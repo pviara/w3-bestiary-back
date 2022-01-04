@@ -4,6 +4,9 @@ import { DatabaseModule } from './infrastructure/database/database.module';
 import { DatabaseService } from './infrastructure/database/database.service';
 import { Module } from '@nestjs/common';
 import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
+import { MonsterModule } from './monster/monster.module';
+import { RouterModule } from '@nestjs/core';
+
 
 @Module({
 	imports: [
@@ -20,6 +23,11 @@ import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
 			},
 			inject: [DatabaseService],
 		}),
+        MonsterModule,
+        RouterModule.register([{
+            path: 'monster',
+            module: MonsterModule
+        }])
 	],
 	controllers: [],
 	providers: [AppService],
