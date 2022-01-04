@@ -1,6 +1,7 @@
 import { BadRequestException, Controller, Get, NotFoundException, Query } from '@nestjs/common';
-import { QueryBus } from '@nestjs/cqrs';
 import { GetAllMonstersQuery } from '../application/queries/get-all-monsters.query';
+import { Monster } from '../domain/monster';
+import { QueryBus } from '@nestjs/cqrs';
 
 @Controller()
 export class MonsterController {
@@ -13,9 +14,9 @@ export class MonsterController {
         }
 
         const query = new GetAllMonstersQuery(lang);
-        const result = await this._queryBus.execute(query);
-        if (!result) {
-            throw new NotFoundException('No monster was found');
+        const result = await this._queryBus.execute(query) as Monster[];
+        if (result.length === 0) {
+            throw new NotFoundException(`No monster was found for language "${lang}".`);
         }
         
         return result;

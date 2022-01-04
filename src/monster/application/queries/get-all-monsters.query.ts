@@ -17,6 +17,6 @@ export class GetAllMonstersHandler implements IQueryHandler<GetAllMonstersQuery>
     ) {}
 
     async execute(query: GetAllMonstersQuery): Promise<Monster[]> {
-       return await this._monsterRepository.getAll(query.lang); 
+        return await this._monsterRepository.getAll(query.lang);
     }
 }

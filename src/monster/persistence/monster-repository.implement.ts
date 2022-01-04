@@ -39,7 +39,12 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             ._model
             .aggregate<MonsterEntity>(monstersAggregate)
             .exec();
+
+        // check if at least one document has been found using the textes $filter
+        if (monsters[0].textes.length === 0) {
+            return [];
+        }
         
-        return MonsterMapper.toDomainModels(monsters);
+        return MonsterMapper.toDomainModels(monsters)
     }
 }
