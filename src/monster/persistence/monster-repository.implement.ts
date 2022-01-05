@@ -78,10 +78,8 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             .aggregate<MonsterEntity>(monstersAggregate)
             .exec();
 
-        if (monster.textes.length === 0) {
-            return null;
+        if (monster) {
+            return MonsterMapper.toDomainModel(monster);
         }
-
-        return MonsterMapper.toDomainModel(monster);
     }
 }

@@ -14,6 +14,7 @@ export class MonsterMapper {
             monsterEntity.code,
             new MonsterTextes(
                 monsterEntityTextes.description,
+                monsterEntityTextes.name,
                 new MonsterTextesQuote(
                     new MonsterTextesQuoteAuthor(
                         monsterEntityTextes.quote.author.firstname,
