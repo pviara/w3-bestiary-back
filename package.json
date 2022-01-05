@@ -64,7 +64,7 @@
       }
     },
     "setupFiles": [
-      "<rootDir>config.ts"
+      "<rootDir>jest-ts-config.ts"
     ],
     "moduleFileExtensions": [
       "js",
