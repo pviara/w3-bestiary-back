@@ -47,4 +47,41 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         
         return MonsterMapper.toDomainModels(monsters)
     }
+
+    async getByCode(code: string, lang: string): Promise<Monster | null> {
+        const monstersAggregate = [{
+            $match: {
+                code
+            }
+        },
+        {
+            $project: {
+                code: 1,
+                textes: {
+                    $filter: {
+                        input: '$textes',
+                        as: 'textes',
+                        cond: {
+                            $eq: [
+                                '$$textes.lang',
+                                lang
+                            ]
+                        }
+                    }
+                },
+                weakspots: 1
+            }
+        }];
+
+        const [monster] = await this
+            ._model
+            .aggregate<MonsterEntity>(monstersAggregate)
+            .exec();
+
+        if (monster.textes.length === 0) {
+            return null;
+        }
+
+        return MonsterMapper.toDomainModel(monster);
+    }
 }

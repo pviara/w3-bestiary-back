@@ -1,0 +1,33 @@
+[{
+    "code": "bear",
+    "textes": [{
+        "lang": "EN",
+        "description": "Bears are carnivoran mammals of the family Ursidae. They are classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats.",
+        "quote": {
+            "author": {
+                "firstname": "gérard",
+                "lastname": "depardieu",
+                "title": "very drunk man"
+            },
+            "text": "Bear is very, very not nice. Espacially when it's hungry. Dead to bears, dough."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les ours forment la famille de mammifères des ursidés (Ursidae), de l'ordre des carnivores (Carnivora). Le Grand panda, dont la classification a longtemps prêté à débat, est aujourd'hui considéré comme un ours herbivore au sein de cette famille.",
+        "quote": {
+            "author": {
+                "firstname": "gérard",
+                "lastname": "depardieu",
+                "title": "homme très saoul"
+            },
+            "text": "L'ours est vraiment très, très peu gentil. Surtout quand il a faim. À mort les ours, entre autres."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": ["anti-beast-oil"],
+        "signs": ["aard"]
+    }
+}]
