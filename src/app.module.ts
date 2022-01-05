@@ -25,8 +25,11 @@ import { RouterModule } from '@nestjs/core';
 		}),
         MonsterModule,
         RouterModule.register([{
-            path: 'monster',
-            module: MonsterModule
+            path: 'api',
+            children: [{
+                path: 'monster',
+                module: MonsterModule
+            }]
         }])
 	],
 	controllers: [],
