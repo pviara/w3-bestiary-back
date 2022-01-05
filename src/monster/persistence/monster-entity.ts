@@ -33,6 +33,9 @@ class MonsterTextes {
     @Prop({ type: String })
     description: string;
 
+    @Prop({ type: String })
+    name: string;
+
     @Prop()
     quote: MonsterTextesQuoteEntity;
 }
