@@ -1,5 +1,5 @@
 import { BadRequestException, Controller, Get, NotFoundException, Query } from '@nestjs/common';
-import { GetAllMonstersQuery } from '../application/queries/get-all-monsters.query';
+import { GetAllMonstersQuery } from '../application/queries/get-all-monsters.handler';
 import { Monster } from '../domain/monster';
 import { QueryBus } from '@nestjs/cqrs';
 
