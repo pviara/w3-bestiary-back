@@ -19,6 +19,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         },
         {
             $project: {
+                category: 1,
                 code: 1,
                 textes: {
                     $filter: {
@@ -56,6 +57,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         },
         {
             $project: {
+                category: 1,
                 code: 1,
                 textes: {
                     $filter: {

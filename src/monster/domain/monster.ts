@@ -1,5 +1,6 @@
 export class Monster {
     constructor(
+        readonly category: string,
         readonly code: string,
         readonly textes: MonsterTextes,
         readonly weakspots: MonsterWeakspots

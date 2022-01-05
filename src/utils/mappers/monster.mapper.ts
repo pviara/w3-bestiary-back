@@ -11,6 +11,7 @@ export class MonsterMapper {
     static toDomainModel(monsterEntity: MonsterEntity): Monster {
         const monsterEntityTextes = monsterEntity.textes[0];
         return new Monster(
+            monsterEntity.category,
             monsterEntity.code,
             new MonsterTextes(
                 monsterEntityTextes.description,
