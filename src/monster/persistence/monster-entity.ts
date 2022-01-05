@@ -81,15 +81,23 @@ export class MonsterDocument {
         lower: true,
         required: true,
         set: normalizeCode,
+        type: String
+    })
+    category: string;
+    
+    @Prop({
+        lower: true,
+        required: true,
+        set: normalizeCode,
         type: String,
         unique: true
     })
     code: string;
     
-    @Prop()
+    @Prop({ required: true })
     textes: MonsterTextes[];
 
-    @Prop()
+    @Prop({ required: true })
     weakspots: MonsterWeakspotsEntity;
 }
 
