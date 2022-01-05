@@ -9,6 +9,7 @@ export class Monster {
 export class MonsterTextes {
     constructor(
         readonly description: string,
+        readonly name: string,
         readonly quote: MonsterTextesQuote,
     ) {}
 }
