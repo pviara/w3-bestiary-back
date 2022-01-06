@@ -41,7 +41,7 @@ export class MonsterWeakspots {
 
 export class MonstersByCategory {
     constructor(
-        readonly category: string,
+        readonly categoryName: string,
         readonly monsters: Monster[]
     ) {}
 }
