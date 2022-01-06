@@ -1,14 +1,29 @@
 import {
     Monster,
+    MonstersByCategory,
     MonsterTextes,
     MonsterTextesQuote,
     MonsterTextesQuoteAuthor,
     MonsterWeakspots
 } from '../../monster/domain/monster';
-import { MonsterEntity } from '../../monster/persistence/monster-entity';
+import { MonsterEntity, MonstersByCategoryEntity } from '../../monster/persistence/monster-entity';
 
 export class MonsterMapper {
-    static toDomainModel(monsterEntity: MonsterEntity): Monster {
+    static toMonstersByCategory(monstersByCategoryEntity: MonstersByCategoryEntity): MonstersByCategory {
+        return new MonstersByCategory(
+            monstersByCategoryEntity.category,
+            this.toMonsters(monstersByCategoryEntity.monsters)
+        );
+    }
+
+    static toMonstersByCategories(monstersByCategoryEntities: MonstersByCategoryEntity[]): MonstersByCategory[] {
+        return monstersByCategoryEntities
+            .map(
+                monsterByCategoryEntity => this.toMonstersByCategory(monsterByCategoryEntity)
+            );
+    }
+    
+    static toMonster(monsterEntity: MonsterEntity): Monster {
         const monsterEntityTextes = monsterEntity.textes[0];
         return new Monster(
             monsterEntity.category,
@@ -34,10 +49,10 @@ export class MonsterMapper {
         );
     }
 
-    static toDomainModels(monsterEntities: MonsterEntity[]): Monster[] {
+    static toMonsters(monsterEntities: MonsterEntity[]): Monster[] {
         return monsterEntities
             .map(
-                monsterEntity => this.toDomainModel(monsterEntity)
+                monsterEntity => this.toMonster(monsterEntity)
             );
     }
 }

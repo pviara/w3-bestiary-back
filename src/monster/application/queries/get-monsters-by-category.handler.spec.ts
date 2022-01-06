@@ -1,26 +1,26 @@
 import { createMock } from 'ts-auto-mock';
-import { GetAllMonstersHandler, GetAllMonstersQuery } from './get-all-monsters.handler';
+import { GetMonstersByCategoriesHandler, GetMonstersByCategoriesQuery } from './get-monsters-by-category.handler';
 import { IMonsterRepository } from '../monster-repository.interface';
 
 describe('GetAllMonstersHandler', () => {
-    let sut: GetAllMonstersHandler;
+    let sut: GetMonstersByCategoriesHandler;
     let monsterRepository: IMonsterRepository;
 
     beforeEach(() => {
         monsterRepository = createMock<IMonsterRepository>();
-        sut = new GetAllMonstersHandler(monsterRepository);
+        sut = new GetMonstersByCategoriesHandler(monsterRepository);
     });
 
     describe('execute', () => {
         it('should call MonsterRepository getAll method with query "lang" property', async () => {
             // arrange
-            const query = new GetAllMonstersQuery('lang');
+            const query = new GetMonstersByCategoriesQuery('lang');
             
             // act
             await sut.execute(query);
 
             // assert
-            expect(monsterRepository.getAll).toBeCalledWith(query.lang);
+            expect(monsterRepository.getMonstersByCategories).toBeCalledWith(query.lang);
         });
     });
 });

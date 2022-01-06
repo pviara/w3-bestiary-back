@@ -38,3 +38,10 @@ export class MonsterWeakspots {
         readonly signs: string[]
     ) {}
 }
+
+export class MonstersByCategory {
+    constructor(
+        readonly category: string,
+        readonly monsters: Monster[]
+    ) {}
+}
