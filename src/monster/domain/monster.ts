@@ -39,9 +39,16 @@ export class MonsterWeakspots {
     ) {}
 }
 
+export class MonstersByCategoryCategory {
+    constructor(
+        readonly code: string,
+        readonly name: string
+    ) {}
+}
+
 export class MonstersByCategory {
     constructor(
-        readonly categoryName: string,
+        readonly category: MonstersByCategoryCategory,
         readonly monsters: Monster[]
     ) {}
 }

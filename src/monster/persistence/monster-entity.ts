@@ -72,17 +72,25 @@ class MonsterWeakspotsEntity {
     signs: string[];
 }
 
-class MonsterByEntityCategoryCategory {
+export class MonsterByEntityCategoryCategoryTextes {
     @Prop()
     lang: string;
-    
+
     @Prop()
     name: string;
 }
 
+export class MonsterByEntityCategoryCategory {
+    @Prop()
+    code: string;
+    
+    @Prop()
+    textes: MonsterByEntityCategoryCategoryTextes[];
+}
+
 export class MonstersByCategoryEntity {
     @Prop()
-    categories: MonsterByEntityCategoryCategory[];
+    category: MonsterByEntityCategoryCategory;
 
     @Prop()
     monsters: MonsterEntity[];

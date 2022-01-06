@@ -1,6 +1,7 @@
 import {
     Monster,
     MonstersByCategory,
+    MonstersByCategoryCategory,
     MonsterTextes,
     MonsterTextesQuote,
     MonsterTextesQuoteAuthor,
@@ -10,10 +11,13 @@ import { MonsterEntity, MonstersByCategoryEntity } from '../../monster/persisten
 
 export class MonsterMapper {
     static toMonstersByCategory(monstersByCategoryEntity: MonstersByCategoryEntity): MonstersByCategory {
-        const category = monstersByCategoryEntity.categories[0];
+        const categoryTextes = monstersByCategoryEntity.category.textes[0];
         
         return new MonstersByCategory(
-            category.name,
+            new MonstersByCategoryCategory(
+                monstersByCategoryEntity.category.code,
+                categoryTextes.name
+            ),
             this.toMonsters(monstersByCategoryEntity.monsters)
         );
     }

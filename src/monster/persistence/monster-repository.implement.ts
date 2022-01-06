@@ -56,19 +56,22 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         },
         {
             $project: {
-                monsters: 1,
-                categories: {
-                    $filter: {
-                        input: '$categories.names',
-                        as: 'categories',
-                        cond: {
-                            $eq: [
-                                '$$categories.lang',
-                                lang
-                            ]
+                category: {
+                    code: '$categories.code',
+                    textes: {
+                        $filter: {
+                            input: '$categories.names',
+                            as: 'categoryNames',
+                            cond: {
+                                $eq: [
+                                    '$$categoryNames.lang',
+                                    lang
+                                ]
+                            }
                         }
                     }
                 },
+                monsters: 1
             }
         },
         {
