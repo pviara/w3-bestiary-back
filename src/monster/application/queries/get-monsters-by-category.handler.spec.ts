@@ -12,7 +12,7 @@ describe('GetAllMonstersHandler', () => {
     });
 
     describe('execute', () => {
-        it('should call MonsterRepository getAll method with query "lang" property', async () => {
+        it('should call MonsterRepository getMonstersByCategories method with query "lang" property', async () => {
             // arrange
             const query = new GetMonstersByCategoriesQuery('lang');
             

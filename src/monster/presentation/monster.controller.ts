@@ -1,10 +1,10 @@
 import { Controller, Get, NotFoundException, Param, Query, ValidationPipe } from '@nestjs/common';
+import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
-import { GetAllMonstersURLQuery } from './DTO/get-all-monsters.url-query';
+import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
 import { QueryBus } from '@nestjs/cqrs';
-import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 
 @Controller()
 export class MonsterController {
@@ -12,7 +12,7 @@ export class MonsterController {
     
     @Get()
     async getMonstersByCategories(
-        @Query(new ValidationPipe()) query: GetAllMonstersURLQuery
+        @Query(new ValidationPipe()) query: GetMonstersByCategoriesURLQuery
     ): Promise<MonstersByCategory[]> {
         const getMonstersByCategoryQuery = new GetMonstersByCategoriesQuery(query.lang);
 

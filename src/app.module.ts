@@ -1,4 +1,5 @@
 import { AppService } from './app.service';
+import { CategoryModule } from './category/category.module';
 import { ConfigurationModule } from './infrastructure/configuration/configuration.module';
 import { DatabaseModule } from './infrastructure/database/database.module';
 import { DatabaseService } from './infrastructure/database/database.service';
@@ -7,9 +8,9 @@ import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
 import { MonsterModule } from './monster/monster.module';
 import { RouterModule } from '@nestjs/core';
 
-
 @Module({
 	imports: [
+        CategoryModule,
 		ConfigurationModule,
 		MongooseModule.forRootAsync({
 			imports: [DatabaseModule],
@@ -27,6 +28,10 @@ import { RouterModule } from '@nestjs/core';
         RouterModule.register([{
             path: 'api',
             children: [{
+                path: 'category',
+                module: CategoryModule
+            },
+            {
                 path: 'monster',
                 module: MonsterModule
             }]
