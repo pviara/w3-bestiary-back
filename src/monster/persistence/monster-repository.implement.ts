@@ -34,6 +34,11 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             }
         },
         {
+            $sort: {
+                'textes.name': 1
+            }
+        },
+        {
             $group: {
                 _id: '$category',
                 monsters: {
@@ -76,7 +81,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         },
         {
             $sort: {
-                'category.textes.name': 1
+                'category.textes.name': 1,
             }
         }];
 
