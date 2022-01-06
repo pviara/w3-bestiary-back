@@ -2,6 +2,19 @@
     "category": "beasts",
     "code": "dog",
     "textes": [{
+        "lang": "EN",
+        "description": "Some claim dogs are reflections of their masters. A well-treated pet repays his owner with loyalty and trust, whereas an ill-treated one repays this treatment in kind as well, meeting yells with barks and kicks with bites. Since there is an abundance of bad men, so, too, is there an abundance of bad dogs. Most dangerous of all are the vagrant mutts who have lost all respect for men and developed a taste for blood and carrion.<br><br>Dogs usually attack in packs, choosing isolated victims, especially ones in whom they sense some kind of weakness. Packs of rabid dogs usually only dare attack children, drunkards, the elderly and cripples. Yet when backed into a corner, they will defend themselves with frothing bites and sharp claws against all and sundry.",
+        "name": "dog",
+        "quote": {
+            "author": {
+                "firstname": "alfred",
+                "lastname": "pankratz",
+                "title": "beggar from Novigrad"
+            },
+            "text": "They say a dog's a man's best friend... But in these foul times one best be wary, even of his friends."
+        }
+    },
+    {
         "lang": "FR",
         "description": "\"Tel maître, tel chien\", dit la sagesse populaire. Un animal bien traité est fidèle à son maître, tandis qu'un chien battu et houspillé en permanence finit inévitablement par mordre la main qui le nourrit. Hélas, en ces temps troublés où les hommes mauvais prospèrent, bon nombre de chiens errants ont perdu tout respect pour l'homme et développé un goût pour le sang et la charogne.",
         "name": "chien",
@@ -25,8 +38,21 @@
     "category": "beasts",
     "code": "wolf",
     "textes": [{
+        "lang": "EN",
+        "description": "Once upon a time wolves were the absolute rulers of the forest. Men used them to frighten children, while adults, too, trembled at the sound of their howling. Post-Conjunction monsters not only pushed wolves into the deepest wilds but also took over their place in human nightmares. Yet this does not mean the old predators ceased to be a danger. Wolves do not have a drop of magic within them, breathe no fire and spit no acid, but that in no way stops them from killing unwary travelers and hunters.<br><br>Particularly dangerous are wargs, a nasty and ferocious subspecies of wolf, and the snow-white wolves which today can only be found in the wild highlands of the Skellige archipelago.<br><br>Wolves usually feed in packs counting from a handful to over a dozen members, though some particularly strong males hunt alone. Though wolves are weaker than many post-Conjunction monsters, they make up for any lack of strength with their intelligence. When fighting them one must be especially careful not to become surrounded. The presence of wolves can also signal more serious trouble – these predators often share their hunting grounds with werewolves and leshens.",
+        "name": "wolf",
+        "quote": {
+            "author": {
+                "firstname": "yngvar",
+                "lastname": "",
+                "title": "shepherd"
+            },
+            "text": "Friend of mine used to say that with all these griffins and basilisks and whatnot, good old fashioned wolves weren't nothing to worry about... Then the damned beasts devoured half his flock."
+        }
+    },
+    {
         "lang": "FR",
-        "description": "Les loups régnaient jadis en maîtres sur la forêt. Adultes et enfants tremblaient de peur en entendant leurs hurlements. Depuis la Conjonction cependant, les monstres ont non seulement considérablement réduit le territoire des loups, mais ils ont également pris leur place dans les cauchemars des hommes. Pour autant, l'ancien prédateur n'en reste pas moins dangereux. Le loup n'est pas un animal magique, il ne crache ni feu, ni acide, mais il continue néanmoins de tuer les chasseurs et les voyageurs imprudents.\n\nLes wargs, une sous-espèce de loup, sont des adversaires particulièrements coriaces, tout comme le loup blanc des terres sauvages de Skellige.",
+        "description": "Les loups régnaient jadis en maîtres sur la forêt. Adultes et enfants tremblaient de peur en entendant leurs hurlements. Depuis la Conjonction cependant, les monstres ont non seulement considérablement réduit le territoire des loups, mais ils ont également pris leur place dans les cauchemars des hommes. Pour autant, l'ancien prédateur n'en reste pas moins dangereux. Le loup n'est pas un animal magique, il ne crache ni feu, ni acide, mais il continue néanmoins de tuer les chasseurs et les voyageurs imprudents.<br><br>Les wargs, une sous-espèce de loup, sont des adversaires particulièrements coriaces, tout comme le loup blanc des terres sauvages de Skellige.",
         "name": "loup",
         "quote": {
             "author": {
@@ -48,8 +74,21 @@
     "category": "beasts",
     "code": "bear",
     "textes": [{
+        "lang": "EN",
+        "description": "Bears are omnivores – meaning men find a place in their diet beside berries, roots and salmon. When they snack on humans, they most frequently partake of the meat of travelers unwittingly trespassing on their territory, or else that of hunters for whom besting such a creature is a lifelong ambition.<br><br>There are several subspecies of bears – black bears, polar bears and cave bears – which differ from one another in coloring as well as in size and strength. All share one trait in common, however: a near-unmatched ability to kill.",
+        "name": "bear",
+        "quote": {
+            "author": {
+                "firstname": "jahne",
+                "lastname": "oldak",
+                "title": "royal huntsman"
+            },
+            "text": "Know that ditty about the bear \"climbing the mountain, to see what he could see?\" Biggest load of rubbish I've ever heard. When a bear climbs a mountain, it's not to see. It's to hunt. To kill."
+        }
+    },
+    {
         "lang": "FR",
-        "description": "L'ours est un omnivore, ce qui signifie qu'il mange aussi bien des baies et du saumon que... des hommes. Dans ce dernier cas, il s'agit généralement d'un voyageur imprudent ou d'un chasseur trop ambitieux.\n\nLes différentes espèces d'ours (ours noir, ours polaire, ours des cavernes, etc.) sont de couleur, de taille et de force diverses, mais partagent toutes une même caractéristique : une aptitude naturelle à tuer.",
+        "description": "L'ours est un omnivore, ce qui signifie qu'il mange aussi bien des baies et du saumon que... des hommes. Dans ce dernier cas, il s'agit généralement d'un voyageur imprudent ou d'un chasseur trop ambitieux.<br><br>Les différentes espèces d'ours (ours noir, ours polaire, ours des cavernes, etc.) sont de couleur, de taille et de force diverses, mais partagent toutes une même caractéristique : une aptitude naturelle à tuer.",
         "name": "ours",
         "quote": {
             "author": {
@@ -71,6 +110,19 @@
     "category": "hybrids",
     "code": "griffin",
     "textes": [{
+        "lang": "EN",
+        "description": "Griffins were once only found high in the mountains, where they would hunt marmots and wild goats. When humans encroached on their lands, however, griffins soon discovered a new source of much more plentiful and easier-caught prey: cows, sheep and shepherds. Though still wary of main roads and towns (where folk with the means to hire a witcher are like to dwell), these half-eagle, half-wildcat creatures have gone from rarities to oft-encountered pests known throughout the Northern Realms. Especially hated are the subspecies known as royal griffins and archgriffins.<br><br>Griffins mate for life and when their partner is attacked they will defend it to the death. For this reason they are often considered the embodiment of courage, loyalty and fighting spirit. This last attribute no one would deny them – when provoked, they will not cease their attack until they have torn their opponent to shreds.<br><br>Griffins find their victims using their extraordinary perceptive sense of smell. After drawing near to their chosen target they attack by swooping down from great height. Their muscular mass combined with their swift speed mean this blow alone is often enough to end the fight. If, however, the victim survives this aerial assault, the griffin will immediately engage it in direct combat, making use of its sharp, curved beak and powerful talons.<br><br>The wounds it deals are deep and cause powerful bleeding. Even worse, griffins do not have any true weaknesses – except for their vulnerability to hybrid oil and certain kinds of bombs.",
+        "name": "griffin",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Griffin attack witness, name unknown"
+            },
+            "text": "Aye, half-eagle, half tomcat, just like on the lord's crest. 'Cept this 'un was carryin' me dead cow 'stead of a scepter."
+        }
+    },
+    {
         "lang": "FR",
         "description": "Le griffon était autrefois confiné aux zones montagneuses, où il se nourrissait de marmottes et de chèvres sauvages. Il a cependant trouvé sur les terres habitées par les humains une abondance de proies faciles : vaches, moutons... voire bergers à l'occasion. Cette créature mi-aigle, mi-félin est ainsi devenue en quelques années l'un des pires fléaux des royaumes du Nord. Le griffon royal et l'archigriffon, deux sous-espèces plus redoutables encore, sont la hantise des paysans.",
         "name": "griffon",
@@ -78,7 +130,7 @@
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": "Témoin anonyme d'une attaque de griffon"
+                "title": "témoin anonyme d'une attaque de griffon"
             },
             "text": "\"Je vous jure, c'était une bête mi-aigle, mi-chat, comme sur le blason du seigneur. Sauf que celle-ci portait pas un sceptre, mais une de mes vaches.\""
         }
@@ -91,10 +143,118 @@
     }
 },
 {
+    "category": "hybrids",
+    "code": "harpy",
+    "textes": [{
+        "lang": "EN",
+        "description": "It is hard to say what is most repulsive about harpies and their cousins, the shishigas: their hideous appearance, the overwhelming stench of rot and bird excrement that clings to them or their bloodcurdling screech. Suffice it to say that even rats, who dwell happily among the rankest fecal matter and rotten waste, give their nests wide berth.<br><br>Harpy nests are most often found atop high cliffs or rocky ravines. Sure signs of having strayed near one are crumbling human and animals remains, guano-streaked rocks and feathers littering the ground.<br><br>Harpies and shishigas hunt in flocks consisting of a handful to up to twenty individuals. Though rather cowardly and cautious, harpies fiercely defend their nests and will not hesitate to attack when outnumbering their foes.<br><br>During combat they use their ability to fly to dive swiftly to strike their victims one by one before soaring back up out of reach. They can kill with their wings or their sharp beak and talons. Once on the ground they move slowly and clumsily, and thus no longer present much of a threat.",
+        "name": "harpy",
+        "quote": {
+            "author": {
+                "firstname": "letho",
+                "lastname": "",
+                "title": "Viper School witcher"
+            },
+            "text": "Most monsters don't actually keep any treasure in their lairs. Harpies, though - they like shiny things."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Non contente d'être d'une laideur repoussante, la harpie (tout comme sa cousine la chichiga) dégage une odeur pestilentielle, savoureux mélange de pourriture et d'excréments. Même les rats, pourtant habitués à vivre parmi la matière fécle et les détritus, évitent soigneusement les nids de harpie.",
+        "name": "harpie",
+        "quote": {
+            "author": {
+                "firstname": "letho",
+                "lastname": "",
+                "title": "sorceleur de l'École de la Vipère"
+            },
+            "text": "En général, les monstres ne s'intéressent pas aux richesses humaines, mais pour une harpie, tout ce qui brille est d'or."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["anti-hybrids-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "cursed-ones",
+    "code": "botchling",
+    "textes": [{
+        "lang": "EN",
+        "description": "Botchlings are perhaps the most repulsive creatures a witcher will ever have the displeasure of meeting. Born of dead, unwanted babies discarded without a proper burial, their appearance is that of a partially-decayed fetus, their unformed flesh twisted with hate, fear and malice. These hideous creatures feed on the blood of pregnant women, driven by a mad hunger that most often leads to their victim's death.<br><br>A botchling will emerge from its lair at night to lurk by the bedside of an expectant mother, draining her strength and that of her unborn progeny as she sleeps. A woman thus beleaguered first suffers from troubling dreams, then fever, delirium and a general weakening of the flesh. After a few such nights she is enfeebled and unable to defend herself - it is then the botchling attacks directly, sinking its long, sharp fangs into her body and drinking her blood until mother and fetus perish together.<br><br>A botchling stands around a foot and a half in height, but, when threatened and if gorged with blood, it can change form. At such times it grows into a deformed man, hunched over and striding, ape-like, on its forearms. Stronger and fiercer after this alteration, it hurls itself into direct, physical combat, gnashing at its opponent or attacking him with sharp claws.<br><br>A botchling's curse can be lifted by transforming it into a lubberkin - a guardian spirit of the hearth that watches over the family it never knew in the house it never could call home.",
+        "name": "botchling",
+        "quote": {
+            "author": {
+                "firstname": "lambert",
+                "lastname": "",
+                "title": "witcher of the Wolf School"
+            },
+            "text": "Saying a botchling's ugly is like saying shit's not particularly tasty: can't say it's a lie, but it doesn't exactly convey the whole truth, either."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le couvin est sans doute la créature la plus repoussante qu'un sorceleur puisse croiser au cours de ses voyages. Formé à partir du cadavre d'un bébé enterré sans cérémonie, il ressemble à un foetus en décomposition aux traits déformés par la haine, la peur et la malice. Ce monstre hideux se nourrit du sang des femmes enceintes, malheureuses victimes de sa faim dévorante.",
+        "name": "couvin",
+        "quote": {
+            "author": {
+                "firstname": "lambert",
+                "lastname": "",
+                "title": "sorceleur de l'École du Loup"
+            },
+            "text": "Dire qu'un couvin est moche, c'est comme dire que la merde n'a pas très bon goût : ce n'est pas totalement faux, mais ça reste assez loin de la vérité."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["anti-cursed-ones-oils"],
+        "potions": [],
+        "signs": ["axii"]
+    }
+},
+{
+    "category": "cursed-ones",
+    "code": "werewolf",
+    "textes": [{
+        "lang": "EN",
+        "description": "Werewolves are creatures with both men and wolves inside them. When in beastly form, they take the worst traits of each: the wolf's drive to kill and hunger for raw flesh and the man's cruel and calculating intelligence. A werewolf's condition comes about through a curse, and the transformations happen outside his conscious control. When he reverts to human form, he has no memory of his deeds – otherwise he would surely go mad and take his own life.<br><br>Werewolves are active at night, particularly when the moon is full. Though they hunt alone, when threatened they will summon wolves to aid them. Werewolves rarely feel the need to flee, for few adversaries put up much of a fight against them. They strike as swiftly as lightning with claws sharp as razors and regenerate any damage received in mere moments. When fighting werewolves a witcher should wield a blade covered in oil harmful to the cursed and have a large supply of Devil's Puffballs handy.<br><br>A werewolf's curse can at times be lifted, yet there is no universal, surefire method for doing this. A witcher seeking to undertake such a task must there equip himself with a great deal of patience – and sturdy armor.",
+        "name": "werewolf",
+        "quote": {
+            "author": {
+                "firstname": "elsa",
+                "lastname": "vilge",
+                "title": "archer"
+            },
+            "text": "Wolves aren't as bad as they're made out to be. Werewolves, though – they're every bit as bad and worse."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le loup-garou est à la croisée des chemins entre l'homme et le loup. Sous sa forme bestiale, il emprunte à chaque race ses pires caractéristiques : l'appétit de chair fraîche et l'instinct de prédateur du loup d'une part, la cruauté et l'intelligence calculatrice de l'homme d'autre part. Créature maudite, le loup-garou n'exerce aucun contrôle sur ses transformations. Lorsqu'il reprend forme humaine, il ne conserve aucun souvenir de ses actes, sans quoi il perdrait certainement la raison ou mettrait fin à ses jours.",
+        "name": "loup-garou",
+        "quote": {
+            "author": {
+                "firstname": "elsa",
+                "lastname": "vilge",
+                "title": "archère"
+            },
+            "text": "Au fond, les loups de sont pas de mauvaises bêtes. Les loups-garous, en revanche, c'est une autre histoire..."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust", "devils-puffball"],
+        "oils": ["anti-cursed-ones-oils"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
-        "lang": "FR",
+        "lang": "EN",
         "description": "",
         "name": "",
         "quote": {
@@ -105,363 +265,8 @@
             },
             "text": ""
         }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
+    },
+    {
         "lang": "FR",
         "description": "",
         "name": "",

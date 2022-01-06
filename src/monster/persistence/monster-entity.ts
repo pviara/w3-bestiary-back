@@ -1,6 +1,7 @@
 import { Document } from 'mongoose';
 import { Helper } from 'src/utils/helper';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { CategoryEntity } from 'src/category/persistence/category-entity';
 
 class MonsterTextesQuoteAuthorEntity {
     @Prop({
@@ -71,9 +72,17 @@ class MonsterWeakspotsEntity {
     signs: string[];
 }
 
+class MonsterByEntityCategoryCategory {
+    @Prop()
+    lang: string;
+    
+    @Prop()
+    name: string;
+}
+
 export class MonstersByCategoryEntity {
     @Prop()
-    category: string;
+    categories: MonsterByEntityCategoryCategory[];
 
     @Prop()
     monsters: MonsterEntity[];
