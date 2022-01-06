@@ -1,10 +1,10 @@
 import { IMonsterRepository } from '../application/monster-repository.interface';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
-import { Monster } from '../domain/monster';
-import { MonsterEntity } from './monster-entity';
+import { Model, PipelineStage } from 'mongoose';
+import { Monster, MonstersByCategory } from '../domain/monster';
 import { MonsterMapper } from '../../utils/mappers/monster.mapper';
+import { MonstersByCategoryEntity, MonsterEntity } from './monster-entity';
 
 @Injectable()
 export class MonsterRepositoryImplement implements IMonsterRepository {
@@ -13,8 +13,8 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         private readonly _model: Model<MonsterEntity>
     ) {}
 
-    async getAll(lang: string): Promise<Monster[]> {
-        const monstersAggregate = [{
+    async getMonstersByCategories(lang: string): Promise<MonstersByCategory[]> {
+        const aggregate: PipelineStage[] = [{
             $match: {},
         },
         {
@@ -35,22 +35,52 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
                 },
                 weakspots: 1
             }
+        },
+        {
+            $group: {
+                _id: '$category',
+                monsters: {
+                    $push: '$$ROOT'
+                }
+            }
+        },
+        {
+            $set: {
+                category: '$_id'
+            }
+        },
+        {
+            $unset: '_id'
+        },
+        {
+            $sort: {
+                category: 1
+            }
         }];
-        const monsters = await this
-            ._model
-            .aggregate<MonsterEntity>(monstersAggregate)
-            .exec();
 
-        // check if at least one document has been found using the textes $filter
-        if (monsters[0].textes.length === 0) {
+        const monstersByCategoryEntities = await this
+            ._model
+            .aggregate<MonstersByCategoryEntity>(aggregate)
+            .exec();
+        
+        // check that all monsters' textes have been found with the given language
+        const haveAllMonstersTextesBeenFound = monstersByCategoryEntities
+            .every(
+                monsterByCategoryEntity => monsterByCategoryEntity
+                    .monsters
+                    .every(
+                        monsterEntity => monsterEntity.textes.length > 0
+                    )
+            );
+        if (!haveAllMonstersTextesBeenFound) {
             return [];
         }
         
-        return MonsterMapper.toDomainModels(monsters)
+        return MonsterMapper.toMonstersByCategories(monstersByCategoryEntities);
     }
 
     async getByCode(code: string, lang: string): Promise<Monster | null> {
-        const monstersAggregate = [{
+        const aggregate: PipelineStage[] = [{
             $match: {
                 code
             }
@@ -75,13 +105,13 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             }
         }];
 
-        const [monster] = await this
+        const [monsterEntity] = await this
             ._model
-            .aggregate<MonsterEntity>(monstersAggregate)
+            .aggregate<MonsterEntity>(aggregate)
             .exec();
 
-        if (monster && monster.textes.length > 0) {
-            return MonsterMapper.toDomainModel(monster);
+        if (monsterEntity && monsterEntity.textes.length > 0) {
+            return MonsterMapper.toMonster(monsterEntity);
         }
     }
 }

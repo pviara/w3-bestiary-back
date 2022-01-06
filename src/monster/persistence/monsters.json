@@ -1,33 +1,483 @@
 [{
+    "category": "beast",
+    "code": "dog",
+    "textes": [{
+        "lang": "FR",
+        "description": "\"Tel maître, tel chien\", dit la sagesse populaire. Un animal bien traité est fidèle à son maître, tandis qu'un chien battu et houspillé en permanence finit inévitablement par mordre la main qui le nourrit. Hélas, en ces temps troublés où les hommes mauvais prospèrent, bon nombre de chiens errants ont perdu tout respect pour l'homme et développé un goût pour le sang et la charogne.",
+        "name": "chien",
+        "quote": {
+            "author": {
+                "firstname": "alfred",
+                "lastname": "pankratz",
+                "title": "mendiant de Novigrad"
+            },
+            "text": "Le chien est le meilleur ami de l'homme, il paraît... mais par les temps qui courent, vaut mieux se méfier de tout le monde, même de ses amis."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["anti-beast-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "beast",
+    "code": "wolf",
+    "textes": [{
+        "lang": "FR",
+        "description": "Les loups régnaient jadis en maîtres sur la forêt. Adultes et enfants tremblaient de peur en entendant leurs hurlements. Depuis la Conjonction cependant, les monstres ont non seulement considérablement réduit le territoire des loups, mais ils ont également pris leur place dans les cauchemars des hommes. Pour autant, l'ancien prédateur n'en reste pas moins dangereux. Le loup n'est pas un animal magique, il ne crache ni feu, ni acide, mais il continue néanmoins de tuer les chasseurs et les voyageurs imprudents.\n\nLes wargs, une sous-espèce de loup, sont des adversaires particulièrements coriaces, tout comme le loup blanc des terres sauvages de Skellige.",
+        "name": "loup",
+        "quote": {
+            "author": {
+                "firstname": "yngvar",
+                "lastname": "",
+                "title": "berger"
+            },
+            "text": "Je me disais qu'avec tous les griffons, les basilics et les je-sais-pas-quoi-encore qui traînent dans la région, je risquais pas d'être embêté par les loups... Ben ça n'a pas empêché ces sales bêtes de boulotter la moitié de mon troupeau !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["anti-beast-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "beast",
     "code": "bear",
     "textes": [{
-        "lang": "EN",
-        "description": "Bears are carnivoran mammals of the family Ursidae. They are classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats.",
-        "quote": {
-            "author": {
-                "firstname": "gérard",
-                "lastname": "depardieu",
-                "title": "very drunk man"
-            },
-            "text": "Bear is very, very not nice. Espacially when it's hungry. Dead to bears, dough."
-        }
-    },
-    {
         "lang": "FR",
-        "description": "Les ours forment la famille de mammifères des ursidés (Ursidae), de l'ordre des carnivores (Carnivora). Le Grand panda, dont la classification a longtemps prêté à débat, est aujourd'hui considéré comme un ours herbivore au sein de cette famille.",
+        "description": "L'ours est un omnivore, ce qui signifie qu'il mange aussi bien des baies et du saumon que... des hommes. Dans ce dernier cas, il s'agit généralement d'un voyageur imprudent ou d'un chasseur trop ambitieux.\n\nLes différentes espèces d'ours (ours noir, ours polaire, ours des cavernes, etc.) sont de couleur, de taille et de force diverses, mais partagent toutes une même caractéristique : une aptitude naturelle à tuer.",
+        "name": "ours",
         "quote": {
             "author": {
-                "firstname": "gérard",
-                "lastname": "depardieu",
-                "title": "homme très saoul"
+                "firstname": "jahne",
+                "lastname": "oldak",
+                "title": "veneur"
             },
-            "text": "L'ours est vraiment très, très peu gentil. Surtout quand il a faim. À mort les ours, entre autres."
+            "text": "Ah l'ours... Le bon gros ours, le nounours placide qui mange du miel toute la journée... C'est des conneries tout ça. L'ours est un chasseur, un prédateur. L'ours est un tueur."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["anti-beast-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "hybrid-creatures",
+    "code": "griffin",
+    "textes": [{
+        "lang": "FR",
+        "description": "Le griffon était autrefois confiné aux zones montagneuses, où il se nourrissait de marmottes et de chèvres sauvages. Il a cependant trouvé sur les terres habitées par les humains une abondance de proies faciles : vaches, moutons... voire bergers à l'occasion. Cette créature mi-aigle, mi-félin est ainsi devenue en quelques années l'un des pires fléaux des royaumes du Nord. Le griffon royal et l'archigriffon, deux sous-espèces plus redoutables encore, sont la hantise des paysans.",
+        "name": "griffon",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Témoin anonyme d'une attaque de griffon"
+            },
+            "text": "\"Je vous jure, c'était une bête mi-aigle, mi-chat, comme sur le blason du seigneur. Sauf que celle-ci portait pas un sceptre, mais une de mes vaches.\""
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["anti-hybrids-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
         }
     }],
     "weakspots": {
         "bombs": [],
         "oils": [],
-        "potions": ["anti-beast-oil"],
-        "signs": ["aard"]
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
     }
 }]

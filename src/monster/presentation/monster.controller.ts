@@ -1,8 +1,8 @@
 import { Controller, Get, NotFoundException, Param, Query, ValidationPipe } from '@nestjs/common';
-import { GetAllMonstersQuery } from '../application/queries/get-all-monsters.handler';
+import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetAllMonstersURLQuery } from './DTO/get-all-monsters.url-query';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
-import { Monster } from '../domain/monster';
+import { Monster, MonstersByCategory } from '../domain/monster';
 import { QueryBus } from '@nestjs/cqrs';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 
@@ -11,18 +11,18 @@ export class MonsterController {
     constructor(private readonly _queryBus: QueryBus) {}
     
     @Get()
-    async getAll(
+    async getMonstersByCategories(
         @Query(new ValidationPipe()) query: GetAllMonstersURLQuery
-    ): Promise<Monster[]> {
-        const getAllMonstersQuery = new GetAllMonstersQuery(query.lang);
+    ): Promise<MonstersByCategory[]> {
+        const getMonstersByCategoryQuery = new GetMonstersByCategoriesQuery(query.lang);
 
         const result = await this
             ._queryBus
-            .execute<GetAllMonstersQuery, Monster[]>(getAllMonstersQuery);
+            .execute<GetMonstersByCategoriesQuery, MonstersByCategory[]>(getMonstersByCategoryQuery);
 
         if (result.length === 0) {
             throw new NotFoundException(
-                `No monster was found with { lang: '${query.lang}' }.`
+                `At least one monster was not found with { lang: '${query.lang}' }.`
             );
         }
         

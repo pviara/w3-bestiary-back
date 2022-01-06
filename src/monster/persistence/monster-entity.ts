@@ -70,6 +70,14 @@ class MonsterWeakspotsEntity {
     signs: string[];
 }
 
+export class MonstersByCategoryEntity {
+    @Prop()
+    category: string;
+
+    @Prop()
+    monsters: MonsterEntity[];
+}
+
 function normalizeCode(code: string) {
     const regExp = new RegExp(' ', 'g');
     return code.replace(regExp, '-');
