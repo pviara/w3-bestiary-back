@@ -76,7 +76,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         },
         {
             $sort: {
-                'categories.name': 1
+                'category.textes.name': 1
             }
         }];
 
