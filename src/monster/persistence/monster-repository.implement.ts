@@ -15,9 +15,6 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
 
     async getMonstersByCategories(lang: string): Promise<MonstersByCategory[]> {
         const aggregate: PipelineStage[] = [{
-            $match: {},
-        },
-        {
             $project: {
                 category: 1,
                 code: 1,
@@ -45,16 +42,38 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             }
         },
         {
-            $set: {
-                category: '$_id'
+            $lookup: {
+                from: 'categories',
+                localField: '_id',
+                foreignField: 'code',
+                as: 'categories'
             }
         },
         {
-            $unset: '_id'
+            $unwind: {
+                path: '$categories'
+            }
+        },
+        {
+            $project: {
+                monsters: 1,
+                categories: {
+                    $filter: {
+                        input: '$categories.names',
+                        as: 'categories',
+                        cond: {
+                            $eq: [
+                                '$$categories.lang',
+                                lang
+                            ]
+                        }
+                    }
+                },
+            }
         },
         {
             $sort: {
-                category: 1
+                'categories.name': 1
             }
         }];
 
