@@ -1,0 +1,77 @@
+[{
+    "code": "beasts",
+    "names": [{
+        "lang": "FR",
+        "name": "bêtes"
+    }]
+},
+{
+    "code": "cursed-ones",
+    "names": [{
+        "lang": "FR",
+        "name": "créatures maudites"
+    }]
+},
+{
+    "code": "draconids",
+    "names": [{
+        "lang": "FR",
+        "name": "draconides"
+    }]
+},
+{
+    "code": "elementa",
+    "names": [{
+        "lang": "FR",
+        "name": "élémentaire"
+    }]
+},
+{
+    "code": "hybrids",
+    "names": [{
+        "lang": "FR",
+        "name": "créatures hybrides"
+    }]
+},
+{
+    "code": "insectoids",
+    "names": [{
+        "lang": "FR",
+        "name": "insectoïdes"
+    }]
+},
+{
+    "code": "necrophages",
+    "names": [{
+        "lang": "FR",
+        "name": "nécrophages"
+    }]
+},
+{
+    "code": "ogroids",
+    "names": [{
+        "lang": "FR",
+        "name": "ogroïdes"
+    }]
+},
+{
+    "code": "relicts",
+    "names": [{
+        "lang": "FR",
+        "name": "vestiges"
+    }]
+},
+{
+    "code": "specters",
+    "names": [{
+        "lang": "FR",
+        "name": "spectres"
+    }]
+},
+{
+    "code": "vampires",
+    "names": [{
+        "lang": "FR",
+        "name": "vampires"
+    }]
+}]

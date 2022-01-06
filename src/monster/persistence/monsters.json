@@ -1,5 +1,5 @@
 [{
-    "category": "beast",
+    "category": "beasts",
     "code": "dog",
     "textes": [{
         "lang": "FR",
@@ -16,13 +16,13 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-beast-oil"],
+        "oils": ["anti-beasts-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "beast",
+    "category": "beasts",
     "code": "wolf",
     "textes": [{
         "lang": "FR",
@@ -39,13 +39,13 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-beast-oil"],
+        "oils": ["anti-beasts-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "beast",
+    "category": "beasts",
     "code": "bear",
     "textes": [{
         "lang": "FR",
@@ -62,13 +62,13 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-beast-oil"],
+        "oils": ["anti-beasts-oil"],
         "potions": [],
         "signs": ["quen"]
     }
 },
 {
-    "category": "hybrid-creatures",
+    "category": "hybrids",
     "code": "griffin",
     "textes": [{
         "lang": "FR",

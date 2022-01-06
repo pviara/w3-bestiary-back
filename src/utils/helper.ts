@@ -1,4 +1,9 @@
 export class Helper {
+    static normalizeCode(code: string) {
+        const regExp = new RegExp(' ', 'g');
+        return code.replace(regExp, '-');
+    }
+
 	static replace(
 		source: string,
 		...replaceValues: { placeholder: string; newValue: string }[]

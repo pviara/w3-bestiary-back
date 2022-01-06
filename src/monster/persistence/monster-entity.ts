@@ -1,4 +1,5 @@
 import { Document } from 'mongoose';
+import { Helper } from 'src/utils/helper';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 class MonsterTextesQuoteAuthorEntity {
@@ -43,28 +44,28 @@ class MonsterTextes {
 class MonsterWeakspotsEntity {
     @Prop({
         lower: true,
-        set: normalizeCode,
+        set: Helper.normalizeCode,
         type: [String]
     })
     bombs: string[];
 
     @Prop({
         lower: true,
-        set: normalizeCode,
+        set: Helper.normalizeCode,
         type: [String]
     })
     oils: string[];
 
     @Prop({
         lower: true,
-        set: normalizeCode,
+        set: Helper.normalizeCode,
         type: [String]
     })
     potions: string[];
 
     @Prop({
         lower: true,
-        set: normalizeCode,
+        set: Helper.normalizeCode,
         type: [String]
     })
     signs: string[];
@@ -78,17 +79,12 @@ export class MonstersByCategoryEntity {
     monsters: MonsterEntity[];
 }
 
-function normalizeCode(code: string) {
-    const regExp = new RegExp(' ', 'g');
-    return code.replace(regExp, '-');
-}
-
 @Schema({ _id: false })
 export class MonsterDocument {
     @Prop({
         lower: true,
         required: true,
-        set: normalizeCode,
+        set: Helper.normalizeCode,
         type: String
     })
     category: string;
@@ -96,7 +92,7 @@ export class MonsterDocument {
     @Prop({
         lower: true,
         required: true,
-        set: normalizeCode,
+        set: Helper.normalizeCode,
         type: String,
         unique: true
     })
