@@ -94,7 +94,10 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
                         }
                     }
                 },
-                monsters: 1
+                monsters: {
+                    code: 1,
+                    'textes.name': 1
+                }
             }
         },
         {
