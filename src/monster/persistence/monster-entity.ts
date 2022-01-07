@@ -88,12 +88,25 @@ export class MonsterByEntityCategoryCategory {
     textes: MonsterByEntityCategoryCategoryTextes[];
 }
 
+class MonsterByCategoryTextesEntity {
+    @Prop()
+    name: string;
+}
+
+export class MonsterByCategoryEntity {
+    @Prop()
+    code: string;
+
+    @Prop()
+    textes: MonsterByCategoryTextesEntity[];
+}
+
 export class MonstersByCategoryEntity {
     @Prop()
     category: MonsterByEntityCategoryCategory;
 
     @Prop()
-    monsters: MonsterEntity[];
+    monsters: MonsterByCategoryEntity[];
 }
 
 @Schema({ _id: false })
