@@ -6,14 +6,32 @@ import { Monster, MonstersByCategory } from '../domain/monster';
 import { MonsterMapper } from '../../utils/mappers/monster.mapper';
 import { MonstersByCategoryEntity, MonsterEntity } from './monster-entity';
 
+type MonsterEntitiesByLang = {
+    lang: string;
+    monsters: MonsterEntity[];
+};
+
+type MonstersByCategoriesEntitiesByLang = {
+    lang: string;
+    monsters: MonstersByCategoryEntity[];
+};
+
 @Injectable()
 export class MonsterRepositoryImplement implements IMonsterRepository {
+    private _cachedMonstersByLang: MonsterEntitiesByLang[] = [];
+    private _cachedMonstersByCategoryByLang: MonstersByCategoriesEntitiesByLang[] = [];
+    
     constructor(
         @InjectModel('Monster')
         private readonly _model: Model<MonsterEntity>
     ) {}
 
     async getMonstersByCategories(lang: string): Promise<MonstersByCategory[]> {
+        const cached = this._getMonstersByCategoryFromCache(lang);
+        if (cached) {
+            return MonsterMapper.toMonstersByCategories(cached);
+        }
+        
         const aggregate: PipelineStage[] = [{
             $project: {
                 category: 1,
@@ -102,11 +120,18 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
         if (!haveAllMonstersTextesBeenFound) {
             return [];
         }
+
+        this._addMonstersByCategoryInCache(lang, monstersByCategoryEntities);
         
         return MonsterMapper.toMonstersByCategories(monstersByCategoryEntities);
     }
 
     async getByCode(code: string, lang: string): Promise<Monster | null> {
+        const cached = this._getMonsterFromCache(code, lang);
+        if (cached) {
+            return MonsterMapper.toMonster(cached);
+        }
+        
         const aggregate: PipelineStage[] = [{
             $match: {
                 code
@@ -138,7 +163,61 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             .exec();
 
         if (monsterEntity && monsterEntity.textes.length > 0) {
+            this._addMonsterInCache(lang, monsterEntity);
             return MonsterMapper.toMonster(monsterEntity);
+        }
+    }
+    
+    private _addMonsterInCache(lang: string, monsterEntity: MonsterEntity): void {
+        const existingLang = this
+            ._cachedMonstersByLang
+            .find(
+                cachedMonstersByLang => cachedMonstersByLang.lang === lang
+            );
+        if (existingLang) {
+            existingLang
+                .monsters
+                .push(monsterEntity);
+            return;
+        }
+
+        this._cachedMonstersByLang.push({
+            lang,
+            monsters: [monsterEntity]
+        });
+    }
+
+    private _addMonstersByCategoryInCache(lang: string, monstersByCategoryEntities: MonstersByCategoryEntity[]): void {
+        this._cachedMonstersByCategoryByLang.push({
+            lang,
+            monsters: monstersByCategoryEntities
+        });
+    }
+
+    private _getMonsterFromCache(code: string, lang: string): MonsterEntity {
+        for (const cached of this._cachedMonstersByLang) {
+            if (cached.lang !== lang) {
+                continue;
+            }
+            const matchingMonsterIndex = cached
+                .monsters
+                .findIndex(
+                    monster => monster.code === code
+                );
+            if (matchingMonsterIndex >= 0) {
+                return cached.monsters[matchingMonsterIndex];
+            }
+        }
+    }
+
+    private _getMonstersByCategoryFromCache(lang: string): MonstersByCategoryEntity[] {
+        const cached = this
+            ._cachedMonstersByCategoryByLang
+            .find(
+                cached => cached.lang === lang
+            );
+        if (cached?.monsters.length > 0) {
+            return cached.monsters;
         }
     }
 }

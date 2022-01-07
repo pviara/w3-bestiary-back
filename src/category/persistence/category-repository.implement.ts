@@ -5,13 +5,25 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model, PipelineStage } from 'mongoose';
 import { CategoryMapper } from 'src/utils/mappers/category.mapper';
 
+type CategoryEntityByLang = {
+    lang: string;
+    categories: CategoryEntity[];
+};
+
 export class CategoryRepositoryImplement implements ICategoryRepository {
+    private _cachedCategoriesByLang: CategoryEntityByLang[] = [];
+    
     constructor(
         @InjectModel('Category')
         private readonly _model: Model<CategoryEntity>
     ) {}
 
     async getAll(lang: string): Promise<Category[]> {
+        const cached = this._getCategoriesFromCache(lang);
+        if (cached) {
+            return CategoryMapper.toCategories(cached);
+        }
+        
         const aggregate: PipelineStage[] = [{
             $match: {},
         },
@@ -47,6 +59,26 @@ export class CategoryRepositoryImplement implements ICategoryRepository {
             return [];
         }
 
+        this._addCategoriesInCache(lang, categoryEntities);
+
         return CategoryMapper.toCategories(categoryEntities);
+    }
+
+    private _addCategoriesInCache(lang: string, categoryEntities: CategoryEntity[]): void {
+        this._cachedCategoriesByLang.push({
+            lang,
+            categories: categoryEntities
+        });
+    }
+
+    private _getCategoriesFromCache(lang: string): CategoryEntity[] {
+        const cached = this
+            ._cachedCategoriesByLang
+            .find(
+                cached => cached.lang === lang
+            );
+        if (cached?.categories.length > 0) {
+            return cached.categories;
+        }
     }
 }
