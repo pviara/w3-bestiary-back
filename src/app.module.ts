@@ -30,10 +30,6 @@ import { RouterModule } from '@nestjs/core';
         RouterModule.register([{
             path: 'api',
             children: [{
-                path: 'category',
-                module: CategoryModule
-            },
-			{
 				path: 'item',
 				module: ItemModule
 			},
