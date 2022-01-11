@@ -1,0 +1,33 @@
+[{
+    "code": "beast-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "beast oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les bêtes"
+    }]
+},
+{
+    "code": "cursed-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "cursed oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les créatures maudites"
+    }]
+},
+{
+    "code": "hybrid-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "hybrid oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les hybrides"
+    }]
+}]
