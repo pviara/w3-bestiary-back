@@ -3,6 +3,7 @@ import { CategoryModule } from './category/category.module';
 import { ConfigurationModule } from './infrastructure/configuration/configuration.module';
 import { DatabaseModule } from './infrastructure/database/database.module';
 import { DatabaseService } from './infrastructure/database/database.service';
+import { ItemModule } from './item/item.module';
 import { Module } from '@nestjs/common';
 import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
 import { MonsterModule } from './monster/monster.module';
@@ -10,8 +11,9 @@ import { RouterModule } from '@nestjs/core';
 
 @Module({
 	imports: [
-        CategoryModule,
+		CategoryModule,
 		ConfigurationModule,
+		ItemModule,
 		MongooseModule.forRootAsync({
 			imports: [DatabaseModule],
 			useFactory: (dbService: DatabaseService) => {
@@ -31,6 +33,10 @@ import { RouterModule } from '@nestjs/core';
                 path: 'category',
                 module: CategoryModule
             },
+			{
+				path: 'item',
+				module: ItemModule
+			},
             {
                 path: 'monster',
                 module: MonsterModule
