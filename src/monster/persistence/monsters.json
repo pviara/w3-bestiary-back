@@ -29,7 +29,7 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-beasts-oil"],
+        "oils": ["beast-oil"],
         "potions": [],
         "signs": []
     }
@@ -65,7 +65,7 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-beasts-oil"],
+        "oils": ["beast-oil"],
         "potions": [],
         "signs": []
     }
@@ -101,7 +101,7 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-beasts-oil"],
+        "oils": ["beast-oil"],
         "potions": [],
         "signs": ["quen"]
     }
@@ -137,7 +137,7 @@
     }],
     "weakspots": {
         "bombs": ["hive"],
-        "oils": ["anti-hybrids-oil"],
+        "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["aard"]
     }
@@ -173,7 +173,7 @@
     }],
     "weakspots": {
         "bombs": ["hive"],
-        "oils": ["anti-hybrids-oil"],
+        "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["aard"]
     }
@@ -209,7 +209,7 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["anti-cursed-ones-oils"],
+        "oils": ["cursed-oil"],
         "potions": [],
         "signs": ["axii"]
     }
@@ -245,7 +245,7 @@
     }],
     "weakspots": {
         "bombs": ["moon-dust", "devils-puffball"],
-        "oils": ["anti-cursed-ones-oils"],
+        "oils": ["cursed-oil"],
         "potions": [],
         "signs": ["igni"]
     }
