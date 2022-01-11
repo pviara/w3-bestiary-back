@@ -1,4 +1,3 @@
-import { CategoryController } from './presentation/category.controller';
 import { CategoryRepoProvider } from './persistence/category-repository.provider';
 import { categorySchema } from './persistence/category-entity';
 import { GetAllCategoriesHandler } from './application/queries/get-all-categories.handler';
@@ -9,7 +8,7 @@ import { CqrsModule } from '@nestjs/cqrs';
 const queryHandlers = [GetAllCategoriesHandler];
 
 @Module({
-    controllers: [CategoryController],
+    controllers: [],
     exports: [],
     imports: [
         CqrsModule,
