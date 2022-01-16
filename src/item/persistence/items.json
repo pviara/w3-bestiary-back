@@ -30,4 +30,125 @@
         "lang": "FR",
         "name": "huile contre les hybrides"
     }]
+},
+{
+    "code": "draconid-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "draconid oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les draconides"
+    }]
+},
+{
+    "code": "insectoid-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "insectoid oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les insectoïdes"
+    }]
+},
+{
+    "code": "aard",
+    "names": [{
+        "lang": "EN",
+        "name": "aard"
+    },
+    {
+        "lang": "FR",
+        "name": "aard"
+    }]
+},
+{
+    "code": "igni",
+    "names": [{
+        "lang": "EN",
+        "name": "igni"
+    },
+    {
+        "lang": "FR",
+        "name": "igni"
+    }]
+},
+{
+    "code": "axii",
+    "names": [{
+        "lang": "EN",
+        "name": "axii"
+    },
+    {
+        "lang": "FR",
+        "name": "axii"
+    }]
+},
+{
+    "code": "quen",
+    "names": [{
+        "lang": "EN",
+        "name": "quen"
+    },
+    {
+        "lang": "FR",
+        "name": "quen"
+    }]
+},
+{
+    "code": "devils-puffball",
+    "names": [{
+        "lang": "EN",
+        "name": "devil's Puffball"
+    },
+    {
+        "lang": "FR",
+        "name": "vesse-de-loup du diable"
+    }]
+},
+{
+    "code": "dimeritium-bomb",
+    "names": [{
+        "lang": "EN",
+        "name": "dimeritium bomb"
+    },
+    {
+        "lang": "FR",
+        "name": "bombe au dimeritium"
+    }]
+},
+{
+    "code": "hive",
+    "names": [{
+        "lang": "EN",
+        "name": "hive"
+    },
+    {
+        "lang": "FR",
+        "name": "ruche"
+    }]
+},
+{
+    "code": "moon-dust",
+    "names": [{
+        "lang": "EN",
+        "name": "moon dust"
+    },
+    {
+        "lang": "FR",
+        "name": "poussière de lune"
+    }]
+},
+{
+    "code": "golden-oriole",
+    "names": [{
+        "lang": "EN",
+        "name": "golden oriole"
+    },
+    {
+        "lang": "FR",
+        "name": "loriot doré"
+    }]
 }]
