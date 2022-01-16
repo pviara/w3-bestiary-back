@@ -251,38 +251,182 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "elementa",
+    "code": "wild-hunt-hound",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Born, or so some experts believe, of magic ice crystal, the Hounds of the Wild Hunt race alongside their spectral masters. Like ravenous, feral dogs they are capable only of mindlessly attacking whatever crosses their path.\n\nThe Hounds' chief weapons are their claws and teeth. Their battle tactics rely on knocking their opponents to the ground before tearing them to shreds. Badly wounded Hounds fall into a kind of frenzy that adds to their deadly might. These beasts also use their powers over the cold to freeze the ground around them and create sharp spikes of ice. Creatures born of frost,they feel pain from the Igni Sign, and there is also reason to believe Axii can momentarily weaken their drive to kill and somewhat weaken these fierce foes.\n\nThe Hounds' icy nature also means they can draw strength from extreme cold. Thus one should be particularly on guard when fighting them during blizzards or in glacial regions. Elven legends likewise claim they gain strength when a red moon - a known herald of the Hunt's arrival - hangs in the sky.",
+        "name": "hound of the Wild Hunt",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "essi \"Blackjack\"",
+                "lastname": "daven",
+                "title": "trobairitz"
             },
-            "text": ""
+            "text": "Baying at the heels of the Wild hunt are its Hounds, fierce beasts which follow it like dust clouds trailing after a comet. Hushed legends speak of them losing their way at times and descending from the night sky to earth, cold and death following in their wake."
         }
     },
     {
         "lang": "FR",
-        "description": "",
+        "description": "Né, de l'avis des experts, d'un cristal de glace magique, le molosse de la Chasse Sauvage est le fidèle serviteur de ses maîtres spectraux. Créature féroce et carnassière, le molosse attaque sans réfléchir tout ce qui se dresse sur son chemin.",
+        "name": "molosse de la Chasse Sauvage",
+        "quote": {
+            "author": {
+                "firstname": "essi \"Petit-Oeil\"",
+                "lastname": "daven",
+                "title": "barde"
+            },
+            "text": "Dans le sillage de la chasse Sauvage hurlent les molosses, bêtes cruelles et sauvages. D'anciennes légendes murmurent avec effroi qu'ils descendent parfois du ciel nocturne pour s'abattre sur la terre comme une funèste comète, ne laissant derrière eux que ruine et désolation."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": ["igni", "axii"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "cocatrix",
+    "textes": [{
+        "lang": "EN",
+        "description": "Foolish superstitions claim cockatrices, like basilisks, can kill with their gaze alone. That is utter nonsense, however, a cockatrice's gaze being no more dangerous than that of an angry goose. One should instead watch out for it's sharp beak and long tail, which it can whip to murderous effect.\n\nCockatrices thrive in dark caves, abandoned ruins, cobwebbed dungeons and old basements. Though small compared to griffins and manticores, they are more than capable of killing anyone who stumbles across them in a dark corridor.\n\nCockatrices do not shun direct fights, in which they strike furiously with wing and tail in an attempt to exhaust their foes. Blows from their beaks are especially dangerous, as they aim with deadly precision at exposed flesh and vital organs and leave bleeding, life-threatening wounds. When fighting them one should make liberal use of draconid oil as well as Grapeshot, whose shrapnel will pierce their delicate wings with ease.",
+        "name": "cockatrices",
+        "quote": {
+            "author": {
+                "firstname": "jethro",
+                "lastname": "",
+                "title": "peasant from Pindal"
+            },
+            "text": "Had meself eight heifers, five of 'em milchers. Then this cockatrice sprung up nearby, and now all's I got left's dried patties in an empty field."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "La croyance populaire prête au cocatrix, tout comme au basilic, le pouvoir de changer ses proies en pierre d'un seul regard. Cette croyance n'a cependant aucun fondement et le regard du cocatrix n'est pas plus dangereux que celui d'une oie en colère. Son bec acéré et sa longue queue sont en revanche des armes autrement plus redoutables... et bien réelles.",
         "name": "",
+        "quote": {
+            "author": {
+                "firstname": "jethro",
+                "lastname": "",
+                "title": "paysant de Pindal"
+            },
+            "text": "J'avais huit belles génisses, dont cinq laitières. Mais depuis que le cocatrix est passé par là, il me reste plus que mes yeux pour pleurer."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "shrieker",
+    "textes": [{
+        "lang": "EN",
+        "description": "he monster tormenting the residents of Crow's Perch turned out to be a particularly nasty cockatrice. Geralt was not surprised the baron's men had been unable to stop it. They could not possibly withstand the surgical precision of its strikes, which slice open arteries and provoke an outpouring of blood only the Swallow potion could hope to stop. Neither did they know to force it to the ground with a crossbow, a bomb or a Sign, and then evade its charge by rolling under the monster's outstretched wing.\n\nJust when it seemed the villagers would have to learn to live in the shadow of a bloodthirsty beast, to always look to the sky with fear, the witcher arrived - and put an end to the shrieker for good.",
+        "name": "shrieker",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "conversation overheard at Crow's Perch"
             },
-            "text": ""
+            "text": "Heard you have a problem - a monster you call a shrieker?\nAye, prowls about, it does. Snatches cows and goats, mostly, but it won't scorn a man if it runs into one."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le monstre qui tourmentait les habitants de Perchefreux s'avéra être un cocatrix particulièrement retors. Geralt ne fut guère surpris que les hommes du baron n'en soient pas venus à bout. Ils étaient impuissants face à la précision chirurgicale de ses attaques, capables de trancher les artères et de déverser un flot de sang que seule une potion d'Hirondelle pourrait tarir. Ces soldats ignoraient comment contraindre la bête à atterrir grâce à un carreau d'arbalète, une bombe ou un signe lancé au moment opportun, et comment esquiver sa charge d'une roulade afin de se placer sous les ailes déployées de la créatère.\n\nAlors que les villageois semblaient devoir se résigner à vivre avec la menance constante d'une bête assoiffée de sang, et à scruter le ciel avec crainte, le sorceleur fit son apparition et les débarrassa définitivement du hurleur.",
+        "name": "hurleur",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "conversation entendue à Perchefreux"
+            },
+            "text": "Il paraît que vous avez un problème avec un monstre. Un hurleur, c'est ça ?\nOuais, il rôle dans le coin, il boulotte les vaches et les chèvres et il attaque même les hommes."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "insectoids",
+    "code": "endrega-worker",
+    "textes": [{
+        "lang": "EN",
+        "description": "Workers are the most numerous, and thus the most frequently encountered, caste of endrega. Within the colony their duty lies in building nests and cocoons, acquiring food and caring for eggs and larvae. When threatened they will summon warriors to aid them, yet if forced to defend themselves they will – and do so surprisingly well.\n\nEndrega workers are most often found traveling in groups of half-dozen or more members. They move slowly, yet when attacking, they are capable of covering the distance to their victim in the blink of an eye. Like all of their kind, endrega workers are highly venomous. Their bite is toxic, as are any wounds dealt by the bony growths on the ends of their limbs. They can also spew acid to great effect from a distance of several paces. Their usual tactic is to surround their enemy and attack him from several sides at once. Like all insectoids they do not suffer particularly from bleeding, yet are caused great harm by insectoid oil.",
+        "name": "endrega worker",
+        "quote": {
+            "author": {
+                "firstname": "janne the Gimp",
+                "lastname": "",
+                "title": "trapper"
+            },
+            "text": "I thought the workers were harmless. I thought wrong."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les ouvrières sont de loin la caste la plus représentée au sein d'une colonie endriague. Elles construisent les nids et les cocons, approvisionnent la colonie en nourriture et prennent soin des oeufs et des larves. Face au danger, elles appellent généralement les guerrières à la rescousse, mais sont néanmoins parfaitement capables de se défendre.",
+        "name": "endriague ouvrière",
+        "quote": {
+            "author": {
+                "firstname": "jeanne au pied bot",
+                "lastname": "",
+                "title": "chasseuse"
+            },
+            "text": "Moi qui croyais que les ouvrières étaient inoffensives... Ça m'apprendra."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
-        "potions": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
+    "category": "insectoids",
+    "code": "endrega-warrior",
+    "textes": [{
+        "lang": "EN",
+        "description": "Endless waves of endrega workers are enough to overcome most attackers, but when confronting more dangerous foes, endrega colonies unleash their larger, stronger members – the so-called warriors. This caste lives only to fight, and gets ample opportunity to do so while defending the colony's borders or conquering new territory.\n\nAn endrega warrior's main weapon is its long tail, which is tipped with a club-like growth and spiked with venomous quils. Powerful abdominal muscles allow it to swing this tail with enough force to kill most lesser opponents in one blow.\n\nEndrega warriors also use their mass and strength as a weapon by charging their opponents in an attempted [sic] to knock them over. As invertebrates with sectioned carapaces, endrega warriors do not bleed profusely, yet recoil in great pain when hit with a blade coated in insectoid oil.",
+        "name": "endrega warrior",
+        "quote": {
+            "author": {
+                "firstname": "klaus",
+                "lastname": "altman",
+                "title": "forester"
+            },
+            "text": "Scared of these endregas, are you? Just wait till you see the warriors."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les hordes d'endriagues ouvrières sont capables de venir à bout de la plupart des menances, mais lorsqu'un adversaire trop coriace se présente, la colonie envoie ses guerrières, plus grandes et plus puissantes. Cette caste ne vit que pour se battre, qu'il s'agisse de défendre les frontières de la colonie ou de conquérir de nouveaux territoires.",
+        "name": "endriague guerrière",
+        "quote": {
+            "author": {
+                "firstname": "klaus",
+                "lastname": "altman",
+                "title": "forestier"
+            },
+            "text": "Vous avez peur de ces endriagues ? Attendez un peu d'avoir vu leurs guerrières."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
         "signs": []
     }
 }]
