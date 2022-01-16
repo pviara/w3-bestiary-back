@@ -305,7 +305,7 @@
     {
         "lang": "FR",
         "description": "La croyance populaire prête au cocatrix, tout comme au basilic, le pouvoir de changer ses proies en pierre d'un seul regard. Cette croyance n'a cependant aucun fondement et le regard du cocatrix n'est pas plus dangereux que celui d'une oie en colère. Son bec acéré et sa longue queue sont en revanche des armes autrement plus redoutables... et bien réelles.",
-        "name": "",
+        "name": "cocatrix",
         "quote": {
             "author": {
                 "firstname": "jethro",
