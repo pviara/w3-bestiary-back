@@ -429,4 +429,148 @@
         "potions": ["golden-oriole"],
         "signs": []
     }
+},
+{
+    "category": "necrophages",
+    "code": "alghoul",
+    "textes": [{
+        "lang": "EN",
+        "description": "Alghouls differ from normal ghouls in size, strength, coloring and, most importantly, intelligence. Whereas ghouls and graveirs are primitive creatures unfit to plan even the simplest ambush, alghouls and their kindred (such as cemetaurs) are capable of forethought, and are thus much more dangerous.\n\nGhouls seem to possess wits enough to at least know a brighter mind when they see it, and so let alghouls and cemetaurs lead their packs. A pack so led will terrorize all in its path, attacking not only lone travelers but also caravans and even farmsteads. When encountering such a pack the alghoul should be eliminated as a first priority, leaving the other beasts for once their leader is gone. One be particularly careful when fighting alghouls around dusk and at night, when they fight with doubled strength.\n\nDuring combat alghouls and cemetaurs try risky maneuvers aimed at knocking their opponents to the ground so the others can finish the job by tearing them to shreds. Like a normal ghoul, an injured alghoul can fall into a frenzy and attack with blind fury. An experienced witcher knows to get out of its way on such occasions and strike from behind, while for an inexperienced witcher, such a turn of events often marks the end of his Path.",
+        "name": "alghoul",
+        "quote": {
+            "author": {
+                "firstname": "yarpen",
+                "lastname": "zigrin",
+                "title": "dwarven warrior"
+            },
+            "text": "An alghoul's basically a badarse ghoul."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "L'algoule est plus grande, plus forte et plus intelligente que sa cousine commune. Alors que la goule et le graveir sont des créatures primitives, l'algoule et ses semblables (comme le décharneur, par exemple) sont capables d'élaborer des plans complexes, ce qui les rend d'autant plus dangereux.",
+        "name": "algoule",
+        "quote": {
+            "author": {
+                "firstname": "yarpen",
+                "lastname": "zigrin",
+                "title": "guerrier nain"
+            },
+            "text": "Une algoule, c'est comme une goule... mais en pire."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["necrophage-oil"],
+        "potions": [],
+        "signs": ["axii"]
+    }
+},
+{
+    "category": "necrophages",
+    "code": "foglet",
+    "textes": [{
+        "lang": "EN",
+        "description": "Fog is the traveler's foe. In the forest, it can make one lose one's way, at sea, it can send one sailing into the rocks. Yet such dangers are nothing compared to the monsters known as foglets which sometimes lurk within it. These creatures have powerful arms and claws like Zerrikanian kinjals, yet what makes them truly dangerous is their mastery of deception, beguilement and disorientation. Many times they need not attack at all, instead simply driving their prey to madness or into boggy marshlands, after which they wait patiently for it to drown in the muddy waters.",
+        "name": "foglet",
+        "quote": {
+            "author": {
+                "firstname": "johannes",
+                "lastname": "strudd",
+                "title": "guide"
+            },
+            "text": "If night ever catches you in the swamps, stay put and wait for dawn, even if it means standing waist-deep in water with leeches crawling down your trousers. Most important of all, if you see a light in the fog, never, and I mean never, go towards it."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le brouillard est l'ennemi du voyageur. En forêt, il peut lui faire perdre son chemin. En mer, il peut l'envoyer s'échouer sur les récifs. Pourtant, ces dangers sont insignifiants en comparaison du brumelin, monstre sournois qui rôde dans les bancs de brouillard. Si cette créature est dotée de bras puissants et de griffes aussi tranchantes qu'un kinjal de Zerrikania, c'est son sens de l'illusion et de la duperie qui la rend terriblement mortelle. Bien souvent, le brumelin n'attaque pas sa proie mais se contente de la faire sombrer dans la folie ou de l'attirer dans une zone marécageuse avant d'attendre patiemment qu'elle se noie.",
+        "name": "brumelin",
+        "quote": {
+            "author": {
+                "firstname": "johannes",
+                "lastname": "strudd",
+                "title": "guide"
+            },
+            "text": "Si la nuit vous surprend au milieu des marais, ne bougez plus avant le lever du soleil. Plus un geste, même si vous avez de l'eau jusqu'à la taille et des sangsues plein le froc... Et surtout, surtout, si vous voyez une lueur dans le brouillard, n'allez jamais vers elle. Jamais, vous comprenez ?"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["necrophage-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "necrophages",
+    "code": "mourntart",
+    "textes": [{
+        "lang": "EN",
+        "description": "Most grave hags rarely attack humans, preferring instead to feed on the rotten remains they dig out of graves. Yet some individuals grow bold over the years and begin sneaking into huts to steal children and kill the elderly. Just such a monster was tormenting the inhabitants of Lindenvale.\n\nThe witcher knew this grave hag would put up a fierce fight. He would have to watch out for her powerful claws, capable of smashing through any block or parry, and her long, venomous tongue. He also realized her attacks would be so quick not even his mutated reflexes would be able to keep pace - meaning only judicious use of the Yrden Sign would all[sic] him to survive and conquer.\n\nThe outcome of the fight was not hard to predict. The grave hag perished in the very graveyard which had heretofore served as her feeding grounds, and her body was dumped in a grave she had dug with her own claws.",
+        "name": "mourntart",
+        "quote": {
+            "author": {
+                "firstname": "geralt of",
+                "lastname": "rivia",
+                "title": ""
+            },
+            "text": "Somebody's doing some cooking... This... it's a human femur... a child's."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les guenaudes sépulcrales attaquent rarement les humains et préfèrent se nourrir de cadavres déterrés dans les cimetières. Néanmoins, certaines guenaudes s'enhardissent avec l'âge et vont parfois jusqu'à se faufiler dans les maisons pour s'en prendre aux enfants ou aux vieillards. Une telle créature tourmentait les habitants de Valtilleul.\n\nLe sorceleur se doutait que la guenaude sépulcrale lui donnerait du fil à retordre. Il allait devoir éviter ou parer les coups de ses puissantes griffes capables de tailler la roche, ainsi que sa langue, longue et venimeuse. Il réalisa également que ses attaques seraient trop fulgurantes pour ses réflexes surhumains, et avisa qu'il serait donc judicieux d'avoir recours au signe d'Yrden pour sortir vainqueur de cet affrontement.\n\nL'issue du combat était assez prévisible. La guenaude sépulcrale périt dans le cimetière même où elle se nourrissait, puis son cadavre fut jeté dans une tombe qu'elle avait creusée de ses propres griffes.",
+        "name": "fourbe-veuve",
+        "quote": {
+            "author": {
+                "firstname": "geralt de",
+                "lastname": "riv",
+                "title": ""
+            },
+            "text": "Quelqu'un a cuisiné... C'est... un fémur humain... un fémur d'enfant."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["necrophage-oil"],
+        "potions": ["black-blood"],
+        "signs": ["yrden", "quen"]
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
 }]
