@@ -4,16 +4,16 @@ import { Category } from 'src/category/domain/category';
 import { ICategoryRepository } from '../category-repository.interface';
 
 export class GetAllCategoriesQuery implements IQuery {
-    constructor(
-        readonly lang: string
-    ) {}
+    constructor(readonly lang: string) {}
 }
 
 @QueryHandler(GetAllCategoriesQuery)
-export class GetAllCategoriesHandler implements IQueryHandler<GetAllCategoriesQuery> {
+export class GetAllCategoriesHandler
+    implements IQueryHandler<GetAllCategoriesQuery>
+{
     constructor(
         @Inject('CategoryRepo')
-        private readonly _categoryRepository: ICategoryRepository
+        private readonly _categoryRepository: ICategoryRepository,
     ) {}
 
     async execute(query: GetAllCategoriesQuery): Promise<Category[]> {

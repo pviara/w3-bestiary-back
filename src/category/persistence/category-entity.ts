@@ -16,7 +16,7 @@ export class CategoryDocument {
         lower: true,
         required: true,
         set: Helper.normalizeCode,
-        type: String
+        type: String,
     })
     code: string;
 

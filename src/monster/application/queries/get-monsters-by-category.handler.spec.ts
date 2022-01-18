@@ -1,5 +1,8 @@
 import { createMock } from 'ts-auto-mock';
-import { GetMonstersByCategoriesHandler, GetMonstersByCategoriesQuery } from './get-monsters-by-category.handler';
+import {
+    GetMonstersByCategoriesHandler,
+    GetMonstersByCategoriesQuery,
+} from './get-monsters-by-category.handler';
 import { IMonsterRepository } from '../monster-repository.interface';
 
 describe('GetAllMonstersHandler', () => {
@@ -15,12 +18,14 @@ describe('GetAllMonstersHandler', () => {
         it('should call MonsterRepository getMonstersByCategories method with query "lang" property', async () => {
             // arrange
             const query = new GetMonstersByCategoriesQuery('lang');
-            
+
             // act
             await sut.execute(query);
 
             // assert
-            expect(monsterRepository.getMonstersByCategories).toBeCalledWith(query.lang);
+            expect(monsterRepository.getMonstersByCategories).toBeCalledWith(
+                query.lang,
+            );
         });
     });
 });

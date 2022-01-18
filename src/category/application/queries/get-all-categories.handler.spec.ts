@@ -1,5 +1,8 @@
 import { createMock } from 'ts-auto-mock';
-import { GetAllCategoriesHandler, GetAllCategoriesQuery } from './get-all-categories.handler';
+import {
+    GetAllCategoriesHandler,
+    GetAllCategoriesQuery,
+} from './get-all-categories.handler';
 import { ICategoryRepository } from '../category-repository.interface';
 
 describe('GetAllCategoriesHandler', () => {

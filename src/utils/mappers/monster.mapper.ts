@@ -6,12 +6,12 @@ import {
     MonsterTextes,
     MonsterTextesQuote,
     MonsterTextesQuoteAuthor,
-    MonsterWeakspots
+    MonsterWeakspots,
 } from '../../monster/domain/monster';
 import {
     MonsterByCategoryEntity,
     MonsterEntity,
-    MonstersByCategoryEntity
+    MonstersByCategoryEntity,
 } from '../../monster/persistence/monster-entity';
 
 export class MonsterMapper {
@@ -29,60 +29,66 @@ export class MonsterMapper {
                         monsterEntityTextes.quote.author.lastname,
                         monsterEntityTextes.quote.author.title,
                     ),
-                    monsterEntityTextes.quote.text
-                )
+                    monsterEntityTextes.quote.text,
+                ),
             ),
             new MonsterWeakspots(
                 monsterEntity.weakspots.bombs,
                 monsterEntity.weakspots.oils,
                 monsterEntity.weakspots.potions,
                 monsterEntity.weakspots.signs,
-            )
+            ),
         );
     }
 
-    static toMonsterByCategory(monsterByCategoryEntity: MonsterByCategoryEntity): MonsterByCategory {
+    static toMonsterByCategory(
+        monsterByCategoryEntity: MonsterByCategoryEntity,
+    ): MonsterByCategory {
         const monsterByCategoryEntityTextes = monsterByCategoryEntity.textes[0];
 
         return new MonsterByCategory(
             monsterByCategoryEntity.code,
-            monsterByCategoryEntityTextes
+            monsterByCategoryEntityTextes,
         );
     }
 
     static toMonsters(monsterEntities: MonsterEntity[]): Monster[] {
-        return monsterEntities
-            .map(
-                monsterEntity => this.toMonster(monsterEntity)
-            );
+        return monsterEntities.map((monsterEntity) =>
+            this.toMonster(monsterEntity),
+        );
     }
 
-    static toMonstersByCategories(monstersByCategoryEntities: MonstersByCategoryEntity[]): MonstersByCategory[] {
-        return monstersByCategoryEntities
-            .map(
-                monsterByCategoryEntity => this.toMonstersByCategory(monsterByCategoryEntity)
-            );
+    static toMonstersByCategories(
+        monstersByCategoryEntities: MonstersByCategoryEntity[],
+    ): MonstersByCategory[] {
+        return monstersByCategoryEntities.map((monsterByCategoryEntity) =>
+            this.toMonstersByCategory(monsterByCategoryEntity),
+        );
     }
 
-    static toMonstersByCategory(monstersByCategoryEntity: MonstersByCategoryEntity): MonstersByCategory {
+    static toMonstersByCategory(
+        monstersByCategoryEntity: MonstersByCategoryEntity,
+    ): MonstersByCategory {
         const categoryTextes = monstersByCategoryEntity.category.textes[0];
-        
+
         return new MonstersByCategory(
             new MonstersByCategoryCategory(
                 monstersByCategoryEntity.category.code,
-                categoryTextes.name
+                categoryTextes.name,
             ),
-            this.toMonstersInsideCategories(monstersByCategoryEntity.monsters)
+            this.toMonstersInsideCategories(monstersByCategoryEntity.monsters),
         );
     }
-    
-    static toMonstersInsideCategories(monstersByCategoryEntities: MonsterByCategoryEntity[]): MonsterByCategory[] {
-        return monstersByCategoryEntities
-            .map(
-                monsterByCategoryEntity => new MonsterByCategory(
+
+    static toMonstersInsideCategories(
+        monstersByCategoryEntities: MonsterByCategoryEntity[],
+    ): MonsterByCategory[] {
+        return monstersByCategoryEntities.map(
+            (monsterByCategoryEntity) =>
+                new MonsterByCategory(
                     monsterByCategoryEntity.code,
-                    monsterByCategoryEntity.textes[0]
-                )
-            );
+                    monsterByCategoryEntity.textes[0],
+                ),
+        );
     }
 }
