@@ -12,14 +12,13 @@ const queryHandlers = [GetAllCategoriesHandler];
     exports: [],
     imports: [
         CqrsModule,
-        MongooseModule.forFeature([{
-            name: 'Category',
-            schema: categorySchema
-        }])
+        MongooseModule.forFeature([
+            {
+                name: 'Category',
+                schema: categorySchema,
+            },
+        ]),
     ],
-    providers: [
-        CategoryRepoProvider,
-        ...queryHandlers
-    ]
+    providers: [CategoryRepoProvider, ...queryHandlers],
 })
 export class CategoryModule {}

@@ -1,6 +1,6 @@
-import { createMock } from "ts-auto-mock";
-import { GetAllItemsHandler, GetAllItemsQuery } from "./get-all-items.query";
-import { IItemRepository } from "../item-repository.interface";
+import { createMock } from 'ts-auto-mock';
+import { GetAllItemsHandler, GetAllItemsQuery } from './get-all-items.query';
+import { IItemRepository } from '../item-repository.interface';
 
 describe('GetAllItemsHandler', () => {
     let sut: GetAllItemsHandler;

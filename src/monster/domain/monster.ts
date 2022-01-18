@@ -3,7 +3,7 @@ export class Monster {
         readonly category: string,
         readonly code: string,
         readonly textes: MonsterTextes,
-        readonly weakspots: MonsterWeakspots
+        readonly weakspots: MonsterWeakspots,
     ) {}
 }
 
@@ -18,7 +18,7 @@ export class MonsterTextes {
 export class MonsterTextesQuote {
     constructor(
         readonly author: MonsterTextesQuoteAuthor,
-        readonly text: string
+        readonly text: string,
     ) {}
 }
 
@@ -35,27 +35,24 @@ export class MonsterWeakspots {
         readonly bombs: string[],
         readonly oils: string[],
         readonly potions: string[],
-        readonly signs: string[]
+        readonly signs: string[],
     ) {}
 }
 
 export class MonstersByCategoryCategory {
-    constructor(
-        readonly code: string,
-        readonly name: string
-    ) {}
+    constructor(readonly code: string, readonly name: string) {}
 }
 
 export class MonsterByCategory {
     constructor(
         readonly code: string,
-        readonly textes: Pick<MonsterTextes, 'name'>
+        readonly textes: Pick<MonsterTextes, 'name'>,
     ) {}
 }
 
 export class MonstersByCategory {
     constructor(
         readonly category: MonstersByCategoryCategory,
-        readonly monsters: MonsterByCategory[]
+        readonly monsters: MonsterByCategory[],
     ) {}
 }

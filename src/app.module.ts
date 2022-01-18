@@ -10,36 +10,40 @@ import { MonsterModule } from './monster/monster.module';
 import { RouterModule } from '@nestjs/core';
 
 @Module({
-	imports: [
-		CategoryModule,
-		ConfigurationModule,
-		ItemModule,
-		MongooseModule.forRootAsync({
-			imports: [DatabaseModule],
-			useFactory: (dbService: DatabaseService) => {
-				const options: MongooseModuleOptions = {
-					uri: dbService.dbURI,
-					useNewUrlParser: true,
-					useUnifiedTopology: true,
-				};
-				return options;
-			},
-			inject: [DatabaseService],
-		}),
+    imports: [
+        CategoryModule,
+        ConfigurationModule,
+        ItemModule,
+        MongooseModule.forRootAsync({
+            imports: [DatabaseModule],
+            useFactory: (dbService: DatabaseService) => {
+                const options: MongooseModuleOptions = {
+                    uri: dbService.dbURI,
+                    useNewUrlParser: true,
+                    useUnifiedTopology: true,
+                };
+                return options;
+            },
+            inject: [DatabaseService],
+        }),
         MonsterModule,
-        RouterModule.register([{
-            path: 'api',
-            children: [{
-				path: 'item',
-				module: ItemModule
-			},
+        RouterModule.register([
             {
-                path: 'monster',
-                module: MonsterModule
-            }]
-        }])
-	],
-	controllers: [],
-	providers: [AppService],
+                path: 'api',
+                children: [
+                    {
+                        path: 'item',
+                        module: ItemModule,
+                    },
+                    {
+                        path: 'monster',
+                        module: MonsterModule,
+                    },
+                ],
+            },
+        ]),
+    ],
+    controllers: [],
+    providers: [AppService],
 })
 export class AppModule {}

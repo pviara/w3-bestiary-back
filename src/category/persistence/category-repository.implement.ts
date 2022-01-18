@@ -12,10 +12,10 @@ type CategoryEntityByLang = {
 
 export class CategoryRepositoryImplement implements ICategoryRepository {
     private _cachedCategoriesByLang: CategoryEntityByLang[] = [];
-    
+
     constructor(
         @InjectModel('Category')
-        private readonly _model: Model<CategoryEntity>
+        private readonly _model: Model<CategoryEntity>,
     ) {}
 
     async getAll(lang: string): Promise<Category[]> {
@@ -23,38 +23,35 @@ export class CategoryRepositoryImplement implements ICategoryRepository {
         if (cached) {
             return CategoryMapper.toCategories(cached);
         }
-        
-        const aggregate: PipelineStage[] = [{
-            $match: {},
-        },
-        {
-            $project: {
-                code: 1,
-                names: {
-                    $filter: {
-                        input: '$names',
-                        as: 'names',
-                        cond: {
-                            $eq: [
-                                '$$names.lang',
-                                lang
-                            ]
-                        }
-                    }
-                },
-            }
-        }];
 
-        const categoryEntities = await this
-            ._model
+        const aggregate: PipelineStage[] = [
+            {
+                $match: {},
+            },
+            {
+                $project: {
+                    code: 1,
+                    names: {
+                        $filter: {
+                            input: '$names',
+                            as: 'names',
+                            cond: {
+                                $eq: ['$$names.lang', lang],
+                            },
+                        },
+                    },
+                },
+            },
+        ];
+
+        const categoryEntities = await this._model
             .aggregate<CategoryEntity>(aggregate)
             .exec();
 
         // check that all categories' names have been found with the given language
-        const haveAllCategoriesTextesBeenFound = categoryEntities
-            .every(
-                categoryEntity => categoryEntity.names.length > 0
-            );
+        const haveAllCategoriesTextesBeenFound = categoryEntities.every(
+            (categoryEntity) => categoryEntity.names.length > 0,
+        );
         if (!haveAllCategoriesTextesBeenFound) {
             return [];
         }
@@ -64,19 +61,20 @@ export class CategoryRepositoryImplement implements ICategoryRepository {
         return CategoryMapper.toCategories(categoryEntities);
     }
 
-    private _addCategoriesInCache(lang: string, categoryEntities: CategoryEntity[]): void {
+    private _addCategoriesInCache(
+        lang: string,
+        categoryEntities: CategoryEntity[],
+    ): void {
         this._cachedCategoriesByLang.push({
             lang,
-            categories: categoryEntities
+            categories: categoryEntities,
         });
     }
 
     private _getCategoriesFromCache(lang: string): CategoryEntity[] {
-        const cached = this
-            ._cachedCategoriesByLang
-            .find(
-                cached => cached.lang === lang
-            );
+        const cached = this._cachedCategoriesByLang.find(
+            (cached) => cached.lang === lang,
+        );
         if (cached?.categories.length > 0) {
             return cached.categories;
         }

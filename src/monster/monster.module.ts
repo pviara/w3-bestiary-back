@@ -7,24 +7,20 @@ import { MonsterController } from './presentation/monster.controller';
 import { MonsterRepoProvider } from './persistence/monster-repository.provider';
 import { monsterSchema } from './persistence/monster-entity';
 
-const queryHandlers = [
-    GetMonstersByCategoriesHandler,
-    GetMonsterByCodeHandler
-];
+const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
 
 @Module({
     controllers: [MonsterController],
     exports: [],
     imports: [
         CqrsModule,
-        MongooseModule.forFeature([{
-            name: 'Monster',
-            schema: monsterSchema
-        }])
+        MongooseModule.forFeature([
+            {
+                name: 'Monster',
+                schema: monsterSchema,
+            },
+        ]),
     ],
-    providers: [
-        MonsterRepoProvider,
-        ...queryHandlers
-    ]
+    providers: [MonsterRepoProvider, ...queryHandlers],
 })
 export class MonsterModule {}
