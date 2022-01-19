@@ -38,6 +38,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
                 $project: {
                     category: 1,
                     code: 1,
+                    extension: 1,
                     textes: {
                         $filter: {
                             input: '$textes',
@@ -92,6 +93,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
                     },
                     monsters: {
                         code: 1,
+                        extension: 1,
                         'textes.name': 1,
                     },
                 },
