@@ -37,8 +37,8 @@ class MonsterTextes {
     @Prop({ type: String })
     name: string;
 
-    @Prop()
-    quote: MonsterTextesQuoteEntity;
+    @Prop({ required: false })
+    quote?: MonsterTextesQuoteEntity;
 }
 
 class MonsterWeakspotsEntity {
@@ -126,6 +126,9 @@ export class MonsterDocument {
         unique: true,
     })
     code: string;
+
+    @Prop({ required: false })
+    extension?: string;
 
     @Prop({ required: true })
     textes: MonsterTextes[];

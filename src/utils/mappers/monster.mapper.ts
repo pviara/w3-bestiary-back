@@ -23,14 +23,16 @@ export class MonsterMapper {
             new MonsterTextes(
                 monsterEntityTextes.description,
                 monsterEntityTextes.name,
-                new MonsterTextesQuote(
-                    new MonsterTextesQuoteAuthor(
-                        monsterEntityTextes.quote.author.firstname,
-                        monsterEntityTextes.quote.author.lastname,
-                        monsterEntityTextes.quote.author.title,
-                    ),
-                    monsterEntityTextes.quote.text,
-                ),
+                monsterEntityTextes.quote
+                    ? new MonsterTextesQuote(
+                          new MonsterTextesQuoteAuthor(
+                              monsterEntityTextes.quote.author.firstname,
+                              monsterEntityTextes.quote.author.lastname,
+                              monsterEntityTextes.quote.author.title,
+                          ),
+                          monsterEntityTextes.quote.text,
+                      )
+                    : undefined,
             ),
             new MonsterWeakspots(
                 monsterEntity.weakspots.bombs,
