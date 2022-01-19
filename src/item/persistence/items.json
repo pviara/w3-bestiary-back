@@ -142,6 +142,17 @@
     }]
 },
 {
+    "code": "northern-wind",
+    "names": [{
+        "lang": "EN",
+        "name": "northern wind"
+    },
+    {
+        "lang": "FR",
+        "name": "vent du nord"
+    }]
+},
+{
     "code": "golden-oriole",
     "names": [{
         "lang": "EN",
