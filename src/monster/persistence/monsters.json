@@ -539,6 +539,175 @@
     }
 },
 {
+    "category": "beasts",
+    "code": "big-bad-wolf",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "The Big Bad Wolf who lived in the Land of a Thousand Fables was, like the other denizens of that strange sphere, created by Artorius Vigo based on a figure from folk tales. Once he served as a playmate to the duke's daughters, acting out scenes with a certain red-hooded girl and her grandmother, but as the fable land slowly degenerated, so did he.\n\nGeralt and Syanna met the Big Bad Wolf while he was nursing a nasty hangover and was not eager to cooperate. Yet since our heroes needed a bean which the wolf had, they forced him to act out his tale.\n\nThat tale ended as it always had: the Big Bad Wolf attacked the Hunter (played by Geralt), biting and clawing him fiercely while his own wounds healed almost instantaneously. Inevitably, however, the Big Bad Wolf was killed and his stomach cut open.",
+        "name": "big Bad Wolf",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Big Bad Wolf"
+            },
+            "text": "You ask why I have these big hands, my friend? Well, I'll tell you my secret: exercise."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le grand méchant loup de la Contrée des Mille Fables, à l'instar des autres créatures qui peuplent cette étrange sphère, fut créé par Artorius Vigo d'après un personnage issu de contes populaires. Autrefois, il servait de camarade de jeu aux filles du duc. Il leur jouait des scènes où figurait une certaine fillette au chaperon rouge et sa mère-grand. Mais la contrée fabuleuse finit par s'étioler, et lui avec.\n\nGeralt et Syanna rencontrèrent le Grand Méchant Loup alors qu'il soignait une vilaine gueule de bois, et il n'était guère disposé à coopérer. Mais nos héros convoitaient un haricot que le loup avait en sa possession, et ils l'obligèrent à interpréter sa fable.\n\nElle se conclut comme elle l'avait toujours fait : le Grand Méchant Loup attaqua le Chasseur (campé par Geralt). De ses crocs et griffes, il déchiquetait les chairs, tandis que ses propres plaies guérissaient instantanément. Mais sont sort était scellé : il fut vaincu et éventré.\n\nCette fois, ce ne furent pas une mère grand et sa petite-fille qu'on délivra de son estomac, mais un haricot magique.",
+        "name": "grand Méchant Loup",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Le Grand Méchant Loup"
+            },
+            "text": "Vous me demandez pourquoi j'ai d'aussi grosses mains ? Eh bien, je vais vous confier mon secret : c'est une question d'exercice."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["beast-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "beasts",
+    "code": "beast-of-beauclair",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Eyewitnesses to gruesome monster attacks always have a hard time describing the creature in question. The beasts move quickly and often attack at night, while the witnesses are terrified and primarily concerned with fleeing for their lives. As a result, witchers quite often have no inkling what creature they face until they find tracks or otherwise establish something for themselves. Such was the case with the Beast tormenting Beauclair. Geralt knew it was deadly, elusive and fiendishly clever. Everything else he heard was clearly the product of imaginations fed by fear of a dangerous predator.\n\nWhen Geralt identified the Beast, he discovered it was a higher vampire, meaning one of the most difficult foes a witcher can come to face.\n\nHigher vampires are superhumanly strong and fast. They can turn completely invisible, and each comes with its own personalized set of talents and abilities perfected through centuries of existence.\n\nWhen Geralt realized he was dealing with such a creature, he swore foully and realized the rumors about the Beast had not been exaggerated in the slightest.",
+        "name": "the Beast of Beauclair"
+    },
+    {
+        "lang": "FR",
+        "description": "Les témoins oculaires d'une attaque horrible ont toujours du mal à décrire les monstres responsables. D'une part parce que la plupart de ces monstres sont rapides et attaquent la nuit, et d'autre part car les témoins sont terrifiés et ne pensent généralement qu'à fuir pour sauver leur vie. Bien souvent, les sorceleurs n'ont donc aucune idée de la créature à laquelle ils ont affaire, jusqu'à ce qu'ils trouvent des traces ou parviennent à vérifier des faits par eux-mêmes. Ce fut le cas avec la bête tourmentant Beauclair. Geralt savait que des gens mouraient et que le monstre était insaisissable et terriblement intelligent. Les autres informations qu'on lui avait rapportées n'étaient que l'invention d'esprits effrayés par un dangereux prédateur.\n\nFinalement, il s'avéra que la bête était un vampire supérieur, et donc l'un des adversaires les plus redoutables qu'un sorceleur puisse affronter.\n\nLes vampires supérieurs sont dotés d'une force et d'une rapidité surhumaines, peuvent se rendre complètement invisibles et disposent en outre de talents et de capacités personnels, qu'ils ont perfectionnés au cours d'une existence de plusieurs siècles.\n\nQuand Geralt se rendit compte qu'il avait affaire à une telle créature, il jura comme un charretier et comprit que les rumeurs sur la bête n'étaient nullement exagérés.",
+        "name": "la bête de Beauclair"
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "beasts",
+    "code": "three-little-pigs",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "The three little pigs are perfect examples of a rather unfortunate phenomenon. Leave even a kind-hearted, warm, naively benign creature to fend for itself, and it won't remain so benign for long.\n\nThe three little pigs from the Land of a Thousand Fables were left for years without Artorius Vigo's supervision. During this time they went completely feral, transforming into three wild boars which attacked anyone who dared approach their ruined home.",
+        "name": "three Little Pigs",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "a little pig"
+            },
+            "text": "Why bother with brick? In this climate, even a straw house's nice and cozy."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les trois petits cochons sont l'exemple flagrant d'un phénomène regrettable. Livrez à elle-même une créature parfaitement aimable et innocente jusqu'à l'excès, et elle ne le restera pas bien longtemps.",
+        "name": "les trois petits cochons",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "un petit cochon"
+            },
+            "text": "La brique, à quoi bon ? Par ce climat, une maison de paille fait bien l'affaire."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["beast-oil"],
+        "potions": [],
+        "signs": ["igni","yrden"]
+    }
+},
+{
+    "category": "beasts",
+    "code": "panther",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Panthers are dangerous predators found in forests and other woodlands. They are quick, agile and, like all cats, diabolically cunning. In many less-than-thoroughly-urbanized areas, folk still believe panthers are the stranded souls of those who die in their sleep. Superstition thus holds anyone perishing in this way should be dragged to the nearest woods and left there without a burial. The panther-spirit of the deceased may then devour its own body, thereby passing on to the nether realms.\n\nThis belief must be eradicated by any means, for it leads to epidemics of cholera and other contagious diseases born of rotting corpses.\n\nBesides, it is patently ridiculous, given panthers are not necrophages and will not consume carrion of any sort. They prefer more spry and lively prey, such as deer or even humans, provided they are not ill and do not stink too badly.\n\nPanthers (and their tawny-coated cousins, mountain lions) are incredibly swift and able to sneak up on prey undetected to gain the advantage of surprise.\n\nAs soon as they enter open terrain, they leap to attack with astonishing speed, mauling their prey with their sharp claws, long teeth and the sheer force of their momentum.\n\nPanthers are known to retreat mid-fight, yet do not let yourself be fooled into a false sense of security. This is but a ruse to allow them to attack again, by surprise. Never drop your guard until you see the animal drop dead.\n\nPanthers are vulnerable to the effects of all the Signs, as well as bombs and oils.",
+        "name": "panther",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "rare variant of a traditional folk rhyme"
+            },
+            "text": "Pussy cat, pussy cat, where have you been?\nI've been to Cintra to look at the queen\nPussy cat, pussy cat, what did you there?\nRun, fool, that's not a cat but a panther!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les panthères sont de féroces prédateurs qui sévissent dans les forêts et autres régions boisées. Elles sont rapides, agiles, et comme tous les félins, diaboliquement rusées. Dans les régions les plus délaissées par la civilisation, certains crédules restent persuadés qu'elles sont les âmes égarées des pauvres bougres qui ont péri durant leur sommeil.\n\nAinsi, la superstition veut qu'on traîne leur dépouille jusqu'à la forêt la plus proche et qu'on l'y abandonne sans funérailles. L'esprit-panthère du défunt s'en repaît alors pour le faire passer dans l'au-delà. Il faut tout faire pour que cette croyance disparaisse, tant elle donne lieu aux épidémies de choléra et autres maladies infectieuses engendrées par les cadavres en décomposition. Sans compter qu'elle est grotesque... les panthères ne sont pas nécrophages, et jamais elles ne se nourrissent de charogne d'aucune sorte. Elles préfèrent des proies plus vivaces, comme les cerfs voire les humains, pourvu qu'ils ne soient pas malades et ne sentent pas trop fort.\n\nLes panthères, de même que les lions des montagnes, leurs cousins au pelage fauve, sont incroyablement rapides et capables de se déplacer discrètement, au total insu de leurs proies. Une foie exposées, elles bondissent à une vitesse fulgurante, renversent leur proie à la seule force de leur élan et la lacèrent de leurs griffes et crocs acérés.\n\nLes panthères sont réputées pour battre en retraite au beau milieu du combat, mais n'allez pas croire que vous êtes tiré d'affaire pour autant. Ce n'est qu'une ruse qui leur permet de repasser à l'attaque à l'improviste. Ne baissez jamais votre garde avant que l'animal ne soit bel et bien terrassé.\n\nLes panthères sont vulnérables aux effets de tous les signes, ainsi qu'aux bombes et aux huiles.",
+        "name": "panthère",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "variante rare d'une comptine traditionnelle"
+            },
+            "text": "Petit chat, petit chat, où es-tu passé ?\nÀ Cintra, voir la reine je suis allé\nPetit chat, petit chat, et pour quoi faire ?\nCours, imbécile, ce n'est pas un chat, mais une panthère !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["beast-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "beasts",
+    "code": "wild-boar",
+    "extension": "hearts-of-stone",
+    "textes": [{
+        "lang": "EN",
+        "description": "These woodland beasts are as \"wild\" – untamed, nasty and aggressive – as their name indicates. To this day, many peasants in outlying Kaedweni villages believe wild boars persist on a diet of young maids, though in truth they most often slate their hunger with roots and acorns. Do not think this vegetarian diet makes them harmless, however. In fact, these animals' stout build and sharp teeth render them veritable fur-covered combat machines. Mother Nature has additionally equipped them with dual pairs of tusks - upper \"pipes\" and lower \"sabres\" - and this weaponry's sum effect is to make the beasts the terrors of the woods, a threat to all who venture or dwell there, human, humanoid and otherwise. Boars also have hard, club-like snouts, which some peasants call their \"whistles,\" though no boar has ever been heard to make such a noise. Instead, they emit a characteristic grunt, which sounds to some like the snoring of an extremely overweight man. Another peasant belief claims boars have extremely prickly natures, and, if offended, will vent their anger by knocking down fences and gobbling up potatoes. Though they sometimes live alone, boars usually appear in small groups of 3 to 5 specimens.",
+        "name": "wild boar",
+        "quote": {
+            "author": {
+                "firstname": "louis of",
+                "lastname": "charolle",
+                "title": "mathematician, author and poet"
+            },
+            "text": "How doth the little wild boar\nImprove his shining tusks,\nAnd rut them 'gainst the forest floor,\nAnd on the trees' rough husks!\n\nHow cheerfully he seems to grin\nHow neatly spreads his claws,\nAnd welcomes little lasses in,\nWith gently smiling jaws!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Ces bêtes de bois sont aussi sauvages que leur nom l'indique. Il faut entendre par là qu'elles sont vicieuses, agressives et indomptées. Aujourd'hui encore, nombre de paysans des villages isolés de Kaedwen croient dur comme fer que les sangliers sauvages se nourrissent exclusivement de jeunes filles, mais la vérité est qu'ils se content plus souvent de racines et de glands. N'allez pas croire, cependant, que ce régime végétarien les rend inoffensifs. En fait, la corpulence et les dents acérées de ces animaux en font de véritables machines de combat couvertes de poils. De plus, la nature les a aussi dotés de défenses, qui en font les terreurs des bois et une menance pour tous ceux qui y vivent, qu'ils soient humains ou pas. Les sangliers possèdent également un groin solide comme un gourdin, que certains paysans qualifient de \"sifflet\", même si l'on n'a jamais entendu un de ces animaux produire le son d'un tel instrument. En revanche, ils produisent un grognement caractéristique, qui ressemblerait au ronflement d'un homme obèse. D'après les croyances paysannes, les sangliers seraient aussi très irritables et pourraient, en cas d'offense, décharger leur colère en renversant des clôtures et en dévorant des pommes de terre. Même s'il existe des solitaires, les sangliers apparaissent généralement par petits groupes de 3 à 5 individus.",
+        "name": "sanglier sauvage",
+        "quote": {
+            "author": {
+                "firstname": "ludwig de",
+                "lastname": "charolle",
+                "title": "mathématicien, auteur et poète"
+            },
+            "text": "Voyez le petit sanglier sauvage\nSes dagues brillantes aiguiser\nEn retournant le sol des bocages,\nEt en frottant les troncs rugueux et élancés !\n\nComme il irradie de bonheur\nComme il écarte ses griffes joliment,\nPour accueillir les jeunes filles en fleur,\nEntre ses mâchoires au sourire charmant !"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["northern-wind"],
+        "oils": ["beast-oil"],
+        "potions": [],
+        "signs": ["igni", "yrden"]
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
