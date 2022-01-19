@@ -97,6 +97,9 @@ export class MonsterByCategoryEntity {
     code: string;
 
     @Prop()
+    extension?: string;
+
+    @Prop()
     textes: MonsterByCategoryTextesEntity[];
 }
 

@@ -47,6 +47,7 @@ export class MonsterByCategory {
     constructor(
         readonly code: string,
         readonly textes: Pick<MonsterTextes, 'name'>,
+        readonly extension?: string,
     ) {}
 }
 

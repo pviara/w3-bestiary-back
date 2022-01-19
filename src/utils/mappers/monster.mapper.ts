@@ -90,6 +90,7 @@ export class MonsterMapper {
                 new MonsterByCategory(
                     monsterByCategoryEntity.code,
                     monsterByCategoryEntity.textes[0],
+                    monsterByCategoryEntity.extension
                 ),
         );
     }
