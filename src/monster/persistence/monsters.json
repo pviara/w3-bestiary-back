@@ -708,6 +708,78 @@
     }
 },
 {
+    "category": "hybrids",
+    "code": "erynia",
+    "textes": [{
+        "lang": "EN",
+        "description": "Hard as it is to imagine, the erynias found in Skellige are even more repulsive - and dangerous - than harpies, their close relatives. Though well-rotten carrion is their food of choice, they will not turn up their noses at fresh meat, man flesh included.<br><br>When they spy a potential victim, erynias, like harpies or shishigas, will try to make full use of the strength of their numbers and their ability to control the skies. They will circle above their prey then attack from several directions at once, striking with razor-shark [sic] talons and tearing their targets to shreds.<br><br>While attacking they aim for the neck, eyes and other vital organs, often causing their prey to bleed to death as a result. In this way a small flock of erynias is able to make quick work of larger and better-armed victims, who often are not able to defend themselves effectively from several opponents attacking at once.",
+        "name": "erynia",
+        "quote": {
+            "author": {
+                "firstname": "lytta",
+                "lastname": "neyd",
+                "title": "the sorceress also known as Coral"
+            },
+            "text": "A merchant once told me I reminded him of an erynia. Naturally, I immediately teleported him to one of their nests, so he could see for himself how ill-fitting a comparison it was."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Aussi surprenant que cela puisse paraître, l'erynia de Skellige est encore plus repoussante et dangereuse que sa cousine la harpie. Bien qu'elle apprécie tout particulièrement la charogne bien faisandée, elle ne dédaigne pas la chair humaine fraîche lorsque l'occasion se présente.<br><br>À l'instar des harpies et des chichigas, les erynias misent sur le poids du nombre et sur leur maîtrise des airs pour fondre sur leur proie. Elles tournoient autour du ciel et attaquent de plusieurs directions simultanément en visant en priorité la jugulaire, les yeux et les organes vitaux pour saigner à blanc leur malheureuse victime.<br><br>Un petit vol d'erynias peut ainsi venir à bout d'une créature certes plus grande et plus forte, mais mal préparée à affronter une nuée d'adversaires.",
+        "name": "erynia",
+        "quote": {
+            "author": {
+                "firstname": "lytta",
+                "lastname": "neyd alias Corail",
+                "title": "magicienne"
+            },
+            "text": "Un marchand m'a un jour traitée d'erynia. Naturellement, je l'ai immédiatement téléporté dans un de leurs nids afin qu'il puisse constater par lui-même l'abursdité de sa comparaison."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["hybrid-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "hybrids",
+    "code": "melusine",
+    "textes": [{
+        "lang": "EN",
+        "description": "In the mountains near the village of Svorlag in Skellige lies an enormous complex of caves. For many centuries they were given wide berth on account of the bloodthirsty ekhidna known as Melusine who had made them into her lair.<br><br>Melusine was a beast so powerful some islanders worshiped her as a semi-divine being. The witcher, however, harbored no such delusions. He knew she was an extremely powerful monster - but a monster all the same. This meant she could be killed. To do so, he would need the highest quality bolts, a solid silver blade - and a steady hand.",
+        "name": "melusine",
+        "quote": {
+            "author": {
+                "firstname": "britt of",
+                "lastname": "svorlag",
+                "title": ""
+            },
+            "text": "I... I saw a shadow... Great wings, like a cloud passin' o'er the sky. Then I heard him scream."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un vaste réseau de cavernes s'étend sous les montagnes de Skellige, près du village de Svorlag. Depuis des générations, les villageois évitaient ces cavernes comme la peste, sachant qu'elles abritaient une échidna sanguinaire du nom de Mélusine.<br><br>Cette terrifiante créature avait autrefois fait l'objet d'un culte. Le sorceleur avisé n'était néanmoins pas dupe. Il avait affaire à un monstre redoutable, certes, mais un monstre tout de même. Une créature qu'il avait été formé à exterminer. Pour ce faire, il lui faudrait recourir à des carreaux de la meilleure facture qui soit, à sa fidèle épée en argent, et se fier à sa dextérité innée.",
+        "name": "mélusine",
+        "quote": {
+            "author": {
+                "firstname": "britt de",
+                "lastname": "svorlag",
+                "title": ""
+            },
+            "text": "J'ai vu... une ombre... De grandes ailes, comme un nuage qui passe dans le ciel. Ensuite, je l'ai entendu crier."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["hybrid-oil"],
+        "potions": [],
+        "signs": ["igni", "aard"]
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
