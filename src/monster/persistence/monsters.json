@@ -780,38 +780,38 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "hybrids",
+    "code": "opinicus",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Killers of various stripes - mercenaries, knights errant, ambitious lawmen - try at times to compete with witchers as monster slayers. This usually ends in a massacre that not only does not solve the problem, but in fact only makes it worse - the beast walks away from the fight unharmed, enraged and out for vengeance. Such was the case in the mountains outside Oxenfurt, where a powerful archgriffin had made its nest.<br><br>Once again it fell to the witcher to clean up after amateurs. He knew neither Igni nor bombs dealing fire damage would have any effect against this fire-loving creature. He would also have to look out for its acid, which can eat through even the thickest armor - leaving one vulnerable to its razor-sharp talons.<br><br>After a long fight, the witcher slew the archgriffin. Some scholars in nearby Oxenfurt might accuse him of having contributed to the disappearance of an endangered species and disrupting the local ecosystem. Somehow, the witcher didn't seem likely to lose much sleep over the matter.",
+        "name": "opinicus",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
+                "firstname": "geralt of",
+                "lastname": "rivia",
                 "title": ""
             },
-            "text": ""
+            "text": "Thin rachides, sparse after feathers... An archgriffin."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Mercenaires, chevaliers errants et autres justiciers vertueux cherchent parfois à se substituer aux sorceleurs... mais le métier de tueur de monstres ne s'improvise pas. L'affaire tourne généralement au massacre et envenime la situation : non seulement la créature n'est pas éliminée, mais elle est enragée par l'attaque. C'est précisément ce qui arriva dans les montagnes de la région d'Oxenfurt, où un imposant archigriffon avait élu domicile.<br><br>Une fois encore, il échut au sorceleur de réparer les pots cassés. Il savait que la créature serait insensible au signe d'Igni et aux bombes. Il allait lui falloir éviter ses jets d'acide, capables de ronger la plus épaisse cuirasse, livrant ainsi l'adversaire à la merci de ses serres effilées comme des lames de rasoir.<br><br>Au terme d'un long combat, le sorceleur élimina l'archigriffon. Des érudits d'Oxenfurt l'accuseront peut-être d'avoir participé à la disparition d'une espèce menacée et d'avoir perturbé l'écosystème local. Quoi qu'il en soit, je doute que le sorceleur en perde le sommeil pour autant.",
+        "name": "opinicus",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
+                "firstname": "geralt de",
+                "lastname": "riv",
                 "title": ""
             },
-            "text": ""
+            "text": "Le rachis est fin, le duvet épars... Intéressant. Un archigriffon."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["hive"],
+        "oils": ["hybrid-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["aard"]
     }
 }]
