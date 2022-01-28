@@ -814,4 +814,148 @@
         "potions": [],
         "signs": ["aard"]
     }
+},
+{
+    "category": "hybrids",
+    "code": "salma",
+    "textes": [{
+        "lang": "EN",
+        "description": "The witcher's investigation uncovered that a succubus named Salma was responsible for the string of killings afflicting the Novigrad city guard. This came as a surprise, for succubi do not usually commit premeditated, cold-blooded murder. This is not to say they are not dangerous: they will at times kill on accident, when carried away on a particularly gushing stream of ecstasy. At other times, they kill in self-defense: though they have the look of slender maids from the waist up, their supple limbs hide incredible strength. They are also invulnerable to fire, the Igni Sign included. They present witchers with an intractable dilemma: does this monster, who wishes me no ill yet all the same often causes harm, deserve death, or mercy?<br><br>That is exactly the perplexing question faced by Geralt of Rivia. In the end he believed Salma and decided to let her go free - though he could not shake off the feeling that he might live to regret that decision.",
+        "name": "salma",
+        "quote": {
+            "author": {
+                "firstname": "salma",
+                "lastname": "",
+                "title": "succubus"
+            },
+            "text": "I'm not one to lie. Nor do I kill without reason."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "En enquêtant, le sorceleur découvrit qu'une succube appelée Salma était responsable d'une série de meurtres dont était victime de la garde municipale de Novigrad. Ce fut pour lui une véritable surprise, car les succubes n'ont pas pour habitude de tuer de sang-froid ou avec préméditation. Elles n'en restent pas moins des créatures dangereuses qui tuent parfois par accident, sous le coup d'une extase particulièrement puissante, ou simplement pour se défendre. Bien qu'elles ressemblent à de frêles jeunes filles au-dessus de la taille, elles possèdent des membres souples qui cachent une force incroyable. Elles sont de plus invulnérables au feu, et donc au signe d'Igni. Une succube présente pour un sorceleur un dilemme délicat : cette créature à la fois pacifique et mortelle mérite-t-elle la mort ou la pitié ?<br><br>Telle est la question à laquelle Geralt de Riv dut répondre. Au final, le sorceleur décida de croire Salma et lui laissa la vie sauve... sans toutefois pouvoir se défaire de l'impression qu'un jour ou l'autre, il regretterait sa décision.",
+        "name": "salma",
+        "quote": {
+            "author": {
+                "firstname": "salma",
+                "lastname": "",
+                "title": "succube"
+            },
+            "text": "Je n'ai pas pour habitude de mentir. Ni de tuer sans raison."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["hybrid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "hybrids",
+    "code": "siren",
+    "textes": [{
+        "lang": "EN",
+        "description": "Like skilled hunters setting out wooden ducks to lure in drakes, sirens and lamias lure men near - using their own bodies as decoys. They can transform to resemble beautiful human maidens, though with tails covered in silver scales instead of legs. Once a naive sailor gets within arm's reach of these beautiful creatures, their fair faces suddenly turn to fang-filled, fish-like maws, and lovely tails promising unknown delights become sharp, death dealing talons.<br><br>One legend claims sirens and lamias were once friendly towards men – and supposedly were even known (albeit on rare occasions) to accept some sailors' clumsy attempts at courtship. In our day, however, they are decidedly aggressive, perhaps soured by the numerous kidnappings of carried out by frustrated sea salts. Whatever the truth, one thing is certain: these days the monsters display no signs of good will, and so when spotting them one should immediately reach for one's silver sword.<br><br>Sirens and lamias (the sirens' more dangerous cousins) usually hunt in flocks, making use of their numbers as well as their ability to move effortlessly through water and air.<br><br>On the ground, however, they are virtually defenseless, and so a wise tactic is to damage their fin-like wings to force them to land. The Igni Sign also proves effective when fighting against them. Threatened or injured sirens will let out a terrifying shriek, leaving their opponents stunned while they escape – and their sisters swoop down for an easy attack.",
+        "name": "siren",
+        "quote": {
+            "author": {
+                "firstname": "arike of",
+                "lastname": "hindarsfjall",
+                "title": "advice given to his son before his first solo voyage"
+            },
+            "text": "Out at sea, if you hear a beautiful woman singing, turn the ship around at once. You understand? Even if it means sailing straight back into a storm."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Tel un chasseur se servant d'un appeau pour attirer sa proie, la sirène et la lamie utilisent leur corps pour piéger les malheureuses victimes. Elles peuvent toutes deux se métamorphoser en magnifiques jenes femmes dotées d'une queue de poisson argentée à la place des jambes. Un marin assez naïf pour les approcher ne tarde cependant pas à découvrir leur vraie nature : leur bouche pulpeuse devient une mâchoire garnie de crocs pointus, tandis que leur douce étreinte se transforme en un mortel étau.<br><br>D'après la légende, sirènes et lamies étaient autrefois bienveillantes envers les hommes et s'accouplaient même parfois avec certains marins. Aujourd'hui cependant, leur animosité ne fait aucun doute et il est plus prudent de les attaquer à vue.<br><br>Les sirènes et les lamies (leurs dangereuses cousines) chassent en bancs et sont capables de se déplacer sans effort dans l'eau comme dans les airs.<br><br>Elles sont cependant sans défense au sol, c'est pourquoi il est recommandé de viser en priorité leurs ailes membraneuses afin de les contraindre à se poser. Elles sont par ailleurs sensibles au signe d'Igni. Attention cependant, car une sirène peut pousser un cri strident qui étourdit ses adversaires, les laissant à la merci de ses soeurs.",
+        "name": "sirène",
+        "quote": {
+            "author": {
+                "firstname": "arike d'",
+                "lastname": "hindarsfjall",
+                "title": "conseil donné à son fils avant son premier voyage en mer"
+            },
+            "text": "Une fois en mer, si tu entends une douce voix de femme portée par le vent, change de cap immédiatement. Immédiatement, tu comprends ? Même si tu dois faire voile sur une tempête, change de cap."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["hybrid-oil"],
+        "potions": [],
+        "signs": ["igni", "aard"]
+    }
+},
+{
+    "category": "hybrids",
+    "code": "succubus",
+    "textes": [{
+        "lang": "EN",
+        "description": "Unlike other monsters, succubi and menads feel no desire to kill, do not crave human blood and usually do not, in fact, mean any harm at all. They are motivated by one thing and one thing only: an insatiable lust. They try in vain to slake this by engaging in sexual acts with any other humanoid species they encounter. While it must be admitted that their \"victims\" rarely put up much resistance, this does not mean succubi and menads do not present any danger: their never-ending advances, though pleasurable at first, have pushed more than one man to madness or even death.<br><br>Succubi and menads usually can be found near human settlement, including small villages and populous cities. They prowl at night, though when stricken by serious need they will leave their lairs during the day as well. They shower their affections on men as well as women, the young as well as the old, the ugly as well as the beautiful. Some of them are particularly fond of pastors and other holy men, whose seduction they treat as a sort of game.<br><br>Though succubi are peaceful by nature, when forced to fight they will defend themselves fiercely. One should thus not be fooled by their fair appearance – under the velvety skin of their arms lie muscles of iron, and a blow delivered with their rear, goat-like legs or the thick horns on their head can easily crush bone.",
+        "name": "succubus",
+        "quote": {
+            "author": {
+                "firstname": "lester of",
+                "lastname": "smallton to a succubus",
+                "title": "a few days before taking a vow of celibacy"
+            },
+            "text": "Again?! Good grief, woman, I'm spent..."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Contrairement aux autres monstres, les succubes et les ménades n'éprouvent aucune animosité envers les humains. Elles sont en fait animées par une unique motivation : un insatiable désir sexuel, qui les pousse à chercher l'accouplement avec tout individu humanoïde qu'elles rencontrent. Aussi doux soit le danger représenté par ces créatures, il n'en est pas moins bien réel : leur inapaisable appétit sexuel a poussé d'une malheureuse \"victime\" vers la mort ou la folie.<br><br>Les succubes et les ménades vivent généralement à proximité des installations humaines, villes et villages en particulier. Créatures nocturnes, elles peuvent néanmoins sortir au grand jour si leur désir se fait trop pressant. Elles prodiguent leur amour à la première personne veneue, sans considération pour le sexe, l'âge ou l'apparence physique. Par goût du jeu, certaines succubes ciblent de préférence les hommes d'église.<br><br>Bien que pacifique, une succube n'en est pas moins capable de se défendre. Ses bras menus dissimument une force peu commune et elle peut aisément briser des os d'un coup de corne ou de sabot.",
+        "name": "succube",
+        "quote": {
+            "author": {
+                "firstname": "lester de",
+                "lastname": "smallton à une succube",
+                "title": "quelques jours avant de faire voeu de chasteté"
+            },
+            "text": "Encore ?! Madame, je vous assure, je suis épuisé !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["hybrid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
 }]
