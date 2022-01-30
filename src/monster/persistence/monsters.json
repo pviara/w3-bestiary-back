@@ -924,6 +924,42 @@
     }
 },
 {
+    "category": "cursed-ones",
+    "code": "berserker",
+    "textes": [{
+        "lang": "EN",
+        "description": "Skellige legends speak of men known as berserkers who transform into bears when overwhelmed by battle rage. In doing so, they lose all self-awareness and are driven by a bloodlust which they must satiate in order to return to human form. Few believe these blood-curdling tales, however, not even in Skellige, where the inhabitants usually treat even the least probable legends with the utmost gravity. This indicates either that berserkers are in fact mere figments of mead-sodden imaginations, or else that they have learned to hide their abilities from the rest of the islanders.<br><br>The skalds' ballads indicate a berserker transformed in the heat of battle cannot be distinguised from a true-born bear. Only minute anatomical details - such as the shape of their tongues and teeth - reveal their secret. Descriptions of their fighting prowess paint them as invulnerable to pain and able to heal any wound received almost at once.<br><br>If these men-turned-bears truly do exist, one can suppose that, like werewolves and lycanthropes, they are particularly vulnerable to oils that harm cursed creatured. But if we are to give credence to ancient songs about these creatures' deeds, about the mass murders and massacres they have committed, we can only hope that no witcher will have to test this hypothesis.",
+        "name": "berserker",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Skellige mother scolding a child"
+            },
+            "text": "Now finish your soup, or a berserker'll come and swallow ye whole."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Créature du folklore de Skellige, le berserker serait un homme qui, à la faveur des combats, se transformerait en ours dénué de toute humanité et assoiffé de sang, soif qu'il doit étancher pour reprendre forme humaine. Bien que les habitants de Skellige n'accordent que peu de crédit à cette légende, elle perdure encore à ce jour dans les chaumières. Le berserker, s'il n'est pas le fruit d'une imagination collective embrumée par l'hydromel, a sans doute appris au fil des siècles à masquer son existence.<br><br>Les ballades des skaldes sont riches en informations, aussi peu fiables soient-elles, sur cette créature. Un berserker métamorphosé serait ainsi presque impossible à distinguer d'un ours véritable. Seuls d'infimes détails anatomiques, comme la forme des dents et de la langue, permettraient de l'identifier. Sous sa forme d'ours, il est décrit comme insensible à la douleur et capable de soigner instantanément les pires blessures.<br><br>S'il existe vraiment, on peut supposer que le berserker, comme le loup-garou et le lycanthrope, est vulnérable aux huiles contre les créatures maudites. Cependant, si l'on se fie aux récits contant les atrocités et les massacres commis par les berserkers au fil des siècles, il vaut mieux espérer qu'aucun sorceleur n'ait jamais à vérifier la validité de cette hypothèse.",
+        "name": "berserker",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Réprimande typique de Skellige"
+            },
+            "text": "Finis ta soupe, sinon un berserker viendra te manger cette nuit !"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["devils-puffball"],
+        "oils": ["cursed-oil"],
+        "potions": [],
+        "signs": ["quen", "igni"]
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
