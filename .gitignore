@@ -36,3 +36,6 @@ lerna-debug.log*
 
 # dotenv
 .env
+
+# static files
+/public
