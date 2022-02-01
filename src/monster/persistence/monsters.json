@@ -994,4 +994,114 @@
         "potions": [],
         "signs": []
     }
+},
+{
+    "category": "cursed-ones",
+    "code": "the-toad-prince",
+    "extension": "hearts-of-stone",
+    "textes": [{
+        "lang": "EN",
+        "description": "Timeless tales always carry within them a grain of truth. The legend of the frog prince is no exception, or at least that's what the folk of Oxenfurt wished to believe when they found out a monstrous toad lurked in their city sewers. The women who hunted it in search of romance and a better life, however, found their tales had a most unhappy ending. The creature they encountered was no small, sweet frog but a bloodthirsty beast, who not only did not let them in for a kiss, but instead greedily devoured them and anything else that strayed into its slime-covered lair.",
+        "name": "the Toad Prince",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "folk tale, author unknown"
+            },
+            "text": "The girl walked up to the edge of the pond. There, squatting amidst the fragrant lilies and broad lily-pads, she saw a most unusual sight: a small green frog with a golden crown perched on its warty head. Charmed by this curious little creature, the girl picked it up and gave it a kiss. Immediately the little frog transformed into a handsome prince. Overcome with gratitude, he asked the girl to be his wife."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les contes qui traversent les époques contiennent toujours une part de vérité. La légende du prince grenouille ne fait pas exception, ou c'est du moins ce que voulurent croire les habitants d'Oxenfurt en découvrant qu'un crapaud monstrueux rôdait dans les égouts de leur ville. Cependant, l'histoire des femmes qui lançaient à sa recherche en quête d'amour et d'une vie meilleure se terminait de façon très tragique. La créature qu'elles rencontraient n'était pas une petite grenouille bien intentionnée, mais une bête sanguinaire, qui, au lieu de se laisser embrasser, les dévorait voracement et faisait subir le même sort à tout ce qui s'aventurait dans sa tanière gluante.",
+        "name": "le \"prince\" crapaud",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conte populaire, auteur inconnu"
+            },
+            "text": "La fillette s'approcha du bord de la mare. Là, accroupie au milieu des lys parfumés et des larges feuilles de nénuphars, elle fit une découverte des plus surprenantes : une petite grenouille verte avec une couronne dorée sur sa tête verruqueuse. Charmée par cette petite créature étrange, la fillette la ramassa et lui donna un baiser. Instantanément, la petite grenouille se transforma en un prince séduisant. Infiniment reconnaissant, celui-ci demanda à la fillette de l'épouser."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["northern-wind"],
+        "oils": ["cursed-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "cursed-ones",
+    "code": "ulfhedinn",
+    "textes": [{
+        "lang": "EN",
+        "description": "Ulfhedinn are a breed of werewolf found mainly in Skellige. The harsh and barren conditions of the isles might explain why they primarily hunt men and are stronger than their continental brethren. Older and particularly dangerous ulfhedinn are called vorefs. Only a few daring warriors in Skellige history have managed to defeat an ulfhedinn, and each of them is commemorated in ballads as a hero to this day.<br><br>Like werewolves, ulfhedinn and vorefs are active at night, particularly when the moon is at its fullest. Fast, strong, and amazingly resilient, these creatures kill with disturbing ease. Silver blades should be brought against them, as should Devil's Puffball. Take note that when near death the ulfhedinn becomes particularly dangerous and will attack with doubled fury, while calling on wolves to come to its rescue.",
+        "name": "ulfhedinn",
+        "quote": {
+            "author": {
+                "firstname": "professor Artibus Joannes",
+                "lastname": "rack",
+                "title": "geographer, disappeared during a surveying expedition in Skellige"
+            },
+            "text": "Ulfhedinn? What's that, some kind of fish?"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "L'ulfhedinn est une espèce de loup-garou originaire de Skellige. Sans doute en raison des rudes conditions de vie sur les îles, il est plus fort que ses congénères du continent et chasse principalement les hommes. Les ulfhedinns les plus anciens, les vorefs, sont des monstres terriblement dangereux. Dans toute l'histoire de Skellige, seuls quelques rares guerriers ont réussi à vaincre un ulfhedinn et leurs exploits sont aujourd'hui chantés par les skaldes.<br><br>Tout comme le loup-garou, l'ulfhedinn (ainsi que le voref) est actif la nuit, surtout en période de pleine lune. Rapide, puissant et extraordinairement robuste, c'est un tueur-né contre qui la plupart des armes sont inefficaces. Seules les lames d'argent et les vesses-de-loup du diable peuvent lui infliger des blessures sérieuses. Pire encore, un ulfhedinn proche de la mort attaque avec une ardeur redoublée et peut même appeler une meute de loups à son secours.",
+        "name": "ulfhedinn",
+        "quote": {
+            "author": {
+                "firstname": "professeur Artibus Joannes",
+                "lastname": "rack",
+                "title": "géographe porté disparu au cours d'une expédition sur Skellige"
+            },
+            "text": "Un ulfhedinn ? Jamais entendu parler... C'est une sorte de poisson ?"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust", "devils-puffball"],
+        "oils": ["cursed-oil"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "cursed-ones",
+    "code": "archespore",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Archespores look like gigantic, aesthetically unpleasing flowers with some of the traits of exceptionally cruel and bloodthirsty sundews. They are, however, far more dangerous that even the most colossal sundew. Their peculiar appearance makes them practically impossible to discern amidsts other plants. By the time one draws close enough to realize what they are, it is often too late to flee.<br><br>According to popular belief, archespores are cursed plants grown in soil fertilized by the blood of the dying. They are most often found in places which in the past saw pogroms, bloody rituals or cruel murders. Four types of archespore have been catalogued to date, differing from one another in terms of coloring: brown (the least dangerous), green and purple (the most dangerous). The final variant, said to have been cultivated by mages from Ban Ard, is the yellow archespore, whose strength is similar to that of its green-colored-cousins.<br><br>Regardless of color, all archespores fight using similar methods: attacking with powerful, jaw-like leaves. If their victim is out of reach, they can also spray caustic acid which if it makes any contact whatsoever with the skin, can provoke a reaction similar to that caused by severe poisoning.<br><br>Like other plants, all archespores are extremely vulnerable to fire, which is one of the most effective methods of fighting them. Silver also works well, as does any sort of shock wave. Archespores do not like strong vibrations, which cause them to flee underground at once. Due to the nature of their origins, oil damaging to cursed beings can also be useful against them.",
+        "name": "archespore",
+        "quote": {
+            "author": {
+                "firstname": "blasco",
+                "lastname": "tennerbe",
+                "title": "last words"
+            },
+            "text": "Looks like a flower to me. A hideous, disgusting flower."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les ékinoppyres ressemblent à des fleurs gigantesques et disgracieuses, et certaines de leurs propriétés les appartentent aux cruels et sanguinaires rossolis. Par contre, elles sont bien plus dangereuses que les plus imposants des rossolis. Leur aspect anoding les rend pratiquement impossibles à distinguer parmi d'autres végétaux. Le temps de les approcher d'assez près pour être fixé sur leur nature, il est souvent déjà trop tard pour fuir.<br><br>D'après la croyance populaire, les ékinoppyres sont des plantes impies qui ont poussé dans un sol arrosé du sang des défunts. Le plus souvent, on les observe ont eu lieu jadis divers massacres, rituels sanguinaires et autres meurtres atroces. À ce jour, quatre variétés d'ékinoppyres ont été répertoriées. Leur couleur varie du marron (la variété la moins novice) au violet (la plus dangereuse), en passant par le vert. L'ultime variété, qu'on prétend créée par les mages de Ban Ard, est l'ékinoppyre jaune, dont la force est comparable à celle de se parentes de couleur verte.<br><br>Les quatre principales espèces d'ékinoppyres se distinguent à leur couleur, qui peut être marron, verte, jaune ou violette. Il faut se méfier particulièrement des ékinoppyres violettes, qui sont les plus dangereuses. Quelle que soit leur couleur, toutes les ékinoppyres se battent de la même façon, en attaquant avec leurs puissantes feuilles en forme de mâchoires. Si leur victime est hors de portée, elles peuvent aussi projeter un acide caustique provquant une réaction semblable à un grave empoissement en cas de contact avec la peau.<br><br>Comme les autres plantes, toutes les ékinoppyres sont extrêmement vulnérables au feu, qui est un des meilleurs moyens de lutter contre lles. L'argent est aussi efficace, tout comme les ondes de choc. Les ékinoppyres n'aiment pas les fortes vibrations, qui les poussent à se réfugier immédiatement sous terre. En raison de la nature des ékinoppyres, l'huile infligeant des dégâts aux créatures maudites est aussi utile contre elles.",
+        "name": "Ékinoppyre",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Dernières paroles de Blasco Tennerbe"
+            },
+            "text": "On dirait une fleur. Une fleur dans le genre hideux."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["cursed-oil"],
+        "potions": [],
+        "signs": ["aard", "igni"]
+    }
 }]
