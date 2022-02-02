@@ -1328,7 +1328,7 @@
     "code": "fire-elemental",
     "textes": [{
         "lang": "EN",
-        "description": "",
+        "description": "Fire is the most destructive of the elements, thus the aggressive lethality of the creature that embodies its essence should come as no surprise. Fire elementals are forged in complicated magic rituals for one purpose: destruction. And they pursue this with murderous determination.<br><br>This elemental attacks using fireballs and streams of flame which reduce anything in their path to ashes in the blink of an eye. Like golems and other elementals, poison does not touch it nor does it bleed. Fire-based spells not only do no harm but in fact strengthen it - thus one should by no means think of striking it with Igni. Though vulnerable to silver blades, getting within sword's reach of one is dangerous due to the furnace-like heart they emanate. When fighting a fire elemental one should thus strike from a distance, using frost-spewing and dimeritium bombs, for they will do it the most damage.",
         "name": "fire elemental",
         "quote": {
             "author": {
