@@ -960,42 +960,6 @@
     }
 },
 {
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
     "category": "cursed-ones",
     "code": "the-toad-prince",
     "extension": "hearts-of-stone",
@@ -1103,5 +1067,403 @@
         "oils": ["cursed-oil"],
         "potions": [],
         "signs": ["aard", "igni"]
+    }
+},
+{
+    "category": "elementa",
+    "code": "djinn",
+    "textes": [{
+        "lang": "EN",
+        "description": "A djinn is a powerful air spirit, a condensation of the power of that element endowed with consciousness and character - the latter usually nasty. According to legend, djinn can grant even the most far-fetched wishes, though they do so very begrudgingly.<br><br>Unusually powerful mages can capture and tame these beings. The mage can then draw on its energy, using it to cast spells without having to call on Power from traditional sources. Only a sparse handful have managed this feat, however, for djinn fight to avoid such a fate with stubborn determination. To imprison a djinn and bend it to one's will, one must first weaken it - and that is no easy feat.<br><br>Fighting a djinn is extraordinarily difficult. They can fling off spells in an instant that the most accomplished human mages could never cast with years of preparation. What's more, by manipulating the element of air they can summon powerful storms, hurricanes, and gales. Luckily, as magic beings, they are vulnerable to silver - yet steel will do them no harm.",
+        "name": "djinn",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "The First Longing, a Tale Fantastic in All Ways."
+            },
+            "text": "The pitcher emitted a puff of glowing red smoke. The smoke pulsated, then gathered up into an irregular sphere floating in front of the poet's head..."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un djinn est un esprit de l'air particulièrement puissant, un concentré d'énergie magique doué d'une conscience et d'une personnalité... souvent pernicieuse. D'après la légende, un djinn est capable d'exaucer les souhaits les plus fous, bien qu'il le fasse généralement de mauvaise grâce.<br><br>Seul un mage d'exception peut capturer et dompter cette terrifiante créature. Il peut alors canalsier son énergie pour lancer des sorts sans recourir aux sources traditionnelles. Néanmoins, il s'agit là d'un exploit rarissime, car un djinn fera tout pour échapper à un tel sort. Pour emprisonner un djinn et le soumettre à sa volonté, il faut tout d'abord l'affaiblir, tâche délicate s'il en est.<br><br>Peu de monstres sont aussi dangereux qu'un djinn : capable de lancer des sorts d'une puissance extraordinaire, il peut également manipuler les éléments pour invoquer orgaes, ouragans et autres tempêtes. Il est de plus, comme toutes les créatures d'origine magique, invulnérable aux armes en acier... mais fort heureusement sensible aux lames d'argent.",
+        "name": "djinn",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "L'histoire extraordiniaire du premier désir"
+            },
+            "text": "Un nuage de fumée rouge s'échappa de la jarre, puis vint former une sphère irrégulière devant le visage du poète..."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "elementa",
+    "code": "pixie",
+    "extension":"blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Pixies might look like gentle, harmless creatures, yet in their case, the saying about appearances being deceiving fits all too perfectly. The pixies from the Land of a Thousand Fables were created to protect that magic place from intruders and ensure the ducal daughters, Sylvia Anna and Anna Henrietta, did not come to even the slightest harm. Thus whenever anyone else crossed the pixies' path, it ended badly for them, for pixies are aggressive, war-like creatures, created to kill, defend and fight till they can fight no more.",
+        "name": "pixie",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "last words of two criminals who broke into the Land of a Thousand Fables, identities unknown"
+            },
+            "text": "\"Look! Pixies!\"<br>\"We should go. Now.\"<br>\"Come on, what harm can cute little pixies do us?\""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les farfadets ont l'air de créatures avenantes et inoffensives, mais les apparences sont parfois trompeuses, surtout dans leur cas. Les farfadets de la Contrée des Mille Fables furent créés pour protéger ce lieu magique contre les intrus et faire en sorte u'il n'arrive rien de fâcheux à Sylvia Anna et Anna Henrietta, les filles du duc. Ainsi, lorsque quelqu'un d'autre croisait la route des farfadets, il le regrettait bien amèrement, tant les farfadets sont des créatures belliqueuses, créées pour tuer, protéger et combattre jusqu'à la mort.",
+        "name": "farfadet",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Dernières paroles de deux criminels anonymes qui s'étaient introduits dans la Contrée des Mille Fables"
+            },
+            "text": "\"Là ! Des farfadets !\"<br>\"Il faut qu'on parte, et vite.\"<br>\"Voyons, quel mal pourraient bien nous faire d'adorables petits farfadets ?\""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "elementa",
+    "code": "gargoyle",
+    "textes": [{
+        "lang": "EN",
+        "description": "Gargoyles are stone statues brought to life by magic in order to guard mages' laboratories and lairs from intruders. Their appearance alone has scared off more than one prospective burglar. Those who do not take fright at the sight of these horned and winged monstrosities usually die shortly thereafter, torn to shreds by stony claws.",
+        "name": "gargoyle",
+        "quote": {
+            "author": {
+                "firstname": "lara",
+                "lastname": "estevann",
+                "title": "burglar from Loc Muinne"
+            },
+            "text": "It just me, or is that gargoyle ogling us?"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Une gargouille est une statue de pierre animée par magie, généralement conçue pour protéger le repaire ou le laboratoire d'un mage et dont la simple vue suffit à emplir d'effroi le coeur de la plupart des intrus. Ceux qui parviennent à surmonter leur terreur regrettent bien vite leur bravoure inconsidérée... quelques secondes avant de trouver la mort.",
+        "name": "gargouille",
+        "quote": {
+            "author": {
+                "firstname": "lara",
+                "lastname": "estevann",
+                "title": "cambrioleuse de Loc Muinne"
+            },
+            "text": "Je rêve, ou cette gargouille nous reluque ?"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "elementa",
+    "code": "golem",
+    "textes": [{
+        "lang": "EN",
+        "description": "Golems are mindless matter brought to life by a spell. They obey their creator's orders without question. Their boundless strength, ability to withstand pain, endless patience and the fact that they neet not one jot of food or drink makes them the best servants or guards anyone could ask for. Once provoked, they will not tire of battle until they have either crushed their opponent or themselves crumbled to dust.<br><br>Defeating a golem is extraordinarily difficult: for obvious reasons it does not bleed, it feels no fear or mercy and it is invulnerable to fire and poison. What's more, a golem's body is as hard as the rock it is sometimes heft out of, so even a silver blade will barely wound it. The monster's only weakness is acid – a blade covered in acrid oil can thus increase one's chances for victory.<br><br>Golems use no weapons, for they have no need – their fists, weighing over a hundred pounds each, can crush solid granite with one hit. A blow from a golem should thus be avoided at all costs – there is no shield that can stop it, nor sword that can parry it. That is no easy task, for these creatures are able to move with surprising speed. Luckily, their enormous mass means they are not very agile – once a golem begins a charge, it cannot stop quickly, a fact experienced witchers use to their advantage.",
+        "name": "golem",
+        "quote": {
+            "author": {
+                "firstname": "vilmir",
+                "lastname": "brass",
+                "title": "foreman at Mount Carbon"
+            },
+            "text": "If want us to break through this wall, we're gonna need twenty sappers, seven mules and a hundredweight of saltpeter. Or one golem."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le golem est un être créé magiquement à partir de matière inerte. Son obéissance aveugle, sa force inouïe et son insensibilité à la douleur font de lui un serviteur ou un garde idéal. Absolument infatigable, il se battra jusqu'à avoir écrasé tous ses adversaires ou jusqu'à tomber lui-même en poussière.<br><br>Il est presque impossible de vaincre un golem : il ne saigne pas, il ne craint ni le feu, ni le poison et ne connaôt pas plus la peur que la pitié. Pis encore, son corps est dur comme la roche, au point que même une lame d'argent n'a guère d'effet sur lui. L'acide est son unique faiblesse : seule une lame ointe d'une huile caustique peut lui infliger des blessures.<br><br>Un golem n'utilise pas d'arme, et pour cause : ses points sont de pesantes massues capables de réduire en poudre un bloc de granit pur. Nul bouclier ne peut arrêter le point d'un golem, nulle épée ne peut le dévier. La seule parade, le seul espoir de survie, consiste à esquiver ses coups, une tâche plus complexe qu'il n'y paraît, un golem étant capable de se déplacer à une vitesse surprenante. Heureusement, sa masse est telle qu'une fois lancé, il ne peut s'arrêter rapidement. Un sorceleur expérimenté saura tirer profit de ce manque de dextérité.",
+        "name": "golem",
+        "quote": {
+            "author": {
+                "firstname": "vilmir",
+                "lastname": "brass",
+                "title": "contremaître au Mont Terril"
+            },
+            "text": "Pour ouvrir une brèche dans cette muraille, il nous faudrait une vingtaine de sapeurs, une dizaine de mules et un quintal de salpêtre. Ou un golem."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "elementa",
+    "code": "moreaus-golem",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Long years of solitary study tend to make mages somewhat eccentric. As the years pass, laypeople being to irritate them more and more: they are dense, unreliable, disobedient and determined not to understand the gravity of mages' work. They display emotion when they should show discipline and self-mastery. No wonder mages have long considered the best companions to be artificial constructs they themselves bring to life and design to follow their orders and meet their needs. Professor Moreau was no exception in this regard. His golem was his dutiful servant and companion, in good times and bad. Moreau's golem was also an excellent guardian: massive, unyielding and devilishly strong. All in all, he was a tough nut for a witcher to crack!",
+        "name": "moreau's Golem",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "De longues années d'études solitaires ne font rien pour arranger l'excentricité des mages. Au fil des ans, les gens du commun les irritent de plus en plus : obtus, peu fiables, indociles et résolus à ne rien comprendre au sérieux des travauxs des mages. Ils se complaisent dans les émotions au lieu de cultiver la discipline et la maîtrise de soi. Il n'y a guère à s'étonner si de tout temps les mages ont préféré s'accompagner de créatures artificielles qu'ils conçoivent et animent eux-mêmes pour se plier à leurs caprices et combler leurs besoins. Le professeur Moreau n'y faisait pas exception. Son golem était autant sont docile serviteur que son loyal compagnon, dans les jours fastes comme dans les épreuves. Le golem de Moreau était aussi un excellent protecteur : massif, inébranlable et d'une force prodigieuse. En bref, un adversaire ô combien redoutable pour un sorceleur !",
+        "name": "golem de Moreau",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "elementa",
+    "code": "apiarian-phantom",
+    "textes": [{
+        "lang": "EN",
+        "description": "The \"Apiarian Phantom\" destroying the Meiersdorf family's hives turned out to be a lost Hound of the Wild Hunt. When fighting such a beast, one must bear in mind three things. First of all, that the thick armor of ice covering it can only be pierced by strong blows. Second, that, like any other frost-born creature, it is vulnerable to fire, the Igni Sign included. Third and last: that it shall show no mercy.<br><br>Though the Hound fought fiercely, it nevertheless fell to the witcher's blade. By killing this dangerous monster, Geralt saved the humans, halflings and, last but not least, bees of the area from further torment.",
+        "name": "the Apiarian Phantom",
+        "quote": {
+            "author": {
+                "firstname": "holofernus",
+                "lastname": "meiersdorf",
+                "title": ""
+            },
+            "text": "Something's destroyed our fields and hives. We think it's... the apiarian phantom."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le soi-disant \"fantôme des rayons\" qui ravageait le rucher de la famille Meiersdorf était en réalité un molosse égaré de la Chasse Sauvage. Lors d'une rencontre avec une bête de cet acabit, il convient de se souvenir de trois choses. Premièrement, seuls les loups les plus puissants parviendront à pénétrer l'épaisse armure de glace qui la recouvre. Deuxièmement, à l'instar des autres créatures issues du froid, elle est vulnérable au feu, y compris au signe d'Igni. Et troisièmement, ce monstre ne connaît aucune pitié.<br><br>Le molosse se défendit farouchement, mais finit quand même par tomber sous les coups de lame du sorceleur. En tunant ce monstre dangereux, Geralt sauva les humains, les halfelins et, il ne faut pas l'oublier, les abeilles menacées de la région.",
+        "name": "le fantôme des rayons",
+        "quote": {
+            "author": {
+                "firstname": "holofernus",
+                "lastname": "meiersdorf",
+                "title": ""
+            },
+            "text": "Quelque chose a détruit nos prés et nos ruches. Selon nous, c'est l'oeuvre du... fantôme des rayons."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": ["igni", "axii"]
+    }
+},
+{
+    "category": "elementa",
+    "code": "therazane",
+    "textes": [{
+        "lang": "EN",
+        "description": "There's no such thing as a risk-free real estate investment. It might turn out your new home has a leaky roof, structural rot in the attic, a scratched floor in the living room... or elven ruins beneath its foundations, and within them an enormous earth elemental just waiting for a chance to break free of its chains.<br><br>Fighting such a monster is no easy task. Its tough outer husk deflects all but the strongest blows. It can liquefy a man's bones with one crushing blow from its fists - thus, one should never near it without first casting the Quen Sign. One should have the Yrden Sign at the ready as well, whereas the other signs - Igni, Aard and Axii - are completely ineffective against it.<br><br>In the end the witcher triumphed over the powerful earth elemental, and in doing so won gratitude of, and a reward from, Count Dysart.",
+        "name": "therazane",
+        "quote": {
+            "author": {
+                "firstname": "kurt",
+                "lastname": "dysart",
+                "title": "Count of Anchor"
+            },
+            "text": "I do not believe in ghosts - it is that simple. But my men say the house shakes at night, walls crumble, why, even the floors move about..."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "En immobilier, l'investissement sûr n'existe pas. Infiltration, moisissure, vice caché... Tels sont les risques du métier. Il est en revanche plus rare de découvrir sous les fondations de sa maison des ruines elfes abritant un gigantesque élémentaire de terre prêt à saisir la moindre chance de briser ses chaînes.<br><br>Affronter pareilles créature n'est pas une mince affaire. Son épaisse carapace dévie les coups les plus faibles. D'un coup un seul, elle est capable de broyer les os d'un homme, c'est pourquoi il est primordial que le sorceleur garde ses distances lorsqu'il lance le signe de Quen. Il est également recommandé de se tenir prêt à user du signe d'Yrden. Les signes d'Igni, Aard et Axii en revanche, resteront sans effet contre l'élémentaire.<br><br>Finalement, le sorceleur triompha du puissant élémentaire de terre et gagna ainsi la gratitude du comte Dysart, ainsi qu'une récompense.",
+        "name": "therazan",
+        "quote": {
+            "author": {
+                "firstname": "kurt",
+                "lastname": "dysart",
+                "title": "compe d'Anchor"
+            },
+            "text": "Autant vous le dire, je ne crois pas aux fantômes... mais mes hommes disent que la maison tremble la nuit, que les murs s'effritent et que le plancher se soulève."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "elementa",
+    "code": "fire-elemental",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "fire elemental",
+        "quote": {
+            "author": {
+                "firstname": "tarvix",
+                "lastname": "sandoval",
+                "title": "\"Origins of Magic Arcana\""
+            },
+            "text": "The first fire elemental was created by Ransant Alvaro. Sadly, flames engulfed his entire laboratory, burning it - along with every other building on his block - to ash."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Élément de la destruction par excellence, le feu engendre tout naturellement des créatures à son image. Un élémentaire de feu est forgé dans les flammes à l'aide de rituels magiques complexes dans un seul et unique but : l'anéantissement. Un but qu'il poursuit, dès sa création, avec une implacable détermination.<br><br>L'élémentaire de feu projette des boules de feu et des torrents de flammes pour réduire en cendres tout ce qui se dresse sur sa route. Comme les golems et les autres élémentaires, il ne saigne pas et est immunisé aux effets du poison. Le feu (d'origine naturelle ou magique) ne le blesse pas, mais au contraire le renforce : inutile d'espérer l'abattre avec le signe d'Igni. Enfin, s'il est vulnérable aux lames d'argent, il émane de lui une chaleur si intense qu'il est presque impossible de s'en approcher. La meilleure méthode pour vaincre un élémentaire de feu consiste donc à garder ses distances pour l'affaiblir à l'aide de bombes givrantes ou au dimeritium.",
+        "name": "élémentaire de feu",
+        "quote": {
+            "author": {
+                "firstname": "tarvix",
+                "lastname": "sandoval",
+                "title": "\"Des origines de l'énergie magique\""
+            },
+            "text": "Le premier élémentaire de feu fut créé par Ransant Alvaro. Hélas, l'illustre érudit périt le jour même dans l'incendie qui détruisit son laboratoire... et tous les bâtiments attenants."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb", "northern-wind"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "elementa",
+    "code": "ice-elemental",
+    "textes": [{
+        "lang": "EN",
+        "description": "An ice elemental is a mass of frozen water animated by magic. Deprived of consciousness or independent will, this elemental is boundlessly obedient to the orders of the mage who created it. Those orders usually contain but one syllable: kill.<br><br>Ice elementals have no qualms about carrying out this order nor any particular difficulty in doing so. Gifted with incredible strength, they are completely invulnerable to poison and fire, deprived of sensitive organs, hard as permafrost and all in all incredibly difficult opponents. A witcher's only chance at tipping the scales towards victory is to toss a dimeritium bomb – shrapnel made of this metal interferes with the workings of the spell that gives this creature life. Beyond that remains only prayer.",
+        "name": "ice elemental",
+        "quote": {
+            "author": {
+                "firstname": "yannick",
+                "lastname": "lovt",
+                "title": "burglar"
+            },
+            "text": "I thought to myself - what's a hunk of ice doing in the middle of some lab? And then that hunk of ice got up and broke my legs."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un élémentaire de glace est une masse d'eau glacée animée par magie. Sans conscience ni volonté propres, l'élémentaire obéit aveuglément à son créature, qui lui assigne généralement une tâche élémentaire : tuer.<br><br>L'élémentaire de glace est en effet une véritable machine à tuer. Doté d'une force hors du commun, il est invulnérable au feu et au poison, totalement insensible à la douleur et tout aussi impénétrable qu'un sol gelé. C'est un adversaire impitoyable et pour ainsi dire invincible à moins d'avoir une bombe au dimeritium sous la main. Ce métal interfère en effet avec les forces magiques qui animent le golem, offrant ainsi au sorceleur une maigre chance de victoire.",
+        "name": "élémentaire de glace",
+        "quote": {
+            "author": {
+                "firstname": "yannick",
+                "lastname": "lovt",
+                "title": "cambrioleur"
+            },
+            "text": "Je me demandais ce qu'un gros tas de glace venait faire au milieu de la pièce... quand le tas de glace s'est levé et m'a brisé les deux jambes."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "elementa",
+    "code": "earth-elemental",
+    "textes": [{
+        "lang": "EN",
+        "description": "Earth elementals are made of mud, clay, sand and rock dust clumped together with water and brought alive with magic. While seemingly slow and ponderous, there creatures are nevertheless dangerous and should be avoided at all costs.<br><br>Earth elementals can withstand a tremendous amount of punishment. Due to their enormous mass they are virtually impossible to knock off balance. They do not bleed nor feel any pain from poison or even fire.<br><br>They kill men with astonishing ease – whether by smashing them with their fists or hurling enormous stones at them. Their only weakness is their vulnerability to dimeritium dust – thus before combat one should prepare a full arsenal of bombs containing this ingredient.",
+        "name": "earth elementa",
+        "quote": {
+            "author": {
+                "firstname": "nino",
+                "lastname": "murk",
+                "title": "bounty hunter"
+            },
+            "text": "How to survive an encounter with an earth element? Simple. Run. Fast as you can."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un élémentaire de terre est un aglomérat de boue, d'argile, de sable et de roche animé par magie. En apparence lent et maladroit, il est cependant terriblement dangereux et doit être évité à tout prix.<br><br>Face à un élémentaire de terre, l'expression \"solide comme un roc\" prend tout son sens. Sa masse est telle qu'il est presque impossible à renverser, il ne saigne pas et il est insensible à la douleur, au poison et au feu.<br><br>Il peut tuer un homme avec une facilité déconcertente, en l'écrasant de ses poings massifs ou en lui lançant d'énormes pierres. Sa seule faiblesse est une relative vulnérabilité à la poussière de dimeritium, il est donc conseillé de se munir de bombes idoines avant d'affronter ce redoutable adversaire.",
+        "name": "élémentaire de terre",
+        "quote": {
+            "author": {
+                "firstname": "nino",
+                "lastname": "murk",
+                "title": "chasseur de primes"
+            },
+            "text": "Survivre à une rencontre avec un élémentaire de terre ? C'est très simple. Il suffit de courir. Vite, de préférence."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["elementa-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
     }
 }]
