@@ -1432,6 +1432,42 @@
     }
 },
 {
+    "category": "insectoids",
+    "code": "arachasae",
+    "textes": [{
+        "lang": "EN",
+        "description": "Powerful pincers, a maw filled with razor-sharp teeth and venom glands packed with deadly toxins – these creatures constitute the arachas' deadly arsenal. Since people and farm animals make up an important part of these creatures' diet, contracts on arachasae in turn constitute an important source of witcher coin.<br><br>Once native to the far south, this invasive species migrated north over the course of decades, adjusting as it went to new climates and temperatures. It found damp woodlands and swamps most hospitable and made them its home, making use of the much and moss found there as blankets during its winter hiberation. The arachas hides its unprotected, sack-like abdomen under a covering of hollow tree-trunks worn on its back.<br><br>At first glance, a stationary arachas often looks like a part of the forest undergrowth, a fact it uses to deadly advantage when hunting. It usually begins a battle by spitting venom, then tries to grab its prey with prehensile feelers in order to drag it within reach of its crushing pincers.",
+        "name": "arachasae",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Elven proverb"
+            },
+            "text": "N'aracche aen woed endicen [Let sleeping arachasae lie]."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
