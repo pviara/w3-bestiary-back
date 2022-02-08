@@ -1469,12 +1469,12 @@
 },
 {
     "category": "draconids",
-    "code": "silver-basilik",
+    "code": "silver-basilisk",
     "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
         "description": "Geralt always liked looking at things that don't exist. Be it a vampire with a human heart of the last basilisk of a species that no scholar has classified, discovering something thought not to be there to be discovered caused him great pleasure. That is why he took an interest in a contract which, at first glance, seemed banal, but proved to be very intriguing. It concerned the last basilisk of the nearly-extinct species Regulus Platinum.<br><br>In the end, Geralt decided not to kill the basilisk, for who in his right mind would raise his sword against a living legend?",
-        "name": "silver basilik",
+        "name": "silver basilisk",
         "quote": {
             "author": {
                 "firstname": "anatole",
