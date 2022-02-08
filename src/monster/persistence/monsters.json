@@ -1432,19 +1432,310 @@
     }
 },
 {
-    "category": "insectoids",
-    "code": "arachasae",
+    "category": "draconids",
+    "code": "basilisk",
     "textes": [{
         "lang": "EN",
-        "description": "Powerful pincers, a maw filled with razor-sharp teeth and venom glands packed with deadly toxins – these creatures constitute the arachas' deadly arsenal. Since people and farm animals make up an important part of these creatures' diet, contracts on arachasae in turn constitute an important source of witcher coin.<br><br>Once native to the far south, this invasive species migrated north over the course of decades, adjusting as it went to new climates and temperatures. It found damp woodlands and swamps most hospitable and made them its home, making use of the much and moss found there as blankets during its winter hiberation. The arachas hides its unprotected, sack-like abdomen under a covering of hollow tree-trunks worn on its back.<br><br>At first glance, a stationary arachas often looks like a part of the forest undergrowth, a fact it uses to deadly advantage when hunting. It usually begins a battle by spitting venom, then tries to grab its prey with prehensile feelers in order to drag it within reach of its crushing pincers.",
-        "name": "arachasae",
+        "description": "Contrary to popular belief, basilisks cannot turn anything to stone with their gaze. That is small comfort, however, given that their acid, venom, claws and teeth provide them many other ways to kill.<br><br>Basilisks love dark, damp places such as cellars, caves and city sewers. They hunt by day, waiting patiently in hiding for their prey to come, then jump out in a flash to unleash a deadly attack.<br><br>When preparing to fight such a creature one should drink Golden Oriole, which will provide resistance to its venom, and also prepare Dancing Star or shrapnel bombs, which work particularly well against basilisks.<br><br>Basilisk leather is a highly-valued material used to make fashionable shoes and women's handbags. For this reason many men, their courage girded by goldlust, take to hunting them. Most of these hunts end in disaster, but some do manage to bag their prey, which has led to a drastic decline in this creature's numbers in recent years. Some mages and druids are of the opinion that basilisks should be included in programs meant to safeguard dying species. Everyone else thinks those mages and druids have gone completely mad.",
+        "name": "basilisk",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": "Elven proverb"
+                "title": "Gravestone inscription, Vizima cemetery"
             },
-            "text": "N'aracche aen woed endicen [Let sleeping arachasae lie]."
+            "text": "In memory of the noble knight Roderick, slain during a valiant struggle against a basilisk. Let's hope the beast choked on his bones."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Contrairement à la croyance populaire, le regard d'un basilic ne transforme pas sa victime en statue de pierre. Il n'en reste pas moins une créature terriblement dangereuse, capable de tuer de bien des manières : crocs, griffes, acide ou encore venin font partie de son arsenal.<br><br>Le basilic aime les endroits sombres et humides comme les égouts, les cavernes ou les celliers. Chasseur diurne, il peut attendre une proie pendant des heures avant de surgir pour lancer une attaque fatale.<br><br>Afin d'affronter une telle créature, il est recommandé de boire une potion de Loriot doré et de s'armer de bombes (Étoile dansante ou à fragmentation, de préférence).<br><br>Le cuir de basilic est un matériau très recherché, utilisé dans la confection de chaussures ou de sacs à main. Pour cette raison, de nombreux hommes aveuglés par des rêves de fortune se lancent, souvent à leurs dépens, dans la chasse au basilic. Si bien des imprudents trouvent là une mort prématurée, les plus chanceux atteignent leur objectif, avec pour conséquence un déclin progressif du nombre de basilics au cours des dernières années. Certains druides et mages estiment que le basilic devrait être placé sur une liste des espèces protégées... mais personne ne les écoute.",
+        "name": "basilic",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Épitaphe, cimetière de Wyzima."
+            },
+            "text": "En mémoire du noble chevalier Roderick, tué au combat par un basilic. Puisse un de ses os être resté en travers de la gorge du monstre."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "silver-basilik",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Geralt always liked looking at things that don't exist. Be it a vampire with a human heart of the last basilisk of a species that no scholar has classified, discovering something thought not to be there to be discovered caused him great pleasure. That is why he took an interest in a contract which, at first glance, seemed banal, but proved to be very intriguing. It concerned the last basilisk of the nearly-extinct species Regulus Platinum.<br><br>In the end, Geralt decided not to kill the basilisk, for who in his right mind would raise his sword against a living legend?",
+        "name": "silver basilik",
+        "quote": {
+            "author": {
+                "firstname": "anatole",
+                "lastname": "vizholy",
+                "title": "shoemaker from Beauclair"
+            },
+            "text": "You want a fine pair of boots, you say? Bring me the hide of a silver basilisk, and I'll make you boots the whole world will envy."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Il a toujours plu à Geralt de chercher ce qui n'existait pas, qu'il s'agisse d'un vampire au cœur humain, ou le dernier basilic d'une espèce qu'aucun érudit n'a jamais répertoriée. Découvrir ce que personne ne croyait exister lui procurait un immense plaisir. Voilà pourquoi il se piqua d'intérêt pour un contrat pourtant anodin au premier abord, mais diablement intriguant. Il s'agissait du dernier spécimen d'une variété de basilic proche de l'extinction: Regulus Platinum.<br><br>Les écailles qui recouvrent les basilics argentés sont plus fines que celles de leurs congénères, ce qui les rend d'autant plus vulnérables au feu. Le signe d'Igni sera donc de toute première utilité face à ces créatures.<br><br>Méfiez-vous néanmoins de leur venin, beaucoup plus virulent que celui des basilics communs.<br><br>Au final, Geralt résolut d'épargner le basilic. Qui d'autre qu'un fou oserait lever son épée contre une légende vivante ?",
+        "name": "basilic argenté",
+        "quote": {
+            "author": {
+                "firstname": "anatole",
+                "lastname": "vizholy",
+                "title": "cordonnier de Beauclair"
+            },
+            "text": "C'est une jolie paire de bottes que vous voulez ? Rapportez moi le cuir d'un basilic argenté, et je vous confectionnerai des bottes que le monde entier vous enviera."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard", "igni"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "forktail",
+    "textes": [{
+        "lang": "EN",
+        "description": "Forktails owe their quaint name to the long sharp growths at the tip of their tails. A blow from this weapon can slice an oaken shield in two – along with the arm that was carrying it. Thus, though its name conjures images of cutlery, fighting a forktail is nothing like a dinner party and ends in death rather than dessert.",
+        "name": "forktail",
+        "quote": {
+            "author": {
+                "firstname": "yavinn",
+                "lastname": "buck",
+                "title": "veteran of the Mahakaman Volunteer Regiment"
+            },
+            "text": "Forktails... Bah! Fuckers' tails're more like cleavers."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Tout comme le renard, dont son nom est dérivé, le foënard est immédiatement reconnaissable à sa queue. Celle-ci n'est cependant pas rousse et touffue, mais garnie d'excroissances osseuses et parfaitement capable de détruire d'un seul coup un bouclier en chêne et la main de son porteur.",
+        "name": "foënard",
+        "quote": {
+            "author": {
+                "firstname": "yavinn",
+                "lastname": "buck",
+                "title": "vétéran du régiment de volontaires de Mahakaman"
+            },
+            "text": "Me parlez pas des foënards... Des saloperies, des aberrations de la nature !"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "the-dragon-of-fyresdal",
+    "textes": [{
+        "lang": "EN",
+        "description": "Few truly know what a dragon looks like, for those who have seen one up-close rarely have a chance to share their impressions. That is why people are forever mistaking other monsters for dragons. This was the case in Fyresdal, where the so-called dragon wreaking havoc turned out to be a forktail.<br><br>Yet this mistaken attribution did not mean there was no reason to worry. The forktail harassing Fyresdal was a particularly vile representative of its kind, one equipped with an endless store of deadly venom. Fighting it without first drinking a regenerative potion or a poison antidote would be tantamount to suicide.<br><br>In his fight with the forktail, Geralt gave proof not only of his masterful swordsmanship, but also of a previously-undemonstrated flair for shepherdry. With a little help from a brave sheep lent by the village elder, he lured the monster into a trap - then ended its life.",
+        "name": "the dragon of Fyresdal",
+        "quote": {
+            "author": {
+                "firstname": "vagn",
+                "lastname": "",
+                "title": "village elder of Fyresdal"
+            },
+            "text": "It's got scales, wings, claws... A dragon's a dragon! No point gabbin', just go kill it!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Rares sont ceux qui peuvent se vanter d'avoir survécu à une rencontre avec un dragon, en conséquence de quoi le commun des mortels est bien incapable de dire précisément à quoi ressemble cette créature. Il n'est donc pas étonnant que, confrontés à un monstre inhabituel, les gens du peuple crient bien souvent au dragon.<br><br>C'est ce qui advint à Fyresdal, où le dragon n'était en fait qu'un simple foënard. Ceci dit, la créature pourvue hautement venimeuse était particulièrement coriace. Dans ces conditions, il aurait été suicidaire d'engager le combat sans avoir préalablement consommé une potion régénératrice ou un antidote afin de se prémunir contre le poison.<br><br>En affrontant le foënard, Geralt fit preuve non seulement de son habileté avec une lame, mais aussi de compétences inédites de berger. Avec l'aide d'un brave mouton prêté par l'ancien du village, Geralt attira le monstre dans un piège, puis mit un terme à son existence.",
+        "name": "le dragon de Fyresdal",
+        "quote": {
+            "author": {
+                "firstname": "vagn",
+                "lastname": "",
+                "title": "ancien du village de Fyresdal"
+            },
+            "text": "Écailles, ailes, griffes... Un dragon, quoi ! Finassez pas et tuez moi ça avant qu'il fasse d'autres victimes !"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "slyzard-matriarch",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "If you ever find yourself facing a monster that breathes fire, strikes with a tail tipped with venomous spines, bites with sharp teeth and swipes with even sharper claws and tends to knock its prey to the ground with a sonic blast, then you are fighting a slyzard. With an arsenal like that, it comes as no surprise folk often mistake these draconids for dragons. Yet the experts (meaning witchers) know slyzards constitute an entirely separate species, much smaller than dragons and far less dangerous. With one exception: slyzard females in mating season, or, even worse, just after laying their eggs. When fighting such individuals, my suggestion is to get as far as possible from the danger as quickly as possible, preferably by running, at full tilt, without looking back.",
+        "name": "slyzard matriarch",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Si jamais vous êtes un jour confronté à une créature qui crache le feu, à la queue hérissée de dards venimeux, aux crocs comme des rasoirs et aux griffes plus affûtées encore, et qui a la fâcheuse manie d'émettre des ondes soniques pour abattre ses proies, c'est que vous affrontez un slyzard. Avec un tel arsenal, il n'est guère surprenant qu'on confonde souvent ces reptiles avec des dragons. Cependant, les experts (autrement dit, les sorceleurs) n'ignorent pas qu'ils sont une espèce à part entière, de taille plus modeste que les dragons et bien moins redoutables. À une exception près : les femelles slyzards en période de reproduction, ou pire encore, après qu'elles ont pondu leurs œeufs. Face à pareilles créatures, je vous suggère de tourner les talons et de courir à perdre haleine, sans vous retourner.",
+        "name": "matriarche slyzard",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard", "quen"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "slyzard",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Slyzards are often mistaken for wyverns or forktails. Yet make no mistake: slyzards are nasty, terribly dangerous beasts, and confusing them for wyverns will end very badly for the confuser. While a wyvern can tear apart and devour an untrained man in seconds, only a slyzard can first bake him to a crisp with a waft of fiery breath.<br><br>Slyzards are keenly aggressive and attack from both ground and air. Their goal during a fight is to get close enough to their foe to injure it with a breath of fire or knock it down with a sonic blast. Like wyverns, slyzards also attack with venom-spiked tails.<br><br>Slyzards like to disengage mid-fight to fly into the air and plummet down at high speed while spewing out balls of fire.<br><br>Right before these igneous missiles emerge, you can observe a fiery ball forming in the monster's maw. While airborne, a slyzard can also attack with its claws and teeth.<br><br>It is worthwhile to employ the Aard and Igni Signs to force slyzards to the ground. They are not, however, vulnerable to burning. Before tackling one of them, be sure to coat your blade in draconid oil.",
+        "name": "slyzard",
+        "quote": {
+            "author": {
+                "firstname": "zator",
+                "lastname": "",
+                "title": "one of the Crinfrid Reavers"
+            },
+            "text": "Some peasants once offered me a king's ransom to slay a slyzard. A damned hefty purse, chock full o' gold... But I turned 'em down. Coin's no good if you're dead. And a slyzard, that's no fuckin' forktail."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "On confond souvent les slyzards avec les wyverns ou les foënards. Mais ne vous y trompez pas, ou vous en pâtirez : les slyzards sont des créatures féroces et ô combien dangereuses. Une wyvern est certes capable de réduire en charpie un homme peu aguerri, mais un slyzard l'aura d'abord fait rôtir de son souffle incendiaire.<br><br>Les slyzards sont particulièrement agressifs et attaquent du sol comme depuis les airs. Au combat, ils cherchent à approcher leur proie d'assez près pour déverser sur elle un torrent de flammes ou bien l'abattre d'une décharge sonique. Comme les wyverns, les slyzards sont pourvus d'une queue surmontée de dards empoisonnés.<br><br>Les slyzards aiment à rompre le combat pour s'élancer dans les airs et fondre sur leur proie à pleine vitesse tout en crachant des boules de feu.<br><br>Juste avant que ces projectiles enflammés ne soient décochés, on peut observer une boule flamboyante qui se forme dans la gueule du monstre. Une fois qu'il a pris son essor, un slyzard peut aussi attaquer de ses griffes et de ses crocs.<br>Vous auriez tout intérêt à utiliser les signes d'Aard et d'Igni pour clouer les slyzards au sol. Par contre, ils ne craignent pas le feu. Avant d'en affronter un spécimen, veillez à enduire votre lame d'huile contre les draconides.",
+        "name": "slyzard",
+        "quote": {
+            "author": {
+                "firstname": "zator",
+                "lastname": "",
+                "title": "membre des Chasseurs de Crinfrid"
+            },
+            "text": "Un jour, des paysans m'ont offert une petite fortune pour abattre un slyzard. Une bourse bien replète, remplie d'or à ras bord... Mais j'ai décliné. À quoi bon de l'or si on ne peut pas en profiter. Se battre contre un slyzard, ça n'a rien d'une partie de plaisir."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": [],
+        "signs": ["aard", "quen"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "wyvern",
+    "textes": [{
+        "lang": "EN",
+        "description": "Wyverns are often mistaken for dragons, and, though they are much smaller than their more famous kin and do not breathe fire, they are likewise extremely dangerous monsters. Especially feared are the so-called royal wyverns who, like their namesake monarchs, are exceptionally ornery and extremely deadly.",
+        "name": "wyvern",
+        "quote": {
+            "author": {
+                "firstname": "albina",
+                "lastname": "tottelkampf",
+                "title": "lecturer in natural sciences at Aretuza"
+            },
+            "text": "Most dangerous of all are the royal wyverns. Or, as they're called in some circles, the royal pains in the arse."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "La wyvern est souvent confondue avec un dragon. Bien qu'elle soit plus petite que son cousin et qu'elle soit incapable de cracher du feu, elle n'en reste pas moins un monstre des plus dangereux. La wyvern royale, en particulier, est une créature féroce et mortelle.",
+        "name": "wyvern",
+        "quote": {
+            "author": {
+                "firstname": "albina",
+                "lastname": "tottelkampf",
+                "title": "professeur de sciences naturelles à Aretuza"
+            },
+            "text": "Parmi les différentes espèces de wyverns, la plus dangereuse est sans le moindre doute la wyvern royale... ou comme elle est parfois surnommée dans certains cercles, la saloperie royale."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "draconids",
+    "code": "royal-wyvern",
+    "textes": [{
+        "lang": "EN",
+        "description": "A hunter who knows his prey's habits and behavior will rarely return from his hunt empty-handed. To know what forest paths deer are like to trod, to know in what muck boars will wallow, to guess when a hare will emerge from its burrow - that is half the battle.<br><br>What most men do not know is that some monsters also possess such knowledge. For example, a royal wyvern from Velen had learned the danger of exposing itself to human eyes and arrows by flying high to pick out its prey from afar. Instead, it would lurk by the roadside and wait for military transports. In this way it grew fat on salted pork and beer, expanding until it resembled a dragon more than other, lesser members of its own kind.<br><br>The witcher thus knew this beast would be much stronger and more resilient than a normal wyvern. Even one blow from it could kill - which is why he would need to avoid its charge at all costs. He would also be wise to force it to the ground with his crossbow or a bomb whenever it tried to fly into the air and hurtle down in a deadly dive.<br><br>In the end the witcher slew the hideous creature, though not without some difficulty. Thanks to this feat, the soldiers could once again send shipments of food and equipment needed to conduct the war. Whether that was a good or a bad thing - that is an entirely different matter.",
+        "name": "royal wyvern",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation overheard in Velen"
+            },
+            "text": "It were huge. And those teeth, ugh! We barely escaped. Wonder if it killed the traders... Whoresons sure had it comin'"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Connaître sa proie, suivre les chemins forestiers, localiser les points d'eau, écouter son instinct telles sont les principales qualités d'un bon chasseur. Des qualités que certains monstres possèdent au plus haut degré...<br><br>Ainsi, une wyvern royale de Velen avait appris à chasser ses proies sans s'exposer aux regards humains et aux flèches, mais en rôdant aux abords de la route pour attaquer directement les convois militaires, source de bière et de porc salé. La bête avait grandi tant et si bien qu'elle ressemblait presque à un dragon et terrorisait toute la région.<br><br>Le sorceleur sut d'emblée que ce spécimen serait plus résistant et puissant que ses congénères. Un coup un seul, et c'en serait fini de lui, c'est pourquoi il allait devoir éviter ses charges à tout prix. L'utilisation avisée d'une bombe ou de son arbalète empêcherait quant à elle la bête de prendre son essore afin de fondre sur lui dans un piqué mortel.<br><br>Finalement, le sorceleur vint à bout de l'horrible créature, mais non sans mal. Grâce à cet exploit, les soldats purent à nouveau envoyer des chargements de nourriture et d'équipement pour livrer bataille. Était-ce une bonne ou une mauvaise chose ? Ça, c'est une toute autre question.",
+        "name": "wyvern royale",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation entendue à Velen"
+            },
+            "text": "L'était énorme. Et ces crocs ! On a eu chaud. Me demande si la bête a tué les marchands... L'auraient pas volé, ces salauds-là."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["hive"],
+        "oils": ["draconid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
         }
     },
     {
@@ -1462,8 +1753,44 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": ["insectoid-oil"],
-        "potions": ["golden-oriole"],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
         "signs": []
     }
 },
