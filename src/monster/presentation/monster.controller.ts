@@ -1,7 +1,9 @@
 import {
+    Body,
     Controller,
     Get,
     NotFoundException,
+    Post,
     Query,
     ValidationPipe,
 } from '@nestjs/common';
@@ -11,6 +13,7 @@ import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categorie
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
 import { QueryBus } from '@nestjs/cqrs';
+import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
 
 @Controller()
 export class MonsterController {
