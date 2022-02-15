@@ -10,6 +10,7 @@ import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
 import { MonsterModule } from './monster/monster.module';
 import { RouterModule } from '@nestjs/core';
 import { ServeStaticModule } from '@nestjs/serve-static';
+import { TypoModule } from './typo/typo.module';
 
 @Module({
     imports: [
@@ -41,12 +42,17 @@ import { ServeStaticModule } from '@nestjs/serve-static';
                         path: 'monster',
                         module: MonsterModule,
                     },
+                    {
+                        path: 'typo',
+                        module: TypoModule,
+                    },
                 ],
             },
         ]),
         ServeStaticModule.forRoot({
             rootPath: join(__dirname, '..', 'public'),
         }),
+        TypoModule,
     ],
     controllers: [],
     providers: [AppService],
