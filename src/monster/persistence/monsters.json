@@ -1723,6 +1723,1055 @@
     }
 },
 {
+    "category": "insectoids",
+    "code": "arachas",
+    "textes": [{
+        "lang": "EN",
+        "description": "Powerful pincers, a maw filled with razor-sharp teeth and venom glands packed with deadly toxins – these creatures constitute the arachas' deadly arsenal. Since people and farm animals make up an important part of these creatures' diet, contracts on arachasae in turn constitute an important source of witcher coin.<br><br>Once native to the far south, this invasive species migrated north over the course of decades, adjusting as it went to new climates and temperatures. It found damp woodlands and swamps most hospitable and made them its home, making use of the much and moss found there as blankets during its winter hiberation. The arachas hides its unprotected, sack-like abdomen under a covering of hollow tree-trunks worn on its back.<br><br>At first glance, a stationary arachas often looks like a part of the forest undergrowth, a fact it uses to deadly advantage when hunting. It usually begins a battle by spitting venom, then tries to grab its prey with prehensile feelers in order to drag it within reach of its crushing pincers.",
+        "name": "arachas",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Elven proverb"
+            },
+            "text": "N'aracche aen woed endicen [Let sleeping arachasae lie]."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Pinces puissantes, crocs acérés et glandes de venin mortel : tel est le terrible arsenal de l'arachas. Grand prédateur d'humains et d'animaux de ferme, l'arachas est une source de revenus réguliers pour la plupart des sorceleurs.<br><br>Originaire du lointain sud, cette espèce envahissante a migré vers le nord au fil du temps, s'adaptant progressivement au climat plus humide et aux températures moins clémentes. Aujourd'hui parfaitement à son aise au milieu des bois et des marais, l'arachas se terre sous une épaisse couche de boue et de mousse pour hiberner durant l'hiver. Pour protéger son abdomen, sac fragile et vulnérable, il utilise souvent un tronc d'arbre mort.<br><br>Immobile, il se fond alors parfaitement dans la végétation pour mieux surprendre ses proies. Lorsqu'il chasse, il commence généralement par cracher son venin pour affaiblir sa victime avant de l'immobiliser à l'aide d'appendices préhensiles pour finalement l'écraser sous ses pinces.",
+        "name": "arachas",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Proverbe elfe"
+            },
+            "text": "N'arache aen woed endicen [Ne réveillez pas l'arachas qui dort]."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
+    "category": "insectoids",
+    "code": "armored-arachas",
+    "textes": [{
+        "lang": "EN",
+        "description": "An arachas' only weakness is its soft, sensitive abdomen. Some arachasae hide this under hollow tree stumps, while other, \"armored\" varieties exist which have grown a thick carapace that covers all the more delicate parts of their bodies.<br><br>An armored arachas is a true behemoth. It uses its enormous mass to knock over and trample its victims then devours their crushed remains. Like all arachasae, it is highly venomous, and thus Golden Oriole should always be consumed before fighting it.<br><br>It is also worthwhile to stock up on healing potions and crossbow bolts before setting out, for this arachas' thick plating can withstand a great deal of damage, making battles with it a long and exhausting affair.",
+        "name": "armored arachas",
+        "quote": {
+            "author": {
+                "firstname": "foxy",
+                "lastname": "lisa",
+                "title": "Maribor prostitute"
+            },
+            "text": "That's the kinda john we call an 'armored arachas.' Hard and prickly on the otuside, but get 'im undressed and everything's soft and squishy."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "La seule véritable faiblesse d'un arachas est son abdomen souple et fragile. Si les arachas communs protègent cette zone sensible avec une souche creuse, l'arachas cuirassé bénéficie pour sa part d'une protection naturelle.<br>L'arachas cuirassé est un mastodonte qui charge ses victimes tête baissée pour les renverser avant de dévorer leur cadavre broyé. Comme tous les arachas, il crache un venin mortel, il est donc fortement recommandé d'ingérer une potion de Loriot doré avant de l'affronter.<br><br>Par ailleurs, un sorceleur avisé préparera une réserve conséquente de potions de soins et de carreaux d'arbalète en prévision d'un combat long et épuisant.",
+        "name": "arachas cuirassé",
+        "quote": {
+            "author": {
+                "firstname": "lisa la",
+                "lastname": "chaude",
+                "title": "prostituée de Maribor"
+            },
+            "text": "\"Les clients comme lui, on les appelle des \"arachas cuirassés\". De vrais durs à l'extérieur, mais dès qu'ils se retrouvent à poil, ils deviennent doux comme des agneaux.\""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
+    "category": "insectoids",
+    "code": "venomous-arachas",
+    "textes": [{
+        "lang": "EN",
+        "description": "Though all arachasae are highly venomous, this breed produces an especially strong toxin. A few drops are enough to kill a grown man – unless that man is a witcher, whose mutations will neutralize small amounts of this venom. Large quantities, however, will kill anything they touch, with mutations only prolonging an inevitable and painful death in such instances.<br><br>Venomous arachasae produce colossal amounts of this toxin and deploy it during combat in many ways. Before striking a venomous arachas will cover its pincers and teeth with a thick coating of the deadly liquid. It will then squirt the venom at its opponent to weaken it, and once locked in direct combat, will continue spraying the noxious ooze all around itself, meaning every breath brings its victim closer to death. Like other members of this species, venomous arachasae use prehensile feelers to grab and immobilize their prey. When attempting to fight such a creature a witcher should drink Golden Oriole, which will reduce his body's vulnerability to poison, and then attack from a safe distance with crossbow or bombs before dealing the finishing blows with a silver sword enhanced with a coating of insectoid oil.",
+        "name": "venomous arachas",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Last words of an unknown hunter"
+            },
+            "text": "Barley nicked me, I'll be fine."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Bien que tous les arachas soient venimeux, cette espèce secrète une toxine particulièrement puissante. Quelques gouttes de son venin suffisent à terrasser un homme adulte. Un sorceleur peut, grâce à son métabolisme particulier, survivre à une faible dose, mais une forte quantité de venin lui sera également fatale.<br><br>L'arachas venimeux dispose d'une importante réserve de venin qu'il utilise de diverses manières pour éliminer ses adversaires. Avant un combat, il enduit ses crocs et ses pinces d'une épaisse couche du liquide mortel. Il peut également cracher son venin pour affaiblir sa proie et, une fois au contact de celle-ci, libérer un nuage toxique irrespirable. Enfin, comme tous ses congénères, l'arachas venimeux dispose d'appendices préhensiles pour immobiliser sa proie. Pour se défaire d'une de ces créatures, il est recommandé de boire une potion de Loriot doré et de l'affaiblir par des attaques à distance (bombes ou tirs d'arbalète) avant de l'achever à l'aide d'une épée d'argent enduite d'huile contre les insectoïdes.",
+        "name": "arachas venimeux",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Dernières paroles d'un chasseur anonyme"
+            },
+            "text": "Ça va aller, c'est juste une égratignure."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
+    "category": "insectoids",
+    "code": "arachnomorph",
+    "extension": "hearts-of-stone",
+    "textes": [{
+        "lang": "EN",
+        "description": "A similar saying could gain ground in our land concerning arachnomorphs and everything unable to flee them – meaning most every creature in the world. True, the tillers of the earth and fellers of trees need not fear them in their daily labors, for arachnomorphs, as distant, post-Conjunction cousins of common spiders, strongly prefer deep, dark caves and unfrequented sodden swamps. Anyone who does come across them, however, had best hope his conscience is clear and his worldly affairs are in order, for his life shall soon end, as not even the fastest man in the world can outrun them and only a few witchers can hope to slay them. Even worse are the more aggressive and dangerous kind known as arachnomorph colossi, which are capable of devouring an entire ox in seconds.",
+        "name": "arachnomorph",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Ofieri proverb"
+            },
+            "text": "The spider shall never lie down with the fly."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un dicton semblable pourrait devenir populaire dans notre région au sujet des arachnomorphes et de tout ce qui s'avère incapable de les fuir, c'est-à-dire quasiment toutes les créatures du monde. Certes, les laboureurs et les bûcherons n'ont pas à les craindre durant leurs activités quotidiennes, car les arachnomorphes, lointains cousins des araignées ordinaires issus de la Conjonction, préfèrent largement les grottes sombres et profondes ou les marais humides et peu fréquentés. Cependant, toute personne tombant nez à nez avec eux ferait mieux d'avoir la conscience tranquille et d'avoir mis ses affaires en ordre, car sa vie est sur le point de s'achever. En effet, même le plus rapide des hommes ne saurait les distancer et seuls quelques rares sorceleurs ont une chance de les éliminer. Plus agressifs et dangereux encore sont les arachnomorphes colossaux, qui s'avèrent capables de dévorer un bœuf entier en quelques secondes.",
+        "name": "arachnomorphe",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Proverbe ophiri"
+            },
+            "text": "Jamais avec la mouche l'araignée ne doit coucher."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": [],
+        "signs": ["aard", "axii"]
+    }
+},
+{
+    "category": "insectoids",
+    "code": "endrega-drone",
+    "textes": [{
+        "lang": "EN",
+        "description": "Endrega males – called 'drones' – are gluttonous creatures whose only aim in life is to eat, fight and reproduce. Yet when venturing outside their nests, these aggressive hunters attack any and every creature they come across.<br><br>Endrega drones live but brief lives, the culmination of which comes in the autumn when they fertilize the queen. They pass the time leading to that moment protecting the colony's territory. Weaker drones die in these battles, while the largest and strongest survive. These elect[sic] individuals' genes are passed down to the next generation of endregas, while they themselves are killed after fertilization takes place and their bodies used to feed the hive during the long winter months.<br><br>Drones are easy to identify thanks to their distinctive, cone-shaped abdomens. Unlike other endregas they can attack from a distance, sending out volleys of poisoned quills. As with all of their kind, bleeding has no effect on them and insectoid oil does them great harm.",
+        "name": "endrega drone",
+        "quote": {
+            "author": {
+                "firstname": "evelynn",
+                "lastname": "harker",
+                "title": "herbalist"
+            },
+            "text": "Lazy, good-for-nothing men are sometimes called drones. That's an insult to endrega drones, who at least get off their arses to fight."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le mâle endriague, aussi appelé \"bourdon\", est une créature vorace qui semble passer le plus clair de son temps à manger, se battre et se reproduire. Pourtant, lorsqu'il s'aventure hors du nid, c'est un chasseur très agressif et particulièrement dangereux.<br><br>Le bourdon endriague a une espérance de vie très courte. Il meurt à l'automne en fécondant la reine et consacre le reste de sa vie à défendre le territoire de la colonie. Seuls les bourdons les plus forts survivent à ces combats, une sélection naturelle qui assure la transmission des meilleurs gènes d'une génération à l'autre. Après la fécondation, les bourdons sont tués et servent à nourrir la colonie pendant les longs mois d'hiver.<br><br>Un bourdon endriague est facilement identifiable à son abdomen conique. Contrairement aux autres endriagues, le bourdon est capable d'attaquer à distance en projetant des pointes empoisonnées. Il est par ailleurs insensible au saignement et vulnérable aux armes enduites d'huile contre les insectoïdes.",
+        "name": "bourdon endriague",
+        "quote": {
+            "author": {
+                "firstname": "evelynn",
+                "lastname": "harker",
+                "title": ""
+            },
+            "text": "Le mâle endriague passe sa vie à se battre dans le seul but de féconder la femelle. Quelle que soit l'espèce, les hommes sont toujours les mêmes..."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
+    "category": "insectoids",
+    "code": "kikimore-warrior",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "It is unknown how exactly it is kikimores communicate with each other. Autopsies are hampered by the high toxicity of their subjects. Scholars have established that kikimores do not seem to possess any detectable auricles. One amateur researcher, Count di Salvaress, put forth a theory in his treatise "A Microscope Among Monsters" suggesting kikimores have a highly developed sense of smell and use airborne particles undetectable to humans to transmit information. This theory has yet to be proved or disproved.<br><br>Kikimore warriors defend their nests from attackers. They attack somewhat slower than kikimore workers. They are able to spew streams of caustic venom a great distance and leap to attack. This venom is highly unique in that it reacts with a witcher's body to raise the level of his potion toxicity. They are covered with thick, hard armor which easily deflects blows from even the sharpest sword.<br><br>Kikimore warriors are protected by swarms of workers which obey their orders until they are themselves eradicated.<br><br>They are completely immune to the effects of the Axii Sign, but vulnerable to Igni, oils and bombs harming insectoids and blows dealt by a silver sword.",
+        "name": "kikimore warrior",
+        "quote": {
+            "author": {
+                "firstname": "lavinia",
+                "lastname": "",
+                "title": "\"The Kikimore Princess and the Mountain Giants\" Cornelius Briggs (dwarven children's fable, fragment)"
+            },
+            "text": "Then the kikimore princess summoned all her loyal sisters and off they went! Together they charged the enemy trying to harm their queen."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "On ignore comment les kikimorrhes s'y prennent pour communiquer entre elles. L'extrême toxicité des sujets autopsiés compromet les recherches. Les érudits ont déterminé que les kikimorrhes ne possédaient pas d'organe auriculaire apparent. Dans son traité, "Un microscope parmi les monstres", le comte di Salvaress, chercheur amateur de son état, a formulé la théorie selon laquelle les kikimorrhes posséderaient un odorat particulièrement développé et qu'elles utiliseraient des particules aériennes indétectables à l'œil humain pour communiquer entre elles. Cette théorie reste encore à confirmer.<br><br>Les guerrières kikimorrhes défendent leurs nids contre les assaillants. Elles attaquent un peu plus lentement que les ouvrières kikimorrhes. Elles peuvent cracher des jets de venin caustique à une grande distance et bondir pour attaquer. Ce venin est unique dans la mesure où il réagit avec le corps des sorceleurs pour augmenter leur intoxication. Elles sont couvertes d'une épaisse et solide armure, qui dévie facilement les coups, même ceux des épées les mieux aiguisées.",
+        "name": "guerrière kikimorrhe",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "\"La princesse kikimorrhe et les géants des montagnes\" Cornelius Briggs (conte pour enfants nain, extrait)"
+            },
+            "text": "C'est ainsi que la princesse kikimorrhe rallia ses loyales sœurs et elles s'en furent. Ensemble, elles chargèrent l'ennemi qui s'efforçait d'attenter à leur reine."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["white-honey"],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "insectoids",
+    "code": "harrisi",
+    "textes": [{
+        "lang": "EN",
+        "description": "Velen's woods and bogs brim with monsters. This fact is well known, and thus when the war drove refugees into this hostile land, certain of their number thought to avoid the dangers of the lowlands by hiding in an abandoned mine. They were in for an unfortunate surprise. The shaft they chose for their sanctuary was inhabited by a poisonous arachas - a merciless and bloodthirsty monster.<br><br>The witcher knew he was in for a tough fight. The arachas had dwelled in the mine for years and had grown large and particularly strong and resilient in that time. Like other members of its vile species, it would be dangerous both at close quarters and at a distance. What's more, it was almost certainly venomous - he would need to imbibe Swallow or Golden Oriole (or both) before attacking if he was to stand a chance of surviving. As a small consolation, the witcher knew the monster would be vulnerable to his Signs - especially Igni, Aard and Yrden - as well as to the Northern Wind bomb.<br><br>The witcher arrived at the cave too late to save the refugees - but he could still avenge their fate. He slew the powerful arachas and destroyed the eggs bearing its vile offspring.",
+        "name": "harrisi",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Velen peasant woman"
+            },
+            "text": "It attacked us... Gods, I dunno what it were, but 'twere at least four spans high!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Chacun sait que les bois et les marais de Velen regorgent de monstres de tout poil. Voilà pourquoi, lorsque la guerre éclata, un groupe de réfugiés pensa échapper aux dangers des basses terres en s'abritant dans une mine désaffectée. Hélas pour eux, ils allaient au devant d'une bien mauvaise surprise : la galerie qu'ils avaient choisie pour sanctuaire servait également d'antre à un arachas venimeux, créature impitoyable et sanguinaire.<br><br>Le sorceleur sut immédiatement que la lutte serait âpre. L'arachas, tapi dans la mine depuis des années, avait gagné tant en force qu'en taille. À l'image de ses congénères, il serait aussi dangereux au corps à corps qu'à distance. Sans oublier qu'il était certainement venimeux. Le sorceleur allait devoir ingérer une potion d'Hirondelle ou de Loriot doré (voire les deux) avant le combat s'il espérait triompher. En revanche, le sorceleur savait la créature vulnérable aux signes, en particulier Igni, Aard et Yrden, ainsi qu'à la bombe Vent du Nord.<br><br>Le sorceleur arriva à la grotte trop tard pour sauver les réfugiés, mais il pouvait toujours les venger. Il élimina le puissant arachas et détruisit les œufs contenant ses immondes rejetons.",
+        "name": "harrisi",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Paysanne de Velen"
+            },
+            "text": "La chose nous a attaqués... Dieux, j'ignore ce que c'est, mais quelle bête immense !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": []
+    }
+},
+{
+    "category": "insectoids",
+    "code": "kikimore-worker",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Kikimores form colonies, making them similar to communal insects such as ants. A kikimore colony is ruled by a queen and organized into something of a social hierarchy. Kikimore workers take care of hunting food and bringing it back to the nest, while kikimore warriors defend the nest against attackers.<br><br>A worker on its own can be easily killed by even a weak person or a child. It is rare indeed, however, to come across an isolated individual, for kikimore workers usual move in groups of a few to a dozen or so members. The only defense against a swarm of kikimores available to a normal person is to flee. And not even that is guaranteed to work.<br><br>Kikimore workers listen to orders given by kikimore warriors. On command, a swarm of workers might begin burrowing tunnels near potential prey to allow for a surprise mass attack. Eliminate the warrior guiding a swarm, however, and the workers will disperse and cease digging.<br><br>Kikimore workers are nimbler and quicker than warriors.They show complete immunity to the Axii Sign, and when they dig tunnels, they are invulnerable to all the other Signs as well. Poison also does them no harm.<br><br>A good method for fighting them is to use the Igni Sign as well as oils and bombs meant to damage insectoids.",
+        "name": "kikimore worker",
+        "quote": {
+            "author": {
+                "firstname": "laviania",
+                "lastname": "",
+                "title": "wife of a Beauclair innkeeper"
+            },
+            "text": "The old fool came home all black and blue, claiming kikimores had attacked him in the woods. Who does he take me for?! His mates worked him over because he'd cheated at gwent. If it'd been kikimores, he'd be dead. And I'd have peace at last."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les kikimorrhes se forment en colonies, ce qui les apparente aux insectes communautaires, comme les fourmis. Une colonie kikimorrhe est dirigée par une reine et organisée selon ce qui ressemble à une hiérarchie sociale. Les ouvrières. kikimorrhes se chargent de trouver de la nourriture et de la rapporter au nid, tandis que les guerrières protègent la colonie. N'importe qui pourrait venir à bout d'une ouvrière seule, mais il est rare d'en trouver des spécimens isolés. En effet, les ouvrières se déplacent habituellement en groupes d'environ dix membres. La seule défense offerte aux individus normaux confrontés à un essaim de kikimorrhes, c'est la fuite... et encore, rien ne garantit qu'elle donne des résultats.<br><br>Les ouvrières kikimorrhes se plient aux instructions données pas les guerrières. Sur leur ordre, un groupe d'ouvrières peut se mettre à creuser des tunnels non loin d'une proie pour mettre en œuvre une attaque surprise d'envergure. Mais si vous éliminez la guerrière qui commande aux ouvrières, elles se disperseront et cesseront de creuser.<br>Les ouvrières kikimorrhes sont plus rapides et agiles que les guerrières.<br><br>Elles sont totalement immunisées contre le signe d'Axii, et lorsqu'elles creusent des tunnels, elles sont également invulnérables à tous les autres signes. En outre, elles sont résistantes au poison.<br><br>Un bon moyen d'en venir à bout consiste à utiliser le signe d'igni, ainsi que des huiles et bombes à vocation insecticide.",
+        "name": "ouvrière kikimorrhe",
+        "quote": {
+            "author": {
+                "firstname": "lavinia",
+                "lastname": "",
+                "title": "femme d'un aubergiste de Beauclair"
+            },
+            "text": "Le vieux fou est revenu tout maculé de noir et de bleu, proclamant à qui voulait l'entendre que des kikimorrhes l'avaient attaqué dans les bois. Pour qui est-ce qu'il me prend? Ses compères l'avaient un peu malmené parce qu'il avait triché au gwynt. Si ça avait été des kikimorrhes, il y serait resté... et là au moins, j'aurais la paix."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": ["golden-oriole"],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "insectoids",
+    "code": "giant-centipedes",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Giant centipedes are enormous, insect-like monsters which can be found in many places in the world, but are particularly common in the lands (or more precisely, under the lands) of Toussaint. There they often dwell in close comity with shaelmaars, for a sort of monstrous symbiosis has developed between them: giant centipedes feed on the small creatures which eat Shaelmaar dung.<br><br>Hard chitinous armor covers nearly the entire body of a giant centipede. Sticking out from under this carapace are rows of hooked limbs. Giant centipedes are able to burrow into the ground with shocking speed, only to then appear back on the surface in another place. Once they select a target, they will circle it determinedly, trying to get close enough to deliver a blow. They attack primarily with their powerful mandibles, but they also possess glands allowing them to spew acid.<br><br>The greatest obstacle when fighting giant centipedes is their thick armor, which deflects most blows not only from weapons, but also from magical means – such as those dealt by simple spells or witcher Signs.<br><br>When attacked with a weapon, they will often parry the strike, then quickly reply with their own forceful counter. Thus the best method for fighting them is to chatch them in an Yrden trap, keeping them from protecting themselves with their armor or burrowing into the ground.",
+        "name": "giant centipedes",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "\"A Visit to Toussaint,\" one of the many guides authored by Peterin Safles"
+            },
+            "text": "Among the fascinating flora and fauna of the duchy of Toussaint, one also encounters creatures of the decidedly unpleasant sort, such as giant centipedes. Not only do these beasts look hideous to the eye, they can do colossal damage to the flesh as well. I decidedly advise against them."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les scolopendromorphes sont de gigantesques créatures insectoïdes qu'on rencontre un peu partout dans le monde, mais qui prolifèrent tout particulièrement dans les terres (ou plus exactement, \"sous\" les terres) de Toussaint. Ils y cohabitent avec les shaelmaars, avec qui ils entretiennent une sorte de monstrueuse symbiose : les scolopendromorphes se nourrissent des coprophages qui dévorent les excréments des shaelmaars.<br><br>Le corps des scolopendromorphes est presque intégralement recouvert d'une carapace chitineuse extrêmement solide. Plusieurs rangées de pattes crochues dépassent de la carapace. Les scolopendromorphes peuvent s'enfouir dans le sol à une vitesse stupéfiante pour ressurgir à la surface quelque part ailleurs. Une fois qu'ils ont choisi une cible, ils décrivent des cercles autour de leur proie et frappent quand ils sont assez près. Pour attaquer, ils utilisent surtout leurs puissantes mandibules, mais ils possèdent également des glandes qui leur permettent de cracher de l'acide.<br><br>Lorsqu'on affronte des scolopendromorphes, le principal obstacle à surmonter est leur épaisse carapace, capable de repousser les assauts physiques ainsi que les attaques magiques, comme les sorts ordinaires ou les signes de sorceleur.<br><br>Attaqués avec une arme, ils pareront le coup avant de riposter tout en puissance. Le meilleur moyen d'en venir à bout consiste à les piéger avec un signe d'Yrden pour les empêcher de se lover dans leur carapace ou de s'enfouir dans le sol.",
+        "name": "scholopendromorphe",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "\"Une visite à Toussaint\", l'un des nombreux guides signés de Peterin Safles"
+            },
+            "text": "Parmi les remarquables espèces animales et végétales qu'abrite le duché de Toussaint, il en est qui sont particulièrement déplaisantes, comme scolopendromorphes. Ces créatures hideuses sont aussi les capables d'atrocement mutiler les chairs. Face à elles, l'extrême prudence est de mise."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["insectoid-oil"],
+        "potions": [],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "insectoids",
+    "code": "pale-widows",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "This rare variety of giant centipede dwells in underground lairs and owes its name to its unusual, pale white coloring. Like the more common giant centipede, its body is covered in hard chitinous armor, with numerous hooked limbs sticking out from underneath. Some scholars raise these creatures in laboratory conditions for the properties of their albumen, which makes an excellent base for the brewing of mutagenic potions.",
+        "name": "pale widow",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Account of Doctor Vittorius de la Vega after the first encounter with the Pale Widow"
+            },
+            "text": "Never have I seen such a creature! It was like a giant centipede, but white, utterly white!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Cette rare variété de scolopendromorphe vit dans des tanières souterraines et doit son nom à sa blancheur inhabituelle. Tout comme le scolopendromorphe ordinaire, son corps est recouvert d'une solide carapace chitineuse, d'où dépassent d'innombrables pattes crochues. Certains érudits élèvent ces créatures en conditions de laboratoire pour cultiver les vertus particulières de leur albumen, qui fait une base excellente pour la concoction de potions mutagènes.",
+        "name": "veuve pâle",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Témoignage du docteur Vittorius de la Vega, après sa première rencontre avec une veuve pâle"
+            },
+            "text": "Je n'avais jamais vu une créature pareille ! On aurait dit un scolopendromorphe, mais d'un blanc éclatant !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
