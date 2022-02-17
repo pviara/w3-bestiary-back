@@ -1,10 +1,13 @@
-import { IMonsterRepository } from '../application/monster-repository.interface';
+import { IMonsterRepository } from '../../application/monster-repository.interface';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, PipelineStage } from 'mongoose';
-import { Monster, MonstersByCategory } from '../domain/monster';
-import { MonsterMapper } from '../../utils/mappers/monster.mapper';
-import { MonstersByCategoryEntity, MonsterEntity } from './monster-entity';
+import { Monster, MonstersByCategory } from '../../domain/monster';
+import { MonsterMapper } from '../../../utils/mappers/monster.mapper';
+import {
+    MonstersByCategoryEntity,
+    MonsterEntity,
+} from '../entities/monster-entity';
 
 type MonsterEntitiesByLang = {
     lang: string;

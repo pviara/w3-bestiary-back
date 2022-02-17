@@ -1,5 +1,6 @@
 import {
     Body,
+    ConflictException,
     Controller,
     Get,
     NotFoundException,
@@ -7,17 +8,22 @@ import {
     Query,
     ValidationPipe,
 } from '@nestjs/common';
+import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
-import { QueryBus } from '@nestjs/cqrs';
+import { ReportTextTypoCommand } from '../application/commands/report-text-typo.handler';
 import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
+import { Typo } from '../domain/typo';
 
 @Controller()
 export class MonsterController {
-    constructor(private readonly _queryBus: QueryBus) {}
+    constructor(
+        private readonly _commandBus: CommandBus,
+        private readonly _queryBus: QueryBus,
+    ) {}
 
     @Get()
     async getMonstersByCategories(
@@ -61,6 +67,28 @@ export class MonsterController {
             );
         }
 
+        return result;
+    }
+
+    @Post('typo')
+    async reportTextTypo(
+        @Body(new ValidationPipe()) payload: ReportTextTypoPayload,
+    ): Promise<Typo> {
+        const command = new ReportTextTypoCommand(
+            payload.lang,
+            payload.monsterCode,
+            payload.typo,
+        );
+
+        const result = await this._commandBus.execute<
+            ReportTextTypoCommand,
+            Typo
+        >(command);
+        if (!result) {
+            throw new ConflictException(
+                `A typo with a similar content for monster "${command.monsterCode}" in lang "${command.lang}" has already been reported.`,
+            );
+        }
         return result;
     }
 }
