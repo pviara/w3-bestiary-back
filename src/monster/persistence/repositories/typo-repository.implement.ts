@@ -1,6 +1,6 @@
 import { InjectModel } from '@nestjs/mongoose';
 import { ITypoRepository } from '../../application/typo-repository.interface';
-import { Model } from 'mongoose';
+import { Model, PipelineStage } from 'mongoose';
 import { ReportTextTypoCommand } from '../../application/commands/report-text-typo.handler';
 import { Typo } from '../../domain/typo';
 import { TypoEntity } from '../entities/typo-entity';
@@ -22,11 +22,24 @@ export class TypoRepositoryImplement implements ITypoRepository {
         return TypoMapper.toTypo(created);
     }
 
-    findByResemblance(
+    async findByResemblance(
         lang: string,
         monsterCode: string,
         content: string,
-    ): Promise<Typo | undefined> {
-        return undefined;
+    ): Promise<Typo[] | undefined> {
+        const aggregate: PipelineStage[] = [
+            {
+                $match: {
+                    lang,
+                    monsterCode,
+                    content,
+                },
+            },
+        ];
+
+        const resemblingTypos = await this._model
+            .aggregate<TypoEntity>(aggregate)
+            .exec();
+        return TypoMapper.toTypos(resemblingTypos);
     }
 }

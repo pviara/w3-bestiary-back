@@ -11,4 +11,8 @@ export class TypoMapper {
             typoEntity.githubIssueURL,
         );
     }
+
+    static toTypos(typoEntities: TypoEntity[]): Typo[] {
+        return typoEntities.map((typoEntity) => this.toTypo(typoEntity));
+    }
 }
