@@ -6,6 +6,7 @@ import {
     NotFoundException,
     Post,
     Query,
+    UnprocessableEntityException,
     ValidationPipe,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
@@ -85,9 +86,8 @@ export class MonsterController {
             Typo
         >(command);
         if (!result) {
-            throw new ConflictException(
-                `A typo with a similar content for monster "${command.monsterCode}" in lang "${command.lang}" has already been reported.`,
-            );
+            // todo 🛠 add error handling with somekind of a Result<T> class
+            throw new UnprocessableEntityException();
         }
         return result;
     }
