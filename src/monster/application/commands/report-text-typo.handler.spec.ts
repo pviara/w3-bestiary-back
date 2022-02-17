@@ -1,5 +1,5 @@
 import { createMock } from 'ts-auto-mock';
-import { ITypoRepository } from '../typo-repository.interface';
+import { ITypoRepository } from '../../application/typo-repository.interface';
 import {
     ReportTextTypoCommand,
     ReportTextTypoHandler,

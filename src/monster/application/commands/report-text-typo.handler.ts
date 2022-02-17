@@ -1,7 +1,7 @@
 import { CommandHandler, ICommand, ICommandHandler } from '@nestjs/cqrs';
 import { Inject } from '@nestjs/common';
-import { ITypoRepository } from '../typo-repository.interface';
-import { Typo } from 'src/typo/domain/typo';
+import { ITypoRepository } from '../../application/typo-repository.interface';
+import { Typo } from '../../domain/typo';
 
 export class ReportTextTypoCommand implements ICommand {
     constructor(
