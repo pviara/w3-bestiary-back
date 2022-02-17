@@ -3,6 +3,7 @@ import { IMonsterRepository } from '../monster-repository.interface';
 import { Inject } from '@nestjs/common';
 import { ITypoRepository } from '../../application/typo-repository.interface';
 import { Typo } from '../../domain/typo';
+import { MonsterTextes } from 'src/monster/domain/monster';
 
 export class ReportTextTypoCommand implements ICommand {
     constructor(
@@ -34,17 +35,10 @@ export class ReportTextTypoHandler
         }
 
         // make sure the typo in inside monster's textes
-        const monsterTextes = [
-            monster.textes.description,
-            monster.textes.name,
-            monster.textes.quote?.author.firstname,
-            monster.textes.quote?.author.lastname,
-            monster.textes.quote?.text,
-        ];
-        const hasTypoBeenFound = monsterTextes
-            .some(
-                monsterText => monsterText.includes(command.content)
-            );
+        const hasTypoBeenFound = this._findTextInMonsterTextes(
+            command.content,
+            monster.textes,
+        );
         if (!hasTypoBeenFound) {
             return null;
         }
@@ -60,5 +54,23 @@ export class ReportTextTypoHandler
         }
 
         return await this._typoRepository.create(command);
+    }
+
+    private _findTextInMonsterTextes(
+        text: string,
+        monsterTextes: MonsterTextes,
+    ) {
+        const assembledTextes = [
+            monsterTextes.description,
+            monsterTextes.name,
+            monsterTextes.quote?.author.firstname,
+            monsterTextes.quote?.author.lastname,
+            monsterTextes.quote?.author.title,
+            monsterTextes.quote?.text,
+        ];
+
+        return assembledTextes.some((monsterText) =>
+            monsterText.includes(text),
+        );
     }
 }
