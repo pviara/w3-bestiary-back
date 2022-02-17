@@ -7,5 +7,5 @@ export interface ITypoRepository {
         lang: string,
         monsterCode: string,
         content: string,
-    ): Promise<Typo | undefined>;
+    ): Promise<Typo[] | undefined>;
 }
