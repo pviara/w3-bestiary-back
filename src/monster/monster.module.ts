@@ -21,6 +21,11 @@ const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
         MongooseModule.forFeature([{ name: 'Monster', schema: monsterSchema }]),
         MongooseModule.forFeature([{ name: 'Typo', schema: typoSchema }]),
     ],
-    providers: [MonsterRepoProvider, ...commandHandlers, ...queryHandlers, TypoRepoProvider],
+    providers: [
+        MonsterRepoProvider,
+        ...commandHandlers,
+        ...queryHandlers,
+        TypoRepoProvider,
+    ],
 })
 export class MonsterModule {}
