@@ -49,7 +49,7 @@ export class ReportTextTypoHandler
                 command.monsterCode,
                 command.content,
             );
-        if (existingSimilarTypo) {
+        if (existingSimilarTypo.length > 0) {
             return null;
         }
 
