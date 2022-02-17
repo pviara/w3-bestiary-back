@@ -1,4 +1,4 @@
-import { ReportTextTypoCommand } from './commands/report-text-typo.handler';
+import { ReportTextTypoCommand } from '../../monster/application/commands/report-text-typo.handler';
 import { Typo } from '../domain/typo';
 
 export interface ITypoRepository {

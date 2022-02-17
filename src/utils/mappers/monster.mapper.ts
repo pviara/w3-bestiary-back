@@ -12,7 +12,7 @@ import {
     MonsterByCategoryEntity,
     MonsterEntity,
     MonstersByCategoryEntity,
-} from '../../monster/persistence/monster-entity';
+} from '../../monster/persistence/entities/monster-entity';
 
 export class MonsterMapper {
     static toMonster(monsterEntity: MonsterEntity): Monster {
