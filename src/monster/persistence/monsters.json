@@ -1909,7 +1909,7 @@
     "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "It is unknown how exactly it is kikimores communicate with each other. Autopsies are hampered by the high toxicity of their subjects. Scholars have established that kikimores do not seem to possess any detectable auricles. One amateur researcher, Count di Salvaress, put forth a theory in his treatise "A Microscope Among Monsters" suggesting kikimores have a highly developed sense of smell and use airborne particles undetectable to humans to transmit information. This theory has yet to be proved or disproved.<br><br>Kikimore warriors defend their nests from attackers. They attack somewhat slower than kikimore workers. They are able to spew streams of caustic venom a great distance and leap to attack. This venom is highly unique in that it reacts with a witcher's body to raise the level of his potion toxicity. They are covered with thick, hard armor which easily deflects blows from even the sharpest sword.<br><br>Kikimore warriors are protected by swarms of workers which obey their orders until they are themselves eradicated.<br><br>They are completely immune to the effects of the Axii Sign, but vulnerable to Igni, oils and bombs harming insectoids and blows dealt by a silver sword.",
+        "description": "It is unknown how exactly it is kikimores communicate with each other. Autopsies are hampered by the high toxicity of their subjects. Scholars have established that kikimores do not seem to possess any detectable auricles. One amateur researcher, Count di Salvaress, put forth a theory in his treatise \"A Microscope Among Monsters\" suggesting kikimores have a highly developed sense of smell and use airborne particles undetectable to humans to transmit information. This theory has yet to be proved or disproved.<br><br>Kikimore warriors defend their nests from attackers. They attack somewhat slower than kikimore workers. They are able to spew streams of caustic venom a great distance and leap to attack. This venom is highly unique in that it reacts with a witcher's body to raise the level of his potion toxicity. They are covered with thick, hard armor which easily deflects blows from even the sharpest sword.<br><br>Kikimore warriors are protected by swarms of workers which obey their orders until they are themselves eradicated.<br><br>They are completely immune to the effects of the Axii Sign, but vulnerable to Igni, oils and bombs harming insectoids and blows dealt by a silver sword.",
         "name": "kikimore warrior",
         "quote": {
             "author": {
@@ -1922,7 +1922,7 @@
     },
     {
         "lang": "FR",
-        "description": "On ignore comment les kikimorrhes s'y prennent pour communiquer entre elles. L'extrême toxicité des sujets autopsiés compromet les recherches. Les érudits ont déterminé que les kikimorrhes ne possédaient pas d'organe auriculaire apparent. Dans son traité, "Un microscope parmi les monstres", le comte di Salvaress, chercheur amateur de son état, a formulé la théorie selon laquelle les kikimorrhes posséderaient un odorat particulièrement développé et qu'elles utiliseraient des particules aériennes indétectables à l'œil humain pour communiquer entre elles. Cette théorie reste encore à confirmer.<br><br>Les guerrières kikimorrhes défendent leurs nids contre les assaillants. Elles attaquent un peu plus lentement que les ouvrières kikimorrhes. Elles peuvent cracher des jets de venin caustique à une grande distance et bondir pour attaquer. Ce venin est unique dans la mesure où il réagit avec le corps des sorceleurs pour augmenter leur intoxication. Elles sont couvertes d'une épaisse et solide armure, qui dévie facilement les coups, même ceux des épées les mieux aiguisées.",
+        "description": "On ignore comment les kikimorrhes s'y prennent pour communiquer entre elles. L'extrême toxicité des sujets autopsiés compromet les recherches. Les érudits ont déterminé que les kikimorrhes ne possédaient pas d'organe auriculaire apparent. Dans son traité, \"Un microscope parmi les monstres\", le comte di Salvaress, chercheur amateur de son état, a formulé la théorie selon laquelle les kikimorrhes posséderaient un odorat particulièrement développé et qu'elles utiliseraient des particules aériennes indétectables à l'œil humain pour communiquer entre elles. Cette théorie reste encore à confirmer.<br><br>Les guerrières kikimorrhes défendent leurs nids contre les assaillants. Elles attaquent un peu plus lentement que les ouvrières kikimorrhes. Elles peuvent cracher des jets de venin caustique à une grande distance et bondir pour attaquer. Ce venin est unique dans la mesure où il réagit avec le corps des sorceleurs pour augmenter leur intoxication. Elles sont couvertes d'une épaisse et solide armure, qui dévie facilement les coups, même ceux des épées les mieux aiguisées.",
         "name": "guerrière kikimorrhe",
         "quote": {
             "author": {
@@ -2052,7 +2052,7 @@
 },
 {
     "category": "insectoids",
-    "code": "pale-widows",
+    "code": "pale-widow",
     "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
