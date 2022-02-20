@@ -44,7 +44,7 @@ export class ReportTextTypoHandler
         }
 
         const existingSimilarTypo =
-            await this._typoRepository.findByResemblance(
+            await this._typoRepository.findByExactMatch(
                 command.lang,
                 command.monsterCode,
                 command.content,

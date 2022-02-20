@@ -3,9 +3,9 @@ import { Typo } from '../domain/typo';
 
 export interface ITypoRepository {
     create(command: ReportTextTypoCommand): Promise<Typo>;
-    findByResemblance(
+    findByExactMatch(
         lang: string,
         monsterCode: string,
         content: string,
-    ): Promise<Typo[] | undefined>;
+    ): Promise<Typo[]>;
 }
