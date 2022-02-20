@@ -22,11 +22,11 @@ export class TypoRepositoryImplement implements ITypoRepository {
         return TypoMapper.toTypo(created);
     }
 
-    async findByResemblance(
+    async findByExactMatch(
         lang: string,
         monsterCode: string,
         content: string,
-    ): Promise<Typo[] | undefined> {
+    ): Promise<Typo[]> {
         const aggregate: PipelineStage[] = [
             {
                 $match: {
