@@ -43,12 +43,11 @@ export class ReportTextTypoHandler
             return null;
         }
 
-        const existingSimilarTypo =
-            await this._typoRepository.findByExactMatch(
-                command.lang,
-                command.monsterCode,
-                command.content,
-            );
+        const existingSimilarTypo = await this._typoRepository.findByExactMatch(
+            command.lang,
+            command.monsterCode,
+            command.content,
+        );
         if (existingSimilarTypo.length > 0) {
             return null;
         }
