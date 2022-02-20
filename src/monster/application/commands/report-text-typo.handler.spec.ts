@@ -1,4 +1,5 @@
 import { createMock } from 'ts-auto-mock';
+import { GitHubService } from '../../../github/application/github.service';
 import { IMonsterRepository } from '../monster-repository.interface';
 import { ITypoRepository } from '../../application/typo-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
@@ -15,6 +16,7 @@ describe('ReportTextTypoHandler', () => {
 
     let monsterRepositoryMock: IMonsterRepository;
     let typoRepositoryMock: ITypoRepository;
+    let gitHubServiceMock: GitHubService;
 
     const monsterMock = {
         category: '',
@@ -42,6 +44,7 @@ describe('ReportTextTypoHandler', () => {
     beforeEach(() => {
         monsterRepositoryMock = createMock<IMonsterRepository>();
         typoRepositoryMock = createMock<ITypoRepository>();
+        gitHubServiceMock = createMock<GitHubService>();
 
         const monsterGetByCode = On(monsterRepositoryMock).get(
             method('getByCode'),
@@ -53,6 +56,7 @@ describe('ReportTextTypoHandler', () => {
         sut = new ReportTextTypoHandler(
             monsterRepositoryMock,
             typoRepositoryMock,
+            gitHubServiceMock,
         );
     });
 
