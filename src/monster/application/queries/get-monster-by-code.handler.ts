@@ -14,7 +14,7 @@ export class GetMonsterByCodeHandler
 {
     constructor(
         private readonly _githubService: GitHubService,
-        
+
         @Inject('MonsterRepo')
         private readonly _monsterRepository: IMonsterRepository,
     ) {}

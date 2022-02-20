@@ -1,5 +1,9 @@
 import { ConfigService } from '@nestjs/config';
-import { Configuration, DatabaseConfiguration, GitHubConfiguration } from './configuration';
+import {
+    Configuration,
+    DatabaseConfiguration,
+    GitHubConfiguration,
+} from './configuration';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
@@ -20,7 +24,7 @@ export class ConfigurationService {
 
         this._configuration.gitHub.GITHUB_REPO =
             this._configService.get<string>('GITHUB_REPO');
-        
+
         this._configuration.database.MONGODB_URI =
             this._configService.get<string>('MONGODB_URI');
 
