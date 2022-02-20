@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { ConfigurationService } from 'src/infrastructure/configuration/configuration.service';
+import { ConfigurationService } from '../../infrastructure/configuration/configuration.service';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
