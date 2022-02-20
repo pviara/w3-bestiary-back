@@ -1,4 +1,5 @@
 import { CommandHandler, ICommand, ICommandHandler } from '@nestjs/cqrs';
+import { GitHubService } from '../../../github/application/github.service';
 import { IMonsterRepository } from '../monster-repository.interface';
 import { Inject } from '@nestjs/common';
 import { ITypoRepository } from '../../application/typo-repository.interface';
@@ -23,6 +24,8 @@ export class ReportTextTypoHandler
 
         @Inject('TypoRepo')
         private readonly _typoRepository: ITypoRepository,
+
+        private readonly _githubService: GitHubService,
     ) {}
 
     async execute(command: ReportTextTypoCommand): Promise<Typo | null> {
