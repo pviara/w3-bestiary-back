@@ -1,7 +1,6 @@
 import { CqrsModule } from '@nestjs/cqrs';
 import { GetMonstersByCategoriesHandler } from './application/queries/get-monsters-by-category.handler';
 import { GetMonsterByCodeHandler } from './application/queries/get-monster-by-code.handler';
-import { GitHubModule } from 'src/github/github.module';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MonsterController } from './presentation/monster.controller';
@@ -19,7 +18,6 @@ const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
     exports: [],
     imports: [
         CqrsModule,
-        GitHubModule,
         MongooseModule.forFeature([{ name: 'Monster', schema: monsterSchema }]),
         MongooseModule.forFeature([{ name: 'Typo', schema: typoSchema }]),
     ],
