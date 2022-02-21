@@ -8,7 +8,6 @@ export class TypoMapper {
             typoEntity.lang,
             typoEntity.monsterCode,
             typoEntity.content,
-            typoEntity.githubIssueURL,
         );
     }
 

@@ -4,6 +4,5 @@ export class Typo {
         readonly lang: string,
         readonly monsterCode: string,
         readonly content: string,
-        readonly githubIssueURL?: string,
     ) {}
 }

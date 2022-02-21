@@ -25,12 +25,6 @@ export class TypoDocument {
         type: String,
     })
     content: string;
-
-    @Prop({
-        required: false,
-        type: String,
-    })
-    githubIssueURL?: string;
 }
 
 export type TypoEntity = TypoDocument & Document;
