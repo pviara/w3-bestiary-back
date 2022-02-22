@@ -2082,225 +2082,225 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["insectoid-oil"],
+        "potions": [],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "necrophages",
+    "code": "abaya",
+    "textes": [{
+        "lang": "EN",
+        "description": "The bay below Kaer Trolde had a pernicious reputation. At times fishermen who chose to cast their nets in its waters would never come home again. Something would drag oarsmen off their longships or knock the ships themselves over. The locals blamed this on sea devils - the Skelligers' name for drowners. The truth, however, proved far worse.<br><br>A water hag had made her lair in the caves beneath the cliffs of Kjerag. An old and experienced water hag. With powerful claws able to demolish any attempt to block or parry. And the ability to blind opponents from a distance, then strike with a lightning-quick counterattack. Signs would be needed to best her - Yrden, to slow her, and Quen, to protect from her blows. Needed most of all, however, would be a great deal of luck.<br><br>The witcher, though, never was one to count on luck alone. Instead, he pulled a few tricks from up his sleeve to even the odds. By masking his scent, he managed to catch the monster by surprise... and slay it.",
+        "name": "abaya",
+        "quote": {
+            "author": {
+                "firstname": "bjord",
+                "lastname": "",
+                "title": "Kaer Trolde shipbuilder"
+            },
+            "text": "Seen a lot o' ugly critters in me life - morays, lampreys, blobfish... But never nothin' like this!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "La baie de Kaer Trolde jouissait d'une bien mauvaise réputation. Les pêcheurs qui jetaient leurs filets dans ses eaux disparaissaient parfois sans laisser de trace. Des rameurs se faisaient happer sur leurs drakkars, quand ces derniers n'étaient pas tout simplement renversés. Les villageois y voyaient l'œeuvre de noyeurs, mais la vérité était tout autre... et bien plus sombre encore.<br><br>Dans les cavernes des Hauts de Kjerag vivait en effet une guenaude aquatique particulièrement retorse, dont les redoutables griffes rendaient vain tout espoir de parade. Après avoir aveuglé ses adversaires à distance, la créature passait à l'attaque avec une vivacité fulgurante. Afin d'en venir à bout, l'utilisation des signes serait de rigueur : Yrden pour la ralentir et Quen pour se protéger de ses coups. Mais l'atout essentiel de ce combat serait sans conteste une belle dose de chance.<br><br>Cependant, le sorceleur n'avait jamais été du genre à compter uniquement sur la chance. Il avait plus d'un tour dans son sac et, en masquant son odeur, il parvint à surprendre la cruelle créature et la tua sans coup férir.",
+        "name": "abaya",
+        "quote": {
+            "author": {
+                "firstname": "Bjorg",
+                "lastname": "",
+                "title": "charpentier de marine de Kaer Trolde"
+            },
+            "text": "J'ai vu mon lot de saletés dans ma chienne de vie : murènes, lamproies, lottes... Mais rien d'aussi affreux !"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["northern-wind"],
+        "oils": ["necrophage-oil"],
+        "potions": [],
+        "signs": ["quen", "igni"]
+    }
+},
+{
+    "category": "necrophages",
+    "code": "ghoul",
+    "textes": [{
+        "lang": "EN",
+        "description": "Ghouls and graveirs are hard to describe. In part, they resemble humans - yet on the whole, they are the utter negation of all that is human. Though they have arms and legs like men, they walk on all fours like dogs or badgers. Though they have eerily familiar faces, one searches them in vain for any sign of sentiment, reason or even a spark of consciousness. They are driven by one thing and one thing only: an insatiable craving for human flesh.<br><br>Ghouls and their more dangerous cousins, graveirs, usually feed in small groups, at times led by an alghoul. Since they delight most in the taste of fresh carcasses, they appear wherever newly-dug graves are to be found: cemeteries, crypts, catacombs and battlefields. Whenever the opportunity arises they hunt the living as well, especially when they have strength in numbers.<br><br>In a one-on-one fight with a trained witcher, a ghoul poses little threat, but one must remember that wounded individuals can erupt in a mad frenzy. At such times they attack fiercely, paying no heed to their own safety and brushing off all wounds. One must likewise bear in mind that ghouls and graveirs are particular dangerous around dusk and at night.",
+        "name": "ghoul",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Children's rhyme"
+            },
+            "text": "Ghouls creep and crawl at night<br>Eating everything in sight<br>In a snap they'd eat you, too<br>Chop you up for a ghoulish stew!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Il est difficile de décrire correctement une goule ou un graveir. En dépit de leur apparence quasi humaine, ces deux créatures représentent la négation même de toute humanité. Bien qu'elles aient des bras et des jambes, elles se déplacent à quatre pattes. Leur visage affreusement humain ne montre jamais la moindre émotion, ni le moindre signe de conscience. Leur unique source de motivation est leur insatiable appétit de chair humaine.<br><br>La goule, ainsi que son cousin le graveir, se déplacent en petits groupes parfois menés par une algoule. Ces nécrophages sont naturellement attirés par les cimetières, les cryptes, les catacombes et les champs de bataille, partout où les cadavres abondent. Par ailleurs, lorsque l'occasion se présente, les goules n'hésitent pas à s'en prendre à des individus isolés.<br><br>En combat singulier, une goule ne représente pas une menace sérieuse pour un sorceleur aguerri, mais il faut cependant rappeler qu'une goule blessée plonge parfois dans une frénésie sanguinaire qui la pousse à attaquer au mépris du danger. Sans oublier que les goules et autres graveirs sont particulièrement dangereux au crépuscule et de nuit.",
+        "name": "goule",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Comptine"
+            },
+            "text": "Les goules rampent dans la nuit, rampent rampent sous les lits, elles mangent les petits enfants, les gentils et les méchants."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["necrophage-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "necrophages",
+    "code": "water-hag",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Some tales mention water hags and swamp bints masquerading as lost old women to lure travelers back to the rickety shacks they build in the wetlands. In truth, only a blind man, or a sighted man blinded with drink, could mistake the rank sludge and rotting carrion of a water hag's den for a cozy cottage, and the hideous hag herself for an innocent grandmother. Their wrinkled, wart-covered bodies stand nearly two yards tall, with skin the color of a long-dead cadaver and stinking of muck and fish. Bony growths two spans long stick out from their backs, with hair like a tangle of seaweed and claws that would make a werewolf proud completing the picture.",
+        "name": "water hag",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
+                "firstname": "shemhel of",
+                "lastname": "dregsdon",
                 "title": ""
             },
-            "text": ""
+            "text": "Folk say water hags are drowner's wives. If that be true, 'tain't no wonder why they're such ornery bitches."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "De nombreuses légendes relatent l'histoire tragique de malheureux voyageurs piégés par une guenaude aquatique ou une ribaude des marais dissimulée sous les traits d'une vieille femme inoffensive. En vérité, seul un fou entrerait de son plein gré dans l'antre infâme d'une guenaude et même un aveugle ne se laisserait pas duper par l'odeur immonde de poisson pourri émanant de ces créatures couvertes de verrues, ridées des pieds à la tête et hautes de près de deux mètres. Des excroissances osseuses de près de cinquante centimètres poussent dans leur dos, leurs cheveux ressemblent à un amas d'algues humides et leurs griffes n'ont rien à envier à celles d'un loup-garou.",
+        "name": "guenaude aquatique",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
+                "firstname": "shemhel de",
+                "lastname": "dregsdon",
                 "title": ""
             },
-            "text": ""
+            "text": "Paraîtrait que les guenaudes aquatiques sont les femmes des noyeurs. Je sais pas si c'est vrai, mais ça expliquerait pourquoi c'est des mal-baisées."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["northern-wind"],
+        "oils": ["necrophage-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["quen", "igni"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "necrophages",
+    "code": "grave-hag",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Few monsters' names fit as well as the grave hags'. As one might guess, these creatures resemble aged, deformed women and loiter near graveyards and battlefields. Grave hags feed on human corpses and in particular on the rotten marrow which they slurp from human bones using their long, prehensile tongues. Once a hag has devoured all corpses within reach, she turns to killing men and burying them in the cemetery as she waits for them to decompose.",
+        "name": "grave hag",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "jacques de",
+                "lastname": "villepin",
+                "title": "Oxenfurt Academy"
             },
-            "text": ""
+            "text": "Cremation, now that's one thing men could learn from gnomes. Burying bodies out in the fields, why, it's like laying out a welcome mat for monsters! Best case scenario, some ghouls will sniff them out, eat their fill and be on their ghoulish way. But if, gods forbid, a grave hag takes to feeding at your cemetery, you'll have no end of trouble."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "La guenaude sépulcrale, la bien nommée, ressemble à une vieillarde difforme rôdant près des cimetières et des champs de bataille. Friande de cadavres humains, elle apprécie particulièrement la moelle des os, qu'elle aspire à l'aide de ses langues préhensiles. À défaut de cadavres frais, la guenaude n'hésite pas à s'en prendre aux humains pour les enterrer et attendre que leur corps commence à se décomposer.",
+        "name": "guenaude sépulcrale",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "jacques de",
+                "lastname": "villepin",
+                "title": "académie d'Oxenfurt"
             },
-            "text": ""
+            "text": "\"En parlant de crémation, les humains seraient bien inspirés d'imiter les gnomes. Enterrer des corps, quelle idée saugrenue! Autant lancer une invitation à tous les monstres de la région. Et encore, si on n'attire que des goules, on a de la chance. Elles se rempliront la panse et iront chercher leur prochain repas un peu plus loin. En revanche, si une guenaude sépulcrale décide de faire de votre cimetière sa nouvelle cantine, c'est une autre histoire.\""
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
+        "oils": ["necrophage-oil"],
+        "potions": ["black-blood"],
+        "signs": ["yrden", "quen"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "necrophages",
+    "code": "ignis-fatuus",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "The monster haunting the peat bogs of Velen turned out to be an ancient foglet. These are exceptionally long-lived creatures - some have even dwelt on this earth for over two hundred years, growing stronger and stronger all the while. Blows dealt by foglets of such an age carry so much power blocking them is out of the question. These foglets possess the ability to move extremely quickly, and not even Yrden can slow them down. Furthermore, they can meld completely into the mist, then suddenly rematerialize to strike from behind. Wearing heavy armor or making good use of the Quen Sign is highly recommended.<br><br>This ancient foglet proved particularly adept in the art of forming illusions. Only a professional monster slayer skilled with Signs and swords could best such a foe. Luckily, Geralt fit that description.",
+        "name": "ignis Fatuus",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "leslav",
                 "lastname": "",
-                "title": ""
+                "title": "peat digger"
             },
-            "text": ""
+            "text": "Careful, sir, a monster prowls the bog. Enter the mist and ye'll never see home again!"
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Il se trouva que le monstre hantant les tourbières de Velen était un vieux brumelin. Ces créatures dotées d'une longévité exceptionnelle foulent cette terre tout en gagnant en puissance depuis plus de 200 ans. Les coups infligés par les brumelins de cet âge sont si terribles qu'il serait futile de tenter de les parer. En outre, ces brumelins se déplacent extrêmement vite, à tel point que le signe d'Yrden se révèle inefficace contre eux. Capables de se fondre totalement dans la brume, ils se matérialisent soudainement dans le dos de leur victime. Il est donc vivement recommandé de porter une armure lourde ou d'utiliser le signe de Quen.<br><br>Ce vieux brumelin était véritablement passé maître dans l'art de créer des illusions. Seul un tueur de monstres professionnel, aussi doué avec les signes qu'avec les épées, pouvait battre un adversaire aussi redoutable. Heureusement, Geralt correspondait parfaitement à cette description.",
+        "name": "ignis fatuus",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "leslav",
                 "lastname": "",
-                "title": ""
+                "title": "tourbier"
             },
-            "text": ""
+            "text": "Attention, messire, un monstre rôde dans les marais. Surtout, n'entrez pas dans le banc de brouillard!"
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["moon-dust"],
+        "oils": ["necrophage-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["quen"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "necrophages",
+    "code": "drowner",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "A drowner resembles a corpse dredged from the bottom of a pond. It is sickly blue or green in color, with slime and sludge oozing out of every pore and the acrid stench of rot wafting off of it. That is why it is often thought drowners - along with their more dangerous cousins: vodniks, mucknixers and drowned dead – arise from the bodies of those who drown in shallow water: lost travelers falling into bogs, children who swim too far from the shore or, in the case of vodniks, inebriated peasants who stumble off narrow swamp trails.<br><br>Like so many other beliefs about monsters, this one is false. While drowners do look like humans from a distance, witchers, who have the dubious pleasure of examining them from close quarters, have reported the numerous ways in which their anatomy differs from our own. Their scaly skin, gills and dorsal fins suggest drowners and their like are an entirely foreign species.<br><br>The adaptations mentioned below make drowners excellent swimmers, well-suited to the muddy waters of the ponds and lakes in which they dwell. They often cluster near human settlements, which are for them an excellent source of food.<br><br>Cowardly creatures by nature, they usually stick to eating scraps they dig out of rubbish piles and animal carcasses. Yet if a lone traveler or careless fisherman strays into their territory, they turn from scavengers to fearsome predators. They can attack with lightning speed, taking their victim by surprise and pulling him into the water to drown. If not particularly hungry at the moment, they will keep their prey under the water for a few days, aging it until it grows deliciously tender and rotten. Drowners are particularly active at dusk and during the night, especially if the rain is falling – at such times they will even leave their watery homes and venture inland.<br><br>Drowners, mucknixers, vodniks and drowned dead all live in putrid, rotting filth, and so have developed a high resistance to poison. Though humanoid in form, they are primitive creatures no more intelligent than carp or pike. That is why spells affecting the mind, the Axii Sign included, are ineffective against them. Yet they are particularly vulnerable to magic drawn from the element of fire, including the Igni Sign.",
+        "name": "drowner",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "yanneck of",
+                "lastname": "blaviken",
+                "title": "fisherman"
             },
-            "text": ""
+            "text": "When at the water's edge, you gotta be quiet. First of all, so as not to scare the fish. Second – so you don't attract drowners."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Un noyeur ressemble à un cadavre humain ayant longtemps séjourné au fond de l'eau. Boue et vase sortent par tous les pores de sa peau bleuâtre ou verdâtre et il émane de lui une odeur âcre de chair pourrie. Pour cette raison, la croyance populaire veut que le noyeur (ainsi que ses sinistres cousins : vodnik, fangeux et noyadé) naisse des cadavres noyés en eau peu profonde voyageur perdu tombant dans une tourbière, enfant emporté par le courant ou, dans le cas du vodnik, paysan éméché égaré dans les marais.<br><br>Comme la plupart de ces croyances, celle-ci est fausse : en dépit de son apparence humanoïde, le noyeur possède une anatomie différente de la nôtre, comme peuvent en attester tous les sorceleurs ayant eu le privilège peu enviable d'en examiner un de près. Sa peau écailleuse, ses branchies et ses nageoires indiquent que le noyeur appartient à une espèce bien distincte.<br><br>Ces caractéristiques physiques font du noyeur un excellent nageur, parfaitement adapté aux mares et aux marécages dans lesquels il évolue. Il installe souvent son antre à proximité des habitations humaines, qui lui procurent une source de nourriture régulière.<br><br>De nature craintive, il se contente généralement de restes et de carcasses d'animaux, mais ne dédaigne pas le voyageur isolé ou le pêcheur imprudent occasionnel. Il attaque alors avec une vitesse stupéfiante pour entraîner sa victime dans l'eau et la noyer. Le plus souvent, il laisse macérer sa malheureuse victime pendant plusieurs jours pour attendrir sa chair. Le noyeur est surtout actif au crépuscule et la nuit (surtout s'il pleut), heures durant lesquelles il peut s'éloigner de son terrier aquatique pour s'aventurer dans les terres.<br><br>Noyeurs, fangeux, vodniks et noyadés vivent tous dans un environnement putride et ont développé une résistance naturelle aux toxines et au poison. En dépit de leur forme humanoïde, aucune de ces créatures n'est plus intelligente qu'une carpe ou qu'un brochet. Les sorts affectant l'esprit, signe d'Axii inclus, sont donc inefficaces contre elles. En revanche, elles sont particulièrement vulnérables au signe d'Igni et à la magie du feu en général.",
+        "name": "noyeur",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "yannick de",
+                "lastname": "blaviken",
+                "title": "pêcheur"
             },
-            "text": ""
+            "text": "À la pêche, la première règle c'est de pas faire un bruit. D'abord pour pas effrayer les poissons... mais surtout, pour pas attirer des noyeurs."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["necrophage-oil"],
         "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
+        "signs": ["igni"]
     }
 },
 {
