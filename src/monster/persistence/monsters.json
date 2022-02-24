@@ -2304,145 +2304,147 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "necrophages",
+    "code": "spotted-wight",
+    "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Spotted wights were a subspecies of wight which the witchers drove to extinction. They were larger than their unspotted kin and owed their names to their numerous blotches and effusions. Spotted wights would most often dwell in derelict cemeteries and empty wildernesses, yet at times took to living in abandoned human domiciles. There they would indulge in their greatest passion: creating brews from their own emissions.<br><br>When not disturbed, spotted wights would not act aggressively. If threatened, however, they became very dangerous indeed. In the colder months or when faced with an unseasonable chill, they would slip into a state of lethargy, making them easy targets. Even during their active periods, it is said the witchers found a surefire way of besting them, based around careful casting of the Yrden Sign – or at least, so claims witcher lore...<br>Whenever on the one hand witchers swear they have driven a certain species of monster into extinction and one[sic] the other someone claims to have seen a member of that species walking around in apparent health, most likely we are dealing with a curse. This rule of thumb showed its worth with the spotted wight from the Trastamara estate. It turned out this creature was in fact a woman transformed into a monster by a curse many years prior, as punishment for refusing food and shelter to a wandering beggar.",
+        "name": "spotted wight",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "fragment of a treatise on spotted wights by Roderick Giligan"
             },
-            "text": ""
+            "text": "The best defense against spotted wights? Stay calm and leave them alone."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les nécrophages tachetés sont une sous-espèce de nécrophage que les sorceleurs ont pratiquement anéantie. Plus grands que leurs congénères à la peau uniforme, ils doivent leur nom aux taches et autres naevus dont ils sont constellés. Les nécrophages tachetés sévissent principalement dans les cimetières délabrés et les régions sauvages dépeuplées, mais il leur prend parfois d'habiter des demeures humaines abandonnées. Leur plus grande passion, c'est de concocter diverses mixtures à partir de leurs propres sécrétions. Si on ne les dérange pas, ils ne manifestent guère d'agressivité. Par contre, s'ils se sentent menacés, la donne est tout autre. Quand la température chute, ils plongent souvent dans un état léthargique. On prétend que les sorceleurs ont découvert le moyen de les vaincre à coup sûr : ainsi, il conviendrait d'utiliser le signe d'Yrden. Du moins, c'est ce que prescrit la tradition des sorceleurs...<br><br>Si quelqu'un soutient avoir aperçu un spécimen de cette espèce déambuler en parfaite santé alors que les sorceleurs jurent avoir exterminé ladite espèce, c'est manifestement qu'il s'agit d'une malédiction. Ce postulat a démontré toute sa validité avec le nécrophage tacheté du domaine Trastamara. La créature était en fait une femme transformée en monstre plusieurs années auparavant, en guise de châtiment pour avoir refusé le gîte et le couvert à un vagabond.",
+        "name": "nécrophage tacheté",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Extrait d'un traité sur les nécrophages tachetés, par Roderick Giligan"
             },
-            "text": ""
+            "text": "Nos meilleures armes contre les nécrophages tachetés sont le calme et le silence."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["necrophage-oil"],
+        "potions": [],
+        "signs": ["igni", "yrden"]
+    }
+},
+{
+    "category": "necrophages",
+    "code": "wight",
+    "textes": [{
+        "lang": "EN",
+        "description": "Though wights are ghastly and threatening in appearance, one should not approach them with sword drawn or attack them unprovoked. Left alone, they present no serious danger to anyone and are far more interested in mixing noxious brews in cauldrons than in fighting. This species mainly lives around ancient burial sites, though they have also been spotted near more recently-founded cemeteries and wherever mass graves can be found.<br><br>Wights spend the winter months in a state of lethargy very similar to human sleep. They live strictly solitary lives -- in fact, it is practically unheard of for these creatures to appear in groups. Yet when they fear their territory is threatened (and it is enough for one to step foot in a wight's territory for it to feel threatened), wights transform into dangerous foes and even abandon their solitary ways to summon other monsters to their aid.<br><br>It is a certainty that if a wight finds itself in danger, it will immediately spew out an ectoplasmic solution which near instantaneously transforms into barghests. These beasts obey the wight and attack anyone it deems a foe. If one of them is killed, the wight tries to replace it at once.<br><br>The best strategy when fighting such a wight is to take out the monsters guarding it with the Axii sign before attacking the wight itself. Wights are resistant to poison, but vulnerable to silver.",
+        "name": "wight",
+        "quote": {
+            "author": {
+                "firstname": "heinrich",
+                "lastname": "von Grott",
+                "title": ""
+            },
+            "text": "They say the dead like quiet. I don't know about the dead, but wights certainly do."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Malgré leur aspect peu engageant, les nécrophages ne sont pas agressifs par nature. Seuls, ils ne présentent aucun réel danger pour quiconque. La plupart du temps, ils sont bien plus soucieux de concocter leurs mixtures que de combattre. Ces créatures vivent principalement dans d'anciens sites funéraires, mais on les aurait aussi aperçues non loin de cimetières ou charniers plus récents. Les nécrophages hivernent dans un état léthargique très comparable au sommeil humain. Leur existence est strictement solitaire. Nul n'a jamais observé ces créatures se réunir en groupes. Néanmoins, lorsqu'ils jugent leur territoire menacé (et il suffit qu'un intrus y mette les pieds pour qu'ils s'estiment en danger), les nécrophages deviennent des adversaires redoutables. Ils renoncent alors à leurs habitudes solitaires pour convoquer d'autres monstres à leur secours.<br>Menacé, un nécrophage expulsera une solution ectoplasmique qui se changera presque immédiatement en barghests. Ceux-ci obéiront au nécrophage et s'en prendront à tout ennemi qu'il aura désigné. Si l'un des barghests est tué, le nécrophage tentera aussitôt de le remplacer par un autre allié.<br><br>Face à une telle opposition, la meilleure stratégie consiste à attaquer le nécrophage en premier, puis à éliminer les monstres qui l'accompagnent à l'aide du signe d'Axii. Les nécrophages résistent au poison, mais sont vulnérables à l'argent.",
+        "name": "nécrophage",
+        "quote": {
+            "author": {
+                "firstname": "heinrich",
+                "lastname": "von Grott",
+                "title": ""
+            },
+            "text": "On dit que les morts apprécient le calme. Peut-être bien. Mais pour les nécrophages, c'est une certitude."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["necrophage-oil"],
+        "potions": [],
+        "signs": ["axii"]
+    }
+},
+{
+    "category": "necrophages",
+    "code": "scurver",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Scurvers are rotfiends' larger cousins. The bodies of these hideous, vaguely humanoid creatures are covered with rotten scraps of flesh, under which lurk even more rotten muscles stretched around a strong, flexible skeleton. Scurvers, which feed on old, rotting corpses, prefer to make their hunting grounds in abandoned torture sites, forgotten graveyards and old battlefields. They are very aggressive and, though they feed on corpses, if they come across a living person they are likely to attack. Thus when wandering near any of the above-mentioned places, one must be especially cautious.<br><br>Scurvers usually feed underground, but sometimes, when they catch the scent of a human, they crawl to the surface in a matter of seconds and attack their potential prey.<br><br>While fighting them one cannot afford to forget about their special boney spines, razor-sharp protuberances sticking out from their skeletons. When a scurver is near death, the gasses and enzymes gathered within its body cause it to explode, flinging these spines out at great speed, turning them into one last deadly weapon in their arsenal.<br><br>To protect oneself against damage from these spines, one should make prodigious use of the Quen Sign.",
+        "name": "scurver",
+        "quote": {
+            "author": {
+                "firstname": "thibaut from",
+                "lastname": "Beauclair",
+                "title": ""
+            },
+            "text": "Thought it was just a pile of rotten meat - till it started to move!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les piqueteurs sont les cousins plus massifs des putréfacteurs. Le corps de ces presqu'humanoïdes répugnants est recouvert de lambeaux de chair décomposée, sous lesquels sont enfouis des muscles encore plus dégradés qui enveloppent un squelette aussi robuste que souple. Les piqueteurs se repaissent de vieux cadavres putréfiés. Ils chassent dans les sites de torture abandonnés, les vieux cimetières et les anciens champs de bataille. Ils sont très agressifs, et bien que charognards par nature, ils ne dédaigneront pas une proie plus vivace. Si vous vous aventurez à proximité de leurs terrains de chasse, sachez à quoi vous attendre.<br><br>D'ordinaire, les piqueteurs se nourrissent sous la terre, mais s'ils flairent l'odeur d'un humain, ils se hissent à la surface en l'espace de quelques secondes et attaquent leur proie en puissance.<br><br>Si vous les affrontez, méfiez-vous des protubérances osseuses, tranchantes comme des rasoirs, dont leur corps est hérissé. Quand un piqueteur est près de mourir, les gaz et les enzymes accumulés dans son corps explosent, ce qui propulse ces dards alentour à très grande vitesse : l'ultime carte de son arsenal.<br><br>Pour vous protéger des dégâts occasionnés, utilisez le signe de Quen à bon escient.",
+        "name": "piqueteur",
+        "quote": {
+            "author": {
+                "firstname": "thibaut de",
+                "lastname": "Beauclair",
+                "title": ""
+            },
+            "text": "Je croyais que ce n'était qu'un tas de viande gâtée... jusqu'à ce que ça se mette à bouger !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["necrophage-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "necrophages",
+    "code": "rotfiend",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Rotfiends resemble decomposing human bodies that have been stripped of their skin. Their presence is given away by the overwhelming stench of the rot which gives them their name. Devourers are a particularly dangerous kind of rotfiend marked by an insatiable appetite for human flesh.<br><br>Rotfiends and devourers were once rarities, but in the present age of constant warfare and violence they have become a veritable plague, particularly around battlefields and in disease-stricken areas. Though they feed mainly on carrion, they will at times attack the living. They usually feed in large groups and thus present a danger to lone travelers – especially considering their speed, which is more than a match for a horse at full gallop.<br><br>The rotfiend's decomposing body is filled with gasses which are poisonous even to those who, like witchers, are immune to most other toxins. These emissions are also highly flammable, meaning any spark, not to mention a carelessly-cast Igni sign, can lead to an explosion. This is particularly likely after a rotfiend dies, when its body thrashes around in uncontrollable tremors.<br><br>Rotfiends and devourers feed in the twilight hours and at night, when they become much more dangerous than during the day.",
+        "name": "rotfiend",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "vesemir",
                 "lastname": "",
-                "title": ""
+                "title": "witcher of the Wolf School"
             },
-            "text": ""
+            "text": "Course it reeks. Think they're called rotfiends because they smell like roses?"
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Le putréfacteur ressemble à un cadavre écorché en décomposition et doit son nom à l'atroce puanteur qu'il dégage. Parmi les différents types de putréfacteurs, le dévoreur est sans doute le plus dangereux et apprécie tout particulièrement la chair humaine.<br><br>Autrefois rares, putréfacteurs et dévoreurs prolifèrent aujourd'hui autour des nombreux champs de bataille et des zones frappées par la maladie. Nécrophages par nature, ils peuvent néanmoins s'en prendre aux êtres vivants. Ils se déplacent en groupe et les voyageurs isolés sont pour eux des proies faciles, d'autant plus qu'ils sont parfaitement capables de rattraper un cheval au galop.<br><br>Le corps en décomposition d'un putréfacteur est rempli de gaz toxiques (même pour un sorceleur) et inflammables. Une simple étincelle ou un signe d'Igni lancé à la hâte peuvent provoquer une explosion, surtout au moment de la mort du putréfacteur, dont le corps est alors pris de soubresauts incontrôlables.<br><br>Putréfacteurs et dévoreurs chassent du crépuscule à l'aube, c'est pourquoi ils sont bien plus dangereux à ces heures qu'en plein jour.",
+        "name": "putréfacteur",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "vesemir",
                 "lastname": "",
-                "title": ""
+                "title": "École du Loup"
             },
-            "text": ""
+            "text": "Évidemment qu'ils empestent. Tu crois qu'on les appelle putréfacteurs parce qu'ils sentent la rose ?"
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "oils": ["necrophage-oil"],
         "potions": [],
         "signs": []
     }
