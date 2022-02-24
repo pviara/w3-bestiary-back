@@ -36,7 +36,7 @@ export class ReportTextTypoHandler
 
         // make sure the typo in inside monster's textes
         const hasTypoBeenFound = this._findTextInMonsterTextes(
-            command.content,
+            command.content.toLowerCase(),
             monster.textes,
         );
         if (!hasTypoBeenFound) {
@@ -60,12 +60,12 @@ export class ReportTextTypoHandler
         monsterTextes: MonsterTextes,
     ) {
         const assembledTextes = [
-            monsterTextes.description,
-            monsterTextes.name,
-            monsterTextes.quote?.author.firstname,
-            monsterTextes.quote?.author.lastname,
-            monsterTextes.quote?.author.title,
-            monsterTextes.quote?.text,
+            monsterTextes.description.toLowerCase(),
+            monsterTextes.name.toLowerCase(),
+            monsterTextes.quote?.author.firstname.toLowerCase(),
+            monsterTextes.quote?.author.lastname.toLowerCase(),
+            monsterTextes.quote?.author.title.toLowerCase(),
+            monsterTextes.quote?.text.toLowerCase(),
         ];
 
         return assembledTextes.some((monsterText) =>
