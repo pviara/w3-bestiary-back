@@ -2450,6 +2450,332 @@
     }
 },
 {
+    "category": "ogroids",
+    "code": "cyclop",
+    "textes": [{
+        "lang": "EN",
+        "description": "Cyclopses can easily be recognized by the single eye located in the center of their foreheads. If for some reason that is not visible, other tell-tale signs are their enormous size, incredible strength and a seething hatred for all humans.",
+        "name": "cyclop",
+        "quote": {
+            "author": {
+                "firstname": "odess",
+                "lastname": "thaka",
+                "title": "traveler. Died tragically on Spikeroog"
+            },
+            "text": "How about this... we take a big stake, sharpen its tip, jam it in the cyclops' eye – then sneak out of the cave disguised as sheep. How's that not a good idea?"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le cyclope est immédiatement reconnaissable à son cil unique situé au centre de son front. Si, pour une raison ou pour une autre, ce trait distinctif n'est pas visible, sa taille monstrueuse, son incroyable force et sa haine des humains sont autant de signes révélateurs.",
+        "name": "cyclope",
+        "quote": {
+            "author": {
+                "firstname": "odess",
+                "lastname": "thaka",
+                "title": "voyageur mort tragiquement sur Spikeroog"
+            },
+            "text": "Bon, voilà le plan... On prend un grand pieu, on affûte sa pointe, on la plante dans l'œeil du cyclope... et ensuite on sort de la caverne déguisés en moutons. Comment ça, pas une bonne idée ?"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["axii", "quen"]
+    }
+},
+{
+    "category": "ogroids",
+    "code": "golyat",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "According to legend, Golyat had once been a knight who violated his vows, for which he was punished by the Lady of the Lake. Transformed into a giant, he fled into the mountains and would only descend into the inhabited lowlands when hunger forced him to it. There's no knowing how much truth lies in that legend, yet it is incontrovertible fact that this dangerous giant gobbled up shepherds and sheep alike, and was so widely feared, governesses used him to scare children into eating their vegetables.<br><br>Though he came across as a wild, unthinking beast, Golyat used simple tools and any item could turn into a deadly weapon in his powerful hands. When fighting Geralt, Golyat wielded a millstone, making his every blow truly crushing. Luckily, Geralt already had some experience slaying giants and made quick work of Golyat as well, with the much appreciated help of three knights - Milton de Peyrac Peyran, Palmerin de Launfal and Guillaume de Launfal.",
+        "name": "golyat",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Selon la légende, Golyat était un ancien chevalier, puni par la Dame du lac pour avoir enfreint son serment. Transformé en géant, il s'enfuit dans les montagnes et ne redescendait dans les plaines habitées que quelques fois par an, lorsque la faim l'y poussait. Difficile de dire quelle part de vérité se cache dans cette légende, mais il est indéniable que ce géant dangereux tuait et dévorait les bergers et leurs moutons, et qu'il suscitait une telle peur que les gouvernantes s'en servaient pour effrayer les enfants et les obliger à manger leurs légumes.<br><br>Même si on le considérait comme une bête sauvage et stupide, Golyat utilisait des outils simples et n'importe quel objet pouvait devenir une arme mortelle entre ses mains puissantes. Golyat affronta Geralt en brandissant une meule dont chaque coup était dévastateur. Heureusement, Geralt avait déjà occis des géants et élimina aussi promptement Golyat, avec l'aide très appréciable de trois chevaliers: Milton de Peyrac-Peyran, Palmerin de Launfal et Guillaume de Launfal.",
+        "name": "golyat",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "ogroids",
+    "code": "ice-giant",
+    "textes": [{
+        "lang": "EN",
+        "description": "This powerful, primeval monster is quite possibly the last of its race. The Ice Giant resembles a man in many respects, but is blue as frost and taller than a tree. Though it seems capable of reason, all attempts to communicate with it to date have ended the same way – in a quick and painful death.",
+        "name": "ice giant",
+        "quote": {
+            "author": {
+                "firstname": "rasmund",
+                "lastname": "kvaalkje",
+                "title": "Clan Tordarroch oarsman"
+            },
+            "text": "Fled one time in my life. From the Ice Giant. And know what? I'm not a bit ashamed."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le géant de glace, monstre puissant et primitif, est sans doute le dernier représentant de son espèce. Il ressemble à un homme, mais un homme plus grand qu'un arbre à la peau bleue comme le givre. Bien qu'il semble doué de raison, toutes les tentatives de communication se sont soldées par la mort violente de l'interlocuteur.",
+        "name": "géant de glace",
+        "quote": {
+            "author": {
+                "firstname": "rasmund",
+                "lastname": "kvaalkje",
+                "title": "rameur du clan Torrdarroch"
+            },
+            "text": "De toute ma vie, je n'ai fui qu'une seule fois, devant le géant de glace. Et vous savez quoi ? Je n'en ai pas honte du tout."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "ogroids",
+    "code": "cloud-giant",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "The Cloud Giant is most likely a degenerated illusory being. He is an inhabitant of the castle in the sky in the Land of a Thousand Fables. This land was abandoned and left untended for years, during which time it began to rot, fester and degrade.<br><br>The Cloud Giant was most likely meant to be a pleasant-natured strongman who would carry the duke's young daughters on his shoulders and never grow tired. When he became degenerated and overgrown, however, he turned into a dangerous monster.<br><br>After Jack stole his goose that laid golden eggs, the Cloud Giant decided in the future anyone who climbed onto his cloud would be tossed off, without a word of warning.",
+        "name": "cloud giant",
+        "quote": {
+            "author": {
+                "firstname": "sibald \"Fang\"",
+                "lastname": "faalde",
+                "title": "shepherd from Fox Hollow"
+            },
+            "text": "Many things fall from the sky other than rain and snow. Frogs, for example... And the Cloud Giant."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le géant des nuages est très probablement une entité illusoire dégénérée. C'est un habitant du château dans le ciel, dans la Contrée des Mille Fables. Cette contrée fut désertée et laissée à l'abandon des années durant, pendant lesquelles elle dépérit lentement. Le géant des nuages était sûrement destiné à faire le gentil colosse, celui qui porterait les filles du duc sur les épaules sans jamais se lasser. Mais quand il fut gagné par la corruption, il se changea en une dangereuse créature.<br>Quand Jack lui déroba son oie aux oeufs d'or, le géant des nuages se jura de jeter dans le vide quiconque se hisserait sur son nuage, et sans autre forme de procès.",
+        "name": "géant des nuages",
+        "quote": {
+            "author": {
+                "firstname": "sibald",
+                "lastname": "faalde, dit \"Le Croc\"",
+                "title": "berger de Fosses-des-Renards"
+            },
+            "text": "La pluie et la neige ne sont point les seules à tomber du ciel. Il y a aussi les grenouilles... et le géant des nuages."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dancing-star"],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "ogroids",
+    "code": "hagubman",
+    "textes": [{
+        "lang": "EN",
+        "description": "Your average nekker is cowardly and weak and only ever attacks in groups, even then only when the group greatly outnumbers its opponents. Yet at times there will appear among them an individual who towers over the rest in terms of strength, stamina and cunning. Such nekkers are usually called warriors, though that name is misleading. Warriors fight with honor, face to face. These overgrown nekkers act more like assassins - they strike by surprise, from hiding, in the back, or when their opponent exposes himself while attacking. Luckily, like other nekkers warriors are vulnerable to all the Signs, and their blows can be easily parried or countered.<br><br>Such a monster lived near the village of Larvik on Hindarsfjall - and not even the strongest of islanders were capable of slaying it. A witcher though... A witcher's another story.",
+        "name": "hagubman",
+        "quote": {
+            "author": {
+                "firstname": "egil",
+                "lastname": "",
+                "title": "warrior from Hindarsfjall"
+            },
+            "text": "Ye or anyone ever heard of a beast settin' a wagon in the read, then waitin' in ambush? They're too ploughin' dumb for that, dammit!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le nekker moyen est une créature veule et faible qui n'attaque qu'en cas de supériorité numérique évidente. Pourtant, certains nekkers sont parfois plus forts, résistant et malins que leurs congénères. En dépit de leur surnom de \"guerrier\", ces individus agissent plutôt comme des assassins : tapis dans les ombres, ils attaquent par surprise dans le dos de leurs adversaires, ou attendent que l'ennemi ouvre sa garde pour attaquer. Par chance, à l'instar des autres nekkers, les guerriers sont vulnérables à tous les signes, et leurs coups peuvent être aisément parés ou contrés.<br><br>Un tel monstre sévissait près du village de Larvik sur Hindarsfjall. Les plus braves combattants du village ne pouvaient pas en venir à bout, mais un sorceleur en revanche... Un sorceleur est un adversaire de haute volée.",
+        "name": "hagubman",
+        "quote": {
+            "author": {
+                "firstname": "egil",
+                "lastname": "",
+                "title": "guerrier d'Hindarsfjall"
+            },
+            "text": "Déjà entendu causer d'une sale bête qui laisse un chariot sur la route pis qu'attend en embuscade ? Sont trop crétins pour ça, bon sang!"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["northern-wind"],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "ogroids",
+    "code": "nekker",
+    "textes": [{
+        "lang": "EN",
+        "description": "A lone nekker is harmless. Five are dangerous. Ten can kill even a veteran monster slayer. Particularly troublesome are the larger, stronger individuals known as warriors, as well as the rare breed of nekkers known as phoocas.<br><br>Nekkers and phoocas live in the dark woods that grow in damp, mist-filled valleys, in colonies of one to several dozen individuals. They dig deep burrows for lairs and connect them with a network of narrow tunnels. Using these passageways they are able to move at great speed within and around their colonies.<br><br>Nekkers always attack in groups and by surprise. They try to surround their prey as quickly as possible, cutting off all escape routes. Luckily their attack is for the most part disorganized, for nekkers are not gifted with great courage and individual nekkers will often hesitate before overcoming their fear and striking. When fighting them one can use this moment of hesitation to kill the braver individuals before finishing off those who remain in the back.",
+        "name": "nekker",
+        "quote": {
+            "author": {
+                "firstname": "kurt",
+                "lastname": "hammerback",
+                "title": "city guardsman in Vengerberg"
+            },
+            "text": "Take heed, gents, there's nekkers under this here bridge. If you all cross at once, without slowing or stopping, there's nothing to fear. But if your cart throws an axle and you get stuck out there... Well, close your eyes and pray to Melitele."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un nekker solitaire est inoffensif. Cinq nekkers représentent une menace sérieuse. Dix nekkers peuvent venir à bout d'un tueur de monstres expérimenté. Les guerriers nekkers, ainsi que les redoutables foucasses (plus rares), sont particulièrement dangereux.<br><br>Nekkers et foucasses vivent au cœur des bois sombres poussant dans les vallées humides et brumeuses, au sein de colonies pouvant compter jusqu'à plusieurs dizaines d'individus. Ils creusent de profonds terriers reliés entre eux par un vaste réseau d'étroits tunnels grâce auxquels ils peuvent se déplacer rapidement dans et autour de leur colonie.<br><br>Les nekkers attaquent toujours en groupe et par surprise. Ils essayent d'encercler leur proie aussi vite que possible afin de l'empêcher de fuir, puis se jettent sur elle de manière désorganisée. Les nekkers sont craintifs et un sorceleur expérimenté saura exploiter leurs nombreuses hésitations pour tuer les individus les plus dangereux avant d'achever les survivants.",
+        "name": "nekker",
+        "quote": {
+            "author": {
+                "firstname": "kurt",
+                "lastname": "hammerback",
+                "title": "garde de Vengerberg"
+            },
+            "text": "Prenez garde, messieurs, il y a des nekkers sous ce pont. Si vous traversez tous ensemble sans ralentir, vous n'avez rien à craindre, mais si par malheur l'essieu de votre chariot casse et que vous restez bloqués... Eh bien, fermez les yeux et adressez une dernière prière à Melitele."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["northern-wind"],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "ogroids",
+    "code": "wham-a-wham",
+    "textes": [{
+        "lang": "EN",
+        "description": "Rock trolls come across as dim-witted, ponderous, slow - stupid, to be frank. It's easy to dismiss them - and even easier to enrage them. When this happens, one's best bet is to run as fast as possible, for an angered rock troll is as deadly as a thundering landslide. The truth held in the case of the massive rock troll known as Wham-a-Wham. His every blow struck like a battering ram - meaning one needed either avoid them entirely or protect oneself with the Quen Sign. Its hard skin meant it was near invulnerable to sword strikes - especially those dealt from behind, where its rock armor is the thickest. The only hope for defeating it lay in taking advantage of its typical troll slowness - especially if further exploited using the Yrden Sign.<br><br>A certain set of Skellige miners learned first-hand just how dangerous rock trolls can be. Ignoring all warnings, they started to mine a rich silver vein in the cave which Wham-a-Wham called home. They died soon thereafter - crushed or torn to rough bits. This time, a troll's killings were a justified act of self-defense - after all, the witcher reasoned, every troll's cave is his castle.",
+        "name": "wham-a-Wham",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Rock troll known as Wham-a-Wham"
+            },
+            "text": "Thems in-walk troll house. Troll say, \"Out mans!\" But they wham-a-wham troll rocks. So troll wham, too!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Lourds et lents, les trolls de pierre semblent le plus souvent stupides aux yeux des humains. Il est cependant dangereux de les sous-estimer et plus encore de les enrager. Si par malheur on en énerve un, le mieux à faire est de prendre ses jambes à son cou, car un troll de pierre en colère est aussi mortel qu'un éboulement. Cette vérité se confirma avec l'énorme troll de pierre Tape-tapeur. Il assenait de véritables coups de boutoir, aussi fallait-il soit les éviter soit se protéger avec le signe de Quen. Sa peau épaisse le rendait presque invulnérable aux coups d'épée, en particulier ceux portés par derrière, sa peau de pierre étant plus épaisse dans son dos. La seule chance pour le vaincre était de profiter de sa lenteur naturelle de troll, encore plus facile à exploiter avec le signe d'Yrden.<br><br>Un groupe de mineurs de Skellige apprit à ses dépens à quel point les trolls de pierre sont dangereux. Ignorant les avertissements, ils entreprirent d'exploiter un filon d'argent dans la caverne où un troll surnommé Tape-tapeur avait élu domicile... et moururent peu e temps après sous les coups du troll irascible. Sa colère était justifiée mais malheureusement pour lui, les sorceleurs n'émettent pas de jugement moral : ils se contentent de tuer les monstres.",
+        "name": "tape-tapeur",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Troll de pierre appelé Tape-tapeur"
+            },
+            "text": "Eux rentrer maison troll. Troll dire \"Hommes partir !\" mais eux tape-taper cailloux troll. Alors troll tape-taper aussi !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "ogroids",
+    "code": "ice-troll",
+    "textes": [{
+        "lang": "EN",
+        "description": "Climbing to the top of snow-covered peaks is never a safe endeavor. One can slip and fall into a ravine, be buried in an avalanche – or stumble across ice trolls. Unlike the rock trolls found at lower altitudes, these permafrost-dwelling monsters treat every man they encounter as a possible ingredient for a tasty meal.<br><br>Luckily ice trolls live atop high mountain ridges so inaccessible they rarely encounter humans, and some suppose this is why they have not mastered the basics of Common Speech. Others claim their harsh mountain home has stripped them of an ability they once possessed, for in a land of never-ending cold there is no room for mercy or understanding.<br><br>Ice trolls are crueler than their rocky kin. Though they use similar tactics in battle – tossing stones and swinging with their mighty fists – they are heartier and stronger than rock trolls and thus more dangerous. Like rock trolls, their backs are covered in thick protective armor, meaning one should never strike them from the rear. Meanwhile their mass means that the Aard Sign cannot move them. Lastly, never think of attacking them during a blizzard. At such times they draw power from the surrounding cold and fight with increased strength.",
+        "name": "ice troll",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "folk song heard in northern Kaedwen"
+            },
+            "text": "Our winter's cold and deep, frostbite eats your feet, snow falls down and hides the ground and ice trolls wake from sleep!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Comme chacun sait, l'ascension d'un sommet enneigé est une activité présentant mille et un dangers : chute au fond d'un ravin, avalanche ou encore... rencontre avec un troll de glace. Contrairement au troll de pierre, le troll de glace considère chaque humain rencontré comme une pièce de choix pour son prochain repas.<br><br>Par chance, le troll de glace vit à l'écart des humains, au sommet des plus hautes montagnes, ce qui explique sans doute pourquoi il ne s'exprime que par grognements. Certains érudits avancent que l'environnement inhospitalier dans lequel évolue le troll ne laisse guère de place à la communication ou à la pitié.<br><br>Plus cruel et plus fort que son cousin de pierre, le troll de glace utilise cependant la même tactique de combat : projection d'énormes blocs de roche et grands coups de poings solides comme des massues. Son dos est protégé par une épaisse armure naturelle, il est donc inutile de l'attaquer par derrière. De plus, il est trop lourd pour être affecté par le signe d'Aard. Enfin, ne songez même pas à engager le combat durant un blizzard, dont il profitera pour puiser des forces.",
+        "name": "troll de glace",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Chanson folklorique du nord de Kaedwen"
+            },
+            "text": "Quand vient l'hiver glacial, les engelures rongent les pieds, la neige recouvre la terre et les trolls de glace sortent de leur tanière."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "ogroids",
+    "code": "rock-troll",
+    "textes": [{
+        "lang": "EN",
+        "description": "If while hiking high in the mountains you come across a walking stone, do not think your eyes deceive you. Instead, draw your sword – for before you stands a rock troll. True, not every encounter with these creatures ends in a fight - while not particularly intelligent, trolls are capable of reason – but it is better to prepare for the worst. Otherwise, your hike might end not on the summit, but in their stew.<br><br>Trolls are able to use fire and simple tools, and some of them have even mastered the basics of Common Speech. Though linguistic nuances such as conjugations and declinations escape them, they are extremely fond of riddles, rhymes and all sorts of wordplay, a fact a witcher in possession of a bit of wit can use to his advantage.<br><br>If a fight proves inevitable, one must watch out for the stones these trolls throw with great strength and shocking precision. Their powerful, heavy fists also present a danger, for they can buckle even the sturdiest breastplate or cuirass. Since their backs are covered in a layer of rocky growth, blows delivered from behind will not do them much damage. They must thus be fought directly, standing face to face – and preferably armed with a sword covered in a fresh coating of ogroid oil.",
+        "name": "rock troll",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "rock troll dwelling in a cave on Undvik"
+            },
+            "text": "Man must riddly talk. But no tricksy. Or troll boom man head."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Si d'aventure vous apercevez un rocher vivant au cours d'une marche en montagne, vous ne rêvez pas vous venez de rencontrer un troll de pierre. e monstre à l'intelligence limitée n'est pas particulièrement belliqueux, mais il est préférable de se préparer à un éventuel combat, sous peine de finir dans sa panse rebondie.<br><br>Le troll est capable d'utiliser le feu et des outils simples, et certains trolls maîtrisent même les rudiments de la langue commune. Bien que la conversation d'un troll soit des plus limitées, il apprécie les énigmes, les rimes et les jeux de mots, une particularité dont un sorceleur habile saura tirer profit.<br><br>Si le combat est inévitable, il faut savoir que le troll de pierre aime lancer des blocs de roche sur ses adversaires avant de les démolir avec ses énormes poings capables d'enfoncer la plus solide armure. De plus, son dos est couvert d'une épaisse couche de roche, le rendant de facto invulnérable sous cet angle. Il est donc obligatoire de l'affronter de face, si possible armé d'une lame enduite d'huile contre les ogroïdes.",
+        "name": "troll de pierre",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Troll de pierre vivant dans une caverne près d'Undvik"
+            },
+            "text": "Homme pas parler, sinon troll tape-taper !"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["ogroid-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
