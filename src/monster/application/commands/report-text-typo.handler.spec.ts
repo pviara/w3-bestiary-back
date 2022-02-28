@@ -67,7 +67,7 @@ describe('ReportTextTypoHandler', () => {
             expect(typoRepositoryMock.create).toBeCalledWith(command);
         });
 
-        it('should return null if no monster is found when calling getByCode on monsterRepository', async () => {
+        it('should return an error if no monster is found when calling getByCode on monsterRepository', async () => {
             const command = new ReportTextTypoCommand(
                 'lang',
                 'monsterCode',
@@ -84,7 +84,7 @@ describe('ReportTextTypoHandler', () => {
             expect(typoRepositoryMock.create).not.toBeCalled();
         });
 
-        it('should return null if no typo is found inside monster textes', async () => {
+        it('should return an error if no typo is found inside monster textes', async () => {
             const command = new ReportTextTypoCommand(
                 'lang',
                 'monsterCode',
@@ -116,7 +116,7 @@ describe('ReportTextTypoHandler', () => {
             expect(typoRepositoryMock.create).not.toBeCalled();
         });
 
-        it('should return null if a similar typo already exists', async () => {
+        it('should return an error if a similar typo already exists', async () => {
             const command = new ReportTextTypoCommand(
                 'lang',
                 'monsterCode',
