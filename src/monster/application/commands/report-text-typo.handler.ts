@@ -1,9 +1,11 @@
 import { CommandHandler, ICommand, ICommandHandler } from '@nestjs/cqrs';
+import { Error } from '../../../application/error';
 import { IMonsterRepository } from '../monster-repository.interface';
 import { Inject } from '@nestjs/common';
 import { ITypoRepository } from '../../application/typo-repository.interface';
+import { MonsterTextes } from '../../../monster/domain/monster';
+import { Result } from '../../../application/result';
 import { Typo } from '../../domain/typo';
-import { MonsterTextes } from 'src/monster/domain/monster';
 
 export class ReportTextTypoCommand implements ICommand {
     constructor(
@@ -25,13 +27,18 @@ export class ReportTextTypoHandler
         private readonly _typoRepository: ITypoRepository,
     ) {}
 
-    async execute(command: ReportTextTypoCommand): Promise<Typo | null> {
+    async execute(
+        command: ReportTextTypoCommand,
+    ): Promise<Result<Typo> | Error> {
         const monster = await this._monsterRepository.getByCode(
             command.monsterCode,
             command.lang,
         );
         if (!monster) {
-            return null;
+            return new Error(
+                404,
+                `No monster was found with { code: '${command.monsterCode}', lang: '${command.lang}' }.`,
+            );
         }
 
         // make sure the typo in inside monster's textes
@@ -40,7 +47,10 @@ export class ReportTextTypoHandler
             monster.textes,
         );
         if (!hasTypoBeenFound) {
-            return null;
+            return new Error(
+                404,
+                `Typo "${command.content}" was not found with { code: '${command.monsterCode}', lang: '${command.lang}' }.`,
+            );
         }
 
         const existingSimilarTypo = await this._typoRepository.findByExactMatch(
@@ -49,10 +59,14 @@ export class ReportTextTypoHandler
             command.content,
         );
         if (existingSimilarTypo.length > 0) {
-            return null;
+            return new Error(
+                409,
+                `A similar typo exists with { code: '${command.monsterCode}', lang: '${command.lang}', typo: '${command.content}' }.`,
+            );
         }
 
-        return await this._typoRepository.create(command);
+        const created = await this._typoRepository.create(command);
+        return new Result(created);
     }
 
     private _findTextInMonsterTextes(
