@@ -1,14 +1,10 @@
-import {
-    Controller,
-    Get,
-    NotFoundException,
-    Query,
-    ValidationPipe,
-} from '@nestjs/common';
+import { Controller, Get, Query, ValidationPipe } from '@nestjs/common';
+import { Error } from '../../application/error';
 import { GetAllItemsQuery } from '../application/queries/get-all-items.query';
 import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
 import { Item } from '../domain/item';
 import { QueryBus } from '@nestjs/cqrs';
+import { Result } from '../../application/result';
 
 @Controller()
 export class ItemController {
@@ -18,16 +14,15 @@ export class ItemController {
     async getAll(@Query(new ValidationPipe()) query: GetAllItemsURLQuery) {
         const getAllItemsQuery = new GetAllItemsQuery(query.lang);
 
-        const result = await this._queryBus.execute<GetAllItemsQuery, Item[]>(
-            getAllItemsQuery,
-        );
+        const result = await this._queryBus.execute<
+            GetAllItemsQuery,
+            Result<Item[]> | Error
+        >(getAllItemsQuery);
 
-        if (result.length === 0) {
-            throw new NotFoundException(
-                `At least one item was not found with { lang: '${query.lang}' }.`,
-            );
+        if (result instanceof Result) {
+            return result.data;
         }
 
-        return result;
+        result.throw();
     }
 }
