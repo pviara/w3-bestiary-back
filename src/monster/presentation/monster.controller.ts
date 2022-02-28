@@ -2,13 +2,12 @@ import {
     Body,
     Controller,
     Get,
-    NotFoundException,
     Post,
     Query,
-    UnprocessableEntityException,
     ValidationPipe,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
+import { Error } from '../../application/error';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
@@ -16,6 +15,7 @@ import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
 import { ReportTextTypoCommand } from '../application/commands/report-text-typo.handler';
 import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
+import { Result } from '../../application/result';
 import { Typo } from '../domain/typo';
 
 @Controller()
@@ -35,16 +35,14 @@ export class MonsterController {
 
         const result = await this._queryBus.execute<
             GetMonstersByCategoriesQuery,
-            MonstersByCategory[]
+            Result<MonstersByCategory[]> | Error
         >(getMonstersByCategoryQuery);
 
-        if (result.length === 0) {
-            throw new NotFoundException(
-                `At least one monster was not found with { lang: '${query.lang}' }.`,
-            );
+        if (result instanceof Result) {
+            return result.data;
         }
 
-        return result;
+        result.throw();
     }
 
     @Get('search')
@@ -58,16 +56,14 @@ export class MonsterController {
 
         const result = await this._queryBus.execute<
             GetMonsterByCodeQuery,
-            Monster
+            Result<Monster> | Error
         >(getMonsterByCodeQuery);
 
-        if (!result) {
-            throw new NotFoundException(
-                `No monster was found with { code: '${query.code}', lang: '${query.lang}' }.`,
-            );
+        if (result instanceof Result) {
+            return result.data;
         }
 
-        return result;
+        result.throw();
     }
 
     @Post('typo')
@@ -82,12 +78,13 @@ export class MonsterController {
 
         const result = await this._commandBus.execute<
             ReportTextTypoCommand,
-            Typo
+            Result<Typo> | Error
         >(command);
-        if (!result) {
-            // todo 🛠 add error handling with somekind of a Result<T> class
-            throw new UnprocessableEntityException();
+
+        if (result instanceof Result) {
+            return result.data;
         }
-        return result;
+
+        result.throw();
     }
 }
