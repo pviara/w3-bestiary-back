@@ -25,7 +25,10 @@ export class GetMonstersByCategoriesHandler
             query.lang,
         );
         if (!result) {
-            return new Error(404, `At least one monster was not found with { lang: '${query.lang}' }.`)
+            return new Error(
+                404,
+                `At least one monster was not found with { lang: '${query.lang}' }.`,
+            );
         }
 
         return new Result(result);
