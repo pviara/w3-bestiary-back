@@ -28,7 +28,7 @@ describe('GetAllItemsHandler', () => {
             expect(itemRepository.getAll).toBeCalledWith(query.lang);
         });
 
-        it('should throw an error when no item is found when calling getAll on ItemRepository', async () => {
+        it('should return an error when no item is found when calling getAll on ItemRepository', async () => {
             // arrange
             const query = new GetAllItemsQuery('lang');
 

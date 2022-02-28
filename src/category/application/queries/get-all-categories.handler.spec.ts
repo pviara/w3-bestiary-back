@@ -1,9 +1,14 @@
+import { Category } from 'src/category/domain/category';
 import { createMock } from 'ts-auto-mock';
+import { Error } from '../../../application/error';
 import {
     GetAllCategoriesHandler,
     GetAllCategoriesQuery,
 } from './get-all-categories.handler';
 import { ICategoryRepository } from '../category-repository.interface';
+import { method, On } from 'ts-auto-mock/extension';
+import { Result } from '../../../application/result';
+import { when } from 'jest-when';
 
 describe('GetAllCategoriesHandler', () => {
     let sut: GetAllCategoriesHandler;
@@ -25,6 +30,35 @@ describe('GetAllCategoriesHandler', () => {
 
             // assert
             expect(categoryRepository.getAll).toBeCalledWith(query.lang);
+        });
+
+        it('should return an error when no category is found when calling getAll on CategoryRepository', async () => {
+            // arrange
+            const query = new GetAllCategoriesQuery('lang');
+
+            // act
+            const result = await sut.execute(query);
+
+            // assert
+            expect(result).toBeInstanceOf(Error);
+        });
+
+        it('should return a category result when calling getAll on CategoryRepository', async () => {
+            // arrange
+            const query = new GetAllCategoriesQuery('lang');
+
+            const categoryRepoGetAllCategories = On(categoryRepository).get(
+                method('getAll'),
+            );
+            when(categoryRepoGetAllCategories)
+                .calledWith(query.lang)
+                .mockReturnValue([createMock<Category>()]);
+
+            // act
+            const result = await sut.execute(query);
+
+            // assert
+            expect(result).toBeInstanceOf(Result);
         });
     });
 });
