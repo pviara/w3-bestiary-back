@@ -18,10 +18,18 @@ export class GetMonsterByCodeHandler
         private readonly _monsterRepository: IMonsterRepository,
     ) {}
 
-    async execute(query: GetMonsterByCodeQuery): Promise<Result<Monster> | Error> {
-        const result = await this._monsterRepository.getByCode(query.code, query.lang);
+    async execute(
+        query: GetMonsterByCodeQuery,
+    ): Promise<Result<Monster> | Error> {
+        const result = await this._monsterRepository.getByCode(
+            query.code,
+            query.lang,
+        );
         if (!result) {
-            return new Error(404, `No monster was found with { code: '${query.code}', lang: '${query.lang}' }.`);
+            return new Error(
+                404,
+                `No monster was found with { code: '${query.code}', lang: '${query.lang}' }.`,
+            );
         }
 
         return new Result(result);
