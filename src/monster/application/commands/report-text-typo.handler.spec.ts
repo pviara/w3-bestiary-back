@@ -1,13 +1,14 @@
 import { createMock } from 'ts-auto-mock';
+import { Error } from '../../../application/error';
 import { IMonsterRepository } from '../monster-repository.interface';
 import { ITypoRepository } from '../../application/typo-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
-import { Monster } from 'src/monster/domain/monster';
+import { Monster } from '../../../monster/domain/monster';
 import {
     ReportTextTypoCommand,
     ReportTextTypoHandler,
 } from './report-text-typo.handler';
-import { Typo } from 'src/monster/domain/typo';
+import { Typo } from '../../../monster/domain/typo';
 import { when } from 'jest-when';
 
 describe('ReportTextTypoHandler', () => {
@@ -79,7 +80,7 @@ describe('ReportTextTypoHandler', () => {
 
             const result = await sut.execute(command);
 
-            expect(result).toBe(null);
+            expect(result).toBeInstanceOf(Error);
             expect(typoRepositoryMock.create).not.toBeCalled();
         });
 
@@ -111,7 +112,7 @@ describe('ReportTextTypoHandler', () => {
 
             const result = await sut.execute(command);
 
-            expect(result).toBe(null);
+            expect(result).toBeInstanceOf(Error);
             expect(typoRepositoryMock.create).not.toBeCalled();
         });
 
@@ -147,7 +148,7 @@ describe('ReportTextTypoHandler', () => {
 
             const result = await sut.execute(command);
 
-            expect(result).toBe(null);
+            expect(result).toBeInstanceOf(Error);
             expect(typoRepositoryMock.create).not.toBeCalled();
         });
     });
