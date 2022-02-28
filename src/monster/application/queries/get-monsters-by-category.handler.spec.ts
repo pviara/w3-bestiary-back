@@ -40,7 +40,7 @@ describe('GetAllMonstersHandler', () => {
             ).get(method('getMonstersByCategories'));
             when(monsterRepoGetMonstersByCategories)
                 .calledWith(query.lang)
-                .mockReturnValue(null);
+                .mockReturnValue([]);
 
             // act
             const result = await sut.execute(query);

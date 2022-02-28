@@ -24,7 +24,7 @@ export class GetMonstersByCategoriesHandler
         const result = await this._monsterRepository.getMonstersByCategories(
             query.lang,
         );
-        if (!result) {
+        if (result.length === 0) {
             return new Error(
                 404,
                 `At least one monster was not found with { lang: '${query.lang}' }.`,
