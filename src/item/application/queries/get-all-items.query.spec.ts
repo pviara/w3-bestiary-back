@@ -2,7 +2,9 @@ import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
 import { GetAllItemsHandler, GetAllItemsQuery } from './get-all-items.query';
 import { IItemRepository } from '../item-repository.interface';
+import { Item } from '../../../item/domain/item';
 import { method, On } from 'ts-auto-mock/extension';
+import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
 describe('GetAllItemsHandler', () => {
@@ -32,14 +34,27 @@ describe('GetAllItemsHandler', () => {
             // arrange
             const query = new GetAllItemsQuery('lang');
 
-            const itemRepoGetAll = On(itemRepository).get(method('getAll'));
-            when(itemRepoGetAll).calledWith(query.lang).mockReturnValue([]);
-
             // act
             const result = await sut.execute(query);
 
             // assert
             expect(result).toBeInstanceOf(Error);
+        });
+
+        it('should return an item result when calling getAll on ItemRepository', async () => {
+            // arrange
+            const query = new GetAllItemsQuery('lang');
+
+            const itemRepoGetAll = On(itemRepository).get(method('getAll'));
+            when(itemRepoGetAll)
+                .calledWith(query.lang)
+                .mockReturnValue([createMock<Item>()]);
+
+            // act
+            const result = await sut.execute(query);
+
+            // assert
+            expect(result).toBeInstanceOf(Result);
         });
     });
 });
