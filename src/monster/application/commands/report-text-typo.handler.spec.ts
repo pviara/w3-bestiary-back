@@ -8,6 +8,7 @@ import {
     ReportTextTypoCommand,
     ReportTextTypoHandler,
 } from './report-text-typo.handler';
+import { Result } from '../../../application/result';
 import { Typo } from '../../../monster/domain/typo';
 import { when } from 'jest-when';
 
@@ -150,6 +151,36 @@ describe('ReportTextTypoHandler', () => {
 
             expect(result).toBeInstanceOf(Error);
             expect(typoRepositoryMock.create).not.toBeCalled();
+        });
+
+        it('should return a typo result when calling create on typoRepository', async () => {
+            const command = new ReportTextTypoCommand(
+                'lang',
+                'monsterCode',
+                'typo',
+            );
+
+            const monsterMock = createMock<Monster>({
+                textes: {
+                    quote: {
+                        author: {
+                            firstname: '',
+                            lastname: '',
+                            title: '',
+                        },
+                        text: 'typo here',
+                    },
+                },
+            });
+
+            when(monsterRepoGetByCode)
+                .calledWith(command.monsterCode, command.lang)
+                .mockReturnValue(monsterMock);
+
+            const result = await sut.execute(command);
+
+            expect(result).toBeInstanceOf(Result);
+            expect(typoRepositoryMock.create).toBeCalled();
         });
     });
 });
