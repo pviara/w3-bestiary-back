@@ -6,6 +6,8 @@ import {
 } from './get-monsters-by-category.handler';
 import { IMonsterRepository } from '../monster-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
+import { MonsterByCategory } from '../../../monster/domain/monster';
+import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
 describe('GetAllMonstersHandler', () => {
@@ -35,17 +37,29 @@ describe('GetAllMonstersHandler', () => {
             // arrange
             const query = new GetMonstersByCategoriesQuery('lang');
 
+            // act
+            const result = await sut.execute(query);
+
+            // assert
+            expect(result).toBeInstanceOf(Error);
+        });
+
+        it('should return a MonsterByCategory result when calling getMonstersByCategories on MonsterRepository', async () => {
+            // arrange
+            const query = new GetMonstersByCategoriesQuery('lang');
+
             const monsterRepoGetMonstersByCategories = On(
                 monsterRepository,
             ).get(method('getMonstersByCategories'));
             when(monsterRepoGetMonstersByCategories)
                 .calledWith(query.lang)
-                .mockReturnValue([]);
+                .mockReturnValue([createMock<MonsterByCategory>()]);
 
             // act
             const result = await sut.execute(query);
 
-            expect(result).toBeInstanceOf(Error);
+            // assert
+            expect(result).toBeInstanceOf(Result);
         });
     });
 });
