@@ -2995,75 +2995,76 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "specters",
+    "code": "jenny-o-the-woods",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "It is said true love's flame is never extinguished. This sad truth is the reason why Zula of Midcopse, whom an early death had separated from her beloved, was unable to find peace in the next life, and instead returned to haunt her former environs as a nightwraith.<br><br>Fighting such an apparition is extremely difficult. A nightwraith will form mirror images of herself to confuse her opponent and aid her in battle. She herself can take on immaterial form, rendering her invulnerable to blows. The best way to force her out of this state is to set a trap with the Yrden Sign, then quickly followup with Igni while she is caught. Most important of all, however, is this: never attempt to fight one in the middle of the night, when the moon hangs high in the sky.<br><br>This vengeful wraith might very well have killed every last inhabitant of the village, had not a famous witcher, Geralt of Rivia, appeared in Velen - and been in need of a bit of coin.",
+        "name": "jenny o' the Woods",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "bolko",
                 "lastname": "",
-                "title": ""
+                "title": "ealdorman of Midcopse"
             },
-            "text": ""
+            "text": "So... That's to mean... our Zula's the wraith?"
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "On dit que le véritable amour ne meurt jamais. Cette triste vérité est à l'origine du retour de Zula de Hautbreuil, qui, morte prématurément et incapable de trouver la paix éternelle, revint hanter son village sous la forme d'un spectre de minuit.<br><br>Ce type d'apparitions est particulièrement difficile à vaincre. Un spectre de minuit crée des illusions de lui-même afin de semer la confusion dans l'esprit de son adversaire. Il est de plus capable d'adopter une forme immatérielle le rendant invulnérable aux dégâts physiques. Le meilleur moyen de l'obliger à quitter cet état consiste à le piéger à l'aide du signe d'Yrden, immédiatement suivi du signe d'Igni une fois le spectre emprisonné. Et le plus important : n'engagez jamais le combat en pleine nuit, lorsque la nuit est à son zénith.<br><br>Sans l'arrivée de Geralt de Riv, sorceleur de passage et à la bourse vide, ce monstre vengeur aurait sans doute fini par tuer les habitants jusqu'au dernier.",
+        "name": "la dame des bois",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "bolko",
                 "lastname": "",
-                "title": ""
+                "title": "échevin de Hautbreuil Barghest"
             },
-            "text": ""
+            "text": "Alors... Ça veut dire que... Le spectre, c'est notre Zula ?"
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["yrden"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "specters",
+    "code": "the-wraith-from-the-painting",
+    "extension": "hearts-of-stone",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "While wandering the von Everecs' abandoned estate, Geralt came into contact with a woman's wraith haunting the house. The restless spirit had mastery over the house's furnishings and in particular over the paintings hanging from its walls. It moved freely between their canvasses, entering one and exiting through another. At first it tried to scare Geralt into giving up his search, then, when it was clear this strategy would not work, it attacked him directly.<br><br>Geralt's battle against the wraith proved very difficult, for it was fueled by rage and launched its attacks with heated aggression. Geralt was forced to move with lightning speed in order to parry its blows, without time to take a breath or launch an attack of his own. What's more, the wraith had created a bond with the paintings around it and, until the witcher severed this tie, it would continually regain any lost strength.<br><br>The key to victory over the Wraith from the Painting was to focus on parrying its blows and only attack sporadically, at exactly the right moments. Any attempt to attack in a flurry was always punished with a deadly counterattack.",
+        "name": "the Wraith from the Painting",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "inigo",
+                "lastname": "swann",
+                "title": "\"Beyond the Natural World\""
             },
-            "text": ""
+            "text": "Quite often a wraith is tied to an object, something it clung to during life, or a location, such as its place of death. In either case, we are dealing with the same causal agent: a strong emotional tie from which the wraith draws strength."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "En parcourant le domaine abandonné des von Everec, Geralt entra en contact avec le spectre d'une femme hantant la maison. L'esprit contrôlait le mobilier de la demeure et tout particulièrement les tableaux suspendus aux murs. Il passait librement d'une toile à l'autre, entrant par l'une et sortant par une autre. Au début, il tenta d'effrayer Geralt pour lui faire abandonner ses recherches, mais, constatant l'inutilité de cette stratégie, il finit par l'attaquer directement.<br><br>Geralt dut livrer un rude combat contre le spectre, la rage de ce dernier lui permettant de lancer des attaques très agressives. Geralt était obligé de se montrer vif comme l'éclair pour parer les coups et n'avait pas le temps de souffler ou d'attaquer lui-même. Qui plus est, le spectre avait créé un lien avec les tableaux autour de lui et. jusqu'à ce que le sorceleur rompe ce lien, regagnait toute la force qu'il perdait.<br><br>La clef de la victoire contre le spectre du tableau fut de parer ses coups en n'attaquant que sporadiquement, en attendant le bon moment. Toute tentative pour porter une série de coups était sanctionnée par une contre-attaque mortelle.",
+        "name": "le spectre du tableau",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "inigo",
+                "lastname": "swann",
+                "title": "\"Au-delà du monde naturel\""
             },
-            "text": ""
+            "text": "Bien souvent, un spectre est lié à un objet, une chose à laquelle il tenait de son vivant, ou à un lieu, comme l'endroit de sa mort. Dans tous les cas, la cause est la même un lien émotionnel fort dans lequel le spectre puise de la force."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["specter-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["yrden"]
     }
 },
 {
