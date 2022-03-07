@@ -2776,6 +2776,585 @@
     }
 },
 {
+    "category": "specters",
+    "code": "banshee",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Old gossips claim beann'shies are the spirits of women stuck between life and death due to traumatic experiences. Their wails and howls are considered ill omens of imminent, inevitable death, though they are said not to attack the living themselves. Most often they appear in the form of pale, tear-streaked women with shriveled faces and wrinkled, corpse-like bodies.",
+        "name": "banshee",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "beggar from Dun Dâre"
+            },
+            "text": "Beann'shies howl and shriek, and if you hear their cry, you can know you'll join the ranks of the dead that night."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les rumeurs d'antan prétendent que les banshees sont les esprits de femmes piégées entre la vie et la mort en raison d'expériences traumatiques. Leurs lamentations seraient l'augure funeste d'une mort imminente et inéluctable, bien qu'on prétende qu'elles ne s'en prennent pas aux vivants eux-mêmes. La plupart du temps, elles se manifestent sous la forme de femmes à la peau blafarde, le visage fané et strié de larmes, le corps pareil à un cadavre.",
+        "name": "banshee",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Mendiant de Dun Dâre"
+            },
+            "text": "Les banshees hurlent et tempêtent, et si vous entendez leur complainte, sachez que vous gonflerez les rangs des morts dès la nuit prochaine."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "specters",
+    "code": "barghest",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Folk of simple or superstitious minds claim committing particularly rotten acts will bring down the wrath of the gods in the form of \"barghests,\" phantom dogs which stalk the roads at night. Even if this were their origin, barghests saints and sinners alike would need fear barghests, for they attack both with equal ferocity. Witchers rarely believe in the gods, but they do accept that barghests exist and are always connected with some sequence of tragic events that happened in the past. Their explanation, however, holds that barghests result from a curse or a concentration of ill will.<br><br>Barghests, like wolves, are stronger in packs. Together they surround their prey, leaping at it and tearing it apart with their teeth. If their prey defends itself too determinedly, they strike it with a blast of phantom fire. Since they are fast and agile, they can easily evade attacks directed at them.<br><br>They cannot be burned, but fire hurts them as if they were of flesh and blood. The Axii Sign also works on them.",
+        "name": "barghest",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "\"Sermons for Feasts and Funerals,\" by the Reverend Yomen of Tretogor"
+            },
+            "text": "Shun sin! Renounce foul deeds! And if evil threatens to overwhelm your will, ponder the fate of the Outskirts of Vizima! Remember the hideous barghests which scourged them and repent!"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les simples d'esprit prétendent que perpétrer les pires atrocités déchaînera le courroux des dieux, sous la forme de molosses spectraux appelés aussi \"barghests\" qui sévissent sur les routes à la nuit tombée. Aussi divine que puisse être leur origine, les barghests sont autant une menace pour les saints que pour les pécheurs, car ils attaquent sans distinction et avec une égale férocité. Les sorceleurs ne croient que rarement aux dieux, mais ils conviennent que les barghests existent bel et bien, et qu'ils sont toujours le fruit d'une enfilade d'événements tragiques survenus dans le passé. Pour eux, les barghests résultent d'une malédiction ou d'une concentration de volonté malfaisante.<br><br>À l'instar des loups, les barghests sont plus redoutables en meutes. Ensemble, ils encerclent leur proie avant de lui bondir dessus et de la déchiqueter de leurs crocs. Si leur proie se défend trop ardemment, ils lui assènent un trait de feu spectral. Aussi rapides qu'agiles, ils n'ont aucun mal à esquiver les attaques portées contre eux. Ils ne peuvent être, brûlés, mais le feu les blesse comme s'ils étaient de chair et de sang. Le signe d'Axii est également efficace contre eux.",
+        "name": "barghest",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "\"Sermons pour toutes les occasions\", Révérend Yomen de Tretogor"
+            },
+            "text": "Abstenez-vous du péché et des mauvaises actions, et si jamais la tentation du mal vous étreint, rappelez-vous quel triste sort ont connu les habitants des faubourgs de Wyzima, qui furent châtiés par une invasion de barghests !"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["axii", "yrden"]
+    }
+},
+{
+    "category": "specters",
+    "code": "hym",
+    "textes": [{
+        "lang": "EN",
+        "description": "Monsters most commonly claim innocents as their victims: tardy merchants, reckless children and travelers who wander into dark woodlands out of misplaced curiosity. None of the above need fear hyms, however. These wraiths only latch onto particularly despicable individuals who have committed some unspeakable crime. To all others, they remain completely invisible. When they do show themselves to the one they torment, they appear as a tall, shadow-clad, humanoid silhouette with long, sharp claws.<br><br>Yet hyms do not sink these claws into their victims. Instead, they sap their strength directly, through inflicting suffering. Speaking in a voice only the victim hears, they drive him to commit acts of violence, aggression and self-harm. A hym will seize on a guilty person's worst fears and weave out of them hideous visions, slowing[sic] driving the poor soul into madness.<br><br>Those tormented by a hym are incapable of restful sleep, for they are tormented by ever-more-frequent, incredibly-realistic nightmares. At times the victim will become extremely on edge, yelling pleas or threats at invisible phantoms or confessing his guilt out loud in the hope this will end his torment. This act does not, however, bring any relief, for the hym will not leave until it has addled its victim's wits completely or driven him to suicide.",
+        "name": "hym",
+        "quote": {
+            "author": {
+                "firstname": "svargmitt",
+                "lastname": "",
+                "title": "An Skellig druid"
+            },
+            "text": "Some men have got good reason to fear their own shadows."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les monstres s'en prennent le plus souvent à ce que l'on appelle communément d'innocentes victimes : marchands tardifs, enfants imprudents, voyageurs isolés ou un peu trop curieux... Pourtant, le blême ne représente aucune menace pour ces individus. En effet, il s'attaque uniquement aux êtres les plus abjects et les plus méprisables, coupables d'un crime inavouable. Le blême apparaît à sa victime sous la forme d'une silhouette humanoïde de haude taille, drapée dans l'ombre et dotée de longues griffes acérées. Aux yeux du reste du monde, il est totalement invisible.<br><br>En dépit de ses griffes, le blême ne s'en prend jamais directement à sa victime. Il préfère saper sa volonté de manière indirecte, s'emparer de ses peurs les plus sombres pour créer de terrifiantes visions et lui murmurer à l'oreille pour la pousser lentement mais sûrement vers la folie, la violence et l'autodestruction.<br><br>La proie d'un blême est hantée chaque nuit par d'affreux cauchemars terriblement réalistes lui interdisant toute forme de repos. Sous l'effet de la fatigue et de la peur, elle peut alors supplier ou menacer d'invisibles fantômes, voire confesser publiquement ses crimes dans l'espoir de mettre un terme à ses souffrances. En vian, car le blême n'a de cesse de plonger sa victime dans la folie pure ou de la pousser au suicide.",
+        "name": "blême",
+        "quote": {
+            "author": {
+                "firstname": "svargmitt",
+                "lastname": "",
+                "title": "druide d'An Skellig"
+            },
+            "text": "Certains hommes ont de bonnes raisons d'avoir peur de leur ombre."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "specters",
+    "code": "ethereal",
+    "extension": "hearts-of-stone",
+    "textes": [{
+        "lang": "EN",
+        "description": "The painted world created in the mind of Iris von Everec was mainly populated by figures from her memories, but was also home to dangerous, predatory creatures: the embodiments of her fears. The most dangerous of these, the Ethereal, invoked her greatest fear – and wore the face of her husband.<br><br>The Ethereal resembled Olgierd in appearance and also fought using a technique similar to his. A group of six such creatures lay in wait for Geralt, yet at first only one engaged him in battle. This one's death awoke the next, which was more powerful than the first, and so it went to the end, with a stronger ethereal replacing a fallen weaker brother until all were defeated. Yet Geralt had to be careful, for the slightest amount of damage dealt to a being awaiting his turn would cause him to come alive and join his still-living comrade in the fight.<br><br>In the end, the best tactic against these nightmarish beings proved to be a well-timed counterattack.",
+        "name": "ethereal",
+        "quote": {
+            "author": {
+                "firstname": "arturius",
+                "lastname": "vigo",
+                "title": "\"The essence of Spells and Illusions\""
+            },
+            "text": "The human mind is as wild and unexplored a place as any land far beyond the seas. It is inhabited by manifold dangers – fears, painful memories, traumas. These lurk on the edge of our consciousness, like predators waiting for a moment of weakness in which to reveal themselves... and destroy us."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "La Toile-monde créée dans l'esprit d'Iris von Everec était peuplée principalement de personnes présentes dans ses souvenirs, mais abritait aussi des créatures hostiles et dangereuses, incarnant ses peurs. LEs plus dangereuses d'entre elles, les créatures éthérées, étaient le fruit de sa plus grande peur et prenaient les traits de son mari.<br><br>Les créatures éthérées avaient l'apparence d'Olgierd, mais aussi une technique de combat semblable à la sienne. Six de ces créatures attendaient Geralt, mais une seule l'attaqua. La mort de celle-ci en éveilla une autre, plus puissante que la première, et les créatures se succédèrent, de plus en plus fortes, jusqu'à ce qu'il n'en reste aucune. Pourtant, Geralt dut se montrer prudent, car s'il avait le malheur d'infliger le moindre dégât à un être en attendant son tour, celui-ci s'animait et rejoignait le combat aux côtés de son compagnon encore en vie.<br><br>Finalement, contre-attaquer au bon moment s'avéra être la meilleure tactique contre ces êtres cauchemardesques.",
+        "name": "créatures éthérées",
+        "quote": {
+            "author": {
+                "firstname": "arturius",
+                "lastname": "vigo",
+                "title": "\"De l'essence des sorts et des illusions\""
+            },
+            "text": "L'esprit humain est un endroit aussi sauvage et inexploré qu'une terre par-delà les mers. Nombre de dangers l'habitent, comme les peurs, les souvenirs douloureux ou les traumatismes. Ceux-ci sont tapis à la limite de la conscience, tels des prédateurs guettant un moment de faiblesse pour surgir... et nous détruire."
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["specter-oil"],
+        "potions": ["blizzard"],
+        "signs": []
+    }
+},
+{
+    "category": "specters",
+    "code": "devil-by-the-well",
+    "textes": [{
+        "lang": "EN",
+        "description": "The residents of White Orchard have suffered more than their fair share of misfortunes. Passing armies had trampled their spring planting, a griffin had begun abducting their livestock, and, the rotten icing on this painful cake, a noonwraith haunted a nearby well. No wonder the locals called this final evil a 'devil'. The witcher could sense something bound her to this place, and that in order to send her off into ethereal realms he would first need to learn her secret.<br><br>Once that was done, he would have to prepare for battle - and a noonwraith is a demanding opponent. She can disorient her victim by blinding him and creating mirror images of herself. These copies slowly suck their victim's life energy - while their mistress remains untouchable. In order to defeat her, the witcher could not rely on his silver sword alone - the Yrden sign would also be needed to trap her and force her to take on material form.<br><br>Witchers don't normally feel a limited range of emotions regarding the monsters they slay. They despise the particularly cruel ones and are repulsed by the disgusting ones, but rare indeed is the monster for which they feel sympathy. Yet that is exactly what Geralt felt for the noonwraith of White Orchard. For a long time he was haunted by thoughts of the young woman whose horrible death and powerful emotions had transformed her into that terrible monster.",
+        "name": "devil by the Well",
+        "quote": {
+            "author": {
+                "firstname": "odolan of",
+                "lastname": "white Orchard",
+                "title": ""
+            },
+            "text": "Wears a dirty dress, all rags, its skin flakin' off of its bones. And it howls... like it's sufferin'."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Les habitants de Blanchefleur avaient connu plus que leur lot de malheurs. Les armées de passage les avaient empêchés de faire les semailles de printemps, un griffon enlevait leur bétail, puis, pour couronner le tout, voilà qu'un spectre de midi s'était mis à hanter le puits proche. Pas étonnant que les habitants se soient mis à qualifier ce dernier de démon. Le sorceleur sentit que quelque chose liait le spectre à cet endroit, et que pour le renvoyer dans le monde des esprits, il devrait d'abord découvrir son secret.<br><br>Lorsque ce fut chose faite, il dut se préparer au combat, et un spectre de midi est un adversaire que l'on ne doit pas prendre à la légère. Il peut désorienter sa victime en l'aveuglant et en créant des doubles à son image. Ces doubles absorbent lentement l'énergie vitale de la victime, pendant que leur maître reste intouchable. Afin de vaincre le spectre, le sorceleur ne pourrait pas compter que sur son épée en argent. Il devrait aussi employer le signe d'Yrden pour le piéger et l'obliger à se matérialiser.<br><br>En général, les sorceleurs ne ressentent pas grand-chose pour les monstres qu'ils tuent. Ils haïssent les plus cruels et sont repoussés par les plus répugnants, mais il arrive en de rares occasions qu'ils éprouvent de la sympathie pour un monstre. Et c'est exactement ce que Geralt ressentit pour le spectre de midi de Blanchefleur. Pendant longtemps, les pensées du sorceleur furent hantées par la jeune femme transformée en monstre terrible à cause de sa mort affreuse et de ses puissantes émotions.",
+        "name": "démon près du puits",
+        "quote": {
+            "author": {
+                "firstname": "odolan",
+                "lastname": "de Blanchefleur",
+                "title": ""
+            },
+            "text": "Il porte une robe sale, de vrais haillons, et sa peau pend sur ses os. Et il hurle... comme s'il souffrait."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "specters",
+    "code": "the-white-lady",
+    "textes": [{
+        "lang": "EN",
+        "description": "The apparition haunting the fields outside Novigrad turned out to be a noonwraith. Some powerful emotion must have bound it to that place - love, hate, anger or perhaps all three at once. Like every wraith of this type, she was surely capable of forming mirror images of herself, which served to mislead opponents and restore her vitality. Luckily, these mirages could be dispelled with a quick slash from a silver blade. Like any noonwraith, she would undoubtedly seek to assume immaterial form while fighting, making her almost impossible to injure - unless she is first caught in a trap laid by the Yrden Sign, or blasted with a special bomb. Once thus forced into materiality, she should be attacked with strong blows or the Igni Sign. Finally, one must always keep in mind two witcher sayings: \"The longer you fight a noonwraith, the lower your chances of surviving,\" and \"Fight a noonwraith at midday and you'll be dead before dusk.\"<br>The vengeful wraith known as the White Lady had roamed the fields for a long times, murdering anyone she came across. Though the grain hung heavy from the stalks, the frightened peasants were kept from harvesting it and thus faced famine. They gathered their last bit of savings and went in together on a bounty for a witcher. That was coin well-spent.",
+        "name": "the White Lady",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation overheard in a field outside Novigrad"
+            },
+            "text": "Micko and his band? Who're they?<br>Four lads, drunkards and good-for-nothin's, all. They'd drained a few pints and decided they'd all plough the White Lady, maybe then she'd bugger off."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "L'apparition qui hantait les champs à l'extérieur de Novigrad était en réalité un spectre de midi, retenue en ce lieu par une émotion puissante: amour, haine, colère, voire un mélange des trois. À l'instar de nombreux spectres de ce type, celui-ci était capable de créer des illusions de lui-même afin d'induire ses adversaires en erreur tout en regagnant de la vitalité. Par chance, ces mirages peuvent aisément être dissipés à la pointe d'une lame d'argent. À l'image de ses congénères, ce spectre adopterait sûrement une forme éthérée durant le combat afin de se prémunir contre les attaques physiques, à moins d'être préalablement piégé par un signe d'Yrden ou affecté par une bombe spéciale. Une fois la créature sous forme matérielle, les attaques puissantes et le signe d'Igni seront les meilleurs amis du sorceleur. Pour finir, ne jamais oublier les deux dictons de sorceleur: \"Plus tu combats longtemps un spectre de midi, plus tes chances de survie s'amenuisent\" et \"Spectre de midi au zénith, mort assurée avant la nuit\".<br>L'esprit vengeur appelé la Dame blanche terrorisait depuis longtemps les paysans et empêchait toute récolte, faisant planer sur la région le \"spectre\" de la famine. Mettant leurs maigres ressources en commun, les paysans décidèrent de recourir aux services d'un sorceleur afin que leur vie puisse reprendre son cours normal. Leur argent fut bien dépensé.",
+        "name": "la Dame blanche",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation entendue dans un champ près de Novigrad"
+            },
+            "text": "Micko et sa bande ? Qui sont-ils?<br>Quatre gars, soiffards et bons à rien. Après quelques pintes, ils ont décidé d'aller se taper la Dame blanche, pour voir si ça allait la faire déguerpir."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
+    "category": "",
+    "code": "",
+    "textes": [{
+        "lang": "EN",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "",
+        "name": "",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": ""
+            },
+            "text": ""
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": [],
+        "potions": [],
+        "signs": []
+    }
+},
+{
     "category": "",
     "code": "",
     "textes": [{
