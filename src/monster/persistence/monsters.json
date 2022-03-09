@@ -3068,79 +3068,79 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "specters",
+    "code": "penitent",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "It turned out the monster haunting the isle of Eldberg and its lighthouse was a rare type of specter known as a penitent. Wherever this wraith haunts immediately becomes enveloped in thick fog and darkness - and those that wander into it usually never return. In order to defeat a penitent, one must remain in constant motion in order to avoid being struck by this agile creature, which can disappear and reappear in the blink of an eye to attack from behind. Most importantly of all, however, one must discover what keeps they monster bound to its haunting grounds - and break that bond as soon as possible.<br><br>With the lighthouse keeper's help, Geralt drove the mist from the isle - then dispatched the penitent from our world for good. Now ships were once again able to sail to Arinbjorn's port, and the witcher's coin pouch grew a little fuller.",
+        "name": "penitent",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "mikkjal",
                 "lastname": "",
-                "title": ""
+                "title": "Eldberg lighthouse keeper"
             },
-            "text": ""
+            "text": "I run back inside, hasp the doors, and then I hear it – someone whispering my name. Mikkjaaal, Mikkjaaal!"
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Il s'avéra que le monstre hantant l'île d'Eldberg et son phare était un spectre rare connu sous le nom de pénitent. Les lieux qu'il hante sont immédiatement nimbés d'un épais brouillard et de profondes ténèbres où se perdent à jamais les voyageurs imprudents. Pour vaincre un pénitent, il convient de rester constamment en mouvement afin d'éviter les coups de l'agile créature, capable de se matérialiser dans le dos de l'ennemi en un clin d'œil. Mais le plus important, c'est de découvrir ce qui relie le monstre à l'endroit qu'il hante et de briser ce lien dans les meilleurs délais.<br><br>Avec l'aide du gardien du phare, Geralt chassa la brume de l'île, puis expédia le pénitent dans un autre monde pour de bon. Les navires pouvaient à nouveau gagner le port d'Arinbjorn, et la bourse du sorceleur s'alourdit un peu.",
+        "name": "pénitent",
+        "quote": {
+            "author": {
+                "firstname": "mikkjal",
+                "lastname": "",
+                "title": "gardien du phare d'Eldberg"
+            },
+            "text": "Je suis rentré tout de suite, je me suis barricadé... et là j'ai entendu une voix qui m'appelait. Mikkjaaal, Mikkjaaal!"
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["yrden", "quen"]
+    }
+},
+{
+    "category": "specters",
+    "code": "longlocks",
+    "textes": [{
+        "lang": "EN",
+        "description": "Everyone knows love stories can have tragic endings, but few would think this also applies to princesses from fairy tales created to relieve a set happy ending over and over again. Longlocks had the misfortune of becoming just such an unlikely tragic heroine. After the duke's daughters grew up and the Land of a Thousand Fables went feral, Longlocks, whose prince never came and who suffered greatly from her loneliness, decided to hang herself by her own braid. After she died, her ghost stayed to haunt the castle in which she had awaited her suitor.",
+        "name": "longlocks",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "the last words of Longlocks."
             },
-            "text": ""
+            "text": "Well, since it seems this hair won't be pulling up any knights in shining armor, might as well put it to some use."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Tout le monde sait que les histoires d'amour peuvent très mal finir, mais on n'imagine guère que des princesses de contes de fées créées pour vivre et revivre une fin heureuse puissent être logées à pareille enseigne. À son grand dam, Raiponce devint l'héroïne d'une bien improbable tragédie. Lorsque les filles du duc eurent grandi et que la Contrée des Mille Fables fut sens dessus dessous, Raiponce, dont le prince ne vint jamais, souffrit grandement de sa solitude, au point de se pendre un jour à ses propres mèches. Après sa mort, son fantôme subsista pour hanter le château où elle avait vainement attendu son prétendant.",
+        "name": "raiponce",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Les ultimes paroles de Raiponce"
+            },
+            "text": "Eh bien, puisque cette chevelure n'a l'heur de plaire à nul chevalier en rutilante armure, autant lui trouver une utilité."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["specter-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
+    "category": "specters",
     "code": "",
     "textes": [{
         "lang": "EN",
