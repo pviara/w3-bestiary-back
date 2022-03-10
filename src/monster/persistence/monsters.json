@@ -3141,47 +3141,47 @@
 },
 {
     "category": "specters",
-    "code": "",
+    "code": "wraith",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Clerics and scholars are forever debating whether spirits do in fact journey to another world after death, one where eternal joy or suffering awaits. Both groups agree, however, on what happens to spirits who, for one reason or another, remain in our world after their body breathes its last: they transform into wraiths. To hear their mournful howls, one can surmise this is not a fate to be envied.<br><br>Wraiths are usually encountered at night, near cemeteries, catacombs and other such burial places, or else near the places that were important to them in life: abandoned homes, crumbling castles or forgotten bridges.<br><br>Wraiths suffer endless, indescribable pain. Filled with anger and a sense of having been wronged, they both envy the living and brim with overwhelming hatred for them. Like other specters, they are immaterial, meaning they are not harmed by fire, poison or weapons designed to provoke bleeding.<br><br>Wraiths can turn immaterial and are at times very difficult to wound. One can, however, force them to reassume a physical presence by trapping them with the Yrden Sign or by hitting them with slivers from a Moon Dust bomb. As with any such ghostly being, one should fight them using silver swords, preferably ones smeared with a thick coat of specter oil. Note as well that wraiths are particularly dangerous on moonless nights.",
+        "name": "wraith",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "paule",
+                "lastname": "vikar",
+                "title": "peasant healer, advice to a dying man"
             },
-            "text": ""
+            "text": "Finish all your business before you die. Bid your loved ones farewell. Write your will. Apologize to those you've wronged. Otherwise, you'll never truly leave this world."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Prêtres et érudits débattent depuis toujours pour savoir si les âmes des défunts voyagent vers un autre monde après la mort, un monde où les attendrait joie ou souffrance éternelle. Les deux groupes s'accordent cependant sur un point : un esprit qui ne peut, pour une raison ou pour une autre, quitter notre monde après sa mort, se transforme inévitablement en spectre. Un sort peu enviable, à entendre leurs cris lugubres.<br><br>Le spectre erre généralement la nuit dans les cimetières, les catacombes et autres lieux funéraires, ou près des endroits importants pour lui de son vivant maison abandonnée, château en ruines ou pont oublié.<br><br>Consumé par sa haine et sa jalousie des vivants, un spectre souffre en permanence. Immatériel par nature, il est insensible au feu, au poison et aux armes conçues pour infliger des hémorragies.<br><br>Sous sa forme immatérielle, un spectre est très difficile à blesser. Pour le forcer à s'incarner physiquement, il faut l'immobiliser à l'aide du signe d'Yrden ou le toucher avec une bombe Poussière de lune. Il devient alors vulnérable pendant un bref instant à une lame d'argent enduite d'huile contre les spectres. À noter que les spectres sont particulièrement dangereux lors des nuits sans lune.",
+        "name": "spectre",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "paule",
+                "lastname": "vikar",
+                "title": "guérisseuse, offrant ses conseils à un mourant"
             },
-            "text": ""
+            "text": "Avant de mourir, mettez vos affaires en ordre, dites adieu à vos proches, rédigez votre testament et excusez-vous auprès de ceux à qui vous avez causé du tort. Sinon vous ne quitterez jamais vraiment ce bas-monde."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["yrden", "quen"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "specters",
+    "code": "daphnes-wraith",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "During his stay in Toussaint, Geralt became involved with a curiuos case of gynodendromorphy - that is to say, a woman who had been turned into a tree. When one cut into this tree's bark, it bled, and when the wind blew through its leaves, one could hear muffled sobs. Geralt investigated the matter and learned magic (or possibly a curse) was responsible for the transformation, and it surely had something to do with a certain sad episode form the woman's past. The love of Daphne's life, a knight errant, had gone to the witch of Lynx Crag and never returned, leaving her to wait for him forever, filled with sadness and longing.",
+        "name": "daphne's Wraith",
         "quote": {
             "author": {
                 "firstname": "",
@@ -3193,8 +3193,8 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Lors de son séjour à Toussaint, Geralt fut confronté à un cas étrange de gynodendromorphisme: en clair, une femme transformée en arbre. Lorsqu'on tranchait dans son écorce, il saignait. Et quand le vent bruissait dans ses feuilles, on entendait comme des sanglots étouffés. Geralt finit par découvrir que la magie était à l'œuvre, voire une malédiction. Et c'était sans nul doute le contrecoup d'un douloureux épisode ressurgi du passé de cette pauvre Daphné. L'amour de sa vie, un chevalier errant, s'était rendu chez la sorcière de la butte du Lynx pour ne jamais en revenir, la laissant à jamais éplorée.",
+        "name": "spectre de Daphné",
         "quote": {
             "author": {
                 "firstname": "",
@@ -3206,7 +3206,7 @@
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["specter-oil"],
         "potions": [],
         "signs": []
     }
