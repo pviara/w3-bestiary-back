@@ -3212,147 +3212,148 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "specters",
+    "code": "noonwraith",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "On particularly searing summer days, when the sun reaches its zenith, wraiths will at times appear, resembling sun-scorched women dressed in long, white robes. These are noonwraiths – the spirits of young women and girls who died violent deaths right before their weddings. Driven mad with pain and anger, they wander the fields searching for their unfaithful lovers or backstabbing rivals, though they will kill anyone who does not get out of their way in time. They are often held in this world by some object of intense emotional significance. That is why, if one ever finds a wedding ring or torn veil in the middle of a field, one should not pick it up, but instead back away as quickly as possible.<br><br>Noonwraiths are only known to haunt rural places, and usually stay near the place of their deaths. They prey on peasants working in the fields or children playing nearby.<br><br>Noonwraiths do not bleed and are for the most part immune to the effects of Witcher Signs. They can create mirror images of themselves which circle their victims in a kind of morbid parody of a dance. This ghastly ritual drains their victims' life energy while adding to their own strength. Noonwraiths are also able to manipulate the physical world to a limited degree, kicking up clouds of dust which temporarily blind and disorient their opponents.<br><br>Noonwraiths can turn immaterial and are at such times very difficult to wound. In order to force a noonwraith to take corporeal form, one must first trap it with the Yrden Sign or strike it with a Moon Dust bomb. Once the monster has regained physical presence, one can mount a fast attack with a silver blade, preferably one coated in specter oil.<br><br>Contrary to popular belief, noonwraiths can also be encountered at night, but are much weaker then than during the day.",
+        "name": "noonwraith",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "vlad",
+                "lastname": "reymond",
+                "title": "Peasants and Their Customs"
             },
-            "text": ""
+            "text": "Despite what is commonly thought, peasants do not interrupt their labors at midday to get out of the sun – they do it to avoid noonwraiths."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Lors des chaudes journées estivales, quand le soleil est proche de son zénith, on voit parfois apparaître une femme roussie par le soleil et vêtue d'une longue robe blanche. Il s'agit d'un spectre de midi, l'esprit d'une jeune femme décédée de mort violente à la veille de son mariage. Folle de douleur et de colère, elle erre dans les champs à la recherche de son amant infidèle ou d'une rivale déloyale et tue quiconque se dresse sur son chemin. Elle est souvent retenue en ce monde par un objet chargé d'émotions fortes, c'est pourquoi il ne faut jamais ramasser un anneau ou un voile déchiré trouvé dans un champ, mais au contraire s'en éloigner le plus vite possible. Le spectre de midi hante uniquement des zones rurales et reste généralement à proximité du lieu de sa mort. Il s'attaque aux paysans ou à leurs enfants.<br><br>Il ne saigne pas et la plupart des signes de sorceleurs sont sans effet sur lui. Il peut créer des doubles à son image pour encercler sa victime dans une sinistre parodie de danse et saper son énergie vitale pour l'ajouter à la sienne. Il peut enfin, dans une certaine mesure, manipuler le monde physique, en soulevant par exemple des nuages de poussière pour aveugler et désorienter ses adversaires.<br><br>Sous sa forme immatérielle, un spectre de midi est très difficile à blesser. Pour le forcer à s'incarner physiquement, il faut l'immobiliser à l'aide du signe d'Yrden ou le toucher avec une bombe Poussière de lune. Il devient alors vulnérable pendant un bref instant à une lame d'argent enduite d'huile contre les spectres.",
+        "name": "spectre de midi",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "vlad",
+                "lastname": "reymond",
+                "title": "Coutumes paysannes"
             },
-            "text": ""
+            "text": "Si les paysans interrompent leur labeur à midi, ce n'est pas pour se reposer à l'heure la plus chaude de la journée... C'est pour éviter les spectres de midi."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "specters",
+    "code": "nightwraith",
+    "textes": [{
+        "lang": "EN",
+        "description": "Compared to other creatures of the night – katakans, nekurats and werewolves, for example – nightwraiths (and their rarer cousins, duskwraiths) might not seem all that dangerous. After all, one might ask, how much harm could a pale, withered woman in a tattered dress do? The answer: quite a bit. Instead of finding this out the hard way, avoid crossing fields and meadows at night at all costs.<br><br>Like noonwraiths, nightwraiths are only found in rural areas. Travelers fall victim to them most often, but if legends are to be believed they also sneak into huts at times and murder peasants in their sleep.<br><br>When they attack nightwraiths remain immaterial for most of the time, meaning physical blows pass right through them. They only take on more tangible form for the brief moments in which they strike. When weakened, they will create several projections of themselves which cannot attack directly but act as transmitters of sorts through which the nightwraith can sap her victim's vital energy.<br><br>Nightwraiths can turn immaterial and are at such times very difficult to wound. In order to force one to take on corporeal form, trap it with the Yrden Sign or hit it with the blast of a Moon Dust bomb.<br><br>Do not believe the old wife tales and think yourself completely safe from nightwraiths during the day. They appear under the light of the sun as well - but are much weaker then than after dusk.",
+        "name": "nightwraith",
+        "quote": {
+            "author": {
+                "firstname": "aelline",
+                "lastname": "altsparr",
+                "title": "elven trobairitz"
+            },
+            "text": "Nightwraiths exude this immense sadness, this helpless wraith... I fear them, same as anyone. But most of all I feel sorry for them."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Comparé aux autres créatures de la nuit comme les katakans, les nosferatus ou les loups-garous, le spectre de minuit (et son cousin le spectre du couchant) semble presque inoffensif. Après tout, quel danger pourrait bien représenter cette femme pâle et flétrie vêtue d'une robe en lambeaux ? Le dicton \"L'habit ne fait pas le moine\" prend ici tout son sens, car le spectre de minuit est si dangereux qu'il vaut mieux éviter à tout prix de couper à travers champs en pleine nuit.<br><br>Comme le spectre de midi, le spectre de minuit est une créature rurale. Ses victimes sont le plus souvent des voyageurs imprudents, mais la légende veut qu'il se glisse parfois dans les fermes pour tuer les paysans dans leur sommeil.<br><br>Le spectre de minuit est immatériel, mais devient tangible pendant un très court instant lorsqu'il frappe son adversaire. S'il est affaibli, il projette plusieurs images de lui-même pour entourer son ennemi et saper son énergie vitale.<br><br>Sous sa forme immatérielle, un spectre de minuit est très difficile à blesser. Pour le forcer à s'incarner physiquement, il faut l'immobiliser à l'aide du signe d'Yrden ou le toucher avec une bombe Poussière de lune.",
+        "name": "spectre de minuit",
+        "quote": {
+            "author": {
+                "firstname": "aelline",
+                "lastname": "altsparr",
+                "title": "barde elfe"
+            },
+            "text": "Les spectres de minuit semblent si tristes... Je les crains, bien sûr, mais j'ai parfois pitié de ces âmes en peine."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["moon-dust"],
+        "oils": ["specter-oil"],
+        "potions": [],
+        "signs": ["yrden"]
+    }
+},
+{
+    "category": "specters",
+    "code": "umbra",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "According to some philosophers, everything we do in life leaves a permanent trace in the delicate matter which makes up our souls. Evil deeds, especially harm done to innocent creatures, can torment the soul of a sinner and cause it to remain restless, even after death.<br><br>While traveling through Toussaint, Geralt discovered there might a be grain of truth in these theories and folk beliefs. He came across a hermit whose sleep was troubled by some invisible phantom.<br><br>Geralt determined this phantom was an umbra, the ghost of a recently-deceased knight who had committed a terrible deed while alive and now visited the hermit to demand forgiveness. In his wraithly form he drank her blood and systematically deprived her of life energy.<br><br>The umbra appeared to the hermit as a horse, for the evil deed the knight had committed was to flog his own mount to death. The knight's spirit was unaware of the demonic role he had assumed in the afterlife.",
+        "name": "umbra",
+        "quote": {
+            "author": {
+                "firstname": "sabine of",
+                "lastname": "dal",
+                "title": "mystic and priestess of the Prophet Lebioda"
+            },
+            "text": "An umbra is merely an unclean conscience, one tormented by guilt and unforgiven wrongs. A man wallows in sin with loose women and can't sleep at night, then invents hokey about some umbra or phantom and blabbers about it at the tavern."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "D'après certains philosophes, tout ce que l'on fait dans sa vie laisse une empreinte indélébile dans la trame délicate dont notre âme est tissée. Les actes malveillants, surtout à l'encontre de créatures innocentes, sont autant de cicatrices de l'âme, qui en reste torturée, même après la mort.<br>Tandis qu'il voyageait à Toussaint, Geralt observa que ces croyances populaires n'étaient pas dénuées de bon sens. Ainsi, il rencontra une ermite dont le sommeil était troublé par quelque fantôme invisible.<br><br>Geralt conclut que le fantôme en question était une umbra, le fantôme d'un chevalier trépassé depuis peu qui avait commis de terribles exactions et qui visitait l'ermite pour obtenir le pardon. Sous sa forme spectrale, il buvait son sang et la dépouillait peu à peu de sa force vitale.<br>L'umbra se manifestait à l'ermite sous la forme d'un cheval, car son tort était d'avoir cinglé sa monture jusqu'à la tuer. L'esprit du chevalier ignorait tout du rôle funeste qu'il avait joué dans l'autre monde.Geralt pressentit que pour apaiser l'âme du chevalier, il devait lui accorder son pardon au nom de l'ermite.",
+        "name": "umbra",
+        "quote": {
+            "author": {
+                "firstname": "sabine de",
+                "lastname": "dal",
+                "title": "mystique et prêtresse du prophète Lebioda"
+            },
+            "text": "Une umbra n'est rien d'autre qu'une conscience impure, rongée par la culpabilité et les crimes impunis. Un homme se vautre dans le péché avec des femmes volages, et son sommeil en est troublé. Alors il s'invente quelque fable sur une umbra ou un fantôme, et il s'en va geindre à la taverne."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["specter-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "specters",
+    "code": "plage-maiden",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "When plague ravages a region, a spirit will sometimes walk its lands, a ghost resembling an ill woman whose flesh rots off her bones and in whose wake crawls a cavalcade of rats. No one knows whether this spirit brings the pox with her or is merely drawn to it like a moth to a light. Yet it is certain that she delights in dealing pain and suffering, in hearing the howling and moaning of men.<br><br>Many have called into question the very existence of plague maidens, or pestae, as they are sometimes called. Only two sightings of such a creature have ever been recorded, both during times of raging epidemic.<br><br>As the name \"plague maiden\" suggests, these wraiths take the appearance of females, though exactly why that is remains a mystery. Some speculate they, like other such specters, arise from the powerful emotional charge associated with certain circumstances of death, such as death preceded by a long and particularly painful illness.<br><br>Not much is known about how to fight a plague maiden, though one can assume they possess many traits in common with other phantoms and wraiths. They undoubtedly pose a great danger, though a witcher's immunities should at least prevent him from catching the contagious illnesses they carry.",
+        "name": "plague maiden",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "joachim von",
+                "lastname": "gratz's notes",
+                "title": "Vilmerius Hospital in Novigrad"
             },
-            "text": ""
+            "text": "Patients seem to have hallucinations of a woman covered in scabs and boils, with rats scurrying about all around her. These ravings subsided after an administration of henbane and poppy extract."
         }
     },
     {
         "lang": "FR",
-        "description": "",
+        "description": "Dans les régions ravagées par la peste, un esprit apparaît parfois sous la forme d'une femme aux chairs décomposées suivie d'une myriade de rats. Nul ne peut dire si ce spectre est à l'origine de la peste ou s'il est simplement attiré par la maladie comme un papillon par une flamme. Une chose est certaine, cependant il aime infliger d'insupportables souffrances et se repaît des cris de douleur de ses victimes.<br><br>Nombre sont ceux qui doutent de l'existence des vierges de la peste, aussi connues sous le nom de pestas. On n'a recensé que deux témoignages concernant de telles créatures, chaque fois au cours d'une épidémie.<br><br>Comme son nom l'indique, la vierge de la peste apparaît toujours sous les traits d'une femme, sans que l'on sache vraiment pourquoi. À l'instar des autres spectres, elle semble liée aux puissantes émotions suscitées par une maladie longue et douloureuse.<br><br>Nul ne sait vraiment comment combattre une vierge de la peste, bien que l'on puisse penser qu'elle partage les faiblesses des autres spectres. Quoi qu'il en soit, elle représente un danger qu'il est impossible d'ignorer, même pour un sorceleur immunisé contre les miasmes néfastes qu'elle transporte.",
         "name": "",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Notes de Joachim von Gratz, hôpital de Vilmerius de Novigrad"
             },
-            "text": ""
+            "text": "Les patients semblent pris d'hallucination collective. Ils parlent d'une femme couverte de croûtes et de furoncles et entourée de rats. Les visions persistent même après une forte dose de jusquiame noire et de pavot."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["specter-oil"],
         "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
+        "signs": ["yrden"]
     }
 },
 {
