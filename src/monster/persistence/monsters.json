@@ -3465,192 +3465,414 @@
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "fiend",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Fiends are walking mountains of muscle capped with horned, tooth-filled heads. Like their rarer cousins, bumbakvetches, they live in thick forests, swamps and bogs. When possible they avoid humans, but when not possible, they kill them, and without much difficulty.<br><br>Their size alone makes fiends and bumbakvetches extremely dangerous – one blow from their powerful paws can kill a knight along with it's fully armored mount. Their enormous heft also makes them invulnerable to Aard: even witchers specializing in the power of Signs could not move one even an inch. Furthermore, any wounds they receive heal at lightning speed.<br><br>If that weren't trouble enough, fiends need not rely on their strength and stamina alone with fighting. They can also call on a more refined weapon: the third eye located in the center of their forehead, which they use to draw their prey into a state of hypnosis. During these times their victim does not see anything beyond this single burning eye – the last thing they see before their death.<br><br>A fiend's only weakness is its fear of loud noises – bombs such as Samum or Devil's Puffball are thus quite effective when fighting this monster. Furthermore, a blade covered in relict oil can increase a witcher's chances of victory – or at least of walking away from the fight.",
+        "name": "fiend",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "kavin",
+                "lastname": "jell",
+                "title": "manager of the Villepin Estate near Vizima"
             },
-            "text": ""
+            "text": "I regret to inform Your Grace that Your Grace's son fell while hunting a fiend. He died on the spot, along with his squire, his guide, the beaters, his peasant entourage and his hounds."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Un fiellon est une montagne de muscles au sommet de laquelle trône une tête cornue à la gueule bardée de crocs. Tout comme son cousin le bukavac (plus rare), il vit dans les forêts humides et les marais. Il évite les humains si possible, mais en cas de confrontation, il les tue sans états d'âme... et sans la moindre difficulté.<br><br>Fiellon et bukavac sont si grands qu'ils peuvent tuer un cavalier en armure et sa monture d'un simple coup de patte. Ils sont par ailleurs insensibles au signe d'Aard, même les sorceleurs faisant des signes leur spécialité ne parviennent pas à les soulever d'un pouce. Enfin, ils régénèrent à vue d'œil même les blessures les plus graves.<br><br>Pour couronner le tout, la force et l'endurance ne sont pas les seuls atouts du fiellon. Il possède un troisième ceil, situé au centre du front, grâce auquel il peut hypnotiser sa proie. Pour la malheureuse victime, cet cil cerclé de flammes est bien souvent sa dernière vision.<br><br>La seule faiblesse du fiellon est sa peur des bruits puissants : les bombes Samum et Vesse-de-loup du diable sont ainsi salutaires face à ce monstre. Par ailleurs, une lame couverte d'huile contre les vestiges ouvre au sorceleur une perspective, sinon de victoire, au moins de survie.",
+        "name": "fiellon",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "kavin",
+                "lastname": "jell",
+                "title": "responsable du domaine de Villepin près de Wyzima"
             },
-            "text": ""
+            "text": "Votre Grâce, j'ai le regret de vous informer que votre fils est tombé au combat lors d'une chasse au fiellon. Il est mort sur le coup, ainsi que son écuyer, son guide, ses rabatteurs, son entourage et ses chiens."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["samum", "devils-puffball"],
+        "oils": ["relict-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "grottore",
+    "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "No one knows exactly when the spriggan called \"Grottore\" first made its home in the caves at the foot of Mount Gorgon. Spriggans usually prefer isolated backwoods and rarely make dens in caverns. Yet Grottore seemed to have taken a liking to \"grottos,\" giving rise to its nickname.<br>The monster was quite well-known among Beauclair knights, who often talked of it as a potential source of great glory. None were particularly eager to actually engage the monster in combat, however – none, that is, except for the young Knight François.<br><br>Grottore proved to be a demanding foe. It possessed the ability to teleport, meaning it would appear directly in front of Geralt and mount a surprise attack, dealing strong blows that were impossible to parry. It used primeval magic to control tree roots, which would shoot from the ground on its command, dealing significant damage to any in their way.<br><br>It was resistant to the Aard Sign, but vulnerable to burning. Blows from a silver sword would do it harm, despite the bark-like hide covering it like armor.",
+        "name": "grottore",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "velis",
+                "lastname": "stail",
+                "title": "herbalist"
             },
-            "text": ""
+            "text": "Happened like this... A nasty rain caught me while I was out in the woods, so I thought to myself, \"I'll hide in some hollow, for gods' forbid I get soaked through and catch a cold at my age. So I crawled into a cave. And there inside, something roars at me! Tore out of there so fast, wind had dried my coat by the time I got home."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Personne ne sait précisément quand le spriggan appelé \"Grottore\" a élu domicile dans les grottes creusées au pied de la montagne Gorgone. D'ordinaire, les spriggans préfèrent s'établir dans des sous-bois reculés et ne nicent que rarement dans des cavernes.<br>Et pourtant, Grottore s'est pris d'un goût certain pour les \"grottes\", ce qui lui a d'ailleurs valu son surnom. Le monstre était bien connu des chevaliers de Beauclair. Le terrasser leur aurait rapporté une gloire immortelle, mais aucun n'était particulièrement pressé d'affronter la créature... hormis un jeune chevalier : François.<br><br>Grottore s'avéra un adversaire ô combien redoutable. Il était capable de se téléporter, aussi pouvait-il surgir devant Geralt pour lui asséner par surprise des coups imparables. Il usait de magie primitive pour contrôler les racines des arbres, qui se déployaient à son gré et infligeaient des dégâts dévastateurs à quiconque se trouvait sur leur passage.<br><br>Il était résistant au signe d'Aard, mais vulnérable au feu. Les coups portés avec une épée d'argent l'éprouvaient malgré le cuir d'aspect ligneux qui le recouvrait telle une armure.",
+        "name": "grottore",
+        "quote": {
+            "author": {
+                "firstname": "velis",
+                "lastname": "stail",
+                "title": "herboriste"
+            },
+            "text": "C'est arrivé comme je vous le dis... Je me suis fait surprendre par l'orage alors que j'étais en forêt, alors je me suis dit : \"Je vais me trouver quelque part où m'abriter, parce qu'il vaudrait mieux pas que je me fasse tremper. À mon âge, c'est un coup à attraper la mort.\" Alors je me suis réfugié dans une grotte. Là, à l'intérieur, j'ai entendu quelque chose me rugir dessus ! Je suis sorti de là aussi vite que j'ai pu. Si vite que le temps que je rentre chez moi, le vent avait séché mes vêtements."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["relict-oil"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "relicts",
+    "code": "howler",
+    "textes": [{
+        "lang": "EN",
+        "description": "One is hard-pressed to name another area of our world more thoroughly riddled with monsters than Velen. There is on silver lining to this sad fact, however: the beasts living there must compete fiercely for hunting territory, meaning monsters often end up killing other monsters. An aggressive chort known as Howler went on just such a fratricidal rampage, tearing a pack of wolves to shreds before attacking and killing a fiend significantly larger than itself.<br><br>Howler was a truly fearsome foe. Each one of its blows was enough to kill - only heavy armor or the Quen Sign could protect one from mortal damage. Particularly to be avoided was its charge - and whenever possible, the monster was best attacked from the side.<br><br>Geralt slayed the Howler without much trouble, yet killing such a fierce fighter might very well have proved impossible, had not its previous conflicts with its monstrous kin weakened it considerably. The lesson, I suppose, is that when two monsters fight, a witcher wins.",
+        "name": "howler",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Conversation overheard in Lindenvale"
             },
-            "text": ""
+            "text": "Here about the contract? Any idea what this monster is?<br>Naye, but proper huge it must be. Slaughtered no less than a dozen wolves."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Velen est sans doute la région du monde où l'on retrouve la plus forte concentration de monstres. Corollaire inattendu de cette triste situation, les monstres sont souvent amenés à s'entretuer au cours de luttes territoriales. Ainsi, un tschart particulièrement agressif surnommé \"Hurleur\" massacra, au cours d'une rage meurtrière, une meute entière de loups et un fiellon pourtant bien plus imposant que lui.<br><br>Le hurleur était un redoutable adversaire. Chacun de ses coups aurait suffi à tuer un homme. Seule une lourde armure ou l'utilisation du signe de Quen pourrait protéger efficacement son adversaire. Dans la mesure du possible, il allait falloir éviter ses charges et attaquer les flancs de la bête.<br><br>Geralt tua le Hurleur sans trop de mal, mais l'élimination de ce monstre puissant aurait pu s'avérer impossible s'il n'avait été déjà considérablement affaibli par un combat contre d'autres créatures. La morale de cette histoire est que, lorsque deux monstres s'affrontent, le sorceleur est le vainqueur.",
+        "name": "hurleur",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation entendue à Valtilleul"
+            },
+            "text": "Je viens pour le contrat. Vous savez à quel genre de monstre vous avez affaire ?<br>Non, mais c'est sûr que c'est une sacrée bestiole. Il a tué toute une meute de loups..."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["devils-puffball"],
+        "oils": ["relict-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "kernun",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Novigrad - the greatest metropolis in the world, the acme of civilization, material proof - or so one is tempted to think - of mankind's ability to tame and control nature. Yet right outside the city walls lies the Novigrad Wilderness - and whoever sets foot in it soon finds out that man's primacy does not extend past the city walls.<br><br>One of the monsters who made its lair in that thick tangle was an old, powerful leshen. It killed any who strayed into its territory with its species' characteristic cruelty: lacerating them with razor-sharp claws, sending strangling plants shooting out of the ground or feeding them to packs of hungry wolves. If not for its vulnerability to fire, the Igni Sign included, and the protection of the Quen Sign, one could wager not even the toughest witcher would be able to slay the beast.<br><br>Geralt of Rivia was only able to finally put an end to this leshen after a long and exhausting battle. Once the beast died, the way was clear for loggers to move into its former domain. The woods now gradually fall to the ax. Perhaps one day they'll disappear altogether - and their monstrous denizens along with them.",
+        "name": "kernun",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "louis",
+                "lastname": "closster",
+                "title": "woodcutter"
             },
-            "text": ""
+            "text": "We told the prick something lurked in them woods, but he refused to believe it..."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Novigrad, plus grande ville du monde, pinacle de la civilisation, preuve irréfutable de la domination de l'homme sur la nature... et pourtant, les étendues sauvages qui entourent la ville rappellent à quiconque s'y aventure que la nature est toujours prête à reprendre ses droits.<br><br>Parmi les créatures rôdant en cette verte contrée, un leshen, ancien et puissant, massacrait sans distinction les audacieux et les imprudents qui osaient pénétrer sur son territoire, avec une cruauté caractéristique : lacérations, empalements sur la végétation environnante, cadavres livrés en pâture aux loups... Sans sa vulnérabilité au feu, signe d'Igni compris, et la protection du signe de Quen, il y a fort à parier que même le sorceleur le plus aguerri n'en viendrait pas à bout.<br><br>Geralt de Riv n'acheva de ce leshen qu'après un long combat épuisant. Après la mort du monstre, les bûcherons ne perdirent pas de temps pour se mettre à l'ouvrage et les bois reculent chaque jour un peu plus sous leurs coups de hache, signe qu'un jour peut-être, la civilisation humaine aura définitivement conquis la nature.",
+        "name": "kernun",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "louis",
+                "lastname": "closster",
+                "title": "bûcheron"
             },
-            "text": ""
+            "text": "On lui avait dit, à ce crétin, qu'une drôle de bestiole rôdait dans les bois, mais il a rien voulu entendre..."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["relict-oil"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "relicts",
+    "code": "the-caretaker",
+    "extension": "hearts-of-stone",
+    "textes": [{
+        "lang": "EN",
+        "description": "The Caretaker served with the indifference of a golem, and proved as fierce in battle as it was diligent in its labors. It felt no pain – in fact, each blow it received seemed to give it strength, as did each blow it landed on Geralt with the spade it wielded as a weapon. What is more, the Caretaker was able to summon powerful spirits from the graves it had dug and could heal itself by absorbing them. The witcher had a hard time evading the devastating strikes of its weapon, and his only chance at wounding the creature came when it would stick its spade in the ground to draw on otherworldly energy in an attempt to petrify its foes with fright.<br><br>The being known as the Caretaker had been summoned to the von Everec estate from another realm, making \"demon\" its most accurate designation. The Caretaker had been forced into servitude by magic. Its tasks - to care for the house and protect it from intruders. It performed these pedantically, tending the flowers, repairing the fences, tidying the yard... and murdering all intruders who set foot on the grounds, then burying their corpses in neat rows on untended land just beyond the manor garden's bounds.",
+        "name": "the Caretaker",
+        "quote": {
+            "author": {
+                "firstname": "bartolomeo",
+                "lastname": "darez",
+                "title": "after trying to contact creatures from another plane and landing in an insane asylum"
+            },
+            "text": "There are more things in heaven and earth than are dreamt of in philosophy."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le Gardien servait avec l'indifférence d'un golem, et s'avéra aussi farouche au combat que diligent dans son travail. Il ne ressentait pas la douleur et chaque coup qu'il subissait semblait même accroître sa force, tout comme ceux qu'il infligeait à Geralt avec la pelle lui servant d'arme. Qui plus est, le Gardien pouvait invoquer de puissants esprits des tombes qu'il avait creusées et se soigner en les absorbant. Le sorceleur eut toutes les peines à éviter les coups de pelle dévastateurs, et ne parvenait à blesser la créature que lorsqu'elle plantait son outil dans le sol pour puiser de l'énergie surnaturelle afin de pétrifier ses adversaires de peur.<br><br>L'être appelé le Gardien avait été invoqué au domaine von Everec depuis un autre plan, c'est pourquoi le terme le plus précis pour le désigner est celui de \"démon\". Le Gardien avait été contraint à la servitude par la magie avec pour tâche d'entretenir la maison et de la protéger des intrus. Il accomplissait son travail avec une fidélité maniaque, en arrosant les fleurs, en réparant les clôtures, en entretenant la cour... et en assassinant tous les intrus mettant les pieds sur la propriété avant de les enterrer dans des tombes bien alignées sur une friche au-delà des limites du jardin du manoir.",
+        "name": "le Gardien",
+        "quote": {
+            "author": {
+                "firstname": "bartolomeo",
+                "lastname": "darez",
+                "title": "après avoir tenté de contacter des créatures d'un autre plan et atterri dans un asile d'aliénés"
+            },
+            "text": "Il y a plus de choses au ciel et sur terre que ne l'imaginent les philosophes."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["relict-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "relicts",
+    "code": "the-monster-of-tufo",
+    "extension": "blood-and-wine",
+    "textes": [{
+        "lang": "EN",
+        "description": "Imagine a creature that kills men, feeds on kikimore eggs and digs underground tunnels so wide they'd fit the emperor of Nilfgaard's coronation carriage along with a team of six horses. And now imagine this creature digs with such force, the earth quakes and the houses up above tremble and collapse. Noting these symptoms, Geralt was at first unsure what sort of a beast he could be dealing with, knowing only that he needed to be very, very careful.<br><br>Only after he carefully examined the monster's tracks did he realize it had to be an aged female shaelmaar.<br><br>The monster destroying Tufo turned out to be an old shaelmaar matriarch. Geralt hunted it down and fought it deep under the ground.<br><br>Though blind like all members of its species, this creature could easily maneuver by sensing vibrations and noises. As long as Geralt stood quiet and motionless, he was safe. Yet if he took one step or breathed a bit too loud, the matriarch would start moving in his direction with great speed.<br><br>Geralt had a very difficult time taking out this monster, whose armor could not be pierced by any of his weapons. In the end, however, he succeeded and the monster of Tufo was no more.",
+        "name": "the monster of Tufo",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "veteran Toussaint Ducal Guardsman, briefing new recruits"
+            },
+            "text": "A knight errant might manage to kill a ghoul and a peasant with a pack of dogs can at times take down a bear. Yet let us make one thing clear: not even the finest steel armor ever forged or the collar bone of Saint Plegmund himself will give a mortal man any chance of surviving a fight against the creatures that dwell deep beneath the earth."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Imaginez une créature qui s'en prend aux hommes, se nourrit d'œufs de kikimorrhe et creuse des tunnels si vastes qu'ils pourraient accueillir tout le cortège nuptial de l'empereur du Nilfgaard. Et maintenant, imaginez cette même créature qui fouaille le sol avec une telle violence que la terre s'ébranle, au point de faire s'écrouler les maisons à l'aplomb. Devant ces phénomènes, Geralt ignorait de prime abord à quel genre d'adversaire il était confronté, mais il s'imposa la plus grande prudence.<br><br>Ce n'est qu'après avoir examiné soigneusement les empreintes du monstre qu'il comprit de quoi il s'agissait : c'était une femelle shaelmaar d'un âge avancé.<br><br>Le monstre qui ravageait Tufo était une vieille matriarche shaelmaar. Geralt la traqua et l'affronta loin sous la terre.<br><br>Bien qu'aveugle, comme toutes les créatures de son espèce, ce monstre s'en remettait aux vibrations et aux sons pour se guider. Tant que Geralt restait immobile et ne produisait aucun son, il ne risquait rien. Mais s'il avançait d'un seul pas ou respirait trop bruyamment, la matriarche fondrait aussitôt sur lui.<br><br>Geralt eut toutes les peines du monde à en venir à bout, tant ses armes étaient incapables d'enfoncer sa carapace. Mais il finit par l'emporter le monstre de Tufo n'était plus.",
+        "name": "le monstre de Tufo",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Vétéran de la garde ducale de Toussaint, allocution aux jeunes recrues"
+            },
+            "text": "À l'occasion, un chevalier errant peut réussir à tuer une goule, et un simple paysan accompagné d'une meute de chiens pourra parfois venir à bout d'un ours. Mais ne vous y trompez pas : la plus robuste armure d'acier jamais forgée, ni même la clavicule de Saint Plegmund lui-même ne sauraient prêter à un mortel la moindre chance de rivaliser avec les créatures qui s'ébattent aux tréfonds de la terre."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["samum"],
+        "oils": ["relict-oil"],
+        "potions": [],
+        "signs": ["aard"]
+    }
+},
+{
+    "category": "relicts",
+    "code": "leshen",
+    "textes": [
+    {
+        "lang": "EN",
+        "description": "Leshens dwell in dense, primeval woods. Fiercely territorial creatures, they hunt with stealth and cunning as their only companions. They use their inborn magic to control the plants and animals within their territory – and so, when stalking them, half the battle is merely getting near enough to strike. Leshens old enough to earn the appellation \"ancient\" wield advanced skills and tactics that make them particularly dangerous.",
+        "name": "leshen",
+        "quote": {
+            "author": {
+                "firstname": "mulliver",
+                "lastname": "",
+                "title": "ealdorman of Hoshberg in lower Aedirn"
+            },
+            "text": "We never hunt in these woods. Never. Even if it means the whole village starves."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le leshen est une créature territoriale vivant au plus profond des forêts anciennes. Furtif et rusé, c'est un monstre solitaire qui contrôle par magie les plantes et les animaux de son territoire. Pour affronter un leshen, encore faut-il pouvoir l'approcher sans se faire repérer... Les plus vieux leshens, aussi appelés \"anciens\", sont de formidables adversaires même pour un sorceleur aguerri.",
+        "name": "leshen",
+        "quote": {
+            "author": {
+                "firstname": "mulliver",
+                "lastname": "",
+                "title": "échevin de Hoshberg, Bas-Aedirn"
+            },
+            "text": "On ne chasse jamais dans ces bois. Même si tout le village crève de faim."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["relict-oil"],
+        "potions": [],
+        "signs": ["igni"]
+    }
+},
+{
+    "category": "relicts",
+    "code": "imp",
+    "textes": [{
+        "lang": "EN",
+        "description": "The imp pestering the merchants of Novigrad turned out to be a doppler. These monsters usually avoid confrontation - to everyone's great relief, for when pinned they become extremely dangerous. Fighting them quickly turns into a fight against oneself. Or, to be precise, against a mirror image gifted with one's own strengths and abilities. In a conflict with such even odds, only luck - or destiny - decides the victor.<br><br>Geralt has an extra helping of both, and so won his fight against his doppler doppleganger - then decided to let him go free, for unlike other monsters, this creature's motives for harming humans were noble.",
+        "name": "imp",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation overheard on the streets of Novigrad"
+            },
+            "text": "Really wanna see an angry witcher?<br>Do you?"
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Le lutin qui s'en prenait aux marchands de Novigrad était en fait un doppler. Ces créatures évitent généralement l'affrontement direct... et c'est plutôt une bonne chose, car un doppler acculé est un adversaire extrêmement dangereux. Combattre un doppler, c'est se combattre soi-même... ou, pour être plus précis, combattre un reflet doté des mêmes forces et des mêmes pouvoirs. Inutile de dire que la chance décide le plus souvent de l'issue d'un tel combat.<br><br>Geralt, béni des dieux, parvint à vaincre son double et décida de lui laisser la vie sauve, jugeant ses actes nobles et justifiés.",
+        "name": "lutin",
+        "quote": {
+            "author": {
+                "firstname": "",
+                "lastname": "",
+                "title": "Conversation entendue dans les rues de Novigrad"
+            },
+            "text": "Tu veux vraiment voir un sorceleur en colère ?<br>Et toi ?"
+        }
+    }],
+    "weakspots": {
+        "bombs": [],
+        "oils": ["relict-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "crones",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "The isolated corners of our world harbor creatures older than humans, older than academies and mages, older even than elves and dwarves. The Crones of Crookback Bog are such creatures. No one knows their true names, nor what breed of monstrosity they in fact are.<br><br>Common folk have given these three sisters the names Weavess, Brewess and Whispess, and call the threesome \"The Ladies of the Wood\" or simply \"The Good Ladies.\" The Crones act as the true sovereigns of Velen, whose inhabitants they help survive through harsh times in return for unquestioning obedience. They wield powerful magic, but one different from that of mages. They draw power from water and earth and are bound to the land in which they live. The Crones can hear everything that happens in their woods, predict the future, twist the threads of human lives and bring blessings as well as curses.<br><br>The Crones seem for all intents and purposes to be immortal. Magic elixirs keep them from aging and allow them to take the appearance of young women. These elixirs and their mystical ties to the swamps in which they live also give them supernatural strength and vitality.",
+        "name": "crones",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Macveth, Act 1, Scene 3"
             },
-            "text": ""
+            "text": "Sister crones, hand in hand, terrors of the sea and land, thus do go about, about: thrice to thine and thrice to mine, and thrice again, to make up nine."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Il existe de par le monde des créatures plus anciennes que les mages et leurs académies, plus anciennes que les humains, plus anciennes même que les elfes et les nains. Les Moires du marais de Torséchine font partie de ces étranges créatures dont l'existence remonte à la nuit des temps. Nul ne connaît leur véritable nom, ni leur véritable nature.<br><br>Les petites gens désignent les trois sœurs par les noms de Fuselle, Ambroisie et Soupir, ou collectivement les \"Dames de la forêt\". Les Moires règnent sur Velen, dont elles protègent les habitants en échange d'une indéfectible loyauté. Leur puissante magie, qui trouve sa source dans l'eau et la terre, les lie irrémédiablement à leur territoire. Les Moires peuvent entendre tout ce qui se trame dans leurs bois, prédire l'avenir et modifier la destinée des humains comme bon leur semble.<br><br>Selon toute vraisemblance, les Moires semblent immortelles. Des élixirs magiques leur permettent de conserver l'apparence de jeunes femmes et leur accordent une force et une vigueur surnaturelles.",
+        "name": "moires",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Macveth, Acte I, Scène 3"
             },
-            "text": ""
+            "text": "\"Les sœurs Moires, la main dans la main, fléaux de terre et de mer, ainsi vont en rond, en rond. Trois tours pour toi, et trois pour moi, et trois de plus, pour faire neuf.\""
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["relict-oil"],
+        "potions": [],
+        "signs": ["quen"]
+    }
+},
+{
+    "category": "relicts",
+    "code": "morvudd",
+    "textes": [{
+        "lang": "EN",
+        "description": "They say every journey made in the Skellige Isles ends in adventure. And sometimes, that adventure ends in death. Such was the case for a group of adventure-seeking Skelligers who set out in search of treasure in forgotten ruins - which turned out to lie in the hunting grounds of a powerful fiend known as Morvudd.<br><br>The witcher knew there was little room for error in a fight with such a creature. A moment of carelessness and the beast could hypnotize him with its third eye, then tear him to shreds while he remained in a trance. Morvudd was a particularly large individual, so one could presume fast attacks would not prove effective against it - and that its blows would kill anyone not protected with heavy armor or the Quen Sign.<br><br>Though Morvudd killed the Skellige warriors without much trouble, it proved no match for the witcher. It even tried to save its life by fleeing at one point, but that only delayed its inevitable death by the witcher's silver blade.",
+        "name": "morvudd",
+        "quote": {
+            "author": {
+                "firstname": "geralt of",
+                "lastname": "rivia",
+                "title": ""
+            },
+            "text": "Ate only the entrails. Fussy."
+        }
+    },
+    {
+        "lang": "FR",
+        "description": "Un dicton populaire affirme que sur Skellige, le moindre voyage est une aventure. Une aventure parfois mortelle, comme en atteste l'histoire d'un groupe d'insulaires en quête de gloire, parti à la recherche d'un trésor dans des ruines oubliées... qui s'avérèrent être le terrain de chasse d'un puissant fiellon nommé Morvudd.<br><br>Le sorceleur savait qu'il n'aurait pas droit à l'erreur durant son bras de fer avec la bête. Une seule seconde d'inattention permettrait à son adversaire de l'hypnotiser avec son troisième œil, avant de le tailler en pièces. Morvudd était un spécimen imposant, aussi était-il permis de penser que les attaques rapides seraient inefficaces contre lui... et que ses coups terrasseraient l'aventurier imprudent qui aurait négligé d'utiliser une armure lourde ou le signe de Quen.<br><br>Morvudd avait certes tué les guerriers de Skellige sans effort, mais il n'était pas de taille face au sorceleur. Il tenta même de sauver sa peau en s'enfuyant, mais cela ne fit que retarder l'inévitable et le sorceleur le pourfendit de sa lame en argent.",
+        "name": "morvudd",
+        "quote": {
+            "author": {
+                "firstname": "geralt de",
+                "lastname": "rive",
+                "title": ""
+            },
+            "text": "Il n'a mangé que les entrailles. Un gourmet."
+        }
+    }],
+    "weakspots": {
+        "bombs": ["samum", "devils-puffball"],
+        "oils": ["relict-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "wicked-witch",
+    "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Though evil witches are often considered creatures born of the overactive imaginations of fabulists and mythologists, cartoonish characters only a child would ever be frightened of, there are accounts of men who claim to have happened across one of these improbable beings. All these accounts agree that the witch not only did in fact eat men, but had mastered the cooking of humans to a fine art. They are said to be particularly fond of children's liver fried in butter and served in a saffron sauce, balsamic vinegar-marinated fingers roasted to a golden crisp and, yes, even freshly-squeezed corpse juice. It should be noted here that all the above-mentioned witnesses who swore they saw such a witch were patients of the Ellander Institute for the Mentally Ill, thus the veracity of their testimony is highly debatable.",
+        "name": "wicked witch",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "karl",
+                "lastname": "hrimm",
+                "title": "writer of children's fables"
             },
-            "text": ""
+            "text": "Once upon a time, there was a wicked witch. Every day after supper she'd drink a glass of freshly-squeezed corpse juice..."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "On prétend parfois que les méchantes sorcières sont le fruit de l'imagination trop féconde des fabulistes et autres mythologues de vulgaires caricatures dont seul un enfant pourrait s'effrayer. Et pourtant, il est certains hommes qui affirment avoir rencontré l'une de ces créatures improbables. Tous s'accordent à dire que non contentes de se repaître de chair humaine, elles ont élevé l'art de cuisiner l'homme au rang de véritable religion. Elles se délecteraient tout particulièrement du foie des jeunes enfants, revenu au beurre et assaisonné de sauce safran, de doigts marinés dans le vinaigre balsamique et frits en chapelure, le tout arrosé de jus de cadavre fraîchement tiré. À noter cependant que tous les témoins qui ont juré avoir aperçu une sorcière fréquentaient l'Institut Ellander pour malades mentaux. La fiabilité de leur témoignage est donc pour le moins sujette à caution.",
+        "name": "méchante Sorcière",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "karl",
+                "lastname": "hrimm",
+                "title": "auteur de contes pour enfants"
             },
-            "text": ""
+            "text": "Il était une fois une Méchante Sorcière. Tous les jours, après le souper, elle sirotait un verre de jus de cadavre fraîchement tiré..."
         }
     }],
     "weakspots": {
         "bombs": [],
-        "oils": [],
+        "oils": ["relict-oil"],
         "potions": [],
         "signs": []
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "shaelmaar-fteon",
+    "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Gladiator fights in massive arenas are a popular form of entertainment in Nilfgaard. Usually the fighters are slaves specially trained for this purpose, yet at times the arena masters pit humans against monsters. The shaelmaar Geralt had to fight in the tourney grounds was a present from the emperor to his relative, Duchess Anna Henrietta. It had been caught while young and prepared for its ultimate purpose by Nilfgaardian trainers. That does not mean it was tame, however – in fact, its wildness and inborn ferocity had not been dulled one whit. Like all creatures of its species, it was blind but could unerringly pinpoint its opponents' location using echolocation. The shaelmaar had thick armor and near impenetrable skin. It could also roll into a ball and charge its opponents. Its underbelly, however, was relatively vulnerable and became exposed when its charge failed.<br><br>In the end, though the fight was long and difficult, Geralt defeated the shaelmaar and, when the duchess called from the stands for him to finish the beast off, he refused to kill the creature, not wanting to take a life merely to amuse a crowd.",
+        "name": "shaelmaar from the Emperor of Nilfgaard",
         "quote": {
             "author": {
                 "firstname": "",
@@ -3662,8 +3884,8 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les combats de gladiateurs dans des arènes immenses sont un divertissement populaire au Nilfgaard. En général, les combattants sont des esclaves entraînés spécialement dans ce but, mais il arrive que les maîtres des arènes opposent des humains à des monstres. Le shaelmaar que Geralt dut affronter sur la lice était un cadeau de l'empereur à sa parente, la duchesse Anna Henrietta. Il avait été capturé tout jeune et préparé dans cet ultime but par des dompteurs nilfgaardiens. Cela ne veut pas dire pour autant que l'animal était dompté. En fait, sa sauvagerie et sa férocité innée n'avaient en rien été émoussées. Comme toutes les créatures de son espèce, il était aveugle, mais pouvait repérer ses adversaires à coup sûr grâce à l'écholocation. Le shaelmaar avait une armure épaisse et une peau presque impossible à percer. Il pouvait aussi se rouler en boule pour charger ses adversaires. Cependant, son ventre était assez vulnérable et exposé en cas d'échec d'une charge de la bête.<br><br>Au terme d'un long et difficile combat, Geralt finit par vaincre le shaelmaar, mais lorsque la duchesse l'enjoignit depuis les gradins à achever la bête, il refusa, peu désireux de prendre une vie pour divertir la foule.",
+        "name": "shaelmaar de l'empereur du Nilfgaard",
         "quote": {
             "author": {
                 "firstname": "",
@@ -3674,2096 +3896,154 @@
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["samum"],
+        "oils": ["relict-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["aard"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "shaelmaar",
+    "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Shaelmaars spend most of their lives deep underground, having no contact with the world up above. At times, however, a shaelmaar will dig its way to the surface and devour any men within its reach. Some shaelmaars also burrow tunnels close to the surface, collapsing buildings and causing tremors in the process.<br><br>Since shaelmaars are blind, they find their way by sensing vibrations and listening for sounds. Thus the best tactic when fighting such a monster is to hurl something heavy or noisy against a nearby boulder or wall. Then pray silently that the beast will roll towards the sound and knock itself out upon striking into the obstacle.<br><br>Clumsy shaelmaars might seem easy targets to hit, but when even your strongest blows bounce off the thick armor plating their backs, you realize they've little need to dodge. When threatened, a shaelmaar will curl up in a ball and roll forward with tremendous impetus, becoming an unstoppable force crushing everything in its path.<br><br>A witcher's best bet is to stay out of a charging shaelmaar's way and strike after its charge fails, revealing its vulnerable underbelly.<br><br>A witcher of particular cunning and agility will use the Aard Sign or a bomb (Samum works particularly well for this purpose) to cause the shaelmaar to slam into an obstacle at full speed, significantly lowering its fighting ability and opening the witcher's path to victory. Trying to disorient a shaelmaar in this way is a risky maneuver, but can be effective, especially when third parties are threatened.",
+        "name": "shaelmaar",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "ramus",
+                "lastname": "vendenratz",
+                "title": "Mahakam foreman"
             },
-            "text": ""
+            "text": "The earth's innards are home to mighty strange and fearsome beasts. Were they ever to decide to ramble up to the surface, we'd all be gutted the very first day o' the invasion."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les shaelmaars passent la majeure partie de leur vie dans les profondeurs du sol, sans avoir de contact avec le monde du dessus. Parfois, cependant, il arrive qu'un shaelmaar creuse jusqu'à la surface et dévore les hommes passant à sa portée. Certains shaelmaars creusent aussi des tunnels si près de la surface, qu'ils font trembler la terre et provoquent l'effondrement de bâtiments.<br><br>Les shaelmaars étant aveugles, ils se repèrent aux vibrations et aux bruits. La meilleure tactique face à un tel monstre est donc de lancer un objet lourd ou bruyant contre un rocher ou un mur, puis de prier en silence pour que la bête se roule en boule et fonce vers le bruit en s'assommant du même coup contre l'obstacle.<br><br>Les shaelmaars sont maladroits et peuvent donc sembler des cibles faciles, mais lorsque même vos coups les plus puissants rebondissent sur l'épaisse armure recouvrant leur dos, vous réalisez qu'ils n'ont guère besoin d'esquiver. En cas de menace, un shaelmaar peut se rouler en boule et se propulser vers l'avant avec une grande force. Il écrase alors tout sur son passage sans qu'il soit possible de l'arrêter.<br><br>Le mieux à faire pour un sorceleur est de s'écarter de la trajectoire et de frapper le shaelmaar lorsque sa charge a échoué, car son ventre est alors exposé et vulnérable.<br><br>Un sorceleur particulièrement rusé et agile s'assurera la victoire en utilisant le signe d'Aard ou une bombe (Samum est particulièrement efficace dans ce cas) pour pousser le shaelmaar à percuter un obstacle à pleine vitesse et réduire ainsi nettement ses capacités de combat. Tenter de désorienter ainsi un shaelmaar est une manoeuvre risquée, qui peut malgré tout être efficace, surtout quand des tiers sont menacés.",
+        "name": "shaelmaar",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "ramus",
+                "lastname": "vendenratz",
+                "title": "contremaître de Mahakam"
             },
-            "text": ""
+            "text": "Les entrailles de la terre abritent des bêtes redoutables et très étranges. Si elles décidaient de venir se promener à la surface, nous nous ferions tous massacrer le premier jour de l'invasion."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["samum"],
+        "oils": ["relict-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["aard"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "spriggan",
+    "extension": "blood-and-wine",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Spriggans are a subspecies of the monsters known as leshens. One is liable to come across them in inaccessible, unfrequented woodlands. They do not usually attack humans if unprovoked, but when irritated they can be quite fearsome, and, as they possess considerable strength, they are capable of doing great damage. Their appetite is such that they can devour more flesh than an army at a wedding.<br><br>Each spriggan has mastery over plants and is inextricably tied to them. Thus if someone destroys greenery in its domain, it immediately comes to punish the disturber.",
+        "name": "spriggan",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "fragment of a story told by a woman returning from the woods"
             },
-            "text": ""
+            "text": "I was gathering berries, as one does this time of year, when suddenly the trees shook and I saw this... this thing..."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les spriggans sont une sous-espèce d'une variété de monstres qu'on appelle les leshens. Ils peuplent les régions forestières les plus reculées. Ils ne s'en prennent que rarement aux humains, sauf pour se défendre. Mais sous le coup de la colère, ils deviennent redoutables. Leur force prodigieuse leur permet d'asséner des coups d'une violence inouïe. Leur appétit est tel qu'ils peuvent engloutir plus de viande que toute une armée en ripaille. Tout spriggan entretient un lien inextricable avec les plantes. Si quiconque détruit un végétal dans son domaine, il s'en vient aussitôt punir le coupable.",
+        "name": "spriggan",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Bribes d'un récit rapporté par une femme qui revenait de la forêt"
             },
-            "text": ""
+            "text": "Je cueillais des baies, comme de coutume en cette saison, quand soudain, les arbres se sont ébranlés. Et c'est là que j'ai aperçu cette... cette chose..."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["dimeritium-bomb"],
+        "oils": ["relict-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["igni"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "sylvan",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Sylvans and Yakshas, a kindred species, are extremely rare woodland creatures whose appearance combines traits of goats and rotund men. These beings usually pose little danger, for they limit their contact with humans to playing harmless (though often bothersome) tricks and eating crops from their fields.",
+        "name": "sylvan",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "yaevinn",
                 "lastname": "",
-                "title": ""
+                "title": "legendary Scoia'tael commander"
             },
-            "text": ""
+            "text": "Sylvans are cruel, greedy and treacherous. Still, I prefer them to dh'oine."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Le sylvain et le yaksha sont des créatures forestières extrêmement rares, mi-homme mi-chèvre. Ni l'un, ni l'autre ne représente un réel danger, leurs rares contacts avec les humains se limitant à d'innocentes plaisanteries.",
+        "name": "sylvain",
         "quote": {
             "author": {
-                "firstname": "",
+                "firstname": "yaevinn",
                 "lastname": "",
-                "title": ""
+                "title": "commandant Scoia'tael"
             },
-            "text": ""
+            "text": "Le sylvain est une créature cruelle et perfide. À tout prendre, je préfère cependant sa compagnie à celle d'un dh'oine."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["samum", "devils-puffball"],
+        "oils": ["relict-oil"],
         "potions": [],
-        "signs": []
+        "signs": ["igni"]
     }
 },
 {
-    "category": "",
-    "code": "",
+    "category": "relicts",
+    "code": "chort",
     "textes": [{
         "lang": "EN",
-        "description": "",
-        "name": "",
+        "description": "Chorts are the somewhat smaller kin of fiends and bumbakvetches. Yet any witcher who thinks their diminutive stature means they present no danger commits a grave error – the kind that can end his career permanently. These denizens of dark and ancient woods are some of the most dangerous monsters known to man.<br><br>Legends often mistake chorts for sylvans, ascribing to them the ability to speak, stand on two legs, gobble up cabbage, play pranks and work mischief around the household. The arrival of a true chort in a region soon puts an end to such tales. The creatures do not speak, at best communicating with each other through grunts, snorts and moans. They get about on four legs and as for their \"mischief\"... they destroy farmsteads, devouring anything that can be devoured, including cabbage, if such is available, but also extending to poultry, pork, the family dog and then the family itself.<br><br>Chorts fight with little finesse, running straight towards their opponent and trying to knock him to the ground with the force of their charge. After downing their foe they bite, kick and strike with their claw-tipped paws. Due to their size and four-legged posture, they are mostly unperturbed by the force of the Aard Sign, and the regenerative powers of their body allow any wounds they receive to heal at a rapid pace.",
+        "name": "chort",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "agnes",
+                "lastname": "thistle",
+                "title": "herbalist from the Black Forest"
             },
-            "text": ""
+            "text": "Chorts are smaller than fiends, true. But still big enough to kill."
         }
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Le tschart est apparenté au fiellon et au bukavac. Si son gabarit est moins imposant, il n'en demeure pas moins un adversaire dangereux, même pour un sorceleur expérimenté. Ce monstre des sombres forêts est sans conteste l'une des créatures les plus redoutables du monde connu.<br><br>Le tschart est souvent confondu avec le sylvain et son nom évoque donc une créature humanoïde douée de parole, friande de choux et n'aimant rien plus que jouer des tours aux villageois. L'arrivée d'un véritable tschart dans une région met bien vite un terme à cette légende. Un tschart ne parle pas, il grogne. De plus, il se déplace à quatre pattes et, pour toute facétie, se contente de raser des villages entiers en dévorant tout ce qui s'y trouve, sans faire de distinction en les choux, les poules, les cochons, les chiens et les humains.<br><br>Le tschart n'est pas une créature subtile: au combat, il charge son adversaire pour le renverser, puis l'achève à coups de griffes et de crocs. En raison de sa taille et de sa posture quadrupède, il ne ressent guère les effets du signe d'Aard. Pour ne rien arranger, il est de plus doté d'une faculté de régénération assez stupéfiante.",
+        "name": "tschart",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "agnès",
+                "lastname": "chardon",
+                "title": "herboriste de la Forêt noire"
             },
-            "text": ""
+            "text": "Le tschart est plus petit qu'un fiellon, c'est vrai... mais il est bien assez grand pour tuer quiconque lui barre la route."
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
-    }
-},
-{
-    "category": "",
-    "code": "",
-    "textes": [{
-        "lang": "EN",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    },
-    {
-        "lang": "FR",
-        "description": "",
-        "name": "",
-        "quote": {
-            "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
-            },
-            "text": ""
-        }
-    }],
-    "weakspots": {
-        "bombs": [],
-        "oils": [],
+        "bombs": ["devils-puffball"],
+        "oils": ["relict-oil"],
         "potions": [],
         "signs": []
     }
