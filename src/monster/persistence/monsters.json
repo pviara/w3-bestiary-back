@@ -3339,7 +3339,7 @@
     {
         "lang": "FR",
         "description": "Dans les régions ravagées par la peste, un esprit apparaît parfois sous la forme d'une femme aux chairs décomposées suivie d'une myriade de rats. Nul ne peut dire si ce spectre est à l'origine de la peste ou s'il est simplement attiré par la maladie comme un papillon par une flamme. Une chose est certaine, cependant il aime infliger d'insupportables souffrances et se repaît des cris de douleur de ses victimes.<br><br>Nombre sont ceux qui doutent de l'existence des vierges de la peste, aussi connues sous le nom de pestas. On n'a recensé que deux témoignages concernant de telles créatures, chaque fois au cours d'une épidémie.<br><br>Comme son nom l'indique, la vierge de la peste apparaît toujours sous les traits d'une femme, sans que l'on sache vraiment pourquoi. À l'instar des autres spectres, elle semble liée aux puissantes émotions suscitées par une maladie longue et douloureuse.<br><br>Nul ne sait vraiment comment combattre une vierge de la peste, bien que l'on puisse penser qu'elle partage les faiblesses des autres spectres. Quoi qu'il en soit, elle représente un danger qu'il est impossible d'ignorer, même pour un sorceleur immunisé contre les miasmes néfastes qu'elle transporte.",
-        "name": "",
+        "name": "vierge de la peste",
         "quote": {
             "author": {
                 "firstname": "",
