@@ -2,6 +2,7 @@ import {
     Body,
     Controller,
     Get,
+    HttpException,
     Post,
     Query,
     ValidationPipe,
@@ -42,7 +43,7 @@ export class MonsterController {
             return result.data;
         }
 
-        result.throw();
+        throw new HttpException(result.message, result.code);
     }
 
     @Get('search')
@@ -63,7 +64,7 @@ export class MonsterController {
             return result.data;
         }
 
-        result.throw();
+        throw new HttpException(result.message, result.code);
     }
 
     @Post('typo')
@@ -85,6 +86,6 @@ export class MonsterController {
             return result.data;
         }
 
-        result.throw();
+        throw new HttpException(result.message, result.code);
     }
 }

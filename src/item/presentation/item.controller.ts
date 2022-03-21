@@ -1,4 +1,10 @@
-import { Controller, Get, Query, ValidationPipe } from '@nestjs/common';
+import {
+    Controller,
+    Get,
+    HttpException,
+    Query,
+    ValidationPipe,
+} from '@nestjs/common';
 import { Error } from '../../application/error';
 import { GetAllItemsQuery } from '../application/queries/get-all-items.query';
 import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
@@ -23,6 +29,6 @@ export class ItemController {
             return result.data;
         }
 
-        result.throw();
+        throw new HttpException(result.message, result.code);
     }
 }
