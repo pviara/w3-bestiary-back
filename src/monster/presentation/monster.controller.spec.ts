@@ -1,0 +1,166 @@
+import { CommandBus, QueryBus } from '@nestjs/cqrs';
+import { createMock } from 'ts-auto-mock';
+import { Error } from '../../application/error';
+import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
+import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
+import { HttpException } from '@nestjs/common';
+import { method, On } from 'ts-auto-mock/extension';
+import {
+    Monster,
+    MonsterByCategory,
+    MonstersByCategory,
+    MonstersByCategoryCategory,
+} from '../domain/monster';
+import { MonsterController } from './monster.controller';
+import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
+import { Result } from '../../application/result';
+import { Typo } from '../domain/typo';
+import { when } from 'jest-when';
+
+describe('MonsterController', () => {
+    let sut: MonsterController;
+
+    let commandBusMock: CommandBus;
+    let queryBusMock: QueryBus;
+
+    beforeEach(() => {
+        commandBusMock = createMock<CommandBus>();
+        queryBusMock = createMock<QueryBus>();
+
+        sut = new MonsterController(commandBusMock, queryBusMock);
+    });
+
+    describe('getMonstersByCategories', () => {
+        it('should call execute on queryBus with given query', async () => {
+            const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
+                {
+                    lang: 'lang',
+                };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result<MonstersByCategory[]>([]),
+            );
+
+            await sut.getMonstersByCategories(getMonstersByCategoriesURLQuery);
+
+            expect(queryBusMock.execute).toBeCalled();
+        });
+
+        it('should throw an HttpException when execution result is an Error', async () => {
+            const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
+                {
+                    lang: 'lang',
+                };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Error(0, ''));
+
+            expect(
+                async () =>
+                    await sut.getMonstersByCategories(
+                        getMonstersByCategoriesURLQuery,
+                    ),
+            ).rejects.toThrow(HttpException);
+        });
+
+        it('should return an array of Items when execution result is an object of type Result', async () => {
+            const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
+                {
+                    lang: 'lang',
+                };
+
+            const monstersByCategoryByCategoryMock =
+                new MonstersByCategoryCategory('', '');
+            const monsterByCategoryMock = new MonsterByCategory('', {
+                name: ' ',
+            });
+            const monstersByCategoryMock = new MonstersByCategory(
+                monstersByCategoryByCategoryMock,
+                [monsterByCategoryMock],
+            );
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result([monstersByCategoryMock]),
+            );
+
+            const result = await sut.getMonstersByCategories(
+                getMonstersByCategoriesURLQuery,
+            );
+
+            expect(Array.isArray(result)).toBe(true);
+            expect(result[0]).toBeInstanceOf(MonstersByCategory);
+        });
+    });
+
+    describe('getByCode', () => {
+        it('should call execute on queryBus with given query', async () => {
+            const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
+                code: 'code',
+                lang: 'lang',
+            };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result(createMock<Monster>()),
+            );
+
+            await sut.getByCode(getMonsterByCodeURLQuery);
+
+            expect(queryBusMock.execute).toBeCalled();
+        });
+
+        it('should throw an HttpException when execution result is an Error', async () => {
+            const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
+                code: 'code',
+                lang: 'lang',
+            };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Error(0, ''));
+
+            expect(
+                async () => await sut.getByCode(getMonsterByCodeURLQuery),
+            ).rejects.toThrow(HttpException);
+        });
+    });
+
+    describe('reportTextTypo', () => {
+        it('should call execute on commandBus with given query', async () => {
+            const reportTextTypoPayload: ReportTextTypoPayload = {
+                lang: 'lang',
+                monsterCode: 'code',
+                typo: 'typo',
+            };
+
+            const commandBusMockExecute = On(commandBusMock).get(
+                method('execute'),
+            );
+            when(commandBusMockExecute).mockReturnValue(
+                new Result(createMock<Typo>()),
+            );
+
+            await sut.reportTextTypo(reportTextTypoPayload);
+
+            expect(commandBusMock.execute).toBeCalled();
+        });
+
+        it('should throw an HttpException when execution result is an Error', async () => {
+            const reportTextTypoPayload: ReportTextTypoPayload = {
+                lang: 'lang',
+                monsterCode: 'code',
+                typo: 'typo',
+            };
+
+            const commandBusMockExecute = On(commandBusMock).get(
+                method('execute'),
+            );
+            when(commandBusMockExecute).mockReturnValue(new Error(0, ''));
+
+            expect(
+                async () => await sut.reportTextTypo(reportTextTypoPayload),
+            ).rejects.toThrow(HttpException);
+        });
+    });
+});
