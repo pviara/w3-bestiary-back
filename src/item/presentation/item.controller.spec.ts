@@ -27,7 +27,9 @@ describe('ItemController', () => {
             };
 
             const queryBusMockExecute = On(queryBusMock).get(method('execute'));
-            when(queryBusMockExecute).mockReturnValue(new Result<Item[]>([]));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result([createMock<Item>()]),
+            );
 
             await sut.getAll(getAllItemsURLQuery);
 
@@ -45,6 +47,22 @@ describe('ItemController', () => {
             expect(
                 async () => await sut.getAll(getAllItemsURLQuery),
             ).rejects.toThrow(HttpException);
+        });
+
+        it('should return an array of Items when execution result is an object of type Result', async () => {
+            const getAllItemsURLQuery: GetAllItemsURLQuery = {
+                lang: 'lang',
+            };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result([new Item('', '')]),
+            );
+
+            const result = await sut.getAll(getAllItemsURLQuery);
+
+            expect(Array.isArray(result)).toBe(true);
+            expect(result[0]).toBeInstanceOf(Item);
         });
     });
 });
