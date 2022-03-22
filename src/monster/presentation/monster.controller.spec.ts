@@ -64,7 +64,7 @@ describe('MonsterController', () => {
             ).rejects.toThrow(HttpException);
         });
 
-        it('should return an array of Items when execution result is an object of type Result', async () => {
+        it('should return an array of MonstersByCategories when execution result is an object of type Result', async () => {
             const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
                 {
                     lang: 'lang',
@@ -124,6 +124,43 @@ describe('MonsterController', () => {
                 async () => await sut.getByCode(getMonsterByCodeURLQuery),
             ).rejects.toThrow(HttpException);
         });
+
+        it('should return a Monster when execution result is an object of type Result', async () => {
+            const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
+                code: 'code',
+                lang: 'lang',
+            };
+
+            const monsterMock = new Monster(
+                '',
+                '',
+                {
+                    description: '',
+                    name: '',
+                    quote: {
+                        author: {
+                            firstname: '',
+                            lastname: '',
+                            title: '',
+                        },
+                        text: '',
+                    },
+                },
+                {
+                    bombs: [],
+                    oils: [],
+                    potions: [],
+                    signs: [],
+                },
+            );
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Result(monsterMock));
+
+            const result = await sut.getByCode(getMonsterByCodeURLQuery);
+
+            expect(result).toBeInstanceOf(Monster);
+        });
     });
 
     describe('reportTextTypo', () => {
@@ -161,6 +198,25 @@ describe('MonsterController', () => {
             expect(
                 async () => await sut.reportTextTypo(reportTextTypoPayload),
             ).rejects.toThrow(HttpException);
+        });
+
+        it('should return a Typo when execution result is an object of type Result', async () => {
+            const reportTextTypoPayload: ReportTextTypoPayload = {
+                lang: 'lang',
+                monsterCode: 'code',
+                typo: 'typo',
+            };
+
+            const typoMock = new Typo('', '', '', '');
+
+            const commandBusMockExecute = On(commandBusMock).get(
+                method('execute'),
+            );
+            when(commandBusMockExecute).mockReturnValue(new Result(typoMock));
+
+            const result = await sut.reportTextTypo(reportTextTypoPayload);
+
+            expect(result).toBeInstanceOf(Typo);
         });
     });
 });
