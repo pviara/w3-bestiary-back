@@ -4067,15 +4067,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Lorsqu'un vampire donne pour mission à un sorceleur de tuer un autre vampire, vous pouvez parier qu'aucun des deux n'est tout à fait normal.<br>Le contrat paraissait trivial, bien que Geralt n'ignorât pas que la cible était un vampire. Pourtant, mieux vaut garder à l'esprit que les vampires forment un groupe particulièrement hétéroclite, et qu'ils varient considérablement d'une espèce à l'autre.<br>Le sorceleur avait déterminé que l'individu recherché était pourvu de longues griffes incurvées pour déchirer les chairs et inoculer un venin anticoagulant. En outre, ses griffes lui permettaient d'escalader les parois les plus abruptes sans le moindre mal, au point de laisser accroire qu'il possédait des pouvoirs défiant l'imagination. Geralt observa en outre que son adversaire était un prédateur chevronné capable d'acculer ses proies et de les attaquer à l'improviste.<br><br>Le monstre qu'il traquait se révéla un spécimen de garkain particulièrement retors: un chef de meute, ou alpha. Comme le sorceleur s'y attendait, ce garkain alpha possédait, outre sa faculté à émettre des ondes d'énergie mentale, un venin ô combien virulent.<br><br>",
+        "name": "garkain alpha",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "agnès de",
+                "lastname": "myrkvid",
+                "title": "druide flaminica et érudite"
             },
-            "text": ""
+            "text": "On peut très légitimement conclure que les garkains nourrissent une rancœur particulière à l'égard des humains... Et les humains étant ce qu'ils sont, comment les en blâmer ?"
         }
     }],
     "weakspots": {
@@ -4104,15 +4104,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les alpyres sont des vampires dont l'apparence rappelle celle des brouxes. On les appelle parfois fantômes, un nom adéquat, tant comme les fantômes, ils hantent et tourmentent les hommes. D'ordinaire, ils adoptent l'apparence d'une femme, bien qu'à l'occasion, ils se manifestent aussi sous la forme d'animaux. Le plus souvent, ils rôdent à proximité des villages. Ils attaquent de nuit et sont particulièrement actifs à la pleine lune. La salive d'alpyre a des propriétés somnifères. Administrée à un homme endormi, elle peut susciter d'horribles cauchemars. Il se murmure parfois qu'ils sont à l'œuvre lorsqu'un homme s'endort en parfaite santé pour être retrouvé le matin suivant, le corps aussi blanc que neige, vidé de la moindre goutte de sang.<br><br>Au combat, les alpyres font preuve d'une vitesse surnaturelle et d'une endurance incroyable, même pour des vampires. Les coups d'épée doivent leur être portés avec une grande précision, car les alpyres savent esquiver comme personne. Le signe d'Yrden est conseillé, car il affaiblit les défenses des alpyres. Une autre stratégie consiste à boire une potion Sang noir, car les alpyres boivent le sang de leurs victimes pour saper leurs forces et régénérer leurs propres pouvoirs.<br><br>Contrairement aux brouxes, les alpyres ne peuvent pas se rendre invisibles, mais savent produire comme elles un cri strident dont l'onde de choc peut immobiliser. Leur plus grand atout est leur agilité, qui leur permet de bondir avec une étonnante légèreté, donnant l'impression qu'elles volent. Sous leur forme humaine, elles se fondent facilement parmi les gens, ce qui les rend particulièrement dangereuses.",
+        "name": "alpyre",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Bribe d'une conversation entre l'échevin de Falkoane et un sorceleur"
             },
-            "text": ""
+            "text": "On aurait dit une brouxe, mais non..."
         }
     }],
     "weakspots": {
@@ -4141,15 +4141,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Heureusement pour nous tous, les brouxes sont des créatures rares. La plupart d'entre elles vivent loin des centres habités, car elles tiennent beaucoup à leur propre sécurité et installent leur antre dans des endroits où l'on ne risque pas de les prendre par surprise. Celles qui choisissent de vivre près des hommes évitent la foule et ne sortent de leur abri que la nuit. Quand elles s'y aventurent, on pourrait presque les prendre pour des voyageuses en retard se hâtant de rejoindre leur hébergement pour la nuit, mais d'infimes détails peuvent les trahir leurs liens étroits avec les oiseaux, leur voix perçante et la vitesse sidérante de leurs mouvements. Les brouxes sont bien plus vives et fortes que les hommes, mais leur plus grand atout est leur capacité à se rendre invisibles.<br><br>Les brouxes peuvent se déplacer d'un endroit à un autre en un éclair et, étant capable de se rendre invisibles, peuvent facilement désorienter leurs adversaires pour les attaquer à l'improviste ou par-derrière. Face à ces vampires, la bombe Poussière de lune est donc d'un grand secours. Même si elle ne peut pas priver un vampire de son invisibilité, elle peut permettre de suivre plus facilement ses déplacements. Une généreuse couche d'huile contre les vampires est aussi efficace pour affronter de tels monstres.<br><br>Les brouxes attaquent avec leurs griffes acérées et peuvent facilement traverser les défenses d'un adversaire en lui assénant une volée de coups venant de toutes les directions. Elles tenteront de mordre leur proie et de boire son sang après l'avoir affaiblie, alors un sorceleur s'attendant à rencontrer l'un de ces monstres serait avisé de boire une potion Sang noir en prévision. Les brouxes sont aussi connues pour lancer des attaques sonores, qui renversent leur proie et l'étourdissent.",
+        "name": "brouxe",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Conseil d'un anonyme"
             },
-            "text": ""
+            "text": "Si vous devez traverser les bois, évitez les endroits où vous entendez plusieurs types d'oiseaux en même temps. Ce bruit signifie que vous avez pénétré sur le territoire d'une brouxe et que vous pouvez dire adieu à la vie."
         }
     }],
     "weakspots": {
@@ -4177,15 +4177,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Dettlaff est un vampire supérieur et l'une des créatures les plus terrifiantes que ce monde ait porté. Plusieurs vampires de son acabit vivent parmi les hommes, et nul ne soupçonne jamais ce que dissimulent ces dehors ordinaires. Parfois, ils vont même jusqu'à susciter le respect et l'admiration de leur communauté. Malgré tout, un tel vampire fait un adversaire incroyablement dangereux s'il est poussé au combat.<br><br>Quand Dettlaff adopte sa forme bipède, méfiez-vous de ses attaques caractéristiques de ses griffes affûtées comme des rasoirs, il assène des coups d'une violence et d'une précision inouïes. C'est aussi un expert dans le maniement des armes.<br><br>Comme tout vampire supérieur, il est capable de se changer en brume et d'envelopper ses adversaires. Il faut alors prendre garde aux flaques magiques et aux attaques aériennes. Lorsqu'il est blessé, il revêt le plus souvent sa forme ailée. Ses ailes puissantes peuvent sans peine assommer un sorceleur.<br><br>N'oubliez jamais que les vampires supérieurs sont des êtres immortels et qu'ils ne craignent pas pour leur vie au combat. Ils ne reculent donc devant aucun risque. Ils sont en outre capables de devenir invisibles et de recouvrer leur force au cours du combat. Pour conclure, il s'agit d'adversaires ô combien redoutables, même pour un sorceleur.",
+        "name": "dettlaff van der Eretein",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Extrait d'interrogatoire d'un témoin oculaire"
             },
-            "text": ""
+            "text": "Quelle infinie tristesse de voir une personne aussi aimable se transformer en cette créature de cauchemar, dont les griffes ont déchiré les proies avec la précision d'un boucher..."
         }
     }],
     "weakspots": {
@@ -4213,15 +4213,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Comme tous les vampires et contrairement à la croyance populaire, l'ekimme n'est pas un mort-vivant. C'est une créature issue de la Conjonction qui ne craint ni l'ail, ni l'eau bénite, ni les symboles religieux.<br><br>L'ekimme n'a par ailleurs aucune similitude avec l'aristocrate livide des légendes mais, à l'instar du katakan et du nosferatu, ressemble plutôt à une énorme chauve-souris. Enfin, il ne suce pas le sang des jeunes vierges d'une tendre morsure, mais leur arrache la gorge de ses longues griffes avant de lécher leur sang à même le sol.<br>La cruauté de l'ekimme n'a d'égale que sa stupéfiante vitesse. Ses coups répétés peuvent détruire en quelques instants une armure en acier de Mahakam. Il est vulnérable aux lames en argent, mais sa faculté de régénération fait de lui un adversaire infatigable. Mieux vaut chercher une victoire rapide et décisive et, si possible, brûler le corps avant d'éparpiller les cendres aux quatre vents.",
+        "name": "ekimme",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Dernières paroles d'un garde anonyme"
             },
-            "text": ""
+            "text": "Pourquoi j'aurais peur des ekimmes ? C'est juste des grosses chauves-souris, non ?"
         }
     }],
     "weakspots": {
@@ -4250,15 +4250,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les noctules comptent parmi les vampires dits inférieurs. Plus faibles que leurs congénères à tous les égards, physiomagiques et physionomiques, ils restent extrêmement dangereux. Les noctules se reconnaissent à leur large mâchoire, leur visage aplati et disgracieux et leur corps totalement glabre et souvent verruqueux. Au combat, ces vampires usent surtout de leurs crocs et griffes, dont ils fouettent l'air furieusement, même après la mort de leur victime. Même un noctule isolé est capable de venir à bout d'un soldat aguerri.<br>Comparé aux autres vampires, le noctule n'a guère d'intelligence, ce qu'illustre parfaitement la rage insensée qui les anime lorsqu'ils s'efforcent d'attaquer et de tailler en pièces des êtres plus faibles.<br><br>Lorsque vous affrontez des noctules, tâchez d'exploiter à votre avantage leur mode de déplacement caractéristique. Ces créatures ne courent pas, mais bondissent sur leur proie pour la neutraliser. Anticipez leurs déplacements pour éviter d'être pris par surprise.<br><br>Les noctules sont vulnérables à l'huile contre les vampires, ainsi qu'au Sang noir.",
+        "name": "noctule",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Extrait d'un rapport de la garde ducale de Toussaint"
             },
-            "text": ""
+            "text": "La dépouille était complètement mutilée. Tout ce qui subsistait du nez, c'était une cavité bouchée de sang coagulé. L'un des orbites oculaires avait été mastiqué au point qu'on pouvait à peine l'identifier. La clavicule avait été arrachée. Devant ce spectacle, le sergent Dovate a vomi ses tripes et on a dû lui administrer des sels. L'enquête a été suspendue et le crime attribué à un être surnaturel."
         }
     }],
     "weakspots": {
@@ -4286,15 +4286,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Contrairement à la croyance populaire, les monstres ne sont pas tous semblables. Ils possèdent tous un caractère, des préférences et des faiblesses propres. Ainsi, un certain katakan sévissant à Oxenfurt avait développé un goût inhabituel pour le sang chargé d'alcool des étudiants enivrés de la ville.<br><br>Le vampire avait grandement profité de ce régime riche: il avait ainsi largement gagné en puissance et développé ses capacités de régénération. De plus, il disposait de griffes redoutables infligeant des hémorragies importantes, et comme si cela ne suffisait pas, pouvait se volatiliser et réapparaître dans le dos de sa proie. Fort heureusement, le signe de Quen offrait au sorceleur une défense de choix contre ce tour pendable, et le signe d'Yrden quant à lui, lui permettrait de piéger l'infâme créature.<br><br>Pour attirer le vampire, Geralt prit note de ses préférences alimentaires et chargea son sang d'une bonne dose de vinasse. Certes, il eut beaucoup plus de mal à ajuster ses coups, mais parvint néanmoins à vaincre la bête. La bataille du lendemain contre sa terrible gueule de bois fut en revanche plus difficile.",
+        "name": "gaël",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
+                "firstname": "geralt de",
+                "lastname": "riv",
                 "title": ""
             },
-            "text": ""
+            "text": "Morsure de vampire et forte odeur d'alcool."
         }
     }],
     "weakspots": {
@@ -4323,15 +4323,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les garkains, de même que les noctules, sont une variété de vampires particulièrement féroces, dont la force surpasse même celle des fiellons. Une rencontre avec l'un d'eux se solde presque toujours par la mort, ce qui explique sans doute pourquoi les témoins sont rares à en avoir aperçu. Si l'on en croit les faits rapportés en 1104 par la garde civile de Lan Exeter quant aux attaques perpétrées dans cette ville par trois garkains (tués ultérieurement par un certain Olivier de Guletta, sorceleur), il semble que ces infâmes créatures ne se contentent pas de boire le sang de leurs victimes. Des scènes de crimes baignées de sang et jonchées d'entrailles, les enquêteurs ont déduit que les garkains se délectaient de tailler leurs proies en pièces et de s'amuser de leurs viscères.<br><br>Les garkains appartiennent au groupe de créatures appelé vampires inférieurs. Ils ont coutume de se réunir à d'autres sous-espèces de vampires inférieurs, pour qui ils tiennent lieu de chefs de meute. Ils sont peu ou prou incapables de courir, mais leurs bonds sont prodigieux. C'est d'ailleurs ainsi qu'ils se jettent sur leurs proies. Au combat, ils tendent à garder leurs distances avec leurs adversaires, qu'ils tâchent de neutraliser moyennant des ondes d'énergie mentale hallucinogènes qui charment et déconcertent leur cible.<br><br>Avant d'affronter un garkain, veillez à ingurgiter une potion Sang noir et vous munir d'huile contre les vampires. En outre, rappelez-vous que les bombes Samum et Poussière de lune sont toujours des armes efficaces contre les attaques mentales.",
+        "name": "garkain",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "yan de",
+                "lastname": "lan Exeter",
+                "title": "enquêteur et capitaine de la garde civile"
             },
-            "text": ""
+            "text": "Le plafond maculé de sang, les murs éclaboussés de viscères... I'œuvre d'un garkain, assurément."
         }
     }],
     "weakspots": {
@@ -4359,15 +4359,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "La soif de sang est probablement l'unique point commun entre le vampire supérieur et ses cousins primitifs (ekimme, alpyre, katakan, etc.). En fait, le vampire supérieur est plus proche de l'humain que de ces créatures sanguinaires, non seulement en termes d'apparence, mais également d'intelligence et de comportement. Il apprécie les villes, où il mène une vie normale sous bien des aspects. Même un sorceleur ne peut le reconnaître, car son médaillon ne réagit pas en présence d'un vampire supérieur. En dépit de ces similitudes, une différence essentielle persiste le vampire supérieur est un être immortel. Ceux qui ont survécu à leur rencontre avec l'une de ces néfastes créatures se comptent sur les doigts d'une main.<br><br>Fort heureusement, les vampires supérieurs sont rares et ne sont pas tous dangereux pour les humains. Ils aiment le sang, mais n'ont pas besoin d'en boire pour survivre. Certains d'entre eux ont même renoncé à boire du sang humain. Un sorceleur assez brave ou assez fou pour affronter un vampire supérieur doit garder à l'esprit qu'il a devant lui un monstre doté d'une force surhumaine, et capable de manipuler hommes et animaux, de devenir invisible et de se transformer en chauve souris géante, un monstre presque impossible à tuer de surcroît. En d'autres termes, même un sorceleur expérimenté devrait y réfléchir à deux fois avant d'accepter un contrat sur l'une de ces créatures, quelle que soit la récompense.",
+        "name": "vampire supérieur",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "emiel",
+                "lastname": "regis",
+                "title": "vampire supérieur"
             },
-            "text": ""
+            "text": "Les hommes, les plus polis en tout cas, disent de moi que je suis un monstre. Une bête assoiffée de sang."
         }
     }],
     "weakspots": {
@@ -4395,15 +4395,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Le katakan (ainsi que son redoutable cousin, le nosferatu), incarne l'essence même des peurs humaines. Il vit dans l'ombre. Il se nourrit de sang. Il ressemble à une gigantesque chauve-souris aux serres crochues. Pour couronner le tout, il peut devenir invisible, attendant patiemment que sa proie succombe à la terreur de son inéluctable attaque.<br><br>Face à un katakan, le meilleur espoir de salut passe par une observation attentive des ombres, qui sont souvent le seul moyen de repérer cette sournoise créature.<br><br>Invulnérable aux armes en acier et capable de régénérer ses blessures, le katakan possède une ouïe très fine et se déplace à une vitesse extraordinaire. Pour vaincre un tel adversaire, il est recommandé de l'immobiliser à l'aide du signe d'Yrden puis de l'achever aussi vite que possible.<br><br>Si les légendes selon lesquelles les rayons du soleil réduisent les katakans en cendres sont hélas infondées, ces créatures n'en restent pas moins vulnérables au soleil, qui, à son zénith, réduit considérablement leurs capacités de régénération.",
+        "name": "katakan",
         "quote": {
             "author": {
                 "firstname": "",
                 "lastname": "",
-                "title": ""
+                "title": "Extrait de prière"
             },
-            "text": ""
+            "text": "Melitele, Mère toute-puissante, protège-nous du mal et de ses diaboliques serviteurs. Préservez-nous par-dessus tout des katakans et des nosferatus."
         }
     }],
     "weakspots": {
@@ -4432,15 +4432,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Les protonoctules sont une espèce parente des noctules venus du monde des vampires supérieurs jusqu'au nôtre lors de la Conjonction des Sphères.<br><br>Les spécimens de cette espèce sont caractérisés par une force et une agilité prodigieuses, sans oublier l'étrange lueur qu'ils diffusent, une particularité qu'ils doivent sans nul doute à leur origine d'outre-monde. Les protonoctules n'ont jamais entretenu de contact digne de ce nom avec le monde du dehors. En effet, depuis leur arrivée sur notre planète, ils n'ont pas quitté la grotte du Doyen des Invisibles, dont l'atmosphère est très semblable à celle de leur monde natal.",
+        "name": "protonoctule",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
+                "firstname": "geralt de",
+                "lastname": "riv",
                 "title": ""
             },
-            "text": ""
+            "text": "Je n'ai jamais vu un vampire pareil de toute ma vie."
         }
     }],
     "weakspots": {
@@ -4468,15 +4468,15 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "Piller une tombe elfe est un excellent moyen de faire fortune... ou de trouver la mort. Les temples et les palais des Aen Seidhe regorgent en effet de trésors inestimables, mais abritent parfois en leur sein une abomination endormie. Tel était le cas à Méandres, où d'infortunés paysans réveillèrent par mégarde un ekimme particulièrement dangereux.<br><br>Au premier coup d'œil, le sorceleur comprit que le monstre n'abandonnerait pas facilement. Capable de d'infliger de sévères hémorragies et de se volatiliser, le vampire était également doté de facultés de régénération. Toutefois le sorceleur savait comment contourner ces désavantages: user des signes de Quen et d'Yrden tout en administrant des attaques puissantes. Et en évitant de se faire tuer, bien sûr.<br><br>Le vampire avait déjà tué plusieurs paysans, ainsi qu'une patrouille de Nilfgaardiens lourdement armés, et il aurait sans doute fait de nombreuses autres victimes sans l'arrivée opportune de Geralt de Riv, le célèbre Loup Blanc.",
+        "name": "sarasti",
         "quote": {
             "author": {
-                "firstname": "",
-                "lastname": "",
-                "title": ""
+                "firstname": "bytomir de",
+                "lastname": "velen",
+                "title": "parlant de sa rencontre avec un ekimme"
             },
-            "text": ""
+            "text": "En creusant, on est tombés sur une grande salle. Il y avait une bête endormie à l'intérieur... On a provoqué un éboulement, mais le monstre a réussi à s'en sortir..."
         }
     }],
     "weakspots": {
@@ -4505,8 +4505,8 @@
     },
     {
         "lang": "FR",
-        "description": "",
-        "name": "",
+        "description": "La brouxe que Geralt rencontra et tua pour se défendre à Corvo Bianco était différente des autres créatures de son espèce. Tout d'abord, elle était plus intelligente et même capable d'articuler des mots dans la langue des hommes sans trop de difficulté. De plus, cette brouxe était liée à la bête, le mystérieux assassin rôdant alors à Beauclair.<br><br>L'affronter fut un véritable défi pour Geralt. Comme les autres brouxes, celle-ci était bien plus forte et rapide que les humains, pouvait se rendre invisible et attaquer avec une onde sonore.<br><br>Comme tous les vampires, elle cherchait à sucer le sang de ses victimes. Le moyen de défense habituel contre ces créatures, c'est-à-dire la potion Sang noir, fut donc une arme efficace contre elle, tout comme la bombe Poussière de lune et, naturellement, la fidèle lame en argent du sorceleur.",
+        "name": "la brouxe de Corvo Bianco",
         "quote": {
             "author": {
                 "firstname": "",
@@ -4517,10 +4517,10 @@
         }
     }],
     "weakspots": {
-        "bombs": [],
-        "oils": [],
-        "potions": [],
-        "signs": []
+        "bombs": ["moon-dust"],
+        "oils": ["vampire-oil"],
+        "potions": ["black-blood"],
+        "signs": ["yrden"]
     }
 },
 {
