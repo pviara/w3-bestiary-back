@@ -120,10 +120,10 @@
     }]
 },
 {
-    "code": "hive",
+    "code": "grapeshot",
     "names": [{
         "lang": "EN",
-        "name": "hive"
+        "name": "grapeshot"
     },
     {
         "lang": "FR",

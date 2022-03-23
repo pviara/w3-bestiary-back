@@ -136,7 +136,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["aard"]
@@ -172,7 +172,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["aard"]
@@ -316,7 +316,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": [],
         "signs": ["aard"]
@@ -352,7 +352,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": [],
         "signs": ["aard"]
@@ -737,7 +737,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["aard"]
@@ -773,7 +773,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["igni", "aard"]
@@ -809,7 +809,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["aard"]
@@ -881,7 +881,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["hybrid-oil"],
         "potions": [],
         "signs": ["igni", "aard"]
@@ -1461,7 +1461,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": ["golden-oriole"],
         "signs": ["aard"]
@@ -1534,7 +1534,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": ["golden-oriole"],
         "signs": ["aard"]
@@ -1570,7 +1570,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": ["golden-oriole"],
         "signs": ["aard"]
@@ -1607,7 +1607,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": ["golden-oriole"],
         "signs": ["aard", "quen"]
@@ -1644,7 +1644,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": [],
         "signs": ["aard", "quen"]
@@ -1680,7 +1680,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": ["golden-oriole"],
         "signs": ["aard"]
@@ -1716,7 +1716,7 @@
         }
     }],
     "weakspots": {
-        "bombs": ["hive"],
+        "bombs": ["grapeshot"],
         "oils": ["draconid-oil"],
         "potions": ["golden-oriole"],
         "signs": ["aard"]
