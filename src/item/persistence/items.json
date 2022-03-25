@@ -162,4 +162,114 @@
         "lang": "FR",
         "name": "loriot doré"
     }]
+},
+{
+    "code": "dancing-star",
+    "names": [{
+        "lang": "EN",
+        "name": "dancing star"
+    },
+    {
+        "lang": "FR",
+        "name": "étoile dansante"
+    }]
+},
+{
+    "code": "vampire-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "vampire oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les vampires"
+    }]
+},
+{
+    "code": "black-blood",
+    "names": [{
+        "lang": "EN",
+        "name": "black blood"
+    },
+    {
+        "lang": "FR",
+        "name": "sang noir"
+    }]
+},
+{
+    "code": "elementa-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "elementa oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les élémentaires"
+    }]
+},
+{
+    "code": "ogroid-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "ogroid oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les ogroïdes"
+    }]
+},
+{
+    "code": "relict-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "relict oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les vestiges"
+    }]
+},
+{
+    "code": "blizzard",
+    "names": [{
+        "lang": "EN",
+        "name": "blizzard"
+    },
+    {
+        "lang": "FR",
+        "name": ""
+    }]
+},
+{
+    "code": "samum",
+    "names": [{
+        "lang": "EN",
+        "name": "samum"
+    },
+    {
+        "lang": "FR",
+        "name": "samum"
+    }]
+},
+{
+    "code": "necrophage-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "necrophage oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les nécrophages"
+    }]
+},
+{
+    "code": "",
+    "names": [{
+        "lang": "EN",
+        "name": ""
+    },
+    {
+        "lang": "FR",
+        "name": ""
+    }]
 }]
