@@ -1,5 +1,9 @@
 import { ConfigService } from '@nestjs/config';
-import { Configuration, DatabaseConfiguration, LoggingConfiguration } from './configuration';
+import {
+    Configuration,
+    DatabaseConfiguration,
+    LoggingConfiguration,
+} from './configuration';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
