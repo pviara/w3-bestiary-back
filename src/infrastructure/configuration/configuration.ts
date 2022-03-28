@@ -1,5 +1,6 @@
 export class Configuration {
     readonly database = new DatabaseConfiguration();
+    readonly logging = new LoggingConfiguration();
 }
 
 export class DatabaseConfiguration {
@@ -7,4 +8,8 @@ export class DatabaseConfiguration {
     MONGODB_USER: string;
     MONGODB_PASSWORD: string;
     MONGODB_DBNAME: string;
+}
+
+export class LoggingConfiguration {
+    LOGS_PATH: string;
 }
