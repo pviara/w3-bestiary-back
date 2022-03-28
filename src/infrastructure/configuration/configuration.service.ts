@@ -1,5 +1,5 @@
 import { ConfigService } from '@nestjs/config';
-import { Configuration, DatabaseConfiguration } from './configuration';
+import { Configuration, DatabaseConfiguration, LoggingConfiguration } from './configuration';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
@@ -8,6 +8,10 @@ export class ConfigurationService {
 
     get database(): DatabaseConfiguration {
         return this._configuration.database;
+    }
+
+    get logging(): LoggingConfiguration {
+        return this._configuration.logging;
     }
 
     constructor(private readonly _configService: ConfigService) {
@@ -22,5 +26,8 @@ export class ConfigurationService {
 
         this._configuration.database.MONGODB_DBNAME =
             this._configService.get<string>('MONGODB_DBNAME');
+
+        this._configuration.logging.LOGS_PATH =
+            this._configService.get<string>('LOGS_PATH');
     }
 }
