@@ -3,12 +3,30 @@ import { ConfigService } from '@nestjs/config';
 import { createStream } from 'rotating-file-stream';
 import { NestFactory } from '@nestjs/core';
 import * as morgan from 'morgan';
+import { InternalServerErrorException } from '@nestjs/common';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
-    app.enableCors();
 
     const configService = app.get<ConfigService>(ConfigService);
+    const currentEnv = configService.get<string>('APP_ENV');
+    if (!currentEnv) {
+        throw new InternalServerErrorException(
+            'Missing required environment variable.',
+        );
+    }
+
+    app.enableCors({
+        origin: (origin, callback) => {
+            if (currentEnv === 'PROD') {
+                const whitelist = ['https://w3.bestiary.app'];
+                if (!origin || whitelist.indexOf(origin) === -1) {
+                    callback(new Error('Not allowed by CORS.'));
+                }
+            }
+            callback(null, true);
+        },
+    });
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
 
     const logStream = createStream('logs.log', {
