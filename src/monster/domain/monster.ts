@@ -2,13 +2,13 @@ import { ApiProperty } from '@nestjs/swagger';
 
 export class MonsterTextesQuoteAuthor {
     @ApiProperty()
-    public readonly firstname: string;
+    readonly firstname: string;
 
     @ApiProperty()
-    public readonly lastname: string;
+    readonly lastname: string;
 
     @ApiProperty()
-    public readonly title: string;
+    readonly title: string;
 
     constructor(firstname: string, lastname: string, title: string) {
         this.firstname = firstname;
@@ -19,10 +19,10 @@ export class MonsterTextesQuoteAuthor {
 
 export class MonsterTextesQuote {
     @ApiProperty()
-    public readonly author: MonsterTextesQuoteAuthor;
+    readonly author: MonsterTextesQuoteAuthor;
 
     @ApiProperty()
-    public readonly text: string;
+    readonly text: string;
 
     constructor(author: MonsterTextesQuoteAuthor, text: string) {
         this.author = author;
@@ -32,13 +32,13 @@ export class MonsterTextesQuote {
 
 export class MonsterTextes {
     @ApiProperty()
-    public readonly description: string;
+    readonly description: string;
 
     @ApiProperty()
-    public readonly name: string;
+    readonly name: string;
 
     @ApiProperty()
-    public readonly quote?: MonsterTextesQuote;
+    readonly quote?: MonsterTextesQuote;
 
     constructor(description: string, name: string, quote?: MonsterTextesQuote) {
         this.description = description;
@@ -49,16 +49,16 @@ export class MonsterTextes {
 
 export class MonsterWeakspots {
     @ApiProperty()
-    public readonly bombs: string[];
+    readonly bombs: string[];
 
     @ApiProperty()
-    public readonly oils: string[];
+    readonly oils: string[];
 
     @ApiProperty()
-    public readonly potions: string[];
+    readonly potions: string[];
 
     @ApiProperty()
-    public readonly signs: string[];
+    readonly signs: string[];
 
     constructor(
         bombs: string[],
@@ -75,16 +75,16 @@ export class MonsterWeakspots {
 
 export class Monster {
     @ApiProperty()
-    public readonly category: string;
+    readonly category: string;
 
     @ApiProperty()
-    public readonly code: string;
+    readonly code: string;
 
     @ApiProperty()
-    public readonly textes: MonsterTextes;
+    readonly textes: MonsterTextes;
 
     @ApiProperty()
-    public readonly weakspots: MonsterWeakspots;
+    readonly weakspots: MonsterWeakspots;
 
     constructor(
         category: string,
@@ -102,10 +102,10 @@ export class Monster {
 
 export class MonstersByCategoryCategory {
     @ApiProperty()
-    public readonly code: string;
+    readonly code: string;
 
     @ApiProperty()
-    public readonly name: string;
+    readonly name: string;
 
     constructor(code: string, name: string) {
         this.code = code;
@@ -120,15 +120,15 @@ class MonsterTextesName {
 
 export class MonsterByCategory {
     @ApiProperty()
-    public readonly code: string;
+    readonly code: string;
 
     @ApiProperty({
         type: MonsterTextesName,
     })
-    public readonly textes: Pick<MonsterTextes, 'name'>;
+    readonly textes: Pick<MonsterTextes, 'name'>;
 
     @ApiProperty()
-    public readonly extension?: string;
+    readonly extension?: string;
 
     constructor(
         code: string,
@@ -143,13 +143,13 @@ export class MonsterByCategory {
 
 export class MonstersByCategory {
     @ApiProperty()
-    public readonly category: MonstersByCategoryCategory;
+    readonly category: MonstersByCategoryCategory;
 
     @ApiProperty({
         type: MonsterByCategory,
         isArray: true,
     })
-    public readonly monsters: MonsterByCategory[];
+    readonly monsters: MonsterByCategory[];
 
     constructor(
         category: MonstersByCategoryCategory,
