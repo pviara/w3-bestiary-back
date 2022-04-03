@@ -1,9 +1,10 @@
 import { AppModule } from './app.module';
 import { ConfigService } from '@nestjs/config';
 import { createStream } from 'rotating-file-stream';
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { InternalServerErrorException } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import * as morgan from 'morgan';
-import { InternalServerErrorException } from '@nestjs/common';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
@@ -42,6 +43,18 @@ async function bootstrap() {
             { stream: logStream },
         ),
     );
+
+    const swaggerConfig = new DocumentBuilder()
+        .setTitle('The Witcher 3 Bestiary')
+        .setDescription(
+            'API documentation for The Witcher 3 Bestiary application.',
+        )
+        .setLicense('MIT License', 'https://opensource.org/licenses/MIT')
+        .build();
+
+    const swaggerDocument = SwaggerModule.createDocument(app, swaggerConfig);
+
+    SwaggerModule.setup('apiDocs', app, swaggerDocument);
 
     await app.listen(3000);
 }
