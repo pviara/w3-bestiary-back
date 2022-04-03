@@ -16,18 +16,7 @@ async function bootstrap() {
             'Missing required environment variable.',
         );
     }
-
-    app.enableCors({
-        origin: (origin, callback) => {
-            if (currentEnv === 'PROD') {
-                const whitelist = ['https://w3.bestiary.app'];
-                if (!origin || whitelist.indexOf(origin) === -1) {
-                    callback(new Error('Not allowed by CORS.'));
-                }
-            }
-            callback(null, true);
-        },
-    });
+    
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
 
     const logStream = createStream('logs.log', {
