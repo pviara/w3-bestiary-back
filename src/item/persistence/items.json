@@ -32,6 +32,17 @@
     }]
 },
 {
+    "code": "specter-oil",
+    "names": [{
+        "lang": "EN",
+        "name": "specter oil"
+    },
+    {
+        "lang": "FR",
+        "name": "huile contre les spectres"
+    }]
+},
+{
     "code": "draconid-oil",
     "names": [{
         "lang": "EN",
