@@ -16,6 +16,10 @@ async function bootstrap() {
             'Missing required environment variable.',
         );
     }
+
+    if (currentEnv === 'DEV') {
+        app.enableCors();
+    }
     
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
 
