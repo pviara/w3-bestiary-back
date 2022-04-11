@@ -1,3 +1,5 @@
-export class Version {
-    constructor(readonly content: string) {}
+import { version } from '../../../package.json';
+
+export class AppVersion {
+    readonly content = version;
 }
