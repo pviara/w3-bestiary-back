@@ -1,11 +1,12 @@
+import { ApiExcludeController } from '@nestjs/swagger';
+import { AppVersion } from '../domain/version';
 import { Controller, Get } from '@nestjs/common';
-import { version } from '../../../package.json'
-import { Version } from '../domain/version';
 
+@ApiExcludeController()
 @Controller()
 export class VersionController {
     @Get()
-    getProjectVersion(): Version {
-        return new Version(version);
+    getProjectVersion(): AppVersion {
+        return new AppVersion();
     }
 }
