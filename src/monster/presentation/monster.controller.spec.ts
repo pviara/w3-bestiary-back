@@ -2,6 +2,7 @@ import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../application/error';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
+import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
 import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
 import { HttpException } from '@nestjs/common';
 import { method, On } from 'ts-auto-mock/extension';
@@ -91,6 +92,18 @@ describe('MonsterController', () => {
 
             expect(Array.isArray(result)).toBe(true);
             expect(result[0]).toBeInstanceOf(MonstersByCategory);
+        });
+    });
+
+    describe('getMonsterImage', () => {
+        it('should call execute on queryBus with given query', async () => {
+            const getMonsterImageURLQuery: GetMonsterImageURLQuery = {
+                code: 'code',
+            };
+
+            await sut.getMonsterImage(getMonsterImageURLQuery);
+
+            expect(queryBusMock.execute).toBeCalled();
         });
     });
 
