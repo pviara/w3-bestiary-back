@@ -13,6 +13,8 @@ import {
     HttpException,
     Post,
     Query,
+    Res,
+    StreamableFile,
     ValidationPipe,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
@@ -21,9 +23,13 @@ import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-cod
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
+import { GetMonsterImageQuery } from '../application/queries/get-monster-image.handler';
+import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
 import { ReportTextTypoCommand } from '../application/commands/report-text-typo.handler';
 import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
+import { ReadStream } from 'fs';
+import { Response } from 'express';
 import { Result } from '../../application/result';
 import { Typo } from '../domain/typo';
 
@@ -69,6 +75,45 @@ export class MonsterController {
         }
 
         throw new HttpException(result.message, result.code);
+    }
+
+    @ApiOperation({
+        description: 'Get a specific monster image by its code.',
+    })
+    @ApiBadRequestResponse({
+        description: 'No code was provided.',
+    })
+    @ApiOkResponse({
+        description: 'Retrieved monster image.',
+        type: StreamableFile,
+    })
+    @ApiNotFoundResponse({
+        description: 'No image was found for the given code.',
+    })
+    @Get('image')
+    async getMonsterImage(
+        @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
+        @Res() response: Response,
+    ): Promise<void> {
+        const getMonsterImageQuery = new GetMonsterImageQuery(query.code);
+
+        const result = await this._queryBus.execute
+            <GetMonsterImageQuery,
+            Result<ReadStream> | Error
+        >(getMonsterImageQuery);
+
+        if (result instanceof Result) {
+            response.set({
+                'Content-Disposition': `inline; filename=${query.code}.png`,
+                'Content-Type': 'image/png',
+            });
+
+            result.data.pipe(response);
+
+        } else {
+            throw new HttpException(`No image was found for monster with { code: '${query.code}' }.`, result.code);
+        }
+
     }
 
     @ApiOperation({
