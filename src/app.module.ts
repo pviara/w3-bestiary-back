@@ -45,7 +45,7 @@ import { VersionModule } from './version/version.module';
                     {
                         path: 'version',
                         module: VersionModule,
-                    }
+                    },
                 ],
             },
         ]),

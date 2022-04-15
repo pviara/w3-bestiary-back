@@ -8,7 +8,7 @@ import * as morgan from 'morgan';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
-    
+
     const configService = app.get<ConfigService>(ConfigService);
     const currentEnv = configService.get<string>('APP_ENV');
     if (!currentEnv) {
@@ -17,13 +17,13 @@ async function bootstrap() {
 
     const filesPath = configService.get<string>('FILES_PATH');
     if (!filesPath) {
-        throwMissingEnvVariableError('FILES_PATH')
+        throwMissingEnvVariableError('FILES_PATH');
     }
 
     if (currentEnv === 'DEV') {
         app.enableCors();
     }
-    
+
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
 
     const logStream = createStream('logs.log', {
@@ -57,5 +57,7 @@ async function bootstrap() {
 bootstrap();
 
 function throwMissingEnvVariableError(varName: string): void {
-    throw new InternalServerErrorException(`Missing required environment variable "${varName}".`);
+    throw new InternalServerErrorException(
+        `Missing required environment variable "${varName}".`,
+    );
 }

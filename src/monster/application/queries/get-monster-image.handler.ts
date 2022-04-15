@@ -24,13 +24,15 @@ export class GetMonsterImageHandler
         private readonly _fileService: IFileService,
     ) {}
 
-    async execute(query: GetMonsterImageQuery): Promise<Result<ReadStream> | Error> {
+    async execute(
+        query: GetMonsterImageQuery,
+    ): Promise<Result<ReadStream> | Error> {
         const filePath = this._fileService.computeFilePath(
             FileFolder.MonsterImages,
             FileFormat.PNG,
             query.code,
         );
-        
+
         return this._fileService.getFileStream(filePath);
     }
 }

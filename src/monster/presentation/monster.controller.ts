@@ -97,8 +97,8 @@ export class MonsterController {
     ): Promise<void> {
         const getMonsterImageQuery = new GetMonsterImageQuery(query.code);
 
-        const result = await this._queryBus.execute
-            <GetMonsterImageQuery,
+        const result = await this._queryBus.execute<
+            GetMonsterImageQuery,
             Result<ReadStream> | Error
         >(getMonsterImageQuery);
 
@@ -109,11 +109,12 @@ export class MonsterController {
             });
 
             result.data.pipe(response);
-
         } else {
-            throw new HttpException(`No image was found for monster with { code: '${query.code}' }.`, result.code);
+            throw new HttpException(
+                `No image was found for monster with { code: '${query.code}' }.`,
+                result.code,
+            );
         }
-
     }
 
     @ApiOperation({

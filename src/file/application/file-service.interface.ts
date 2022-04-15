@@ -12,6 +12,10 @@ export enum FileFormat {
 }
 
 export interface IFileService {
-    computeFilePath(folder: FileFolder, format: FileFormat, code: string): string;
+    computeFilePath(
+        folder: FileFolder,
+        format: FileFormat,
+        code: string,
+    ): string;
     getFileStream(path: string): Result<ReadStream> | Error;
 }
