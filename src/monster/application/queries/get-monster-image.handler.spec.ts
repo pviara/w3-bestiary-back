@@ -32,7 +32,11 @@ describe('GetMonsterImageHandler', () => {
                 method('computeFilePath'),
             );
             when(fileServiceComputeFilePathMock)
-                .calledWith(FileFolder.MonsterImages, FileFormat.PNG, command.code)
+                .calledWith(
+                    FileFolder.MonsterImages,
+                    FileFormat.PNG,
+                    command.code,
+                )
                 .mockReturnValue(filePathMock);
 
             await sut.execute(command);

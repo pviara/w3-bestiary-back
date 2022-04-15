@@ -16,7 +16,7 @@ const commandHandlers = [ReportTextTypoHandler];
 const queryHandlers = [
     GetMonstersByCategoriesHandler,
     GetMonsterByCodeHandler,
-    GetMonsterImageHandler
+    GetMonsterImageHandler,
 ];
 
 @Module({
