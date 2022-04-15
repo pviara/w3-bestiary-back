@@ -26,7 +26,7 @@ export class ConfigurationService {
     constructor(private readonly _configService: ConfigService) {
         this._configuration.file.FILES_PATH =
             this._configService.get<string>('FILES_PATH');
-        
+
         this._configuration.database.MONGODB_URI =
             this._configService.get<string>('MONGODB_URI');
 

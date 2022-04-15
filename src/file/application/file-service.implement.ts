@@ -8,8 +8,12 @@ import { Result } from '../../application/result';
 @Injectable()
 export class FileServiceImplement implements IFileService {
     constructor(private readonly _configService: ConfigurationService) {}
-    
-    computeFilePath(folder: FileFolder, format: FileFormat, code: string): string {
+
+    computeFilePath(
+        folder: FileFolder,
+        format: FileFormat,
+        code: string,
+    ): string {
         const { FILES_PATH } = this._configService.file;
         return `${FILES_PATH}/${folder}/${code}${format}`;
     }
