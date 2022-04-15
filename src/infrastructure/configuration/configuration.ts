@@ -1,5 +1,6 @@
 export class Configuration {
     readonly database = new DatabaseConfiguration();
+    readonly file = new FileConfiguration();
     readonly logging = new LoggingConfiguration();
 }
 
@@ -12,4 +13,8 @@ export class DatabaseConfiguration {
 
 export class LoggingConfiguration {
     LOGS_PATH: string;
+}
+
+export class FileConfiguration {
+    FILES_PATH: string;
 }

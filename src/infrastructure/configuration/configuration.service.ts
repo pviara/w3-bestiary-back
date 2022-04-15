@@ -2,6 +2,7 @@ import { ConfigService } from '@nestjs/config';
 import {
     Configuration,
     DatabaseConfiguration,
+    FileConfiguration,
     LoggingConfiguration,
 } from './configuration';
 import { Injectable } from '@nestjs/common';
@@ -14,11 +15,18 @@ export class ConfigurationService {
         return this._configuration.database;
     }
 
+    get file(): FileConfiguration {
+        return this._configuration.file;
+    }
+
     get logging(): LoggingConfiguration {
         return this._configuration.logging;
     }
 
     constructor(private readonly _configService: ConfigService) {
+        this._configuration.file.FILES_PATH =
+            this._configService.get<string>('FILES_PATH');
+        
         this._configuration.database.MONGODB_URI =
             this._configService.get<string>('MONGODB_URI');
 
