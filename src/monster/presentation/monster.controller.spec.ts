@@ -152,6 +152,61 @@ describe('MonsterController', () => {
         });
     });
 
+    describe('getMonsterThumbnail', () => {
+        it('should call execute on queryBus with given query', async () => {
+            const getMonsterImageURLQuery: GetMonsterImageURLQuery = {
+                code: 'code',
+            };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result(createMock<ReadStream>()),
+            );
+
+            await sut.getMonsterThumbnail(
+                getMonsterImageURLQuery,
+                createMock<Response>(),
+            );
+
+            expect(queryBusMock.execute).toBeCalled();
+        });
+
+        it('should throw an HttpException when execution result is an Error', async () => {
+            const getMonsterImageURLQuery: GetMonsterImageURLQuery = {
+                code: 'code',
+            };
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Error(0, ''));
+
+            expect(
+                async () =>
+                    await sut.getMonsterThumbnail(
+                        getMonsterImageURLQuery,
+                        createMock<Response>(),
+                    ),
+            ).rejects.toThrow(HttpException);
+        });
+
+        it('should return nothing when execution result is an object of type Result', async () => {
+            const getMonsterImageURLQuery: GetMonsterImageURLQuery = {
+                code: 'code',
+            };
+
+            const readStream = createMock<ReadStream>();
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Result(readStream));
+
+            const result = await sut.getMonsterThumbnail(
+                getMonsterImageURLQuery,
+                createMock<Response>(),
+            );
+
+            expect(result).toBe(undefined);
+        });
+    });
+
     describe('getByCode', () => {
         it('should call execute on queryBus with given query', async () => {
             const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
