@@ -24,7 +24,10 @@ describe('GetMonsterImageHandler', () => {
 
     describe('execute', () => {
         it('should call getFile on fileService with given argument', async () => {
-            const command = new GetMonsterImageQuery('code');
+            const command = new GetMonsterImageQuery(
+                'code',
+                FileFolder.MonsterImages,
+            );
 
             const filePathMock = `someSortOfPathFor${command.code}`;
 

@@ -14,11 +14,11 @@ import {
     Post,
     Query,
     Res,
-    StreamableFile,
     ValidationPipe,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { Error } from '../../application/error';
+import { FileFolder } from '../../file/application/file-service.interface';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
@@ -85,7 +85,6 @@ export class MonsterController {
     })
     @ApiOkResponse({
         description: 'Retrieved monster image.',
-        type: StreamableFile,
     })
     @ApiNotFoundResponse({
         description: 'No image was found for the given code.',
@@ -95,26 +94,47 @@ export class MonsterController {
         @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
-        const getMonsterImageQuery = new GetMonsterImageQuery(query.code);
+        const result = await this._executeMonsterImageQuery(
+            query.code,
+            FileFolder.MonsterImages,
+        );
 
-        const result = await this._queryBus.execute<
-            GetMonsterImageQuery,
-            Result<ReadStream> | Error
-        >(getMonsterImageQuery);
+        this._handleMonsterImageQueryResult(
+            result,
+            response,
+            query.code,
+            'image',
+        );
+    }
 
-        if (result instanceof Result) {
-            response.set({
-                'Content-Disposition': `inline; filename=${query.code}.png`,
-                'Content-Type': 'image/png',
-            });
+    @ApiOperation({
+        description: 'Get a specific monster thumbnail by its code.',
+    })
+    @ApiBadRequestResponse({
+        description: 'No code was provided.',
+    })
+    @ApiOkResponse({
+        description: 'Retrieved monster thumbnail.',
+    })
+    @ApiNotFoundResponse({
+        description: 'No thumbnail was found for the given code.',
+    })
+    @Get('thumbnail')
+    async getMonsterThumbnail(
+        @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
+        @Res() response: Response,
+    ): Promise<void> {
+        const result = await this._executeMonsterImageQuery(
+            query.code,
+            FileFolder.MonsterThumbnails,
+        );
 
-            result.data.pipe(response);
-        } else {
-            throw new HttpException(
-                `No image was found for monster with { code: '${query.code}' }.`,
-                result.code,
-            );
-        }
+        this._handleMonsterImageQueryResult(
+            result,
+            response,
+            query.code,
+            'thumbnail',
+        );
     }
 
     @ApiOperation({
@@ -174,5 +194,40 @@ export class MonsterController {
         }
 
         throw new HttpException(result.message, result.code);
+    }
+
+    private async _executeMonsterImageQuery(
+        code: string,
+        folder: FileFolder,
+    ): Promise<Result<ReadStream> | Error> {
+        const getMonsterImageQuery = new GetMonsterImageQuery(code, folder);
+
+        const result = await this._queryBus.execute<
+            GetMonsterImageQuery,
+            Result<ReadStream> | Error
+        >(getMonsterImageQuery);
+
+        return result;
+    }
+
+    private _handleMonsterImageQueryResult(
+        result: Result<ReadStream> | Error,
+        response: Response,
+        code: string,
+        resourceType: 'image' | 'thumbnail',
+    ): void {
+        if (result instanceof Result) {
+            response.set({
+                'Content-Disposition': `inline; filename=${code}.png`,
+                'Content-Type': 'image/png',
+            });
+
+            result.data.pipe(response);
+        } else {
+            throw new HttpException(
+                `No ${resourceType} was found for monster with { code: '${code}' }.`,
+                result.code,
+            );
+        }
     }
 }

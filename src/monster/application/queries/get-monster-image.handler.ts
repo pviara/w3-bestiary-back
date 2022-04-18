@@ -10,7 +10,7 @@ import { ReadStream } from 'fs';
 import { Result } from '../../../application/result';
 
 export class GetMonsterImageQuery implements IQuery {
-    constructor(readonly code: string) {}
+    constructor(readonly code: string, readonly folder: FileFolder) {}
 }
 
 const FileService = () => Inject('FileService');
@@ -28,7 +28,7 @@ export class GetMonsterImageHandler
         query: GetMonsterImageQuery,
     ): Promise<Result<ReadStream> | Error> {
         const filePath = this._fileService.computeFilePath(
-            FileFolder.MonsterImages,
+            query.folder,
             FileFormat.PNG,
             query.code,
         );
