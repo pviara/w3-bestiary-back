@@ -14,7 +14,6 @@ import {
     Post,
     Query,
     Res,
-    StreamableFile,
     ValidationPipe,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
@@ -85,7 +84,6 @@ export class MonsterController {
     })
     @ApiOkResponse({
         description: 'Retrieved monster image.',
-        type: StreamableFile,
     })
     @ApiNotFoundResponse({
         description: 'No image was found for the given code.',
