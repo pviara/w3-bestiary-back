@@ -1,9 +1,9 @@
 import { CategoryRepoProvider } from './persistence/category-repository.provider';
 import { categorySchema } from './persistence/category-entity';
+import { CqrsModule } from '@nestjs/cqrs';
 import { GetAllCategoriesHandler } from './application/queries/get-all-categories.handler';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { CqrsModule } from '@nestjs/cqrs';
 
 const queryHandlers = [GetAllCategoriesHandler];
 

@@ -14,11 +14,11 @@ import {
 } from '../domain/monster';
 import { MonsterController } from './monster.controller';
 import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
+import { ReadStream } from 'fs';
 import { Result } from '../../application/result';
+import { Response } from 'express';
 import { Typo } from '../domain/typo';
 import { when } from 'jest-when';
-import { Response } from 'express';
-import { ReadStream } from 'fs';
 
 describe('MonsterController', () => {
     let sut: MonsterController;

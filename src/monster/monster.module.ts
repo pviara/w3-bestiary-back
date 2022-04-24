@@ -1,8 +1,8 @@
 import { CqrsModule } from '@nestjs/cqrs';
 import { FileModule } from 'src/file/file.module';
-import { GetMonstersByCategoriesHandler } from './application/queries/get-monsters-by-category.handler';
 import { GetMonsterByCodeHandler } from './application/queries/get-monster-by-code.handler';
 import { GetMonsterImageHandler } from './application/queries/get-monster-image.handler';
+import { GetMonstersByCategoriesHandler } from './application/queries/get-monsters-by-category.handler';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MonsterController } from './presentation/monster.controller';
