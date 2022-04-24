@@ -1,6 +1,6 @@
 import { ConfigurationModule } from '../infrastructure/configuration/configuration.module';
-import { Module } from '@nestjs/common';
 import { FileServiceProvider } from './application/file-service.provider';
+import { Module } from '@nestjs/common';
 
 @Module({
     exports: [FileServiceProvider],

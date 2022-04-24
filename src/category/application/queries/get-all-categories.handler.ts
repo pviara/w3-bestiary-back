@@ -1,8 +1,8 @@
 import { Category } from '../../../category/domain/category';
 import { Error } from '../../../application/error';
+import { ICategoryRepository } from '../category-repository.interface';
 import { Inject } from '@nestjs/common';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { ICategoryRepository } from '../category-repository.interface';
 import { Result } from '../../../application/result';
 
 export class GetAllCategoriesQuery implements IQuery {

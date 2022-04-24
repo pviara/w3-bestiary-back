@@ -1,13 +1,13 @@
 import { createMock } from 'ts-auto-mock';
 import {
-    GetMonsterImageHandler,
-    GetMonsterImageQuery,
-} from './get-monster-image.handler';
-import {
     FileFolder,
     FileFormat,
     IFileService,
 } from '../../../file/application/file-service.interface';
+import {
+    GetMonsterImageHandler,
+    GetMonsterImageQuery,
+} from './get-monster-image.handler';
 import { method, On } from 'ts-auto-mock/extension';
 import { when } from 'jest-when';
 

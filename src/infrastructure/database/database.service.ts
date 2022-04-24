@@ -1,6 +1,6 @@
 import { ConfigurationService } from '../configuration/configuration.service';
-import { Injectable } from '@nestjs/common';
 import { Helper } from '../../utils/helper';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class DatabaseService {
