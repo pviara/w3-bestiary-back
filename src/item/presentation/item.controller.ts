@@ -10,14 +10,20 @@ import {
     Get,
     HttpException,
     Query,
+    Res,
     ValidationPipe,
 } from '@nestjs/common';
 import { Error } from '../../application/error';
+import { FileFolder } from '../../file/application/file-service.interface';
 import { GetAllItemsQuery } from '../application/queries/get-all-items.query';
 import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
+import { GetItemThumbnailQuery } from '../application/queries/get-item-thumbnail.handler';
+import { GetItemThumbnailURLQuery } from './DTO/get-item-image.url-query';
 import { Item } from '../domain/item';
 import { QueryBus } from '@nestjs/cqrs';
+import { Response } from 'express';
 import { Result } from '../../application/result';
+import { ReadStream } from 'fs';
 
 @ApiTags('item')
 @Controller()
@@ -53,5 +59,44 @@ export class ItemController {
         }
 
         throw new HttpException(result.message, result.code);
+    }
+
+    @ApiOperation({
+        description: 'Get a specific item thumbnail by its code.',
+    })
+    @ApiBadRequestResponse({
+        description: 'No code was provided.',
+    })
+    @ApiOkResponse({
+        description: 'Retrieved item thumbnail.',
+    })
+    @ApiNotFoundResponse({
+        description: 'No thumbnail was found for the given code.',
+    })
+    @Get('thumbnail')
+    async getItemThumnail(
+        @Query(new ValidationPipe()) query: GetItemThumbnailURLQuery,
+        @Res() response: Response,
+    ): Promise<void> {
+        const getItemThumbnailQuery = new GetItemThumbnailQuery(query.code, FileFolder.ItemThumbnails);
+
+        const result = await this._queryBus.execute<
+            GetItemThumbnailQuery,
+            Result<ReadStream> | Error
+        >(getItemThumbnailQuery);
+        
+        if (result instanceof Result) {
+            response.set({
+                'Content-Disposition': `inline; filename=${query.code}.png`,
+                'Content-Type': 'image/png',
+            });
+
+            result.data.pipe(response);
+        } else {
+            throw new HttpException(
+                `No thumbnail was found for monster with { code: '${query.code}' }.`,
+                result.code,
+            );
+        }
     }
 }

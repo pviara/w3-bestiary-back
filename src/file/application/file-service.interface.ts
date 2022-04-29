@@ -3,6 +3,7 @@ import { ReadStream } from 'fs';
 import { Result } from 'src/application/result';
 
 export enum FileFolder {
+    ItemThumbnails = 'item/thumbnails',
     MonsterImages = 'monster/images',
     MonsterThumbnails = 'monster/thumbnails',
 }
