@@ -1,8 +1,8 @@
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
-import { GetAllItemsHandler, GetAllItemsQuery } from './get-all-items.query';
+import { GetAllItemsHandler, GetAllItemsQuery } from './get-all-items.handler';
 import { IItemRepository } from '../item-repository.interface';
-import { Item } from '../../../item/domain/item';
+import { Item } from '../../domain/item';
 import { method, On } from 'ts-auto-mock/extension';
 import { Result } from '../../../application/result';
 import { when } from 'jest-when';
