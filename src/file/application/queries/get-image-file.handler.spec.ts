@@ -2,47 +2,48 @@ import { createMock } from 'ts-auto-mock';
 import {
     FileFolder,
     FileFormat,
-    IFileService
+    IFileService,
 } from '../../../file/application/file-service.interface';
 import {
-    GetItemThumbnailHandler,
-    GetItemThumbnailQuery
-} from './get-item-thumbnail.handler';
+    GetImageFileHandler,
+    GetImageFileQuery
+} from './get-image-file.handler';
 import { method, On } from 'ts-auto-mock/extension';
 import { when } from 'jest-when';
 
-describe('GetItemThumbnailHandler', () => {
-    let sut: GetItemThumbnailHandler;
+describe('GetImageFileQuery', () => {
+    let sut: GetImageFileHandler;
 
     let fileServiceMock: IFileService;
 
     beforeEach(() => {
         fileServiceMock = createMock<IFileService>();
 
-        sut = new GetItemThumbnailHandler(fileServiceMock);
+        sut = new GetImageFileHandler(fileServiceMock);
     });
 
     describe('execute', () => {
         it('should call getFile on fileService with given argument', async () => {
-            const command = new GetItemThumbnailQuery(
+            const query = new GetImageFileQuery(
                 'code',
-                FileFolder.ItemThumbnails,
+                FileFolder.MonsterImages,
+                FileFormat.PNG,
             );
 
-            const filePathMock = `someSortOfPathFor${command.code}`;
+            const filePathMock = `someSortOfPathFor${query.code}`;
 
             const fileServiceComputeFilePathMock = On(fileServiceMock).get(
                 method('computeFilePath'),
             );
             when(fileServiceComputeFilePathMock)
                 .calledWith(
-                    FileFolder.ItemThumbnails,
-                    FileFormat.PNG,
-                    command.code,
+                    query.folder,
+                    query.format,
+                    query.code,
                 )
                 .mockReturnValue(filePathMock);
 
-            await sut.execute(command);
+            await sut.execute(query);
 
             expect(fileServiceMock.getFileStream).toBeCalledWith(filePathMock);
         });

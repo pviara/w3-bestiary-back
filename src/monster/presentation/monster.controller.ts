@@ -18,10 +18,10 @@ import {
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { Error } from '../../application/error';
-import { FileFolder } from '../../file/application/file-service.interface';
+import { FileFolder, FileFormat } from '../../file/application/file-service.interface';
+import { GetImageFileQuery } from '../../file/application/queries/get-image-file.handler';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
-import { GetMonsterImageQuery } from '../application/queries/get-monster-image.handler';
 import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
@@ -94,12 +94,13 @@ export class MonsterController {
         @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
-        const result = await this._executeMonsterImageQuery(
+        const result = await this._executeImageFileQuery(
             query.code,
             FileFolder.MonsterImages,
+            FileFormat.PNG,
         );
 
-        this._handleMonsterImageQueryResult(
+        this._handleImageFileQueryResult(
             result,
             response,
             query.code,
@@ -124,12 +125,13 @@ export class MonsterController {
         @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
-        const result = await this._executeMonsterImageQuery(
+        const result = await this._executeImageFileQuery(
             query.code,
             FileFolder.MonsterThumbnails,
+            FileFormat.PNG,
         );
 
-        this._handleMonsterImageQueryResult(
+        this._handleImageFileQueryResult(
             result,
             response,
             query.code,
@@ -196,21 +198,22 @@ export class MonsterController {
         throw new HttpException(result.message, result.code);
     }
 
-    private async _executeMonsterImageQuery(
+    private async _executeImageFileQuery(
         code: string,
         folder: FileFolder,
+        format: FileFormat,
     ): Promise<Result<ReadStream> | Error> {
-        const getMonsterImageQuery = new GetMonsterImageQuery(code, folder);
+        const getImageFileQuery = new GetImageFileQuery(code, folder, format);
 
         const result = await this._queryBus.execute<
-            GetMonsterImageQuery,
+            GetImageFileQuery,
             Result<ReadStream> | Error
-        >(getMonsterImageQuery);
+        >(getImageFileQuery);
 
         return result;
     }
 
-    private _handleMonsterImageQueryResult(
+    private _handleImageFileQueryResult(
         result: Result<ReadStream> | Error,
         response: Response,
         code: string,
