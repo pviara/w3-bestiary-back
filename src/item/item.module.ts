@@ -1,6 +1,6 @@
 import { CqrsModule } from '@nestjs/cqrs';
 import { FileModule } from 'src/file/file.module';
-import { GetAllItemsHandler } from './application/queries/get-all-items.query';
+import { GetAllItemsHandler } from './application/queries/get-all-items.handler';
 import { GetItemThumbnailHandler } from './application/queries/get-item-thumbnail.handler';
 import { ItemController } from './presentation/item.controller';
 import { ItemRepoProvider } from './persistence/item-repository.provider';

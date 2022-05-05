@@ -15,7 +15,7 @@ import {
 } from '@nestjs/common';
 import { Error } from '../../application/error';
 import { FileFolder } from '../../file/application/file-service.interface';
-import { GetAllItemsQuery } from '../application/queries/get-all-items.query';
+import { GetAllItemsQuery } from '../application/queries/get-all-items.handler';
 import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
 import { GetItemThumbnailQuery } from '../application/queries/get-item-thumbnail.handler';
 import { GetItemThumbnailURLQuery } from './DTO/get-item-image.url-query';

@@ -2,7 +2,7 @@ import { Error } from '../../../application/error';
 import { IItemRepository } from '../item-repository.interface';
 import { Inject } from '@nestjs/common';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
-import { Item } from '../../../item/domain/item';
+import { Item } from '../../domain/item';
 import { Result } from '../../../application/result';
 
 export class GetAllItemsQuery implements IQuery {
