@@ -14,10 +14,10 @@ import {
     ValidationPipe,
 } from '@nestjs/common';
 import { Error } from '../../application/error';
-import { FileFolder } from '../../file/application/file-service.interface';
+import { FileFolder, FileFormat } from '../../file/application/file-service.interface';
 import { GetAllItemsQuery } from '../application/queries/get-all-items.handler';
 import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
-import { GetItemThumbnailQuery } from '../application/queries/get-item-thumbnail.handler';
+import { GetImageFileQuery } from '../../file/application/queries/get-image-file.handler';
 import { GetItemThumbnailURLQuery } from './DTO/get-item-image.url-query';
 import { Item } from '../domain/item';
 import { QueryBus } from '@nestjs/cqrs';
@@ -78,12 +78,16 @@ export class ItemController {
         @Query(new ValidationPipe()) query: GetItemThumbnailURLQuery,
         @Res() response: Response,
     ): Promise<void> {
-        const getItemThumbnailQuery = new GetItemThumbnailQuery(query.code, FileFolder.ItemThumbnails);
+        const getImageFileQuery = new GetImageFileQuery(
+            query.code,
+            FileFolder.ItemThumbnails,
+            FileFormat.PNG,
+        );
 
         const result = await this._queryBus.execute<
-            GetItemThumbnailQuery,
+            GetImageFileQuery,
             Result<ReadStream> | Error
-        >(getItemThumbnailQuery);
+        >(getImageFileQuery);
         
         if (result instanceof Result) {
             response.set({
@@ -94,7 +98,7 @@ export class ItemController {
             result.data.pipe(response);
         } else {
             throw new HttpException(
-                `No thumbnail was found for monster with { code: '${query.code}' }.`,
+                `No thumbnail was found for item with { code: '${query.code}' }.`,
                 result.code,
             );
         }
