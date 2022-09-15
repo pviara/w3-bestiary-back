@@ -18,7 +18,10 @@ import {
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { Error } from '../../application/error';
-import { FileFolder, FileFormat } from '../../file/application/file-service.interface';
+import {
+    FileFolder,
+    FileFormat,
+} from '../../file/application/file-service.interface';
 import { GetImageFileQuery } from '../../file/application/queries/get-image-file.handler';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
 import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
@@ -100,12 +103,7 @@ export class MonsterController {
             FileFormat.PNG,
         );
 
-        this._handleImageFileQueryResult(
-            result,
-            response,
-            query.code,
-            'image',
-        );
+        this._handleImageFileQueryResult(result, response, query.code, 'image');
     }
 
     @ApiOperation({

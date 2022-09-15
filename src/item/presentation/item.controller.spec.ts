@@ -68,11 +68,11 @@ describe('ItemController', () => {
             expect(result[0]).toBeInstanceOf(Item);
         });
     });
-    
+
     describe('getItemThumbnail', () => {
         it('should call execute on queryBus with given query', async () => {
             const getItemThumbnailURLQuery: GetItemThumbnailURLQuery = {
-                code: 'code'
+                code: 'code',
             };
 
             const queryBusMockExecute = On(queryBusMock).get(method('execute'));

@@ -6,7 +6,7 @@ import {
 } from '../../../file/application/file-service.interface';
 import {
     GetImageFileHandler,
-    GetImageFileQuery
+    GetImageFileQuery,
 } from './get-image-file.handler';
 import { method, On } from 'ts-auto-mock/extension';
 import { when } from 'jest-when';
@@ -36,11 +36,7 @@ describe('GetImageFileQuery', () => {
                 method('computeFilePath'),
             );
             when(fileServiceComputeFilePathMock)
-                .calledWith(
-                    query.folder,
-                    query.format,
-                    query.code,
-                )
+                .calledWith(query.folder, query.format, query.code)
                 .mockReturnValue(filePathMock);
 
             await sut.execute(query);

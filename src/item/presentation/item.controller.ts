@@ -14,7 +14,10 @@ import {
     ValidationPipe,
 } from '@nestjs/common';
 import { Error } from '../../application/error';
-import { FileFolder, FileFormat } from '../../file/application/file-service.interface';
+import {
+    FileFolder,
+    FileFormat,
+} from '../../file/application/file-service.interface';
 import { GetAllItemsQuery } from '../application/queries/get-all-items.handler';
 import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
 import { GetImageFileQuery } from '../../file/application/queries/get-image-file.handler';
@@ -88,7 +91,7 @@ export class ItemController {
             GetImageFileQuery,
             Result<ReadStream> | Error
         >(getImageFileQuery);
-        
+
         if (result instanceof Result) {
             response.set({
                 'Content-Disposition': `inline; filename=${query.code}.png`,

@@ -8,13 +8,7 @@ const queryHandlers = [GetImageFileHandler];
 
 @Module({
     exports: [FileServiceProvider],
-    imports: [
-        ConfigurationModule,
-        CqrsModule,
-    ],
-    providers: [
-        FileServiceProvider,
-        ...queryHandlers,
-    ],
+    imports: [ConfigurationModule, CqrsModule],
+    providers: [FileServiceProvider, ...queryHandlers],
 })
 export class FileModule {}

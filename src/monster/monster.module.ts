@@ -12,10 +12,7 @@ import { TypoRepoProvider } from './persistence/repositories/typo-repository.pro
 import { typoSchema } from './persistence/entities/typo-entity';
 
 const commandHandlers = [ReportTextTypoHandler];
-const queryHandlers = [
-    GetMonstersByCategoriesHandler,
-    GetMonsterByCodeHandler,
-];
+const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
 
 @Module({
     controllers: [MonsterController],
