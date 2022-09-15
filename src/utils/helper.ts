@@ -1,3 +1,5 @@
+export type StringReplaceValue = { placeholder: string; newValue: string };
+
 export class Helper {
     static normalizeCode(code: string) {
         const regExp = new RegExp(' ', 'g');
@@ -6,7 +8,7 @@ export class Helper {
 
     static replace(
         source: string,
-        ...replaceValues: { placeholder: string; newValue: string }[]
+        ...replaceValues: StringReplaceValue[]
     ): string {
         let transformed = source;
 
