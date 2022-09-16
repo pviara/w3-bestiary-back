@@ -1,4 +1,3 @@
-import { AppService } from './app.service';
 import { CategoryModule } from './category/category.module';
 import { ConfigurationModule } from './infrastructure/configuration/configuration.module';
 import { DatabaseModule } from './infrastructure/database/database.module';
@@ -55,6 +54,6 @@ import { VersionModule } from './version/version.module';
         VersionModule,
     ],
     controllers: [],
-    providers: [AppService],
+    providers: [],
 })
 export class AppModule {}
