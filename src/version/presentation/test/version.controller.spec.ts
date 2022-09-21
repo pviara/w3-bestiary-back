@@ -1,5 +1,5 @@
-import { version } from '../../../package.json';
-import { VersionController } from './version.controller';
+import { version } from '../../../../package.json';
+import { VersionController } from '../version.controller';
 
 describe('VersionController', () => {
     let sut: VersionController;
