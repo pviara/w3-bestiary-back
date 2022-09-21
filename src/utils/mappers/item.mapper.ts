@@ -1,5 +1,5 @@
-import { Item } from 'src/item/domain/item';
-import { ItemEntity } from 'src/item/persistence/item-entity';
+import { Item } from '../../item/domain/item';
+import { ItemEntity } from '../../item/persistence/item-entity';
 
 export class ItemMapper {
     static toItem(itemEntity: ItemEntity): Item {
