@@ -1,15 +1,15 @@
 import { createMock } from 'ts-auto-mock';
-import { Error } from '../../application/error';
-import { GetAllItemsURLQuery } from './DTO/get-all-items.url-query';
-import { GetItemThumbnailURLQuery } from './DTO/get-item-image.url-query';
+import { Error } from '../../../application/error';
+import { GetAllItemsURLQuery } from '../DTO/get-all-items.url-query';
+import { GetItemThumbnailURLQuery } from '../DTO/get-item-image.url-query';
 import { HttpException } from '@nestjs/common';
-import { Item } from '../domain/item';
-import { ItemController } from './item.controller';
+import { Item } from '../../domain/item';
+import { ItemController } from '../item.controller';
 import { method, On } from 'ts-auto-mock/extension';
 import { QueryBus } from '@nestjs/cqrs';
 import { ReadStream } from 'fs';
 import { Response } from 'express';
-import { Result } from '../../application/result';
+import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
 describe('ItemController', () => {
