@@ -9,6 +9,7 @@ export class DatabaseConfiguration {
     MONGODB_USER: string;
     MONGODB_PASSWORD: string;
     MONGODB_DBNAME: string;
+    MONGODB_TESTING_DBNAME: string;
 }
 
 export class LoggingConfiguration {
