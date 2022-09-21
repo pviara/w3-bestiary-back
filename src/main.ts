@@ -5,6 +5,7 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { InternalServerErrorException } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import * as morgan from 'morgan';
+import helmet from 'helmet';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
@@ -22,6 +23,8 @@ async function bootstrap() {
 
     if (currentEnv === 'DEV') {
         app.enableCors();
+    } else {
+        app.use(helmet());
     }
 
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
