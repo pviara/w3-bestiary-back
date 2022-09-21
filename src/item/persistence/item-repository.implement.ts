@@ -15,7 +15,7 @@ export class ItemRepositoryImplement implements IItemRepository {
 
     constructor(
         @InjectModel('Item')
-        private readonly _model: Model<ItemEntity>,
+        readonly _model: Model<ItemEntity>,
     ) {}
 
     async getAll(lang: string): Promise<Item[]> {
