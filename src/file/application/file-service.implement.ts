@@ -1,4 +1,4 @@
-import { ConfigurationService } from 'src/infrastructure/configuration/configuration.service';
+import { ConfigurationService } from '../../infrastructure/configuration/configuration.service';
 import { createReadStream, existsSync, ReadStream } from 'fs';
 import { Error } from '../../application/error';
 import { FileFolder, FileFormat, IFileService } from './file-service.interface';

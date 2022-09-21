@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 
 enum DatabaseType {
     Feature = 0,
-    Testing = 1
+    Testing = 1,
 }
 
 @Injectable()
@@ -22,7 +22,7 @@ export class DatabaseService {
     private _assembleDbURI(dbType: DatabaseType): string {
         const username = this._configService.database.MONGODB_USER;
         const password = this._configService.database.MONGODB_PASSWORD;
-        
+
         let dbName = this._configService.database.MONGODB_DBNAME;
         if (dbType === DatabaseType.Testing) {
             dbName = this._configService.database.MONGODB_TESTING_DBNAME;
