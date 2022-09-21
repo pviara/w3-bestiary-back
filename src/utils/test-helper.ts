@@ -1,4 +1,7 @@
+import { DatabaseModule } from '../infrastructure/database/database.module';
+import { DatabaseService } from '../infrastructure/database/database.service';
 import { DynamicModule } from '@nestjs/common';
+import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
 import { RouterModule } from '@nestjs/core';
 import { Test, TestingModule } from '@nestjs/testing';
 
@@ -30,6 +33,27 @@ export class TestHelper {
         });
 
         return await testingModule.compile();
+    }
+
+    static buildDatabaseTestingModule(): (
+        | DynamicModule
+        | typeof DatabaseModule
+    )[] {
+        return [
+            DatabaseModule,
+            MongooseModule.forRootAsync({
+                imports: [DatabaseModule],
+                useFactory: (dbService: DatabaseService) => {
+                    const options: MongooseModuleOptions = {
+                        uri: dbService.dbTestURI,
+                        useNewUrlParser: true,
+                        useUnifiedTopology: true,
+                    };
+                    return options;
+                },
+                inject: [DatabaseService],
+            }),
+        ];
     }
 
     private static buildRouterModule(
