@@ -39,6 +39,9 @@ export class ConfigurationService {
         this._configuration.database.MONGODB_DBNAME =
             this._configService.get<string>('MONGODB_DBNAME');
 
+        this._configuration.database.MONGODB_TESTING_DBNAME =
+            this._configService.get<string>('MONGODB_TESTING_DBNAME');
+
         this._configuration.logging.LOGS_PATH =
             this._configService.get<string>('LOGS_PATH');
     }
