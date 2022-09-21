@@ -2,7 +2,7 @@ import { IItemRepository } from '../application/item-repository.interface';
 import { InjectModel } from '@nestjs/mongoose';
 import { Item } from '../domain/item';
 import { ItemEntity } from './item-entity';
-import { ItemMapper } from 'src/utils/mappers/item.mapper';
+import { ItemMapper } from '../../utils/mappers/item.mapper';
 import { Model, PipelineStage } from 'mongoose';
 
 type ItemEntityByLang = {
