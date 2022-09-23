@@ -1,0 +1,27 @@
+name: Node.js CD - Preview
+
+on:
+    push:
+        branches: [develop]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: appleboy/ssh-action@master
+              name: Deploy preview on VPS
+              with:
+                host: ${{ secrets.HOST }}
+                username: ${{ secrets.USERNAME }}
+                key: ${{ secrets.PRIVATE_KEY }}
+                passphrase: ${{ secrets.SERVER_PASSPHRASE }}
+                port: 22
+                script: |
+                    cd ~/dev/repos/w3-bestiary/preview/w3-bestiary-back
+                    git checkout develop
+                    git pull
+                    npm ci
+                    npm run build
+                    pm2 delete w3-bestiary-preview
+                    pm2 start dist/src/main.js --name w3-bestiary-preview
