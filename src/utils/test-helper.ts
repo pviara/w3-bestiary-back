@@ -28,6 +28,7 @@ export class TestHelper {
 
         const { routerModule, importedModules } =
             this.buildRouterModule(routedModules);
+
         const testingModule = Test.createTestingModule({
             imports: [routerModule, ...importedModules],
         });
