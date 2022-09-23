@@ -27,7 +27,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
 
     constructor(
         @InjectModel('Monster')
-        private readonly _model: Model<MonsterEntity>,
+        readonly monsterModel: Model<MonsterEntity>,
     ) {}
 
     async getMonstersByCategories(lang: string): Promise<MonstersByCategory[]> {
@@ -108,7 +108,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             },
         ];
 
-        const monstersByCategoryEntities = await this._model
+        const monstersByCategoryEntities = await this.monsterModel
             .aggregate<MonstersByCategoryEntity>(aggregate)
             .exec();
 
@@ -158,7 +158,7 @@ export class MonsterRepositoryImplement implements IMonsterRepository {
             },
         ];
 
-        const [monsterEntity] = await this._model
+        const [monsterEntity] = await this.monsterModel
             .aggregate<MonsterEntity>(aggregate)
             .exec();
 

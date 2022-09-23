@@ -1,5 +1,5 @@
 import { Document } from 'mongoose';
-import { Helper } from 'src/utils/helper';
+import { Helper } from '../../../utils/helper';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 class MonsterTextesQuoteAuthorEntity {
@@ -111,7 +111,7 @@ export class MonstersByCategoryEntity {
     monsters: MonsterByCategoryEntity[];
 }
 
-@Schema({ _id: false })
+@Schema()
 export class MonsterDocument {
     @Prop({
         lower: true,

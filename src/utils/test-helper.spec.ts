@@ -40,4 +40,23 @@ describe('TestHelper', () => {
             expect(() => testingModule.select(CategoryModule)).toThrowError();
         });
     });
+
+    describe('generateString()', () => {
+        it('should throw an error if given length is below 1', () => {
+            expect(() => sut.generateString(0)).toThrow(Error);
+            expect(() => sut.generateString(-1)).toThrow(Error);
+        });
+
+        it('should throw an error if given length is not natural', () => {
+            expect(() => sut.generateString(0.41)).toThrow(Error);
+            expect(() => sut.generateString(12.8)).toThrow(Error);
+        });
+
+        it('should return a string of the length that has been given', () => {
+            const length = 12;
+            const result = sut.generateString(length);
+
+            expect(result.length).toBe(length);
+        });
+    });
 });
