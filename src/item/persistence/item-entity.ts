@@ -10,7 +10,7 @@ export class ItemName {
     name: string;
 }
 
-@Schema({ _id: false })
+@Schema()
 export class ItemDocument {
     @Prop({
         lower: true,
