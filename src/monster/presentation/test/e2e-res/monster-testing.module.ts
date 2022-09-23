@@ -1,6 +1,7 @@
 import { categorySchema } from '../../../../category/persistence/category-entity';
 import { CqrsModule } from '@nestjs/cqrs';
 import { FileModule } from '../../../../file/file.module';
+import { GetMonsterByCodeHandler } from '../../../application/queries/get-monster-by-code.handler';
 import { GetMonstersByCategoriesHandler } from '../../../application/queries/get-monsters-by-category.handler';
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
@@ -9,7 +10,7 @@ import { MonsterController } from '../../monster.controller';
 import { MonsterTestingRepoProvider } from './monster-testing-repo.provider';
 import { TestHelper } from '../../../../utils/test-helper';
 
-const queryHandlers = [GetMonstersByCategoriesHandler];
+const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
 
 @Module({
     controllers: [MonsterController],
