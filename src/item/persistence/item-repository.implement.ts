@@ -15,7 +15,7 @@ export class ItemRepositoryImplement implements IItemRepository {
 
     constructor(
         @InjectModel('Item')
-        readonly _model: Model<ItemEntity>,
+        readonly model: Model<ItemEntity>,
     ) {}
 
     async getAll(lang: string): Promise<Item[]> {
@@ -44,7 +44,7 @@ export class ItemRepositoryImplement implements IItemRepository {
             },
         ];
 
-        const itemEntities = await this._model
+        const itemEntities = await this.model
             .aggregate<ItemEntity>(aggregate)
             .exec();
 
