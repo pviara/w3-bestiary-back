@@ -1,9 +1,9 @@
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { createMock } from 'ts-auto-mock';
-import { Error } from '../../application/error';
-import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
-import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
-import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
+import { Error } from '../../../application/error';
+import { GetMonsterByCodeURLQuery } from '../DTO/get-monster-by-code.url-query';
+import { GetMonsterImageURLQuery } from '../DTO/get-monster-image.url-query';
+import { GetMonstersByCategoriesURLQuery } from '../DTO/get-monsters-by-categories.url-query';
 import { HttpException } from '@nestjs/common';
 import { method, On } from 'ts-auto-mock/extension';
 import {
@@ -11,13 +11,13 @@ import {
     MonsterByCategory,
     MonstersByCategory,
     MonstersByCategoryCategory,
-} from '../domain/monster';
-import { MonsterController } from './monster.controller';
-import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
+} from '../../domain/monster';
+import { MonsterController } from '../monster.controller';
+import { ReportTextTypoPayload } from '../DTO/report-text-typo.payload';
 import { ReadStream } from 'fs';
-import { Result } from '../../application/result';
+import { Result } from '../../../application/result';
 import { Response } from 'express';
-import { Typo } from '../domain/typo';
+import { Typo } from '../../domain/typo';
 import { when } from 'jest-when';
 
 describe('MonsterController', () => {

@@ -10,7 +10,7 @@ export class CategoryName {
     name: string;
 }
 
-@Schema({ _id: false })
+@Schema()
 export class CategoryDocument {
     @Prop({
         lower: true,

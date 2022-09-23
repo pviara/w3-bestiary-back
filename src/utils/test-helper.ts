@@ -57,6 +57,30 @@ export class TestHelper {
         ];
     }
 
+    static generateString(length = 5): string {
+        if (length <= 0) {
+            throw new Error('Given length must be greater than 0.');
+        }
+        if (!this.isNaturalNumber(length)) {
+            throw new Error('Given length must be a natural number.');
+        }
+
+        const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+
+        let finalString = '';
+        for (let i = 0; i < length; i++) {
+            const randomLetter =
+                alphabet[Math.floor(Math.random() * alphabet.length)];
+            finalString += randomLetter;
+        }
+
+        return finalString;
+    }
+
+    private static isNaturalNumber(length: number) {
+        return Number(length) >= 0 && Number(length) % 1 === 0;
+    }
+
     private static buildRouterModule(
         routedModules: RoutedTestModule[],
     ): RouterTestModule {
