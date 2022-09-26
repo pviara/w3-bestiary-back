@@ -41,7 +41,7 @@ export class ReportTextTypoHandler
             );
         }
 
-        // make sure the typo in inside monster's textes
+        // make sure the typo is inside monster's textes
         const hasTypoBeenFound = this._findTextInMonsterTextes(
             command.content.toLowerCase(),
             monster.textes,
