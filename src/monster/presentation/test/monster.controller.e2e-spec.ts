@@ -1,3 +1,5 @@
+import { ConfigService } from '@nestjs/config';
+import { FileFolder } from '../../../file/application/file-service.interface';
 import { INestApplication } from '@nestjs/common';
 import { MonsterTestingModule } from './e2e-res/monster-testing.module';
 import { MonsterTestingRepositoryImplement } from './e2e-res/monster-testing-repo.implement';
@@ -30,6 +32,19 @@ describe('MonsterController', () => {
         typoTestingRepo = await app.get('TypoRepo');
 
         await monsterTestingRepo.createTestingValues(existingLang);
+
+        const configService = app.get<ConfigService>(ConfigService);
+        const filesPath = configService.get<string>('FILES_PATH');
+        for (const folder of [
+            FileFolder.MonsterImages,
+            FileFolder.MonsterThumbnails,
+        ]) {
+            await TestHelper.createTestingImages(
+                filesPath,
+                folder,
+                existingCode,
+            );
+        }
     });
 
     describe('GET /', () => {
