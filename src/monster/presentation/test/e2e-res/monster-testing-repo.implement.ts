@@ -45,8 +45,9 @@ export class MonsterTestingRepositoryImplement extends MonsterRepositoryImplemen
                                 firstname:
                                     monster.textes.quote?.author.firstname,
                                 lastname: monster.textes.quote?.author.lastname,
+                                title: monster.textes.quote?.author.title,
                             },
-                            texte: monster.textes.quote?.text,
+                            text: monster.textes.quote?.text,
                         },
                     },
                 ],
