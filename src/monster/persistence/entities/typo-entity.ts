@@ -1,5 +1,5 @@
 import { Document } from 'mongoose';
-import { Helper } from 'src/utils/helper';
+import { Helper } from '../../../utils/helper';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 @Schema()

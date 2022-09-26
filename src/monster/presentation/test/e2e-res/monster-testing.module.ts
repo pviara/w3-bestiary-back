@@ -8,8 +8,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { monsterSchema } from '../../../persistence/entities/monster-entity';
 import { MonsterController } from '../../monster.controller';
 import { MonsterTestingRepoProvider } from './monster-testing-repo.provider';
+import { ReportTextTypoHandler } from '../../../application/commands/report-text-typo.handler';
 import { TestHelper } from '../../../../utils/test-helper';
+import { typoSchema } from '../../../persistence/entities/typo-entity';
+import { TypoTestingRepoProvider } from './typo-testing-repo.provider';
 
+const commandHandlers = [ReportTextTypoHandler];
 const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
 
 @Module({
@@ -22,7 +26,13 @@ const queryHandlers = [GetMonstersByCategoriesHandler, GetMonsterByCodeHandler];
             { name: 'Category', schema: categorySchema },
         ]),
         MongooseModule.forFeature([{ name: 'Monster', schema: monsterSchema }]),
+        MongooseModule.forFeature([{ name: 'Typo', schema: typoSchema }]),
     ],
-    providers: [MonsterTestingRepoProvider, ...queryHandlers],
+    providers: [
+        ...commandHandlers,
+        MonsterTestingRepoProvider,
+        ...queryHandlers,
+        TypoTestingRepoProvider,
+    ],
 })
 export class MonsterTestingModule {}

@@ -9,7 +9,7 @@ import { TypoMapper } from '../../../utils/mappers/typo.mapper';
 export class TypoRepositoryImplement implements ITypoRepository {
     constructor(
         @InjectModel('Typo')
-        private readonly _model: Model<TypoEntity>,
+        readonly _model: Model<TypoEntity>,
     ) {}
 
     async create(command: ReportTextTypoCommand): Promise<Typo> {

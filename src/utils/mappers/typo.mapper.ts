@@ -1,5 +1,5 @@
-import { Typo } from 'src/monster/domain/typo';
-import { TypoEntity } from 'src/monster/persistence/entities/typo-entity';
+import { Typo } from '../../monster/domain/typo';
+import { TypoEntity } from '../../monster/persistence/entities/typo-entity';
 
 export class TypoMapper {
     static toTypo(typoEntity: TypoEntity): Typo {
