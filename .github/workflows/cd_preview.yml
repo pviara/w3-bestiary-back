@@ -21,7 +21,7 @@ jobs:
                     cd ~/dev/repos/w3-bestiary/preview/w3-bestiary-back
                     git checkout develop
                     git pull
-                    npm ci
-                    npm run build
+                    yarn install
+                    yarn build
                     pm2 delete w3-bestiary-preview
                     pm2 start dist/src/main.js --name w3-bestiary-preview
