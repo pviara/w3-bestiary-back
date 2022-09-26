@@ -18,6 +18,10 @@ jobs:
                 passphrase: ${{ secrets.SERVER_PASSPHRASE }}
                 port: 22
                 script: |
+                    export PATH="$PATH:/home/reginald/.nvm/versions/node/v16.16.0/bin/"
+                    export NVM_DIR=~/.nvm
+                    source ~/.nvm/nvm.sh
+                    nvm use --lts
                     cd ~/dev/repos/w3-bestiary/preview/w3-bestiary-back
                     git checkout develop
                     git pull
