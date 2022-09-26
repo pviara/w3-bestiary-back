@@ -1,9 +1,12 @@
 import { DatabaseModule } from '../infrastructure/database/database.module';
 import { DatabaseService } from '../infrastructure/database/database.service';
 import { DynamicModule } from '@nestjs/common';
+import { FileFolder } from '../file/application/file-service.interface';
 import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
 import { RouterModule } from '@nestjs/core';
 import { Test, TestingModule } from '@nestjs/testing';
+import { mkdir, writeFile } from 'fs/promises';
+import { existsSync } from 'fs';
 
 export class RoutedTestModule {
     constructor(readonly path: string, readonly module: any) {}
@@ -46,7 +49,7 @@ export class TestHelper {
                 imports: [DatabaseModule],
                 useFactory: (dbService: DatabaseService) => {
                     const options: MongooseModuleOptions = {
-                        uri: dbService.dbTestURI,
+                        uri: dbService.dbURI,
                         useNewUrlParser: true,
                         useUnifiedTopology: true,
                     };
@@ -55,6 +58,35 @@ export class TestHelper {
                 inject: [DatabaseService],
             }),
         ];
+    }
+
+    static async createTestingImages(
+        filesPath: string,
+        folder: FileFolder,
+        code: string,
+    ): Promise<void> {
+        const monsterImagesFolder = `${filesPath}/monster/images`;
+        const monsterThumbnailsFolder = `${filesPath}/monster/thumbnails`;
+        const itemThumbnailsFolder = `${filesPath}/item/thumbnails`;
+
+        const options = { recursive: true };
+
+        if (!existsSync(monsterImagesFolder)) {
+            await mkdir(monsterImagesFolder, options);
+        }
+
+        if (!existsSync(monsterThumbnailsFolder)) {
+            await mkdir(monsterThumbnailsFolder, options);
+        }
+
+        if (!existsSync(itemThumbnailsFolder)) {
+            await mkdir(itemThumbnailsFolder, options);
+        }
+
+        await writeFile(
+            `${filesPath}/${folder}/${code}.png`,
+            `file for: ${code}`,
+        );
     }
 
     static generateString(length = 5): string {

@@ -1,6 +1,8 @@
 import { CategoryModule } from '../category/category.module';
+import { FileFolder } from '../file/application/file-service.interface';
 import { RoutedTestModule, TestHelper } from './test-helper';
 import { VersionModule } from '../version/version.module';
+import { existsSync, unlinkSync } from 'fs';
 
 describe('TestHelper', () => {
     const sut = TestHelper;
@@ -57,6 +59,23 @@ describe('TestHelper', () => {
             const result = sut.generateString(length);
 
             expect(result.length).toBe(length);
+        });
+    });
+
+    describe('createTestingImages()', () => {
+        it('should have created a file with the right name at the desired location', async () => {
+            const code = 'code';
+            await sut.createTestingImages(
+                process.env.FILES_PATH,
+                FileFolder.MonsterImages,
+                code,
+            );
+
+            const expectedPath = `${process.env.FILES_PATH}/${FileFolder.MonsterImages}/${code}.png`;
+            console.log(expectedPath);
+            expect(existsSync(expectedPath)).toBeTruthy();
+
+            unlinkSync(expectedPath);
         });
     });
 });

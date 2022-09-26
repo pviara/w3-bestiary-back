@@ -9,19 +9,35 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-
         strategy:
             matrix:
                 node-version: [14.x, 16.x]
-
+        
         steps:
-            - uses: actions/checkout@v2
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v2
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: 'yarn'
-            - run: yarn install
-            - run: yarn build
-            - run: yarn test
-            - run: yarn test:e2e
+        - name: Git checkout
+          uses: actions/checkout@v3
+        
+        - name: Use Node.js ${{ matrix.node-version }}
+          uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+            cache: 'yarn'
+        
+        - name: 📦 Install dependencies
+          run: yarn install
+        
+        - name: 👷 Build project
+          run: yarn build
+        
+        - name: 🧑‍🔬 Run e2e tests
+          run: yarn test:e2e
+          env:
+            APP_ENV: 'TEST'
+            FILES_PATH: ${{ secrets.FILES_PATH }}
+            MONGODB_URI: ${{ secrets.MONGODB_URI }}
+            MONGODB_DBNAME: ${{ secrets.MONGODB_DBNAME }}
+            MONGODB_USER: ${{ secrets.MONGODB_USER }}
+            MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+        
+        - name: 🧑‍🔬 Run unit tests
+          run: yarn test

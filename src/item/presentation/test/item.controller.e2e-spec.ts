@@ -1,3 +1,5 @@
+import { ConfigService } from '@nestjs/config';
+import { FileFolder } from '../../../file/application/file-service.interface';
 import { INestApplication } from '@nestjs/common';
 import { Item } from '../../domain/item';
 import { ItemTestingModule } from './e2e-res/item-testing.module';
@@ -27,6 +29,14 @@ describe('ItemController', () => {
 
         itemTestingRepo = await app.get('ItemRepo');
         items = await itemTestingRepo.createTestingValues(existingLang);
+
+        const configService = app.get<ConfigService>(ConfigService);
+        const filesPath = configService.get<string>('FILES_PATH');
+        await TestHelper.createTestingImages(
+            filesPath,
+            FileFolder.ItemThumbnails,
+            existingCode,
+        );
     });
 
     describe('GET /', () => {
