@@ -72,7 +72,6 @@ describe('TestHelper', () => {
             );
 
             const expectedPath = `${process.env.FILES_PATH}/${FileFolder.MonsterImages}/${code}.png`;
-            console.log(expectedPath);
             expect(existsSync(expectedPath)).toBeTruthy();
 
             unlinkSync(expectedPath);
