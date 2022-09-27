@@ -24,7 +24,11 @@ async function bootstrap() {
     if (currentEnv === 'DEV') {
         app.enableCors();
     } else {
-        app.use(helmet());
+        app.use(
+            helmet({
+                contentSecurityPolicy: false,
+            }),
+        );
     }
 
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
