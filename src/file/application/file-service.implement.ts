@@ -2,7 +2,7 @@ import { ConfigurationService } from '../../infrastructure/configuration/configu
 import { createReadStream, existsSync, ReadStream } from 'fs';
 import { Error } from '../../application/error';
 import { FileFolder, FileFormat, IFileService } from './file-service.interface';
-import { Injectable } from '@nestjs/common';
+import { HttpStatus, Injectable } from '@nestjs/common';
 import { Result } from '../../application/result';
 
 @Injectable()
@@ -20,7 +20,10 @@ export class FileServiceImplement implements IFileService {
 
     getFileStream(path: string): Result<ReadStream> | Error {
         if (!existsSync(path)) {
-            return new Error(404, `No file was found with path "${path}".`);
+            return new Error(
+                HttpStatus.NOT_FOUND,
+                `No file was found with path "${path}".`,
+            );
         }
 
         return new Result(createReadStream(path));
