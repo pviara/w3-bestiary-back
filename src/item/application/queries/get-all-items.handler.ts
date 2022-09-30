@@ -1,6 +1,6 @@
 import { Error } from '../../../application/error';
+import { HttpStatus, Inject } from '@nestjs/common';
 import { IItemRepository } from '../item-repository.interface';
-import { Inject } from '@nestjs/common';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { Item } from '../../domain/item';
 import { Result } from '../../../application/result';
@@ -20,7 +20,7 @@ export class GetAllItemsHandler implements IQueryHandler<GetAllItemsQuery> {
         const result = await this._itemRepository.getAll(query.lang);
         if (result.length === 0) {
             return new Error(
-                404,
+                HttpStatus.NOT_FOUND,
                 `At least one item was not found with { lang: '${query.lang}' }.`,
             );
         }

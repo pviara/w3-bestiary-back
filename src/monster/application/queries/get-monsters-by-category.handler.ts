@@ -1,6 +1,6 @@
 import { Error } from '../../..//application/error';
+import { HttpStatus, Inject } from '@nestjs/common';
 import { IMonsterRepository } from '../monster-repository.interface';
-import { Inject } from '@nestjs/common';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { MonstersByCategory } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
@@ -26,7 +26,7 @@ export class GetMonstersByCategoriesHandler
         );
         if (result.length === 0) {
             return new Error(
-                404,
+                HttpStatus.NOT_FOUND,
                 `At least one monster was not found with { lang: '${query.lang}' }.`,
             );
         }

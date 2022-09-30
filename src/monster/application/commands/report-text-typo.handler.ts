@@ -1,7 +1,7 @@
 import { CommandHandler, ICommand, ICommandHandler } from '@nestjs/cqrs';
 import { Error } from '../../../application/error';
+import { HttpStatus, Inject } from '@nestjs/common';
 import { IMonsterRepository } from '../monster-repository.interface';
-import { Inject } from '@nestjs/common';
 import { ITypoRepository } from '../../application/typo-repository.interface';
 import { MonsterTextes } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
@@ -36,7 +36,7 @@ export class ReportTextTypoHandler
         );
         if (!monster) {
             return new Error(
-                404,
+                HttpStatus.NOT_FOUND,
                 `No monster was found with { code: '${command.monsterCode}', lang: '${command.lang}' }.`,
             );
         }
@@ -48,7 +48,7 @@ export class ReportTextTypoHandler
         );
         if (!hasTypoBeenFound) {
             return new Error(
-                404,
+                HttpStatus.NOT_FOUND,
                 `Typo "${command.content}" was not found with { code: '${command.monsterCode}', lang: '${command.lang}' }.`,
             );
         }
@@ -60,7 +60,7 @@ export class ReportTextTypoHandler
         );
         if (existingSimilarTypo.length > 0) {
             return new Error(
-                409,
+                HttpStatus.CONFLICT,
                 `A similar typo exists with { code: '${command.monsterCode}', lang: '${command.lang}', typo: '${command.content}' }.`,
             );
         }
