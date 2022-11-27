@@ -24,10 +24,9 @@ import {
 } from '../../file/application/file-service.interface';
 import { GetImageFileQuery } from '../../file/application/queries/get-image-file.handler';
 import { GetMonsterByCodeQuery } from '../application/queries/get-monster-by-code.handler';
-import { GetMonsterByCodeURLQuery } from './DTO/get-monster-by-code.url-query';
 import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
-import { GetMonstersByCategoriesURLQuery } from './DTO/get-monsters-by-categories.url-query';
+import { GetMonstersURLQuery } from './DTO/get-monsters.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
 import { ReportTextTypoCommand } from '../application/commands/report-text-typo.handler';
 import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
@@ -62,7 +61,7 @@ export class MonsterController {
     })
     @Get()
     async getMonstersByCategories(
-        @Query() query: GetMonstersByCategoriesURLQuery,
+        @Query() query: GetMonstersURLQuery,
     ): Promise<MonstersByCategory[]> {
         const getMonstersByCategoryQuery = new GetMonstersByCategoriesQuery(
             query.lang,
@@ -136,11 +135,26 @@ export class MonsterController {
             'thumbnail',
         );
     }
-
+    
+    @ApiOperation({
+        description:
+            'Get a specific monster by its code for the given language.',
+    })
+    @ApiBadRequestResponse({
+        description:
+            'No code and/or no language was provided, or no such language exists in database.',
+    })
+    @ApiOkResponse({
+        description: 'Retrieved monster for the given code and language.',
+        type: Monster,
+    })
+    @ApiNotFoundResponse({
+        description: 'No monster was found for the given code and language.',
+    })
     @Get(':code')
     async getByCode(
         @Param('code') code: string,
-        @Query() query: GetMonstersByCategoriesURLQuery,
+        @Query() query: GetMonstersURLQuery,
     ): Promise<Monster> {
         const getMonsterByCodeQuery = new GetMonsterByCodeQuery(
             code,
