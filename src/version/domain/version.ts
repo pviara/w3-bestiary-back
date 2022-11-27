@@ -3,7 +3,7 @@ import { version } from '../../../package.json';
 
 export class AppVersion {
     @ApiProperty({
-        type: String
+        type: String,
     })
     readonly content = version;
 }

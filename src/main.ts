@@ -2,7 +2,7 @@ import { AppModule } from './app.module';
 import { ConfigService } from '@nestjs/config';
 import { createStream } from 'rotating-file-stream';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { InternalServerErrorException } from '@nestjs/common';
+import { InternalServerErrorException, ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import * as morgan from 'morgan';
 import helmet from 'helmet';
@@ -30,6 +30,8 @@ async function bootstrap() {
             }),
         );
     }
+
+    app.useGlobalPipes(new ValidationPipe());
 
     const LOGS_PATH = configService.get<string>('LOGS_PATH');
 

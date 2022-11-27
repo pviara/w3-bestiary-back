@@ -49,7 +49,7 @@ export class ItemController {
         description: 'At least one item was not found for the given language.',
     })
     @Get()
-    async getAll(@Query(new ValidationPipe()) query: GetAllItemsURLQuery) {
+    async getAll(@Query() query: GetAllItemsURLQuery) {
         const getAllItemsQuery = new GetAllItemsQuery(query.lang);
 
         const result = await this._queryBus.execute<
@@ -78,7 +78,7 @@ export class ItemController {
     })
     @Get('thumbnail')
     async getItemThumnail(
-        @Query(new ValidationPipe()) query: GetItemThumbnailURLQuery,
+        @Query() query: GetItemThumbnailURLQuery,
         @Res() response: Response,
     ): Promise<void> {
         const getImageFileQuery = new GetImageFileQuery(
