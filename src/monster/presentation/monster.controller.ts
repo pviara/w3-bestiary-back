@@ -11,6 +11,7 @@ import {
     Controller,
     Get,
     HttpException,
+    Param,
     Post,
     Query,
     Res,
@@ -42,42 +43,6 @@ export class MonsterController {
         private readonly _commandBus: CommandBus,
         private readonly _queryBus: QueryBus,
     ) {}
-
-    @ApiOperation({
-        description:
-            'Get a specific monster by its code for the given language.',
-    })
-    @ApiBadRequestResponse({
-        description:
-            'No code and/or no language was provided, or no such language exists in database.',
-    })
-    @ApiOkResponse({
-        description: 'Retrieved monster for the given code and language.',
-        type: Monster,
-    })
-    @ApiNotFoundResponse({
-        description: 'No monster was found for the given code and language.',
-    })
-    @Get()
-    async getByCode(
-        @Query() query: GetMonsterByCodeURLQuery,
-    ): Promise<Monster> {
-        const getMonsterByCodeQuery = new GetMonsterByCodeQuery(
-            query.code,
-            query.lang,
-        );
-
-        const result = await this._queryBus.execute<
-            GetMonsterByCodeQuery,
-            Result<Monster> | Error
-        >(getMonsterByCodeQuery);
-
-        if (result instanceof Result) {
-            return result.data;
-        }
-
-        throw new HttpException(result.message, result.code);
-    }
 
     @ApiOperation({
         description: 'Get monsters by categories for the given language.',
@@ -170,6 +135,28 @@ export class MonsterController {
             query.code,
             'thumbnail',
         );
+    }
+
+    @Get(':code')
+    async getByCode(
+        @Param('code') code: string,
+        @Query() query: GetMonstersByCategoriesURLQuery,
+    ): Promise<Monster> {
+        const getMonsterByCodeQuery = new GetMonsterByCodeQuery(
+            code,
+            query.lang,
+        );
+
+        const result = await this._queryBus.execute<
+            GetMonsterByCodeQuery,
+            Result<Monster> | Error
+        >(getMonsterByCodeQuery);
+
+        if (result instanceof Result) {
+            return result.data;
+        }
+
+        throw new HttpException(result.message, result.code);
     }
 
     @ApiExcludeEndpoint()

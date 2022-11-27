@@ -33,6 +33,82 @@ describe('MonsterController', () => {
         sut = new MonsterController(commandBusMock, queryBusMock);
     });
 
+    describe('getByCode', () => {
+        it('should call execute on queryBus with given query', async () => {
+            const getMonsterByCodeURLQuery: GetMonstersByCategoriesURLQuery = {
+                lang: 'lang',
+            };
+
+            const codeParam: string = 'code';
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(
+                new Result(createMock<Monster>()),
+            );
+
+            await sut.getByCode(codeParam, getMonsterByCodeURLQuery);
+
+            expect(queryBusMock.execute).toBeCalled();
+        });
+
+        it('should throw an HttpException when execution result is an Error', async () => {
+            const getMonsterByCodeURLQuery: GetMonstersByCategoriesURLQuery = {
+                lang: 'lang',
+            };
+
+            const codeParam: string = 'code';
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Error(0, ''));
+
+            expect(
+                async () =>
+                    await sut.getByCode(codeParam, getMonsterByCodeURLQuery),
+            ).rejects.toThrow(HttpException);
+        });
+
+        it('should return a Monster when execution result is an object of type Result', async () => {
+            const getMonsterByCodeURLQuery: GetMonstersByCategoriesURLQuery = {
+                lang: 'lang',
+            };
+
+            const codeParam: string = 'code';
+
+            const monsterMock = new Monster(
+                '',
+                '',
+                {
+                    description: '',
+                    name: '',
+                    quote: {
+                        author: {
+                            firstname: '',
+                            lastname: '',
+                            title: '',
+                        },
+                        text: '',
+                    },
+                },
+                {
+                    bombs: [],
+                    oils: [],
+                    potions: [],
+                    signs: [],
+                },
+            );
+
+            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
+            when(queryBusMockExecute).mockReturnValue(new Result(monsterMock));
+
+            const result = await sut.getByCode(
+                codeParam,
+                getMonsterByCodeURLQuery,
+            );
+
+            expect(result).toBeInstanceOf(Monster);
+        });
+    });
+
     describe('getMonstersByCategories', () => {
         it('should call execute on queryBus with given query', async () => {
             const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
@@ -204,75 +280,6 @@ describe('MonsterController', () => {
             );
 
             expect(result).toBe(undefined);
-        });
-    });
-
-    describe('getByCode', () => {
-        it('should call execute on queryBus with given query', async () => {
-            const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
-                code: 'code',
-                lang: 'lang',
-            };
-
-            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
-            when(queryBusMockExecute).mockReturnValue(
-                new Result(createMock<Monster>()),
-            );
-
-            await sut.getByCode(getMonsterByCodeURLQuery);
-
-            expect(queryBusMock.execute).toBeCalled();
-        });
-
-        it('should throw an HttpException when execution result is an Error', async () => {
-            const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
-                code: 'code',
-                lang: 'lang',
-            };
-
-            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
-            when(queryBusMockExecute).mockReturnValue(new Error(0, ''));
-
-            expect(
-                async () => await sut.getByCode(getMonsterByCodeURLQuery),
-            ).rejects.toThrow(HttpException);
-        });
-
-        it('should return a Monster when execution result is an object of type Result', async () => {
-            const getMonsterByCodeURLQuery: GetMonsterByCodeURLQuery = {
-                code: 'code',
-                lang: 'lang',
-            };
-
-            const monsterMock = new Monster(
-                '',
-                '',
-                {
-                    description: '',
-                    name: '',
-                    quote: {
-                        author: {
-                            firstname: '',
-                            lastname: '',
-                            title: '',
-                        },
-                        text: '',
-                    },
-                },
-                {
-                    bombs: [],
-                    oils: [],
-                    potions: [],
-                    signs: [],
-                },
-            );
-
-            const queryBusMockExecute = On(queryBusMock).get(method('execute'));
-            when(queryBusMockExecute).mockReturnValue(new Result(monsterMock));
-
-            const result = await sut.getByCode(getMonsterByCodeURLQuery);
-
-            expect(result).toBeInstanceOf(Monster);
         });
     });
 

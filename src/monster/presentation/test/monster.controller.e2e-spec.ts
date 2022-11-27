@@ -1,6 +1,6 @@
 import { ConfigService } from '@nestjs/config';
 import { FileFolder } from '../../../file/application/file-service.interface';
-import { INestApplication } from '@nestjs/common';
+import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { MonsterTestingModule } from './e2e-res/monster-testing.module';
 import { MonsterTestingRepositoryImplement } from './e2e-res/monster-testing-repo.implement';
 import { ReportTextTypoPayload } from '../DTO/report-text-typo.payload';
@@ -26,6 +26,7 @@ describe('MonsterController', () => {
         ]);
 
         app = module.createNestApplication();
+        app.useGlobalPipes(new ValidationPipe());
         await app.init();
 
         monsterTestingRepo = await app.get('MonsterRepo');
@@ -121,27 +122,10 @@ describe('MonsterController', () => {
         });
     });
 
-    describe('GET /search', () => {
-        it('should return an HTTP error status 400 when no code and lang are given in query', async () => {
-            let response = await request(app.getHttpServer()).get(
-                '/api/monster/search',
-            );
-            expect(response.status).toBe(400);
-
-            response = await request(app.getHttpServer()).get(
-                '/api/monster/search?lang=ANY',
-            );
-            expect(response.status).toBe(400);
-
-            response = await request(app.getHttpServer()).get(
-                '/api/monster/search?code=any',
-            );
-            expect(response.status).toBe(400);
-        });
-
+    describe('GET /:code', () => {
         it('should return an HTTP error status 404 when no monster has been found for given code and lang', async () => {
             const response = await request(app.getHttpServer()).get(
-                '/api/monster/search?lang=NOT_EXISTING&code=any',
+                '/api/monster/any?lang=NOT_EXISTING',
             );
             expect(response.status).toBe(404);
         });
@@ -150,7 +134,7 @@ describe('MonsterController', () => {
             const [{ code }] = await monsterTestingRepo.monsterModel.find({});
 
             const response = await request(app.getHttpServer()).get(
-                `/api/monster/search?lang=${existingLang}&code=${code}`,
+                `/api/monster/${code}?lang=${existingLang}`,
             );
             expect(response.status).toBe(200);
             expect(response.body.code).toBe(code);
