@@ -14,7 +14,6 @@ import {
     Post,
     Query,
     Res,
-    ValidationPipe,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { Error } from '../../application/error';
@@ -45,6 +44,42 @@ export class MonsterController {
     ) {}
 
     @ApiOperation({
+        description:
+            'Get a specific monster by its code for the given language.',
+    })
+    @ApiBadRequestResponse({
+        description:
+            'No code and/or no language was provided, or no such language exists in database.',
+    })
+    @ApiOkResponse({
+        description: 'Retrieved monster for the given code and language.',
+        type: Monster,
+    })
+    @ApiNotFoundResponse({
+        description: 'No monster was found for the given code and language.',
+    })
+    @Get()
+    async getByCode(
+        @Query() query: GetMonsterByCodeURLQuery,
+    ): Promise<Monster> {
+        const getMonsterByCodeQuery = new GetMonsterByCodeQuery(
+            query.code,
+            query.lang,
+        );
+
+        const result = await this._queryBus.execute<
+            GetMonsterByCodeQuery,
+            Result<Monster> | Error
+        >(getMonsterByCodeQuery);
+
+        if (result instanceof Result) {
+            return result.data;
+        }
+
+        throw new HttpException(result.message, result.code);
+    }
+
+    @ApiOperation({
         description: 'Get monsters by categories for the given language.',
     })
     @ApiBadRequestResponse({
@@ -62,7 +97,7 @@ export class MonsterController {
     })
     @Get()
     async getMonstersByCategories(
-        @Query(new ValidationPipe()) query: GetMonstersByCategoriesURLQuery,
+        @Query() query: GetMonstersByCategoriesURLQuery,
     ): Promise<MonstersByCategory[]> {
         const getMonstersByCategoryQuery = new GetMonstersByCategoriesQuery(
             query.lang,
@@ -94,7 +129,7 @@ export class MonsterController {
     })
     @Get('image')
     async getMonsterImage(
-        @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
+        @Query() query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
         const result = await this._executeImageFileQuery(
@@ -120,7 +155,7 @@ export class MonsterController {
     })
     @Get('thumbnail')
     async getMonsterThumbnail(
-        @Query(new ValidationPipe()) query: GetMonsterImageURLQuery,
+        @Query() query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
         const result = await this._executeImageFileQuery(
@@ -137,46 +172,10 @@ export class MonsterController {
         );
     }
 
-    @ApiOperation({
-        description:
-            'Get a specific monster by its code for the given language.',
-    })
-    @ApiBadRequestResponse({
-        description:
-            'No code and/or no language was provided, or no such language exists in database.',
-    })
-    @ApiOkResponse({
-        description: 'Retrieved monster for the given code and language.',
-        type: Monster,
-    })
-    @ApiNotFoundResponse({
-        description: 'No monster was found for the given code and language.',
-    })
-    @Get('search')
-    async getByCode(
-        @Query(new ValidationPipe()) query: GetMonsterByCodeURLQuery,
-    ): Promise<Monster> {
-        const getMonsterByCodeQuery = new GetMonsterByCodeQuery(
-            query.code,
-            query.lang,
-        );
-
-        const result = await this._queryBus.execute<
-            GetMonsterByCodeQuery,
-            Result<Monster> | Error
-        >(getMonsterByCodeQuery);
-
-        if (result instanceof Result) {
-            return result.data;
-        }
-
-        throw new HttpException(result.message, result.code);
-    }
-
     @ApiExcludeEndpoint()
     @Post('typo')
     async reportTextTypo(
-        @Body(new ValidationPipe()) payload: ReportTextTypoPayload,
+        @Body() payload: ReportTextTypoPayload,
     ): Promise<Typo> {
         const command = new ReportTextTypoCommand(
             payload.lang,

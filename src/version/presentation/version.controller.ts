@@ -6,7 +6,7 @@ import { Controller, Get } from '@nestjs/common';
 @Controller()
 export class VersionController {
     @ApiOperation({
-        description: 'Get project version.'
+        description: 'Get project version.',
     })
     @ApiOkResponse({
         description: 'Retrieved project version.',
