@@ -1,6 +1,6 @@
 import { ConfigService } from '@nestjs/config';
 import { FileFolder } from '../../../file/application/file-service.interface';
-import { INestApplication } from '@nestjs/common';
+import { INestApplication, ValidationPipe } from '@nestjs/common';
 import { Item } from '../../domain/item';
 import { ItemTestingModule } from './e2e-res/item-testing.module';
 import { ItemTestingRepositoryImplement } from './e2e-res/item-testing-repo.implement';
@@ -25,6 +25,7 @@ describe('ItemController', () => {
         ]);
 
         app = module.createNestApplication();
+        app.useGlobalPipes(new ValidationPipe());
         await app.init();
 
         itemTestingRepo = await app.get('ItemRepo');
