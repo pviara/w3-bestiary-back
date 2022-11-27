@@ -1,9 +1,8 @@
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
-import { GetMonsterByCodeURLQuery } from '../DTO/get-monster-by-code.url-query';
 import { GetMonsterImageURLQuery } from '../DTO/get-monster-image.url-query';
-import { GetMonstersByCategoriesURLQuery } from '../DTO/get-monsters-by-categories.url-query';
+import { GetMonstersURLQuery } from '../DTO/get-monsters.url-query';
 import { HttpException } from '@nestjs/common';
 import { method, On } from 'ts-auto-mock/extension';
 import {
@@ -35,7 +34,7 @@ describe('MonsterController', () => {
 
     describe('getByCode', () => {
         it('should call execute on queryBus with given query', async () => {
-            const getMonsterByCodeURLQuery: GetMonstersByCategoriesURLQuery = {
+            const getMonsterByCodeURLQuery: GetMonstersURLQuery = {
                 lang: 'lang',
             };
 
@@ -52,7 +51,7 @@ describe('MonsterController', () => {
         });
 
         it('should throw an HttpException when execution result is an Error', async () => {
-            const getMonsterByCodeURLQuery: GetMonstersByCategoriesURLQuery = {
+            const getMonsterByCodeURLQuery: GetMonstersURLQuery = {
                 lang: 'lang',
             };
 
@@ -68,7 +67,7 @@ describe('MonsterController', () => {
         });
 
         it('should return a Monster when execution result is an object of type Result', async () => {
-            const getMonsterByCodeURLQuery: GetMonstersByCategoriesURLQuery = {
+            const getMonsterByCodeURLQuery: GetMonstersURLQuery = {
                 lang: 'lang',
             };
 
@@ -111,7 +110,7 @@ describe('MonsterController', () => {
 
     describe('getMonstersByCategories', () => {
         it('should call execute on queryBus with given query', async () => {
-            const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
+            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery =
                 {
                     lang: 'lang',
                 };
@@ -127,7 +126,7 @@ describe('MonsterController', () => {
         });
 
         it('should throw an HttpException when execution result is an Error', async () => {
-            const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
+            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery =
                 {
                     lang: 'lang',
                 };
@@ -144,7 +143,7 @@ describe('MonsterController', () => {
         });
 
         it('should return an array of MonstersByCategories when execution result is an object of type Result', async () => {
-            const getMonstersByCategoriesURLQuery: GetMonstersByCategoriesURLQuery =
+            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery =
                 {
                     lang: 'lang',
                 };
