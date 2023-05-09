@@ -40,6 +40,7 @@ export class MonsterMapper {
                 monsterEntity.weakspots.potions,
                 monsterEntity.weakspots.signs,
             ),
+            monsterEntity.extension,
         );
     }
 

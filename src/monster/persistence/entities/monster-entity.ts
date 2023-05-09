@@ -2,6 +2,11 @@ import { Document } from 'mongoose';
 import { Helper } from '../../../utils/helper';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
+export enum GameExpansionSet {
+    HeartsOfStone = 'hearts-of-stone',
+    BloodAndWine = 'blood-and-wine',
+}
+
 class MonsterTextesQuoteAuthorEntity {
     @Prop({
         lower: true,
@@ -96,8 +101,8 @@ export class MonsterByCategoryEntity {
     @Prop()
     code: string;
 
-    @Prop()
-    extension?: string;
+    @Prop({ required: false, enum: GameExpansionSet })
+    extension?: GameExpansionSet;
 
     @Prop()
     textes: MonsterByCategoryTextesEntity[];
@@ -130,8 +135,8 @@ export class MonsterDocument {
     })
     code: string;
 
-    @Prop({ required: false })
-    extension?: string;
+    @Prop({ required: false, enum: GameExpansionSet })
+    extension?: GameExpansionSet;
 
     @Prop({ required: true })
     textes: MonsterTextes[];

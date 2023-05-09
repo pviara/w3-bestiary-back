@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { GameExpansionSet } from '../persistence/entities/monster-entity';
 
 export class MonsterTextesQuoteAuthor {
     @ApiProperty()
@@ -81,6 +82,9 @@ export class Monster {
     readonly code: string;
 
     @ApiProperty()
+    readonly extension?: GameExpansionSet;
+
+    @ApiProperty()
     readonly textes: MonsterTextes;
 
     @ApiProperty()
@@ -91,12 +95,14 @@ export class Monster {
         code: string,
         textes: MonsterTextes,
         weakspots: MonsterWeakspots,
+        extension?: GameExpansionSet,
     ) {
         this.category = category;
         this.code = code;
         this.textes = textes;
         this.category = category;
         this.weakspots = weakspots;
+        this.extension = extension;
     }
 }
 
@@ -127,13 +133,13 @@ export class MonsterByCategory {
     })
     readonly textes: Pick<MonsterTextes, 'name'>;
 
-    @ApiProperty()
-    readonly extension?: string;
+    @ApiProperty({ enum: GameExpansionSet })
+    readonly extension?: GameExpansionSet;
 
     constructor(
         code: string,
         textes: Pick<MonsterTextes, 'name'>,
-        extension?: string,
+        extension?: GameExpansionSet,
     ) {
         this.code = code;
         this.textes = textes;

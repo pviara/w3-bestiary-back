@@ -135,7 +135,7 @@ export class MonsterController {
             'thumbnail',
         );
     }
-    
+
     @ApiOperation({
         description:
             'Get a specific monster by its code for the given language.',

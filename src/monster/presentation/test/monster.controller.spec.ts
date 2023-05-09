@@ -110,10 +110,9 @@ describe('MonsterController', () => {
 
     describe('getMonstersByCategories', () => {
         it('should call execute on queryBus with given query', async () => {
-            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery =
-                {
-                    lang: 'lang',
-                };
+            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery = {
+                lang: 'lang',
+            };
 
             const queryBusMockExecute = On(queryBusMock).get(method('execute'));
             when(queryBusMockExecute).mockReturnValue(
@@ -126,10 +125,9 @@ describe('MonsterController', () => {
         });
 
         it('should throw an HttpException when execution result is an Error', async () => {
-            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery =
-                {
-                    lang: 'lang',
-                };
+            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery = {
+                lang: 'lang',
+            };
 
             const queryBusMockExecute = On(queryBusMock).get(method('execute'));
             when(queryBusMockExecute).mockReturnValue(new Error(0, ''));
@@ -143,10 +141,9 @@ describe('MonsterController', () => {
         });
 
         it('should return an array of MonstersByCategories when execution result is an object of type Result', async () => {
-            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery =
-                {
-                    lang: 'lang',
-                };
+            const getMonstersByCategoriesURLQuery: GetMonstersURLQuery = {
+                lang: 'lang',
+            };
 
             const monstersByCategoryByCategoryMock =
                 new MonstersByCategoryCategory('', '');
