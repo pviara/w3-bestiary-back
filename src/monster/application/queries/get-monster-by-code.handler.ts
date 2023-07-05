@@ -6,7 +6,10 @@ import { Monster } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
 
 export class GetMonsterByCodeQuery implements IQuery {
-    constructor(readonly code: string, readonly lang: string) {}
+    constructor(
+        readonly code: string,
+        readonly lang: string,
+    ) {}
 }
 
 @QueryHandler(GetMonsterByCodeQuery)
