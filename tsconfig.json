@@ -19,10 +19,10 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "plugins": [
-        {
-            "transform": "ts-auto-mock/transformer",
-            "cacheBetweenTests": false
-        }
+      {
+        "transform": "ts-auto-mock/transformer",
+        "cacheBetweenTests": false
+      }
     ]
   }
 }
