@@ -50,8 +50,6 @@ export class TestHelper {
                 useFactory: (dbService: DatabaseService) => {
                     const options: MongooseModuleOptions = {
                         uri: dbService.dbURI,
-                        useNewUrlParser: true,
-                        useUnifiedTopology: true,
                     };
                     return options;
                 },
