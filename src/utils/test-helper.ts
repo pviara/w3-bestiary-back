@@ -9,7 +9,10 @@ import { mkdir, writeFile } from 'fs/promises';
 import { existsSync } from 'fs';
 
 export class RoutedTestModule {
-    constructor(readonly path: string, readonly module: any) {}
+    constructor(
+        readonly path: string,
+        readonly module: any,
+    ) {}
 }
 
 class RouterTestModule {
