@@ -1,6 +1,6 @@
-import { Error } from 'src/application/error';
+import { Error } from '../../application/error';
 import { ReadStream } from 'fs';
-import { Result } from 'src/application/result';
+import { Result } from '../../application/result';
 
 export enum FileFolder {
     ItemThumbnails = 'item/thumbnails',

@@ -1,4 +1,4 @@
-import { Category } from 'src/category/domain/category';
+import { Category } from '../../domain/category';
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
 import {

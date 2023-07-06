@@ -1,5 +1,5 @@
 import { CqrsModule } from '@nestjs/cqrs';
-import { FileModule } from 'src/file/file.module';
+import { FileModule } from '../file/file.module';
 import { GetMonsterByCodeHandler } from './application/queries/get-monster-by-code.handler';
 import { GetMonstersByCategoriesHandler } from './application/queries/get-monsters-by-category.handler';
 import { Module } from '@nestjs/common';
