@@ -24,7 +24,8 @@ jobs:
                     nvm use --lts
                     cd ~/dev/repos/w3-bestiary/w3-bestiary-back
                     git checkout main
-                    git pull
+                    git fetch --all
+                    git reset --hard origin/main
                     yarn install
                     yarn build
                     pm2 delete w3-bestiary
