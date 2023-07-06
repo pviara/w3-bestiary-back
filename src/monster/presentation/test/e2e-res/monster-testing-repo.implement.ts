@@ -1,5 +1,7 @@
 import { AnyKeys, Model } from 'mongoose';
+import { CategoryEntity } from '../../../../category/persistence/category-entity';
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
 import {
     Monster,
     MonsterTextes,
@@ -11,8 +13,6 @@ import { MonsterEntity } from '../../../persistence/entities/monster-entity';
 import { MonsterMapper } from '../../../../utils/mappers/monster.mapper';
 import { MonsterRepositoryImplement } from '../../../persistence/repositories/monster-repository.implement';
 import { TestHelper } from '../../../../utils/test-helper';
-import { InjectModel } from '@nestjs/mongoose';
-import { CategoryEntity } from 'src/category/persistence/category-entity';
 
 @Injectable()
 export class MonsterTestingRepositoryImplement extends MonsterRepositoryImplement {

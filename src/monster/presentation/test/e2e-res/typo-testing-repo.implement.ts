@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { AnyKeys } from 'mongoose';
-import { Typo } from 'src/monster/domain/typo';
+import { Typo } from '../../../domain/typo';
 import { TypoEntity } from '../../../persistence/entities/typo-entity';
 import { TypoMapper } from '../../../../utils/mappers/typo.mapper';
 import { TypoRepositoryImplement } from '../../../persistence/repositories/typo-repository.implement';
