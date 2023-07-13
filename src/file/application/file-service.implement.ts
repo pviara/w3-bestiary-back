@@ -16,11 +16,6 @@ import * as path from 'path';
 
 @Injectable()
 export class FileServiceImplement implements FileService, ItemFileService {
-    private readonly itemsJsonFilePath = path.join(
-        __dirname,
-        '../../../dist/static/items.json',
-    );
-
     constructor(private readonly _configService: ConfigurationService) {}
 
     computeFilePath(
@@ -33,7 +28,7 @@ export class FileServiceImplement implements FileService, ItemFileService {
     }
 
     getAllItemsFromJsonFile(): ItemJsonEntity[] {
-        const result = readFileSync(this.itemsJsonFilePath);
+        const result = readFileSync(this.getItemsJsonFilePath());
         return JSON.parse(result.toString());
     }
 
@@ -46,5 +41,13 @@ export class FileServiceImplement implements FileService, ItemFileService {
         }
 
         return new Result(createReadStream(path));
+    }
+
+    private getItemsJsonFilePath(): string {
+        if (this._configService.application.environment === 'TEST') {
+            return path.join(__dirname, '../../../src/static/items.json');
+        }
+
+        return path.join(__dirname, '../../../static/items.json');
     }
 }

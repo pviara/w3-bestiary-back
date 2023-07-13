@@ -4,8 +4,8 @@
   "compilerOptions": {
     "deleteOutDir": true,
     "assets": [
-      "static/items.json"
-    ],
-    "watchAssets": true
+      "**/*.json"
+    ]
   }
 }
+  
