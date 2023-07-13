@@ -1,5 +1,7 @@
+import { Error } from '../../application/error';
 import { Item } from '../domain/item';
+import { Result } from '../../application/result';
 
-export interface IItemRepository {
-    getAll(lang: string): Promise<Item[]>;
+export interface ItemRepository {
+    getAll(lang: string): Promise<Result<Item[]> | Error>;
 }

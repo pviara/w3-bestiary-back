@@ -1,7 +1,9 @@
-import { ItemRepositoryImplement } from './item-repository.implement';
+import { ItemJsonRepository } from './item-json-repository';
 import { Provider } from '@nestjs/common';
 
+export const ITEM_REPOSITORY_TOKEN = 'ItemRepo';
+
 export const ItemRepoProvider: Provider = {
-    provide: 'ItemRepo',
-    useClass: ItemRepositoryImplement,
+    provide: ITEM_REPOSITORY_TOKEN,
+    useClass: ItemJsonRepository,
 };

@@ -2,7 +2,7 @@ import { createMock } from 'ts-auto-mock';
 import {
     FileFolder,
     FileFormat,
-    IFileService,
+    FileService,
 } from '../../../file/application/file-service.interface';
 import {
     GetImageFileHandler,
@@ -14,10 +14,10 @@ import { when } from 'jest-when';
 describe('GetImageFileQuery', () => {
     let sut: GetImageFileHandler;
 
-    let fileServiceMock: IFileService;
+    let fileServiceMock: FileService;
 
     beforeEach(() => {
-        fileServiceMock = createMock<IFileService>();
+        fileServiceMock = createMock<FileService>();
 
         sut = new GetImageFileHandler(fileServiceMock);
     });

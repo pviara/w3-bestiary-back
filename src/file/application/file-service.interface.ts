@@ -12,7 +12,7 @@ export enum FileFormat {
     PNG = '.png',
 }
 
-export interface IFileService {
+export interface FileService {
     computeFilePath(
         folder: FileFolder,
         format: FileFormat,
