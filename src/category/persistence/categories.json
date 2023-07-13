@@ -1,121 +1,145 @@
-[{
-    "code": "beasts",
-    "names": [{
-        "lang": "EN",
-        "name": "beasts"
+[
+    {
+        "code": "beasts",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "beasts"
+            },
+            {
+                "lang": "FR",
+                "name": "bêtes"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "bêtes"
-    }]
-},
-{
-    "code": "cursed-ones",
-    "names": [{
-        "lang": "EN",
-        "name": "cursed ones"
+        "code": "cursed-ones",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "cursed ones"
+            },
+            {
+                "lang": "FR",
+                "name": "créatures maudites"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "créatures maudites"
-    }]
-},
-{
-    "code": "draconids",
-    "names": [{
-        "lang": "EN",
-        "name": "draconids"
+        "code": "draconids",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "draconids"
+            },
+            {
+                "lang": "FR",
+                "name": "draconides"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "draconides"
-    }]
-},
-{
-    "code": "elementa",
-    "names": [{
-        "lang": "EN",
-        "name": "elementa"
+        "code": "elementa",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "elementa"
+            },
+            {
+                "lang": "FR",
+                "name": "élémentaire"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "élémentaire"
-    }]
-},
-{
-    "code": "hybrids",
-    "names": [{
-        "lang": "EN",
-        "name": "hybrids"
+        "code": "hybrids",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "hybrids"
+            },
+            {
+                "lang": "FR",
+                "name": "créatures hybrides"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "créatures hybrides"
-    }]
-},
-{
-    "code": "insectoids",
-    "names": [{
-        "lang": "EN",
-        "name": "insectoids"
+        "code": "insectoids",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "insectoids"
+            },
+            {
+                "lang": "FR",
+                "name": "insectoïdes"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "insectoïdes"
-    }]
-},
-{
-    "code": "necrophages",
-    "names": [{
-        "lang": "EN",
-        "name": "necrophages"
+        "code": "necrophages",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "necrophages"
+            },
+            {
+                "lang": "FR",
+                "name": "nécrophages"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "nécrophages"
-    }]
-},
-{
-    "code": "ogroids",
-    "names": [{
-        "lang": "EN",
-        "name": "ogroids"
+        "code": "ogroids",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "ogroids"
+            },
+            {
+                "lang": "FR",
+                "name": "ogroïdes"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "ogroïdes"
-    }]
-},
-{
-    "code": "relicts",
-    "names": [{
-        "lang": "EN",
-        "name": "relicts"
+        "code": "relicts",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "relicts"
+            },
+            {
+                "lang": "FR",
+                "name": "vestiges"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "vestiges"
-    }]
-},
-{
-    "code": "specters",
-    "names": [{
-        "lang": "EN",
-        "name": "specters"
+        "code": "specters",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "specters"
+            },
+            {
+                "lang": "FR",
+                "name": "spectres"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "spectres"
-    }]
-},
-{
-    "code": "vampires",
-    "names": [{
-        "lang": "EN",
-        "name": "vampires"
-    },
-    {
-        "lang": "FR",
-        "name": "vampires"
-    }]
-}]
+        "code": "vampires",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "vampires"
+            },
+            {
+                "lang": "FR",
+                "name": "vampires"
+            }
+        ]
+    }
+]

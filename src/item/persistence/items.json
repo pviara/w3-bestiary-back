@@ -1,297 +1,353 @@
-[{
-    "code": "beast-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "beast oil"
+[
+    {
+        "code": "aard",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "aard"
+            },
+            {
+                "lang": "FR",
+                "name": "aard"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les bêtes"
-    }]
-},
-{
-    "code": "cursed-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "cursed oil"
+        "code": "axii",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "axii"
+            },
+            {
+                "lang": "FR",
+                "name": "axii"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les créatures maudites"
-    }]
-},
-{
-    "code": "hybrid-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "hybrid oil"
+        "code": "beast-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "beast oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les bêtes"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les hybrides"
-    }]
-},
-{
-    "code": "specter-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "specter oil"
+        "code": "black-blood",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "black blood"
+            },
+            {
+                "lang": "FR",
+                "name": "sang noir"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les spectres"
-    }]
-},
-{
-    "code": "draconid-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "draconid oil"
+        "code": "blizzard",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "blizzard"
+            },
+            {
+                "lang": "FR",
+                "name": "blizzard"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les draconides"
-    }]
-},
-{
-    "code": "insectoid-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "insectoid oil"
+        "code": "cursed-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "cursed oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les créatures maudites"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les insectoïdes"
-    }]
-},
-{
-    "code": "aard",
-    "names": [{
-        "lang": "EN",
-        "name": "aard"
+        "code": "dancing-star",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "dancing star"
+            },
+            {
+                "lang": "FR",
+                "name": "étoile dansante"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "aard"
-    }]
-},
-{
-    "code": "igni",
-    "names": [{
-        "lang": "EN",
-        "name": "igni"
+        "code": "devils-puffball",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "devil's Puffball"
+            },
+            {
+                "lang": "FR",
+                "name": "vesse-de-loup du diable"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "igni"
-    }]
-},
-{
-    "code": "axii",
-    "names": [{
-        "lang": "EN",
-        "name": "axii"
+        "code": "dimeritium-bomb",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "dimeritium bomb"
+            },
+            {
+                "lang": "FR",
+                "name": "bombe au dimeritium"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "axii"
-    }]
-},
-{
-    "code": "quen",
-    "names": [{
-        "lang": "EN",
-        "name": "quen"
+        "code": "draconid-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "draconid oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les draconides"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "quen"
-    }]
-},
-{
-    "code": "devils-puffball",
-    "names": [{
-        "lang": "EN",
-        "name": "devil's Puffball"
+        "code": "elementa-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "elementa oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les élémentaires"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "vesse-de-loup du diable"
-    }]
-},
-{
-    "code": "dimeritium-bomb",
-    "names": [{
-        "lang": "EN",
-        "name": "dimeritium bomb"
+        "code": "golden-oriole",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "golden oriole"
+            },
+            {
+                "lang": "FR",
+                "name": "loriot doré"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "bombe au dimeritium"
-    }]
-},
-{
-    "code": "grapeshot",
-    "names": [{
-        "lang": "EN",
-        "name": "grapeshot"
+        "code": "grapeshot",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "grapeshot"
+            },
+            {
+                "lang": "FR",
+                "name": "ruche"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "ruche"
-    }]
-},
-{
-    "code": "moon-dust",
-    "names": [{
-        "lang": "EN",
-        "name": "moon dust"
+        "code": "hybrid-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "hybrid oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les hybrides"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "poussière de lune"
-    }]
-},
-{
-    "code": "northern-wind",
-    "names": [{
-        "lang": "EN",
-        "name": "northern wind"
+        "code": "igni",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "igni"
+            },
+            {
+                "lang": "FR",
+                "name": "igni"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "vent du nord"
-    }]
-},
-{
-    "code": "golden-oriole",
-    "names": [{
-        "lang": "EN",
-        "name": "golden oriole"
+        "code": "insectoid-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "insectoid oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les insectoïdes"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "loriot doré"
-    }]
-},
-{
-    "code": "dancing-star",
-    "names": [{
-        "lang": "EN",
-        "name": "dancing star"
+        "code": "moon-dust",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "moon dust"
+            },
+            {
+                "lang": "FR",
+                "name": "poussière de lune"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "étoile dansante"
-    }]
-},
-{
-    "code": "vampire-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "vampire oil"
+        "code": "necrophage-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "necrophage oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les nécrophages"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les vampires"
-    }]
-},
-{
-    "code": "black-blood",
-    "names": [{
-        "lang": "EN",
-        "name": "black blood"
+        "code": "northern-wind",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "northern wind"
+            },
+            {
+                "lang": "FR",
+                "name": "vent du nord"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "sang noir"
-    }]
-},
-{
-    "code": "elementa-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "elementa oil"
+        "code": "ogroid-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "ogroid oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les ogroïdes"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les élémentaires"
-    }]
-},
-{
-    "code": "ogroid-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "ogroid oil"
+        "code": "quen",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "quen"
+            },
+            {
+                "lang": "FR",
+                "name": "quen"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les ogroïdes"
-    }]
-},
-{
-    "code": "relict-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "relict oil"
+        "code": "relict-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "relict oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les vestiges"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les vestiges"
-    }]
-},
-{
-    "code": "blizzard",
-    "names": [{
-        "lang": "EN",
-        "name": "blizzard"
+        "code": "samum",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "samum"
+            },
+            {
+                "lang": "FR",
+                "name": "samum"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "blizzard"
-    }]
-},
-{
-    "code": "samum",
-    "names": [{
-        "lang": "EN",
-        "name": "samum"
+        "code": "specter-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "specter oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les spectres"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "samum"
-    }]
-},
-{
-    "code": "necrophage-oil",
-    "names": [{
-        "lang": "EN",
-        "name": "necrophage oil"
+        "code": "vampire-oil",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "vampire oil"
+            },
+            {
+                "lang": "FR",
+                "name": "huile contre les vampires"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "huile contre les nécrophages"
-    }]
-},
-{
-    "code": "yrden",
-    "names": [{
-        "lang": "EN",
-        "name": "yrden"
+        "code": "white-honey",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "white honey"
+            },
+            {
+                "lang": "FR",
+                "name": "miel blanc"
+            }
+        ]
     },
     {
-        "lang": "FR",
-        "name": "yrden"
-    }]
-},
-{
-    "code": "white-honey",
-    "names": [{
-        "lang": "EN",
-        "name": "white honey"
-    },
-    {
-        "lang": "FR",
-        "name": "miel blanc"
-    }]
-}]
+        "code": "yrden",
+        "names": [
+            {
+                "lang": "EN",
+                "name": "yrden"
+            },
+            {
+                "lang": "FR",
+                "name": "yrden"
+            }
+        ]
+    }
+]
