@@ -1,7 +1,7 @@
 import { Category } from '../../../category/domain/category';
 import { Error } from '../../../application/error';
 import { HttpStatus, Inject } from '@nestjs/common';
-import { ICategoryRepository } from '../category-repository.interface';
+import { CategoryRepository } from '../category-repository.interface';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { Result } from '../../../application/result';
 
@@ -15,7 +15,7 @@ export class GetAllCategoriesHandler
 {
     constructor(
         @Inject('CategoryRepo')
-        private readonly _categoryRepository: ICategoryRepository,
+        private readonly _categoryRepository: CategoryRepository,
     ) {}
 
     async execute(

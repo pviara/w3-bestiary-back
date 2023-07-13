@@ -5,17 +5,17 @@ import {
     GetAllCategoriesHandler,
     GetAllCategoriesQuery,
 } from './get-all-categories.handler';
-import { ICategoryRepository } from '../category-repository.interface';
+import { CategoryRepository } from '../category-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
 import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
 describe('GetAllCategoriesHandler', () => {
     let sut: GetAllCategoriesHandler;
-    let categoryRepository: ICategoryRepository;
+    let categoryRepository: CategoryRepository;
 
     beforeEach(() => {
-        categoryRepository = createMock<ICategoryRepository>();
+        categoryRepository = createMock<CategoryRepository>();
 
         sut = new GetAllCategoriesHandler(categoryRepository);
     });

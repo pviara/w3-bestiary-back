@@ -1,5 +1,7 @@
 import { Category } from '../domain/category';
+import { Error } from '../../application/error';
+import { Result } from '../../application/result';
 
-export interface ICategoryRepository {
-    getAll(lang: string): Promise<Category[]>;
+export interface CategoryRepository {
+    getAll(lang: string): Result<Category[]> | Error;
 }
