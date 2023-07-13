@@ -18,7 +18,7 @@ import * as path from 'path';
 export class FileServiceImplement implements FileService, ItemFileService {
     private readonly itemsJsonFilePath = path.join(
         __dirname,
-        '../../../static/items.json',
+        '../../../dist/static/items.json',
     );
 
     constructor(private readonly _configService: ConfigurationService) {}
