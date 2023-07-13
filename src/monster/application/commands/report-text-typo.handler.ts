@@ -1,7 +1,7 @@
 import { CommandHandler, ICommand, ICommandHandler } from '@nestjs/cqrs';
 import { Error } from '../../../application/error';
 import { HttpStatus, Inject } from '@nestjs/common';
-import { IMonsterRepository } from '../monster-repository.interface';
+import { MonsterRepository } from '../monster-repository.interface';
 import { ITypoRepository } from '../../application/typo-repository.interface';
 import { MonsterTextes } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
@@ -21,7 +21,7 @@ export class ReportTextTypoHandler
 {
     constructor(
         @Inject('MonsterRepo')
-        private readonly _monsterRepository: IMonsterRepository,
+        private readonly _monsterRepository: MonsterRepository,
 
         @Inject('TypoRepo')
         private readonly _typoRepository: ITypoRepository,

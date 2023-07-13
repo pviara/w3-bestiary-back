@@ -1,4 +1,4 @@
-import { IMonsterRepository } from '../../application/monster-repository.interface';
+import { MonsterRepository } from '../../application/monster-repository.interface';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, PipelineStage } from 'mongoose';
@@ -20,7 +20,7 @@ type MonstersByCategoriesEntitiesByLang = {
 };
 
 @Injectable()
-export class MonsterRepositoryImplement implements IMonsterRepository {
+export class MonsterRepositoryImplement implements MonsterRepository {
     private _cachedMonstersByLang: MonsterEntitiesByLang[] = [];
     private _cachedMonstersByCategoryByLang: MonstersByCategoriesEntitiesByLang[] =
         [];

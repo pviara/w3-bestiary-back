@@ -1,6 +1,6 @@
 import { Error } from '../../../application/error';
 import { HttpStatus, Inject } from '@nestjs/common';
-import { IMonsterRepository } from '../monster-repository.interface';
+import { MonsterRepository } from '../monster-repository.interface';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { Monster } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
@@ -18,7 +18,7 @@ export class GetMonsterByCodeHandler
 {
     constructor(
         @Inject('MonsterRepo')
-        private readonly _monsterRepository: IMonsterRepository,
+        private readonly _monsterRepository: MonsterRepository,
     ) {}
 
     async execute(
