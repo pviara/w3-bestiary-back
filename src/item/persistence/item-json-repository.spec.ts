@@ -14,13 +14,13 @@ describe('ItemJsonRepository', () => {
     });
 
     describe('getAll', () => {
-        it('should access data from the items json file using file service', async () => {
-            await sut.getAll('lang');
+        it('should access data from the items json file using file service', () => {
+            sut.getAll('lang');
 
             expect(fileService.callCount).toBe(1);
         });
 
-        it("should return an error when given lang doesn't match at least one item's name language", async () => {
+        it("should return an error when given lang doesn't match at least one item's name language", () => {
             const otherLang = 'other_lang';
             const anotherLang = 'another_lang';
 
@@ -68,12 +68,12 @@ describe('ItemJsonRepository', () => {
 
             stubGetAllItemsFromJsonFile(fileService, itemEntities);
 
-            const result = await sut.getAll('unknown_lang');
+            const result = sut.getAll('unknown_lang');
 
             expect(result).toBeInstanceOf(Error);
         });
 
-        it('should only return items which name language matches given lang', async () => {
+        it('should only return items which name language matches given lang', () => {
             const targetLang = 'target_lang';
             const otherLang = 'other_lang';
 
@@ -121,7 +121,7 @@ describe('ItemJsonRepository', () => {
 
             stubGetAllItemsFromJsonFile(fileService, itemEntities);
 
-            const result = await sut.getAll(targetLang);
+            const result = sut.getAll(targetLang);
 
             const everyItemNameMatchesTargetLangName = (): boolean => {
                 if (result instanceof Error) {
