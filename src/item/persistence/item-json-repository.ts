@@ -12,7 +12,7 @@ export class ItemJsonRepository implements ItemRepository {
         private readonly fileService: ItemFileService,
     ) {}
 
-    async getAll(lang: string): Promise<Result<Item[]> | Error> {
+    getAll(lang: string): Result<Item[]> | Error {
         const itemEntities = this.fileService.getAllItemsFromJsonFile();
 
         const items = itemEntities.map<Item>((itemEntity) => {

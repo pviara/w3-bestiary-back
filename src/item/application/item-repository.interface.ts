@@ -3,5 +3,5 @@ import { Item } from '../domain/item';
 import { Result } from '../../application/result';
 
 export interface ItemRepository {
-    getAll(lang: string): Promise<Result<Item[]> | Error>;
+    getAll(lang: string): Result<Item[]> | Error;
 }
