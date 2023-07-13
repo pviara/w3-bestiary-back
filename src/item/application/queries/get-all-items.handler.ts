@@ -1,8 +1,9 @@
 import { Error } from '../../../application/error';
-import { HttpStatus, Inject } from '@nestjs/common';
-import { IItemRepository } from '../item-repository.interface';
+import { Inject } from '@nestjs/common';
+import { ItemRepository } from '../item-repository.interface';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { Item } from '../../domain/item';
+import { ITEM_REPOSITORY_TOKEN } from '../../persistence/item-repository.provider';
 import { Result } from '../../../application/result';
 
 export class GetAllItemsQuery implements IQuery {
@@ -12,19 +13,11 @@ export class GetAllItemsQuery implements IQuery {
 @QueryHandler(GetAllItemsQuery)
 export class GetAllItemsHandler implements IQueryHandler<GetAllItemsQuery> {
     constructor(
-        @Inject('ItemRepo')
-        private readonly _itemRepository: IItemRepository,
+        @Inject(ITEM_REPOSITORY_TOKEN)
+        private readonly itemRepository: ItemRepository,
     ) {}
 
     async execute(query: GetAllItemsQuery): Promise<Result<Item[]> | Error> {
-        const result = await this._itemRepository.getAll(query.lang);
-        if (result.length === 0) {
-            return new Error(
-                HttpStatus.NOT_FOUND,
-                `At least one item was not found with { lang: '${query.lang}' }.`,
-            );
-        }
-
-        return new Result(result);
+        return this.itemRepository.getAll(query.lang);
     }
 }

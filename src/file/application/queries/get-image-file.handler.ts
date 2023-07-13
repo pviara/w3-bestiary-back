@@ -1,9 +1,6 @@
 import { Error } from '../../../application/error';
-import {
-    FileFolder,
-    FileFormat,
-    IFileService,
-} from '../file-service.interface';
+import { FileFolder, FileFormat, FileService } from '../file-service.interface';
+import { FILE_SERVICE_TOKEN } from '../file-service.provider';
 import { Inject } from '@nestjs/common';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
 import { ReadStream } from 'fs';
@@ -17,13 +14,11 @@ export class GetImageFileQuery implements IQuery {
     ) {}
 }
 
-const FileService = () => Inject('FileService');
-
 @QueryHandler(GetImageFileQuery)
 export class GetImageFileHandler implements IQueryHandler<GetImageFileQuery> {
     constructor(
-        @FileService()
-        private readonly _fileService: IFileService,
+        @Inject(FILE_SERVICE_TOKEN)
+        private readonly _fileService: FileService,
     ) {}
 
     async execute(

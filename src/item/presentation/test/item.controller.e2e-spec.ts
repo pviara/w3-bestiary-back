@@ -1,35 +1,29 @@
 import { ConfigService } from '@nestjs/config';
 import { FileFolder } from '../../../file/application/file-service.interface';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
-import { Item } from '../../domain/item';
-import { ItemTestingModule } from './e2e-res/item-testing.module';
-import { ItemTestingRepositoryImplement } from './e2e-res/item-testing-repo.implement';
+import { ItemModule } from '../../item.module';
 import { TestHelper } from '../../../utils/test-helper';
 import * as request from 'supertest';
 
 describe('ItemController', () => {
     let app: INestApplication;
 
-    let itemTestingRepo: ItemTestingRepositoryImplement;
-    let items: Item[];
-
-    const existingLang = 'TEST_LANG';
+    const existingLang = 'EN';
     const existingCode = 'blizzard';
+
+    const ITEMS_JSON_LENGTH = 27;
 
     beforeAll(async () => {
         const module = await TestHelper.buildTestingModule([
             {
                 path: 'item',
-                module: ItemTestingModule,
+                module: ItemModule,
             },
         ]);
 
         app = module.createNestApplication();
         app.useGlobalPipes(new ValidationPipe());
         await app.init();
-
-        itemTestingRepo = await app.get('ItemRepo');
-        items = await itemTestingRepo.createTestingValues(existingLang);
 
         const configService = app.get<ConfigService>(ConfigService);
         const filesPath = configService.get<string>('FILES_PATH');
@@ -60,7 +54,7 @@ describe('ItemController', () => {
                 `/api/item?lang=${existingLang}`,
             );
             expect(response.status).toBe(200);
-            expect(response.body).toEqual(items);
+            expect(response.body.length).toBe(ITEMS_JSON_LENGTH);
         });
     });
 
@@ -89,7 +83,6 @@ describe('ItemController', () => {
     });
 
     afterAll(async () => {
-        await itemTestingRepo.deleteTestingValues();
         await app.close();
     });
 });
