@@ -1,7 +1,7 @@
 import { Category } from '../domain/category';
 import { CategoryEntity } from './category-entity';
 import { CategoryMapper } from '../../utils/mappers/category.mapper';
-import { ICategoryRepository } from '../application/category-repository.interface';
+import { CategoryRepository } from '../application/category-repository.interface';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, PipelineStage } from 'mongoose';
 
@@ -10,7 +10,7 @@ type CategoryEntityByLang = {
     categories: CategoryEntity[];
 };
 
-export class CategoryRepositoryImplement implements ICategoryRepository {
+export class CategoryRepositoryImplement implements CategoryRepository {
     private _cachedCategoriesByLang: CategoryEntityByLang[] = [];
 
     constructor(
