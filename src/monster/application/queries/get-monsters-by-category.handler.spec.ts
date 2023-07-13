@@ -4,7 +4,7 @@ import {
     GetMonstersByCategoriesHandler,
     GetMonstersByCategoriesQuery,
 } from './get-monsters-by-category.handler';
-import { IMonsterRepository } from '../monster-repository.interface';
+import { MonsterRepository } from '../monster-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
 import { MonsterByCategory } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
@@ -12,10 +12,10 @@ import { when } from 'jest-when';
 
 describe('GetAllMonstersHandler', () => {
     let sut: GetMonstersByCategoriesHandler;
-    let monsterRepository: IMonsterRepository;
+    let monsterRepository: MonsterRepository;
 
     beforeEach(() => {
-        monsterRepository = createMock<IMonsterRepository>();
+        monsterRepository = createMock<MonsterRepository>();
         sut = new GetMonstersByCategoriesHandler(monsterRepository);
     });
 

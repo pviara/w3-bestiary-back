@@ -4,7 +4,7 @@ import {
     GetMonsterByCodeHandler,
     GetMonsterByCodeQuery,
 } from './get-monster-by-code.handler';
-import { IMonsterRepository } from '../monster-repository.interface';
+import { MonsterRepository } from '../monster-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
 import { Monster } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
@@ -12,10 +12,10 @@ import { when } from 'jest-when';
 
 describe('GetMonsterByCodeHandler', () => {
     let sut: GetMonsterByCodeHandler;
-    let monsterRepository: IMonsterRepository;
+    let monsterRepository: MonsterRepository;
 
     beforeEach(() => {
-        monsterRepository = createMock<IMonsterRepository>();
+        monsterRepository = createMock<MonsterRepository>();
         sut = new GetMonsterByCodeHandler(monsterRepository);
     });
 

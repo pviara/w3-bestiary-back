@@ -1,6 +1,6 @@
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
-import { IMonsterRepository } from '../monster-repository.interface';
+import { MonsterRepository } from '../monster-repository.interface';
 import { ITypoRepository } from '../../application/typo-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
 import { Monster } from '../../../monster/domain/monster';
@@ -15,13 +15,13 @@ import { when } from 'jest-when';
 describe('ReportTextTypoHandler', () => {
     let sut: ReportTextTypoHandler;
 
-    let monsterRepositoryMock: IMonsterRepository;
+    let monsterRepositoryMock: MonsterRepository;
     let typoRepositoryMock: ITypoRepository;
     let monsterRepoGetByCode: jest.Mock;
     let typoRepoFindByExactMatch: jest.Mock;
 
     beforeEach(() => {
-        monsterRepositoryMock = createMock<IMonsterRepository>();
+        monsterRepositoryMock = createMock<MonsterRepository>();
         typoRepositoryMock = createMock<ITypoRepository>();
 
         monsterRepoGetByCode = On(monsterRepositoryMock).get(
