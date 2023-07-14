@@ -1,17 +1,17 @@
-import { Category } from '../../domain/category';
+import { CategoryRepository } from '../category-repository.interface';
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
 import {
     GetAllCategoriesHandler,
     GetAllCategoriesQuery,
 } from './get-all-categories.handler';
-import { CategoryRepository } from '../category-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
 import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
 describe('GetAllCategoriesHandler', () => {
     let sut: GetAllCategoriesHandler;
+
     let categoryRepository: CategoryRepository;
 
     beforeEach(() => {
@@ -22,43 +22,40 @@ describe('GetAllCategoriesHandler', () => {
 
     describe('execute', () => {
         it('should call CategoryRepository getAll method with query "lang" property', async () => {
-            // arrange
             const query = new GetAllCategoriesQuery('lang');
 
-            // act
             await sut.execute(query);
 
-            // assert
             expect(categoryRepository.getAll).toBeCalledWith(query.lang);
         });
 
-        it('should return an error when no category is found when calling getAll on CategoryRepository', async () => {
-            // arrange
+        it('should return an error when repository method returned an error', async () => {
             const query = new GetAllCategoriesQuery('lang');
 
-            // act
+            stubCategoryRepoGetAll(categoryRepository, query, new Error(0, ''));
+
             const result = await sut.execute(query);
 
-            // assert
             expect(result).toBeInstanceOf(Error);
         });
 
-        it('should return a category result when calling getAll on CategoryRepository', async () => {
-            // arrange
+        it('should return a category result repository method returned a result', async () => {
             const query = new GetAllCategoriesQuery('lang');
 
-            const categoryRepoGetAllCategories = On(categoryRepository).get(
-                method('getAll'),
-            );
-            when(categoryRepoGetAllCategories)
-                .calledWith(query.lang)
-                .mockReturnValue([createMock<Category>()]);
+            stubCategoryRepoGetAll(categoryRepository, query, new Result([]));
 
-            // act
             const result = await sut.execute(query);
 
-            // assert
             expect(result).toBeInstanceOf(Result);
         });
     });
 });
+
+function stubCategoryRepoGetAll(
+    categoryRepository: CategoryRepository,
+    query: GetAllCategoriesQuery,
+    mocked: Awaited<ReturnType<CategoryRepository['getAll']>>,
+): void {
+    const categoryRepoGetAll = On(categoryRepository).get(method('getAll'));
+    when(categoryRepoGetAll).calledWith(query.lang).mockResolvedValue(mocked);
+}

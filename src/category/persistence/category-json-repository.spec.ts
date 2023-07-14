@@ -65,7 +65,10 @@ describe('CategoryJsonRepository', () => {
                 },
             ];
 
-            stubGetAllMonsterCategoriesFromJsonFile(fileService, categoryEntities);
+            stubGetAllMonsterCategoriesFromJsonFile(
+                fileService,
+                categoryEntities,
+            );
 
             const result = sut.getAll('unknown_lang');
 
@@ -118,7 +121,10 @@ describe('CategoryJsonRepository', () => {
                 },
             ];
 
-            stubGetAllMonsterCategoriesFromJsonFile(fileService, categoryEntities);
+            stubGetAllMonsterCategoriesFromJsonFile(
+                fileService,
+                categoryEntities,
+            );
 
             const result = sut.getAll(targetLang);
 
@@ -134,7 +140,8 @@ describe('CategoryJsonRepository', () => {
 
                 return result.data.every((category) => {
                     const categoryEntity = categoryEntities.find(
-                        (categoryEntity) => categoryEntity.code === category.code,
+                        (categoryEntity) =>
+                            categoryEntity.code === category.code,
                     );
                     const targetCategoryName = categoryEntity.names.find(
                         (categoryName) => categoryName.lang === targetLang,
@@ -162,7 +169,8 @@ function stubGetAllMonsterCategoriesFromJsonFile(
     fileService: CategoryFileService,
     categoryEntities: CategoryJsonEntity[],
 ): void {
-    fileService.getAllMonsterCategoriesFromJsonFile = (): CategoryJsonEntity[] => {
-        return categoryEntities;
-    };
+    fileService.getAllMonsterCategoriesFromJsonFile =
+        (): CategoryJsonEntity[] => {
+            return categoryEntities;
+        };
 }

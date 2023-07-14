@@ -1,21 +1,19 @@
+import { CategoryFileService } from './category-file-service.interface';
+import { CategoryJsonEntity } from '../../category/persistence/category-json-entity';
 import { ConfigurationService } from '../../infrastructure/configuration/configuration.service';
-import {
-    createReadStream,
-    existsSync,
-    openSync,
-    readFileSync,
-    ReadStream,
-} from 'fs';
+import { createReadStream, existsSync, readFileSync, ReadStream } from 'fs';
 import { Error as AppError } from '../../application/error';
 import { FileFolder, FileFormat, FileService } from './file-service.interface';
 import { HttpStatus, Injectable } from '@nestjs/common';
 import { ItemFileService } from './item-file-service.interface';
+import { ItemJsonEntity } from '../../item/persistence/item-json-entity';
 import { Result } from '../../application/result';
-import { ItemJsonEntity } from 'src/item/persistence/item-json-entity';
 import * as path from 'path';
 
 @Injectable()
-export class FileServiceImplement implements FileService, ItemFileService {
+export class FileServiceImplement
+    implements FileService, CategoryFileService, ItemFileService
+{
     constructor(private readonly _configService: ConfigurationService) {}
 
     computeFilePath(
@@ -29,6 +27,11 @@ export class FileServiceImplement implements FileService, ItemFileService {
 
     getAllItemsFromJsonFile(): ItemJsonEntity[] {
         const result = readFileSync(this.getItemsJsonFilePath());
+        return JSON.parse(result.toString());
+    }
+
+    getAllMonsterCategoriesFromJsonFile(): CategoryJsonEntity[] {
+        const result = readFileSync(this.getMonsterCategoriesJsonFilePath());
         return JSON.parse(result.toString());
     }
 
@@ -49,5 +52,13 @@ export class FileServiceImplement implements FileService, ItemFileService {
         }
 
         return path.join(__dirname, '../../../static/items.json');
+    }
+
+    private getMonsterCategoriesJsonFilePath(): string {
+        if (this._configService.application.environment === 'TEST') {
+            return path.join(__dirname, '../../../src/static/categories.json');
+        }
+
+        return path.join(__dirname, '../../../static/categories.json');
     }
 }
