@@ -1,6 +1,5 @@
 import {
     ApiBadRequestResponse,
-    ApiExcludeEndpoint,
     ApiNotFoundResponse,
     ApiOkResponse,
     ApiOperation,
@@ -12,11 +11,9 @@ import {
     Get,
     HttpException,
     Param,
-    Post,
     Query,
     Res,
 } from '@nestjs/common';
-import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { Error } from '../../application/error';
 import {
     FileFolder,
@@ -28,6 +25,7 @@ import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersURLQuery } from './DTO/get-monsters.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
+import { QueryBus } from '@nestjs/cqrs';
 import { ReadStream } from 'fs';
 import { Response } from 'express';
 import { Result } from '../../application/result';
@@ -35,10 +33,7 @@ import { Result } from '../../application/result';
 @ApiTags('monster')
 @Controller()
 export class MonsterController {
-    constructor(
-        private readonly _commandBus: CommandBus,
-        private readonly _queryBus: QueryBus,
-    ) {}
+    constructor(private readonly _queryBus: QueryBus) {}
 
     @ApiOperation({
         description: 'Get monsters by categories for the given language.',
@@ -93,13 +88,13 @@ export class MonsterController {
         @Query() query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
-        const result = await this._executeImageFileQuery(
+        const result = await this.executeImageFileQuery(
             query.code,
             FileFolder.MonsterImages,
             FileFormat.PNG,
         );
 
-        this._handleImageFileQueryResult(result, response, query.code, 'image');
+        this.handleImageFileQueryResult(result, response, query.code, 'image');
     }
 
     @ApiOperation({
@@ -119,13 +114,13 @@ export class MonsterController {
         @Query() query: GetMonsterImageURLQuery,
         @Res() response: Response,
     ): Promise<void> {
-        const result = await this._executeImageFileQuery(
+        const result = await this.executeImageFileQuery(
             query.code,
             FileFolder.MonsterThumbnails,
             FileFormat.PNG,
         );
 
-        this._handleImageFileQueryResult(
+        this.handleImageFileQueryResult(
             result,
             response,
             query.code,
@@ -170,7 +165,7 @@ export class MonsterController {
         throw new HttpException(result.message, result.code);
     }
 
-    private async _executeImageFileQuery(
+    private async executeImageFileQuery(
         code: string,
         folder: FileFolder,
         format: FileFormat,
@@ -185,7 +180,7 @@ export class MonsterController {
         return result;
     }
 
-    private _handleImageFileQueryResult(
+    private handleImageFileQueryResult(
         result: Result<ReadStream> | Error,
         response: Response,
         code: string,

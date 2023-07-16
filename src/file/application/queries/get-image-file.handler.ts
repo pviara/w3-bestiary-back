@@ -18,18 +18,18 @@ export class GetImageFileQuery implements IQuery {
 export class GetImageFileHandler implements IQueryHandler<GetImageFileQuery> {
     constructor(
         @Inject(FILE_SERVICE_TOKEN)
-        private readonly _fileService: FileService,
+        private readonly fileService: FileService,
     ) {}
 
     async execute(
         query: GetImageFileQuery,
     ): Promise<Result<ReadStream> | Error> {
-        const filePath = this._fileService.computeFilePath(
+        const filePath = this.fileService.computeFilePath(
             query.folder,
             query.format,
             query.code,
         );
 
-        return this._fileService.getFileStream(filePath);
+        return this.fileService.getFileStream(filePath);
     }
 }
