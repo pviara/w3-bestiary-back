@@ -4,70 +4,67 @@ import {
     GetMonsterByCodeHandler,
     GetMonsterByCodeQuery,
 } from './get-monster-by-code.handler';
-import { MonsterRepository } from '../monster-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
-import { Monster } from '../../../monster/domain/monster';
+import { MonsterRepository } from '../monster-repository.interface';
 import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
 describe('GetMonsterByCodeHandler', () => {
     let sut: GetMonsterByCodeHandler;
+
     let monsterRepository: MonsterRepository;
 
     beforeEach(() => {
         monsterRepository = createMock<MonsterRepository>();
+
         sut = new GetMonsterByCodeHandler(monsterRepository);
     });
 
     describe('execute', () => {
-        it('should call MonsterRepository getByCode method with query "code" and "lang" properties', async () => {
-            // arrange
+        it('should call MonsterRepository getByCode method with query "lang" property', async () => {
             const query = new GetMonsterByCodeQuery('code', 'lang');
 
-            // act
             await sut.execute(query);
 
-            // assert
             expect(monsterRepository.getByCode).toBeCalledWith(
                 query.code,
                 query.lang,
             );
         });
 
-        it('should return an error when no monster is found when calling getByCode on monsterRepository', async () => {
-            // arrange
+        it('should return an error when repository method returned an error', async () => {
             const query = new GetMonsterByCodeQuery('code', 'lang');
 
-            const monsterRepoGetByCode = On(monsterRepository).get(
-                method('getByCode'),
+            stubMonsterRepoGetByCode(
+                monsterRepository,
+                query,
+                new Error(0, ''),
             );
-            when(monsterRepoGetByCode)
-                .calledWith(query.code, query.lang)
-                .mockReturnValue(null);
 
-            // act
             const result = await sut.execute(query);
 
-            // assert
             expect(result).toBeInstanceOf(Error);
         });
 
-        it('should return a monster result when calling getByCode on monsterRepository', async () => {
-            // arrange
+        it('should return an monster result when calling getByCode on MonsterRepository', async () => {
             const query = new GetMonsterByCodeQuery('code', 'lang');
 
-            const monsterRepoGetByCode = On(monsterRepository).get(
-                method('getByCode'),
-            );
-            when(monsterRepoGetByCode)
-                .calledWith(query.code, query.lang)
-                .mockReturnValue(createMock<Monster>());
+            stubMonsterRepoGetByCode(monsterRepository, query, new Result());
 
-            // act
             const result = await sut.execute(query);
 
-            // assert
             expect(result).toBeInstanceOf(Result);
         });
     });
 });
+
+function stubMonsterRepoGetByCode(
+    monsterRepository: MonsterRepository,
+    query: GetMonsterByCodeQuery,
+    mocked: Awaited<ReturnType<MonsterRepository['getByCode']>>,
+): void {
+    const monsterRepoGetByCode = On(monsterRepository).get(method('getByCode'));
+    when(monsterRepoGetByCode)
+        .calledWith(query.code, query.lang)
+        .mockResolvedValue(mocked);
+}

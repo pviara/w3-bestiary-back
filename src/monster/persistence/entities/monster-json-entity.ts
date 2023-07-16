@@ -23,6 +23,7 @@ export class MonsterTextesEntity {
 
 class MonsterWeakspotsEntity {
     bombs: string[];
+    oils: string[];
     potions: string[];
     signs: string[];
 }

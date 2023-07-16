@@ -12,11 +12,9 @@ import {
     MonstersByCategoryCategory,
 } from '../../domain/monster';
 import { MonsterController } from '../monster.controller';
-import { ReportTextTypoPayload } from '../DTO/report-text-typo.payload';
 import { ReadStream } from 'fs';
 import { Result } from '../../../application/result';
 import { Response } from 'express';
-import { Typo } from '../../domain/typo';
 import { when } from 'jest-when';
 
 describe('MonsterController', () => {
@@ -276,63 +274,6 @@ describe('MonsterController', () => {
             );
 
             expect(result).toBe(undefined);
-        });
-    });
-
-    describe('reportTextTypo', () => {
-        it('should call execute on commandBus with given query', async () => {
-            const reportTextTypoPayload: ReportTextTypoPayload = {
-                lang: 'lang',
-                monsterCode: 'code',
-                typo: 'typo',
-            };
-
-            const commandBusMockExecute = On(commandBusMock).get(
-                method('execute'),
-            );
-            when(commandBusMockExecute).mockReturnValue(
-                new Result(createMock<Typo>()),
-            );
-
-            await sut.reportTextTypo(reportTextTypoPayload);
-
-            expect(commandBusMock.execute).toBeCalled();
-        });
-
-        it('should throw an HttpException when execution result is an Error', async () => {
-            const reportTextTypoPayload: ReportTextTypoPayload = {
-                lang: 'lang',
-                monsterCode: 'code',
-                typo: 'typo',
-            };
-
-            const commandBusMockExecute = On(commandBusMock).get(
-                method('execute'),
-            );
-            when(commandBusMockExecute).mockReturnValue(new Error(0, ''));
-
-            expect(
-                async () => await sut.reportTextTypo(reportTextTypoPayload),
-            ).rejects.toThrow(HttpException);
-        });
-
-        it('should return a Typo when execution result is an object of type Result', async () => {
-            const reportTextTypoPayload: ReportTextTypoPayload = {
-                lang: 'lang',
-                monsterCode: 'code',
-                typo: 'typo',
-            };
-
-            const typoMock = new Typo('', '', '', '');
-
-            const commandBusMockExecute = On(commandBusMock).get(
-                method('execute'),
-            );
-            when(commandBusMockExecute).mockReturnValue(new Result(typoMock));
-
-            const result = await sut.reportTextTypo(reportTextTypoPayload);
-
-            expect(result).toBeInstanceOf(Typo);
         });
     });
 });

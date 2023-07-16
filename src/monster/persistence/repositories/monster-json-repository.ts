@@ -8,6 +8,7 @@ import {
     Monster,
     MonstersByCategoryCategory,
     MonsterForCategory,
+    MonsterWeakspots,
 } from '../../domain/monster';
 import { Result } from '../../../application/result';
 import {
@@ -25,6 +26,41 @@ export class MonsterJsonRepository implements MonsterRepository {
         private readonly fileService: MonsterFileService,
     ) {}
 
+    getByCode(code: string, lang: string): Result<Monster> | Error {
+        const monsterEntities = this.fileService.getAllMonsterFromJsonFile();
+        const monsterEntity = this.getMonsterEntityByCode(
+            monsterEntities,
+            code,
+        );
+        if (!monsterEntity) {
+            return new Error(
+                HttpStatus.NOT_FOUND,
+                `Given code "${code}" didn't match any monster.`,
+            );
+        }
+
+        const monsterTextes = this.getMonsterEntityTextesByLang(
+            monsterEntity,
+            lang,
+        );
+        if (!monsterTextes) {
+            return new Error(
+                HttpStatus.NOT_FOUND,
+                `Given lang "${lang}" didn't match at least one monster's name language.`,
+            );
+        }
+
+        return new Result(
+            new Monster(
+                monsterEntity.category,
+                monsterEntity.code,
+                monsterTextes,
+                monsterEntity.weakspots,
+                monsterEntity.extension,
+            ),
+        );
+    }
+
     getMonstersByCategories(
         lang: string,
     ): Result<MonstersByCategory[]> | Error {
@@ -33,7 +69,7 @@ export class MonsterJsonRepository implements MonsterRepository {
             this.fileService.getAllMonsterFromJsonFile(),
         ];
 
-        const monstersByCategoryList = categoryEntities.map<MonstersByCategory>(
+        const monstersByCategory = categoryEntities.map<MonstersByCategory>(
             (categoryEntity) => {
                 const categoryName = this.getCategoryNameByLang(
                     categoryEntity,
@@ -69,18 +105,35 @@ export class MonsterJsonRepository implements MonsterRepository {
             },
         );
 
-        if (monstersByCategoryList.includes(undefined)) {
+        if (monstersByCategory.includes(undefined)) {
             return new Error(
                 HttpStatus.NOT_FOUND,
                 `Given lang "${lang}" didn't match at least one category's name language.`,
             );
         }
 
-        return new Result(monstersByCategoryList);
+        const sortedMonstersByCategory =
+            this.sortMonstersByCategoryAlphabetically(monstersByCategory);
+
+        return new Result(sortedMonstersByCategory);
     }
 
-    getByCode(code: string, lang: string): Result<Monster> | Error {
-        throw new NotImplementedException();
+    private getMonsterEntityByCode(
+        monsterEntities: MonsterJsonEntity[],
+        code: string,
+    ): MonsterJsonEntity {
+        return monsterEntities.find(
+            (monsterEntity) => monsterEntity.code === code,
+        );
+    }
+
+    private getMonsterEntityTextesByLang(
+        monsterEntity: MonsterJsonEntity,
+        lang: string,
+    ): MonsterTextesEntity {
+        return monsterEntity.textes.find(
+            (monsterTextes) => monsterTextes.lang === lang,
+        );
     }
 
     private getCategoryNameByLang(
@@ -101,6 +154,25 @@ export class MonsterJsonRepository implements MonsterRepository {
         );
     }
 
+    private mapMonsterEntitiesToMonsterByCategory(
+        monsterEntities: MonsterJsonEntity[],
+        lang: string,
+    ): MonsterForCategory[] {
+        return monsterEntities.map((monsterEntity) => {
+            const monsterTextes = this.getMonsterTextesByLang(
+                monsterEntity,
+                lang,
+            );
+            return new MonsterForCategory(
+                monsterEntity.code,
+                {
+                    name: monsterTextes.name,
+                },
+                monsterEntity.extension,
+            );
+        });
+    }
+
     private getMonsterTextesByLang(
         monsterEntity: MonsterJsonEntity,
         lang: string,
@@ -108,20 +180,20 @@ export class MonsterJsonRepository implements MonsterRepository {
         return monsterEntity.textes.find((text) => text.lang === lang);
     }
 
-    private mapMonsterEntitiesToMonsterByCategory(
-        filteredMonsterEntities: MonsterJsonEntity[],
-        lang: string,
-    ): MonsterForCategory[] {
-        return filteredMonsterEntities.map((monsterEntity) => {
-            const monsterTextes = this.getMonsterTextesByLang(
-                monsterEntity,
-                lang,
-            );
-            return new MonsterForCategory(
-                monsterEntity.code,
-                monsterTextes,
-                monsterEntity.extension,
-            );
-        });
+    private sortMonstersByCategoryAlphabetically(
+        monstersByCategory: MonstersByCategory[],
+    ): MonstersByCategory[] {
+        return monstersByCategory
+            .sort((prev, next) =>
+                prev.category.name.localeCompare(next.category.name),
+            )
+            .map((monstersByCategory) => {
+                return {
+                    ...monstersByCategory,
+                    monsters: monstersByCategory.monsters.sort((prev, next) =>
+                        prev.textes.name.localeCompare(next.textes.name),
+                    ),
+                };
+            });
     }
 }
