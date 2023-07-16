@@ -7,12 +7,18 @@ import { FileFolder, FileFormat, FileService } from './file-service.interface';
 import { HttpStatus, Injectable } from '@nestjs/common';
 import { ItemFileService } from './item-file-service.interface';
 import { ItemJsonEntity } from '../../item/persistence/item-json-entity';
+import { MonsterFileService } from './monster-file-service.interface';
 import { Result } from '../../application/result';
 import * as path from 'path';
+import { MonsterJsonEntity } from 'src/monster/persistence/entities/monster-json-entity';
 
 @Injectable()
 export class FileServiceImplement
-    implements FileService, CategoryFileService, ItemFileService
+    implements
+        FileService,
+        CategoryFileService,
+        ItemFileService,
+        MonsterFileService
 {
     constructor(private readonly _configService: ConfigurationService) {}
 
@@ -32,6 +38,11 @@ export class FileServiceImplement
 
     getAllMonsterCategoriesFromJsonFile(): CategoryJsonEntity[] {
         const result = readFileSync(this.getMonsterCategoriesJsonFilePath());
+        return JSON.parse(result.toString());
+    }
+
+    getAllMonsterFromJsonFile(): MonsterJsonEntity[] {
+        const result = readFileSync(this.getMonstersJsonFilePath());
         return JSON.parse(result.toString());
     }
 
@@ -60,5 +71,13 @@ export class FileServiceImplement
         }
 
         return path.join(__dirname, '../../../static/categories.json');
+    }
+
+    private getMonstersJsonFilePath(): string {
+        if (this._configService.application.environment === 'TEST') {
+            return path.join(__dirname, '../../../src/static/monsters.json');
+        }
+
+        return path.join(__dirname, '../../../static/monsters.json');
     }
 }

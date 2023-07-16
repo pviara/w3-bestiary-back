@@ -73,7 +73,7 @@ describe('ItemJsonRepository', () => {
             expect(result).toBeInstanceOf(Error);
         });
 
-        it('should only return items which name language matches given lang', () => {
+        it('should only return names which language matches given lang', () => {
             const targetLang = 'target_lang';
             const otherLang = 'other_lang';
 

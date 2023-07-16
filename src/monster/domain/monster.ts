@@ -124,7 +124,7 @@ class MonsterTextesName {
     name: string;
 }
 
-export class MonsterByCategory {
+export class MonsterForCategory {
     @ApiProperty()
     readonly code: string;
 
@@ -152,14 +152,14 @@ export class MonstersByCategory {
     readonly category: MonstersByCategoryCategory;
 
     @ApiProperty({
-        type: MonsterByCategory,
+        type: MonsterForCategory,
         isArray: true,
     })
-    readonly monsters: MonsterByCategory[];
+    readonly monsters: MonsterForCategory[];
 
     constructor(
         category: MonstersByCategoryCategory,
-        monsters: MonsterByCategory[],
+        monsters: MonsterForCategory[],
     ) {
         this.category = category;
         this.monsters = monsters;

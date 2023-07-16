@@ -7,7 +7,7 @@ import { HttpException } from '@nestjs/common';
 import { method, On } from 'ts-auto-mock/extension';
 import {
     Monster,
-    MonsterByCategory,
+    MonsterForCategory,
     MonstersByCategory,
     MonstersByCategoryCategory,
 } from '../../domain/monster';
@@ -147,7 +147,7 @@ describe('MonsterController', () => {
 
             const monstersByCategoryByCategoryMock =
                 new MonstersByCategoryCategory('', '');
-            const monsterByCategoryMock = new MonsterByCategory('', {
+            const monsterByCategoryMock = new MonsterForCategory('', {
                 name: ' ',
             });
             const monstersByCategoryMock = new MonstersByCategory(
