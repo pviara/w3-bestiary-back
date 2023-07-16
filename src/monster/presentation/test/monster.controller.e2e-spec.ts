@@ -1,38 +1,27 @@
 import { ConfigService } from '@nestjs/config';
 import { FileFolder } from '../../../file/application/file-service.interface';
 import { INestApplication, ValidationPipe } from '@nestjs/common';
-import { MonsterTestingModule } from './e2e-res/monster-testing.module';
-import { MonsterTestingRepositoryImplement } from './e2e-res/monster-testing-repo.implement';
-import { ReportTextTypoPayload } from '../DTO/report-text-typo.payload';
+import { MonsterModule } from '../../monster.module';
 import { TestHelper } from '../../../utils/test-helper';
-import { TypoTestingRepositoryImplement } from './e2e-res/typo-testing-repo.implement';
 import * as request from 'supertest';
 
 describe('MonsterController', () => {
     let app: INestApplication;
 
-    let monsterTestingRepo: MonsterTestingRepositoryImplement;
-    let typoTestingRepo: TypoTestingRepositoryImplement;
-
     const existingCode = 'bear';
-    const existingLang = 'TEST_LANG';
+    const existingLang = 'EN';
 
     beforeAll(async () => {
         const module = await TestHelper.buildTestingModule([
             {
                 path: 'monster',
-                module: MonsterTestingModule,
+                module: MonsterModule,
             },
         ]);
 
         app = module.createNestApplication();
         app.useGlobalPipes(new ValidationPipe());
         await app.init();
-
-        monsterTestingRepo = await app.get('MonsterRepo');
-        typoTestingRepo = await app.get('TypoRepo');
-
-        await monsterTestingRepo.createTestingValues(existingLang);
 
         const configService = app.get<ConfigService>(ConfigService);
         const filesPath = configService.get<string>('FILES_PATH');
@@ -131,108 +120,15 @@ describe('MonsterController', () => {
         });
 
         it('should return an HTTP status 200 with the right data when given the right code and lang', async () => {
-            const [{ code }] = await monsterTestingRepo.monsterModel.find({});
-
             const response = await request(app.getHttpServer()).get(
-                `/api/monster/${code}?lang=${existingLang}`,
+                `/api/monster/${existingCode}?lang=${existingLang}`,
             );
             expect(response.status).toBe(200);
-            expect(response.body.code).toBe(code);
-        });
-    });
-
-    describe('POST /typo', () => {
-        it('should return an HTTP error status 400 when given body is not valid', async () => {
-            const payloads: ReportTextTypoPayload[] = [
-                {
-                    lang: '',
-                    monsterCode: 'code',
-                    typo: 'typo',
-                },
-                {
-                    lang: 'lang',
-                    monsterCode: '',
-                    typo: 'typo',
-                },
-                {
-                    lang: 'lang',
-                    monsterCode: 'code',
-                    typo: '',
-                },
-                {
-                    lang: '',
-                    monsterCode: '',
-                    typo: '',
-                },
-            ];
-
-            for (const payload of payloads) {
-                const response = await request(app.getHttpServer())
-                    .post('/api/monster/typo')
-                    .send(payload);
-                expect(response.status).toBe(400);
-            }
-        });
-
-        it('should return an HTTP error status 404 when given monster code does not exist', async () => {
-            const payload: ReportTextTypoPayload = {
-                lang: 'ANY',
-                monsterCode: 'not_existing',
-                typo: 'typo',
-            };
-
-            const response = await request(app.getHttpServer())
-                .post('/api/monster/typo')
-                .send(payload);
-            expect(response.status).toBe(404);
-        });
-
-        it('should return an HTTP error status 404 when given typo does not exists in monster textes', async () => {
-            const [{ code }] = await monsterTestingRepo.monsterModel.find({});
-            const typoContent = 'not existing typo';
-            const existingTypo = await typoTestingRepo.createTestingValue(
-                existingLang,
-                code,
-                typoContent,
-            );
-
-            const payload: ReportTextTypoPayload = {
-                lang: existingTypo.lang,
-                monsterCode: existingTypo.monsterCode,
-                typo: existingTypo.content,
-            };
-
-            const response = await request(app.getHttpServer())
-                .post('/api/monster/typo')
-                .send(payload);
-            expect(response.status).toBe(404);
-        });
-
-        it('should return an HTTP error status 409 when given typo already exists', async () => {
-            const [{ code, textes }] =
-                await monsterTestingRepo.monsterModel.find({});
-            const typoContent = textes[0].description;
-            const existingTypo = await typoTestingRepo.createTestingValue(
-                existingLang,
-                code,
-                typoContent,
-            );
-
-            const payload: ReportTextTypoPayload = {
-                lang: existingTypo.lang,
-                monsterCode: existingTypo.monsterCode,
-                typo: existingTypo.content,
-            };
-
-            const response = await request(app.getHttpServer())
-                .post('/api/monster/typo')
-                .send(payload);
-            expect(response.status).toBe(409);
+            expect(response.body.code).toBe(existingCode);
         });
     });
 
     afterAll(async () => {
-        await monsterTestingRepo.deleteTestingValues();
         await app.close();
     });
 });

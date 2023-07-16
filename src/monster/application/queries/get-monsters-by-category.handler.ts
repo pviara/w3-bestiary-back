@@ -1,8 +1,9 @@
-import { Error } from '../../..//application/error';
-import { HttpStatus, Inject } from '@nestjs/common';
-import { MonsterRepository } from '../monster-repository.interface';
+import { Error } from '../../../application/error';
+import { Inject } from '@nestjs/common';
 import { IQuery, IQueryHandler, QueryHandler } from '@nestjs/cqrs';
+import { MonsterRepository } from '../monster-repository.interface';
 import { MonstersByCategory } from '../../../monster/domain/monster';
+import { MONSTER_REPOSITORY_TOKEN } from '../../persistence/repositories/monster-repository.provider';
 import { Result } from '../../../application/result';
 
 export class GetMonstersByCategoriesQuery implements IQuery {
@@ -14,23 +15,13 @@ export class GetMonstersByCategoriesHandler
     implements IQueryHandler<GetMonstersByCategoriesQuery>
 {
     constructor(
-        @Inject('MonsterRepo')
-        private readonly _monsterRepository: MonsterRepository,
+        @Inject(MONSTER_REPOSITORY_TOKEN)
+        private readonly monsterRepository: MonsterRepository,
     ) {}
 
     async execute(
         query: GetMonstersByCategoriesQuery,
     ): Promise<Result<MonstersByCategory[]> | Error> {
-        const result = await this._monsterRepository.getMonstersByCategories(
-            query.lang,
-        );
-        if (result.length === 0) {
-            return new Error(
-                HttpStatus.NOT_FOUND,
-                `At least one monster was not found with { lang: '${query.lang}' }.`,
-            );
-        }
-
-        return new Result(result);
+        return this.monsterRepository.getMonstersByCategories(query.lang);
     }
 }

@@ -13,15 +13,127 @@ describe('MonsterJsonRepository', () => {
         sut = new MonsterJsonRepository(fileService);
     });
 
-    describe('getMonstersByCategories', () => {
-        // * test cases
-        // // * -> should access data from the categories json file using file service
-        // // * -> should access data from the monsters json file using file service
-        // // * -> should return an array which length equals the amount of categories
-        // // * -> should return an array which category language all match given lang
-        // // * -> should return an array which monsters language all match given lang
-        // * -> should return an error when at least one category/monster name hasn't been found for given lang
+    describe('getByCode', () => {
+        it('should access data from the monsters json file using file service', () => {
+            sut.getByCode('code', 'lang');
 
+            expect(fileService.methodCallCounts.getAllMonsterFromJsonFile).toBe(
+                1,
+            );
+        });
+
+        it('should return a monster which name language matches given lang', () => {
+            const targetLang = 'target_lang';
+            const otherLang = 'other_lang';
+            const targetCode = 'code2';
+
+            const monsterEntities: MonsterJsonEntity[] = [
+                {
+                    code: 'code1',
+                    category: 'category1',
+                    textes: [
+                        {
+                            lang: targetLang,
+                            name: 'target_lang_name_1',
+                            description: 'description',
+                            quote: {
+                                author: {
+                                    firstname: 'firstname',
+                                    lastname: 'lastname',
+                                    title: 'title',
+                                },
+                                text: 'text',
+                            },
+                        },
+                        {
+                            lang: otherLang,
+                            name: 'other_lang_name_1',
+                            description: 'description',
+                            quote: {
+                                author: {
+                                    firstname: 'firstname',
+                                    lastname: 'lastname',
+                                    title: 'title',
+                                },
+                                text: 'text',
+                            },
+                        },
+                    ],
+                    weakspots: {
+                        bombs: [],
+                        oils: [],
+                        potions: [],
+                        signs: [],
+                    },
+                },
+                {
+                    code: targetCode,
+                    category: 'category1',
+                    textes: [
+                        {
+                            lang: targetLang,
+                            name: 'target_lang_name_2',
+                            description: 'description',
+                            quote: {
+                                author: {
+                                    firstname: 'firstname',
+                                    lastname: 'lastname',
+                                    title: 'title',
+                                },
+                                text: 'text',
+                            },
+                        },
+                        {
+                            lang: otherLang,
+                            name: 'other_lang_name_2',
+                            description: 'description',
+                            quote: {
+                                author: {
+                                    firstname: 'firstname',
+                                    lastname: 'lastname',
+                                    title: 'title',
+                                },
+                                text: 'text',
+                            },
+                        },
+                    ],
+                    weakspots: {
+                        bombs: [],
+                        oils: [],
+                        potions: [],
+                        signs: [],
+                    },
+                },
+            ];
+
+            stubGetAllMonstersFromJsonFile(fileService, monsterEntities);
+
+            const result = sut.getByCode(targetCode, targetLang);
+
+            const monsterNameMatchesTargetLang = (): boolean => {
+                if (result instanceof Error) {
+                    return false;
+                }
+
+                const monsterEntity = monsterEntities.find(
+                    (monsterEntity) => monsterEntity.code === targetCode,
+                );
+                const targetMonsterTextes = monsterEntity.textes.find(
+                    (monsterTextes) => monsterTextes.lang === targetLang,
+                );
+
+                return (
+                    result.data.textes.name === targetMonsterTextes.name &&
+                    result.data.textes.description ===
+                        targetMonsterTextes.description
+                );
+            };
+
+            expect(monsterNameMatchesTargetLang()).toBe(true);
+        });
+    });
+
+    describe('getMonstersByCategories', () => {
         it('should access data from the categories json file using file service', () => {
             sut.getMonstersByCategories('lang');
 
@@ -260,6 +372,7 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },
@@ -297,6 +410,7 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },
@@ -347,7 +461,7 @@ describe('MonsterJsonRepository', () => {
 
             const categoryEntities: CategoryJsonEntity[] = [
                 {
-                    code: 'code1',
+                    code: 'greatcategory',
                     names: [
                         {
                             lang: targetLang,
@@ -360,7 +474,7 @@ describe('MonsterJsonRepository', () => {
                     ],
                 },
                 {
-                    code: 'code2',
+                    code: 'anticategory',
                     names: [
                         {
                             lang: targetLang,
@@ -379,7 +493,7 @@ describe('MonsterJsonRepository', () => {
 
             const monsterEntities: MonsterJsonEntity[] = [
                 {
-                    code: 'code1',
+                    code: 'worg',
                     category: categoryCode1,
                     textes: [
                         {
@@ -411,12 +525,13 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },
                 },
                 {
-                    code: 'code2',
+                    code: 'alpha',
                     category: categoryCode1,
                     textes: [
                         {
@@ -448,12 +563,13 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },
                 },
                 {
-                    code: 'code3',
+                    code: 'bear',
                     category: categoryCode2,
                     textes: [
                         {
@@ -485,6 +601,7 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },
@@ -618,6 +735,7 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },
@@ -655,6 +773,7 @@ describe('MonsterJsonRepository', () => {
                     ],
                     weakspots: {
                         bombs: [],
+                        oils: [],
                         potions: [],
                         signs: [],
                     },

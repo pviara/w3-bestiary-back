@@ -28,12 +28,9 @@ import { GetMonsterImageURLQuery } from './DTO/get-monster-image.url-query';
 import { GetMonstersByCategoriesQuery } from '../application/queries/get-monsters-by-category.handler';
 import { GetMonstersURLQuery } from './DTO/get-monsters.url-query';
 import { Monster, MonstersByCategory } from '../domain/monster';
-import { ReportTextTypoCommand } from '../application/commands/report-text-typo.handler';
-import { ReportTextTypoPayload } from './DTO/report-text-typo.payload';
 import { ReadStream } from 'fs';
 import { Response } from 'express';
 import { Result } from '../../application/result';
-import { Typo } from '../domain/typo';
 
 @ApiTags('monster')
 @Controller()
@@ -165,29 +162,6 @@ export class MonsterController {
             GetMonsterByCodeQuery,
             Result<Monster> | Error
         >(getMonsterByCodeQuery);
-
-        if (result instanceof Result) {
-            return result.data;
-        }
-
-        throw new HttpException(result.message, result.code);
-    }
-
-    @ApiExcludeEndpoint()
-    @Post('typo')
-    async reportTextTypo(
-        @Body() payload: ReportTextTypoPayload,
-    ): Promise<Typo> {
-        const command = new ReportTextTypoCommand(
-            payload.lang,
-            payload.monsterCode,
-            payload.typo,
-        );
-
-        const result = await this._commandBus.execute<
-            ReportTextTypoCommand,
-            Result<Typo> | Error
-        >(command);
 
         if (result instanceof Result) {
             return result.data;
