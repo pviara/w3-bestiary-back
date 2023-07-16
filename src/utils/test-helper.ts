@@ -1,12 +1,9 @@
-import { DatabaseModule } from '../infrastructure/database/database.module';
-import { DatabaseService } from '../infrastructure/database/database.service';
 import { DynamicModule } from '@nestjs/common';
+import { existsSync } from 'fs';
 import { FileFolder } from '../file/application/file-service.interface';
-import { MongooseModule, MongooseModuleOptions } from '@nestjs/mongoose';
+import { mkdir, writeFile } from 'fs/promises';
 import { RouterModule } from '@nestjs/core';
 import { Test, TestingModule } from '@nestjs/testing';
-import { mkdir, writeFile } from 'fs/promises';
-import { existsSync } from 'fs';
 
 export class RoutedTestModule {
     constructor(
@@ -40,25 +37,6 @@ export class TestHelper {
         });
 
         return await testingModule.compile();
-    }
-
-    static buildDatabaseTestingModule(): (
-        | DynamicModule
-        | typeof DatabaseModule
-    )[] {
-        return [
-            DatabaseModule,
-            MongooseModule.forRootAsync({
-                imports: [DatabaseModule],
-                useFactory: (dbService: DatabaseService) => {
-                    const options: MongooseModuleOptions = {
-                        uri: dbService.dbURI,
-                    };
-                    return options;
-                },
-                inject: [DatabaseService],
-            }),
-        ];
     }
 
     static async createTestingImages(
