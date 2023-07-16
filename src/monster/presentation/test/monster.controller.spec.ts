@@ -1,4 +1,3 @@
-import { CommandBus, QueryBus } from '@nestjs/cqrs';
 import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
 import { GetMonsterImageURLQuery } from '../DTO/get-monster-image.url-query';
@@ -12,6 +11,7 @@ import {
     MonstersByCategoryCategory,
 } from '../../domain/monster';
 import { MonsterController } from '../monster.controller';
+import { QueryBus } from '@nestjs/cqrs';
 import { ReadStream } from 'fs';
 import { Result } from '../../../application/result';
 import { Response } from 'express';
@@ -20,14 +20,12 @@ import { when } from 'jest-when';
 describe('MonsterController', () => {
     let sut: MonsterController;
 
-    let commandBusMock: CommandBus;
     let queryBusMock: QueryBus;
 
     beforeEach(() => {
-        commandBusMock = createMock<CommandBus>();
         queryBusMock = createMock<QueryBus>();
 
-        sut = new MonsterController(commandBusMock, queryBusMock);
+        sut = new MonsterController(queryBusMock);
     });
 
     describe('getByCode', () => {
