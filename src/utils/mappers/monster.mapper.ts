@@ -1,6 +1,6 @@
 import {
     Monster,
-    MonsterByCategory,
+    MonsterForCategory,
     MonstersByCategory,
     MonstersByCategoryCategory,
     MonsterTextes,
@@ -46,10 +46,10 @@ export class MonsterMapper {
 
     static toMonsterByCategory(
         monsterByCategoryEntity: MonsterByCategoryEntity,
-    ): MonsterByCategory {
+    ): MonsterForCategory {
         const monsterByCategoryEntityTextes = monsterByCategoryEntity.textes[0];
 
-        return new MonsterByCategory(
+        return new MonsterForCategory(
             monsterByCategoryEntity.code,
             monsterByCategoryEntityTextes,
         );
@@ -85,10 +85,10 @@ export class MonsterMapper {
 
     static toMonstersInsideCategories(
         monstersByCategoryEntities: MonsterByCategoryEntity[],
-    ): MonsterByCategory[] {
+    ): MonsterForCategory[] {
         return monstersByCategoryEntities.map(
             (monsterByCategoryEntity) =>
-                new MonsterByCategory(
+                new MonsterForCategory(
                     monsterByCategoryEntity.code,
                     monsterByCategoryEntity.textes[0],
                     monsterByCategoryEntity.extension,

@@ -6,7 +6,7 @@ import {
 } from './get-monsters-by-category.handler';
 import { MonsterRepository } from '../monster-repository.interface';
 import { method, On } from 'ts-auto-mock/extension';
-import { MonsterByCategory } from '../../../monster/domain/monster';
+import { MonsterForCategory } from '../../../monster/domain/monster';
 import { Result } from '../../../application/result';
 import { when } from 'jest-when';
 
@@ -53,7 +53,7 @@ describe('GetAllMonstersHandler', () => {
             ).get(method('getMonstersByCategories'));
             when(monsterRepoGetMonstersByCategories)
                 .calledWith(query.lang)
-                .mockReturnValue([createMock<MonsterByCategory>()]);
+                .mockReturnValue([createMock<MonsterForCategory>()]);
 
             // act
             const result = await sut.execute(query);
