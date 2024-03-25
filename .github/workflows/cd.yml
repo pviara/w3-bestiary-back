@@ -28,5 +28,5 @@ jobs:
                     git reset --hard origin/main
                     yarn install
                     yarn build
-                    pm2 delete w3-bestiary-api
-                    pm2 start dist/src/main.js --name w3-bestiary-api
+                    pm2 delete witcher-api
+                    pm2 start dist/src/main.js --name witcher-api
