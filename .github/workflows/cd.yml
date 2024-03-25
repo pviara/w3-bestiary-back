@@ -1,8 +1,8 @@
-name: Node.js CD - Preview
+name: Node.js CD - Production
 
 on:
     push:
-        branches: [develop]
+        branches: [main]
 
 jobs:
     deploy:
@@ -10,7 +10,7 @@ jobs:
 
         steps:
             - uses: appleboy/ssh-action@master
-              name: Deploy preview on VPS
+              name: Deploy production on VPS
               with:
                 host: ${{ secrets.HOST }}
                 username: ${{ secrets.USERNAME }}
@@ -22,11 +22,11 @@ jobs:
                     export NVM_DIR=~/.nvm
                     source ~/.nvm/nvm.sh
                     nvm use --lts
-                    cd ~/dev/repos/w3-bestiary/preview/w3-bestiary-back
-                    git checkout develop
+                    cd ~/dev/repos/w3-bestiary/w3-bestiary-back
+                    git checkout main
                     git fetch --all
-                    git reset --hard origin/develop
+                    git reset --hard origin/main
                     yarn install
                     yarn build
-                    pm2 delete w3-bestiary-preview
-                    pm2 start dist/src/main.js --name w3-bestiary-preview
+                    pm2 delete w3-bestiary-api
+                    pm2 start dist/src/main.js --name w3-bestiary-api

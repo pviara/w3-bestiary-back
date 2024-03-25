@@ -1,11 +1,9 @@
 import { CategoryModule } from './category/category.module';
 import { ConfigurationModule } from './infrastructure/configuration/configuration.module';
 import { ItemModule } from './item/item.module';
-import { join } from 'path';
 import { Module } from '@nestjs/common';
 import { MonsterModule } from './monster/monster.module';
 import { RouterModule } from '@nestjs/core';
-import { ServeStaticModule } from '@nestjs/serve-static';
 import { VersionModule } from './version/version.module';
 
 @Module({
@@ -33,9 +31,6 @@ import { VersionModule } from './version/version.module';
                 ],
             },
         ]),
-        ServeStaticModule.forRoot({
-            rootPath: join(__dirname, '../..', 'public'),
-        }),
         VersionModule,
     ],
     controllers: [],
