@@ -1,6 +1,6 @@
 {
   "name": "w3-bestiary-back",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "",
   "author": "",
   "private": true,
@@ -35,7 +35,6 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "follow-redirects": "^1.15.2",
-    "helmet": "^7.0.0",
     "morgan": "^1.10.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^5.0.1",

@@ -2,9 +2,13 @@ import { AppModule } from './app.module';
 import { ConfigService } from '@nestjs/config';
 import { createStream } from 'rotating-file-stream';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { InternalServerErrorException, ValidationPipe } from '@nestjs/common';
+import {
+    ForbiddenException,
+    InternalServerErrorException,
+    ValidationPipe,
+} from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
-import helmet from 'helmet';
+import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.interface';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
@@ -20,14 +24,27 @@ async function bootstrap() {
         throwMissingEnvVariableError('FILES_PATH');
     }
 
-    if (currentEnv === 'DEV') {
-        app.enableCors();
+    if (currentEnv === 'PROD') {
+        const corsOptions: CorsOptions = {
+            origin: (origin, callback) => {
+                const allowedOrigin =
+                    configService.get<string>('ALLOWED_ORIGIN');
+                const isOriginAllowed = !origin || allowedOrigin === origin;
+
+                if (isOriginAllowed) {
+                    callback(null, true);
+                } else {
+                    callback(
+                        new ForbiddenException(
+                            'CORS: Request origin is not allowed',
+                        ),
+                    );
+                }
+            },
+        };
+        app.enableCors(corsOptions);
     } else {
-        app.use(
-            helmet({
-                contentSecurityPolicy: false,
-            }),
-        );
+        app.enableCors();
     }
 
     app.useGlobalPipes(new ValidationPipe());
