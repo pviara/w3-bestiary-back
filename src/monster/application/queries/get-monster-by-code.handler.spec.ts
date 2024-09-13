@@ -1,21 +1,21 @@
-import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
 import {
     GetMonsterByCodeHandler,
     GetMonsterByCodeQuery,
 } from './get-monster-by-code.handler';
-import { method, On } from 'ts-auto-mock/extension';
-import { MonsterRepository } from '../monster-repository.interface';
+import {
+    MonsterRepositorySpy,
+    stubGetByCode,
+} from '../../../../test/doubles/monster-repository.spy';
 import { Result } from '../../../application/result';
-import { when } from 'jest-when';
 
 describe('GetMonsterByCodeHandler', () => {
     let sut: GetMonsterByCodeHandler;
 
-    let monsterRepository: MonsterRepository;
+    let monsterRepository: MonsterRepositorySpy;
 
     beforeEach(() => {
-        monsterRepository = createMock<MonsterRepository>();
+        monsterRepository = new MonsterRepositorySpy();
 
         sut = new GetMonsterByCodeHandler(monsterRepository);
     });
@@ -26,20 +26,16 @@ describe('GetMonsterByCodeHandler', () => {
 
             await sut.execute(query);
 
-            expect(monsterRepository.getByCode).toBeCalledWith(
+            expect(monsterRepository.calls.getByCode.history).toContainEqual([
                 query.code,
                 query.lang,
-            );
+            ]);
         });
 
         it('should return an error when repository method returned an error', async () => {
             const query = new GetMonsterByCodeQuery('code', 'lang');
 
-            stubMonsterRepoGetByCode(
-                monsterRepository,
-                query,
-                new Error(0, ''),
-            );
+            stubGetByCode(monsterRepository, new Error(0, ''));
 
             const result = await sut.execute(query);
 
@@ -49,7 +45,7 @@ describe('GetMonsterByCodeHandler', () => {
         it('should return an monster result when calling getByCode on MonsterRepository', async () => {
             const query = new GetMonsterByCodeQuery('code', 'lang');
 
-            stubMonsterRepoGetByCode(monsterRepository, query, new Result());
+            stubGetByCode(monsterRepository, new Result());
 
             const result = await sut.execute(query);
 
@@ -57,14 +53,3 @@ describe('GetMonsterByCodeHandler', () => {
         });
     });
 });
-
-function stubMonsterRepoGetByCode(
-    monsterRepository: MonsterRepository,
-    query: GetMonsterByCodeQuery,
-    mocked: Awaited<ReturnType<MonsterRepository['getByCode']>>,
-): void {
-    const monsterRepoGetByCode = On(monsterRepository).get(method('getByCode'));
-    when(monsterRepoGetByCode)
-        .calledWith(query.code, query.lang)
-        .mockResolvedValue(mocked);
-}

@@ -1,36 +1,36 @@
 name: Node.js CI
 
 on:
-    push:
-        branches: [main, develop]
-    pull_request:
-        branches: [main, develop]
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        
-        steps:
-        - name: Git checkout
-          uses: actions/checkout@v3
-        
-        - name: Use Node.js 16
-          uses: actions/setup-node@v3
-          with:
-            node-version: '16.17.1'
-            cache: 'yarn'
-        
-        - name: 📦 Install dependencies
-          run: yarn install
-        
-        - name: 👷 Build project
-          run: yarn build
-        
-        - name: 🧑‍🔬 Run e2e tests
-          run: yarn test:e2e
-          env:
-            APP_ENV: 'TEST'
-            FILES_PATH: ${{ secrets.FILES_PATH }}
-        
-        - name: 🧑‍🔬 Run unit tests
-          run: yarn test
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.11.1'
+          cache: 'yarn'
+    
+      - name: 📦 Install dependencies
+        run: yarn install
+      
+      - name: 👷 Build project
+        run: yarn build
+      
+      - name: 🧑‍🔬 Run unit tests
+        run: yarn test
+      
+      - name: 🧑‍🔬 Run e2e tests
+        run: yarn test:e2e
+        env:
+          APP_ENV: 'TEST'
+          FILES_PATH: ${{ secrets.FILES_PATH }}

@@ -1,19 +1,18 @@
-import { createMock } from 'ts-auto-mock';
 import { Error } from '../../../application/error';
 import { GetAllItemsHandler, GetAllItemsQuery } from './get-all-items.handler';
-import { ItemRepository } from '../item-repository.interface';
-import { Item } from '../../domain/item';
-import { method, On } from 'ts-auto-mock/extension';
+import {
+    ItemRepositorySpy,
+    stubGetAll,
+} from '../../../../test/doubles/item-repository.spy';
 import { Result } from '../../../application/result';
-import { when } from 'jest-when';
 
 describe('GetAllItemsHandler', () => {
     let sut: GetAllItemsHandler;
 
-    let itemRepository: ItemRepository;
+    let itemRepository: ItemRepositorySpy;
 
     beforeEach(() => {
-        itemRepository = createMock<ItemRepository>();
+        itemRepository = new ItemRepositorySpy();
 
         sut = new GetAllItemsHandler(itemRepository);
     });
@@ -24,13 +23,13 @@ describe('GetAllItemsHandler', () => {
 
             await sut.execute(query);
 
-            expect(itemRepository.getAll).toBeCalledWith(query.lang);
+            expect(itemRepository.calls.getAll.history).toContain(query.lang);
         });
 
         it('should return an error when repository method returned an error', async () => {
             const query = new GetAllItemsQuery('lang');
 
-            stubItemRepoGetAll(itemRepository, query, new Error(0, ''));
+            stubGetAll(itemRepository, new Error(0, ''));
 
             const result = await sut.execute(query);
 
@@ -40,7 +39,7 @@ describe('GetAllItemsHandler', () => {
         it('should return an item result when calling getAll on ItemRepository', async () => {
             const query = new GetAllItemsQuery('lang');
 
-            stubItemRepoGetAll(itemRepository, query, new Result([]));
+            stubGetAll(itemRepository, new Result([]));
 
             const result = await sut.execute(query);
 
@@ -48,12 +47,3 @@ describe('GetAllItemsHandler', () => {
         });
     });
 });
-
-function stubItemRepoGetAll(
-    itemRepository: ItemRepository,
-    query: GetAllItemsQuery,
-    mocked: Awaited<ReturnType<ItemRepository['getAll']>>,
-): void {
-    const itemRepoGetAll = On(itemRepository).get(method('getAll'));
-    when(itemRepoGetAll).calledWith(query.lang).mockResolvedValue(mocked);
-}
