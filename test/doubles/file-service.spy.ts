@@ -50,7 +50,7 @@ export function stubComputeFilePath(
         folder: FileFolder,
         format: FileFormat,
         code: string,
-    ): string => {
+    ): typeof value => {
         service.incrementCallsToComputeFilePath([folder, format, code]);
         return value;
     };
