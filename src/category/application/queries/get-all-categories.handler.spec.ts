@@ -1,22 +1,21 @@
-import { CategoryRepository } from '../category-repository.interface';
-import { createMock } from 'ts-auto-mock';
+import {
+    CategoryRepositorySpy,
+    stubGetAll,
+} from '../../../../test/doubles/category-repository.spy';
 import { Error } from '../../../application/error';
 import {
     GetAllCategoriesHandler,
     GetAllCategoriesQuery,
 } from './get-all-categories.handler';
-import { method, On } from 'ts-auto-mock/extension';
 import { Result } from '../../../application/result';
-import { when } from 'jest-when';
 
 describe('GetAllCategoriesHandler', () => {
     let sut: GetAllCategoriesHandler;
 
-    let categoryRepository: CategoryRepository;
+    let categoryRepository: CategoryRepositorySpy;
 
     beforeEach(() => {
-        categoryRepository = createMock<CategoryRepository>();
-
+        categoryRepository = new CategoryRepositorySpy();
         sut = new GetAllCategoriesHandler(categoryRepository);
     });
 
@@ -26,13 +25,15 @@ describe('GetAllCategoriesHandler', () => {
 
             await sut.execute(query);
 
-            expect(categoryRepository.getAll).toBeCalledWith(query.lang);
+            expect(categoryRepository.calls.getAll.history).toContain(
+                query.lang,
+            );
         });
 
         it('should return an error when repository method returned an error', async () => {
             const query = new GetAllCategoriesQuery('lang');
 
-            stubCategoryRepoGetAll(categoryRepository, query, new Error(0, ''));
+            stubGetAll(categoryRepository, new Error(0, ''));
 
             const result = await sut.execute(query);
 
@@ -42,7 +43,7 @@ describe('GetAllCategoriesHandler', () => {
         it('should return a category result repository method returned a result', async () => {
             const query = new GetAllCategoriesQuery('lang');
 
-            stubCategoryRepoGetAll(categoryRepository, query, new Result([]));
+            stubGetAll(categoryRepository, new Result([]));
 
             const result = await sut.execute(query);
 
@@ -50,12 +51,3 @@ describe('GetAllCategoriesHandler', () => {
         });
     });
 });
-
-function stubCategoryRepoGetAll(
-    categoryRepository: CategoryRepository,
-    query: GetAllCategoriesQuery,
-    mocked: Awaited<ReturnType<CategoryRepository['getAll']>>,
-): void {
-    const categoryRepoGetAll = On(categoryRepository).get(method('getAll'));
-    when(categoryRepoGetAll).calledWith(query.lang).mockResolvedValue(mocked);
-}
