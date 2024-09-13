@@ -1,25 +1,25 @@
-import { createMock } from 'ts-auto-mock';
 import {
     FileFolder,
     FileFormat,
-    FileService,
 } from '../../../file/application/file-service.interface';
+import {
+    FileServiceSpy,
+    stubComputeFilePath,
+} from '../../../../test/doubles/file-service.spy';
 import {
     GetImageFileHandler,
     GetImageFileQuery,
 } from './get-image-file.handler';
-import { method, On } from 'ts-auto-mock/extension';
-import { when } from 'jest-when';
 
 describe('GetImageFileQuery', () => {
     let sut: GetImageFileHandler;
 
-    let fileServiceMock: FileService;
+    let fileService: FileServiceSpy;
 
     beforeEach(() => {
-        fileServiceMock = createMock<FileService>();
+        fileService = new FileServiceSpy();
 
-        sut = new GetImageFileHandler(fileServiceMock);
+        sut = new GetImageFileHandler(fileService);
     });
 
     describe('execute', () => {
@@ -30,18 +30,14 @@ describe('GetImageFileQuery', () => {
                 FileFormat.PNG,
             );
 
-            const filePathMock = `someSortOfPathFor${query.code}`;
-
-            const fileServiceComputeFilePathMock = On(fileServiceMock).get(
-                method('computeFilePath'),
-            );
-            when(fileServiceComputeFilePathMock)
-                .calledWith(query.folder, query.format, query.code)
-                .mockReturnValue(filePathMock);
+            const dummyFilePath = `someSortOfPathFor${query.code}`;
+            stubComputeFilePath(fileService, dummyFilePath);
 
             await sut.execute(query);
 
-            expect(fileServiceMock.getFileStream).toBeCalledWith(filePathMock);
+            expect(fileService.calls.getFileStream.history).toContain(
+                dummyFilePath,
+            );
         });
     });
 });
